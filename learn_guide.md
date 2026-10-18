@@ -200,6 +200,8 @@ VehicleSpeed = 100 km/h
 
 ## 阶段 4：Python 自动解析 BLF + DBC
 
+本阶段的通道与网络关系、DBC 候选匹配、真实报文解码及 CSV 导出，见 [第四阶段学习总结](doc/stage4_summary.md)。
+
 之后非常推荐学：
 
 ```bash
