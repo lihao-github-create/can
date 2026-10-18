@@ -134,6 +134,8 @@ Time          ID       DLC   Data
 
 ## 阶段 3：学习 DBC
 
+本阶段的真实 DBC 定义解读、位提取练习及 Python 解码验证，见 [第三阶段学习总结](doc/stage3_summary.md)。
+
 例如 DBC 里面可能定义：
 
 ```text
