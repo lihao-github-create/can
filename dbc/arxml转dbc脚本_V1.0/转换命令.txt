@@ -1,0 +1,1 @@
+D:\python\python.exe .\split_dynamic_pdu_dbc.py --arxml .\20260319-lb1-AS5PRAS5PM-IPD_V3.0.arxml --zero-factor-policy set-one

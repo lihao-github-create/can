@@ -76,6 +76,7 @@ BO_ 958 FVCM_BKPCANFD_100ms_FrP04: 64 IPD
  SG_ ACCDetObj3SyncCtr : 207|4@0+ (1,0) [0|15] "null" Vector__XXX
  SG_ ACCDetObj2Typ : 217|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ ACCDetObj1Typ : 230|3@0+ (1,0) [0|7] "null" Vector__XXX
+ SG_ ACCDrvrTkovReq : 256|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ ACCDetObj3Typ : 506|3@0+ (1,0) [0|7] "null" Vector__XXX
 
 BO_ 956 FVCM_BKPCANFD_100ms_FrP05: 64 IPD
@@ -132,7 +133,7 @@ BO_ 956 FVCM_BKPCANFD_100ms_FrP05: 64 IPD
  SG_ Lane3_MarkerColor : 383|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ TLRWarning : 388|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ TLRMdSwDspCmd : 391|3@0+ (1,0) [0|7] "null" Vector__XXX
- SG_ SpdLmtOfstSetResp : 399|5@0+ (2,-20) [-20|42] "null" Vector__XXX
+ SG_ SpdLmtOfstSetResp : 399|6@0+ (1,-20) [-20|43] "null" Vector__XXX
  SG_ ACCDetObjHdngAng : 495|8@0+ (2,-180) [-180|330] "null" Vector__XXX
  SG_ CCSpdVcCmdCnfm : 503|3@0+ (1,0) [0|7] "null" Vector__XXX
 
@@ -297,18 +298,31 @@ BO_ 335 IAM_CONNCANFD_100ms_FrP07: 8 Vector__XXX
  SG_ DownVelocityRTK : 55|16@0- (0.001,0) [-32.768|32.767] "null" IPD
 
 BO_ 887 IAM_CONNCANFD_100ms_FrP08: 8 Vector__XXX
+ SG_ IAM_100ms_Group08_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_100ms_Group08_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_100ms_Group08_Reserved15 : 15|4@0+ (1,0) [0|15] "null" IPD
  SG_ LatSigma : 23|16@0+ (0.001,0) [0.000|65.535] "null" IPD
  SG_ LonSigma : 39|16@0+ (0.001,0) [0.000|65.535] "null" IPD
  SG_ AltSigma : 55|16@0+ (0.001,0) [0.000|65.535] "null" IPD
 
 BO_ 912 IAM_CONNCANFD_100ms_FrP34: 8 Vector__XXX
+ SG_ IAM_ZONE_100ms_Group34_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_ZONE_100ms_Group34_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_ZONE_100ms_Group34_Reserved1 : 15|4@0+ (1,0) [0|15] "null" IPD
  SG_ Pdop : 21|14@0+ (0.01,0) [0.00|163.83] "null" IPD
+ SG_ IAM_ZONE_100ms_Group34_Reserved2 : 23|2@0+ (1,0) [0|3] "null" IPD
  SG_ Vdop : 37|14@0+ (0.01,0) [0.00|163.83] "null" IPD
+ SG_ IAM_ZONE_100ms_Group34_Reserved3 : 39|2@0+ (1,0) [0|3] "null" IPD
  SG_ Hdop : 53|14@0+ (0.01,0) [0.00|163.83] "null" IPD
+ SG_ IAM_ZONE_100ms_Group34_Reserved5 : 55|2@0+ (1,0) [0|3] "null" IPD
 
 BO_ 874 IAM_CONNCANFD_100ms_FrP40: 8 Vector__XXX
+ SG_ IAM_ZONE_100ms_Group40_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_ZONE_100ms_Group40_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_ZONE_100ms_Group40_Reserved1 : 15|4@0+ (1,0) [0|15] "null" IPD
  SG_ AltitudeRTK : 23|24@0- (0.001,0) [-8388.608|8388.607] "null" IPD
  SG_ HeadingRTK : 47|16@0+ (0.01,0) [0.00|655.35] "null" IPD
+ SG_ IAM_ZONE_100ms_Group40_Reserved6 : 63|8@0+ (1,0) [0|255] "null" IPD
 
 BO_ 336 IAM_CONNCANFD_20ms_FrP32: 16 Vector__XXX
  SG_ IAM_20ms_Group32_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
@@ -347,6 +361,9 @@ BO_ 1000 IAM_CONNCAN_100ms_FrP04: 8 Vector__XXX
  SG_ SmtKeyAuthnSubModRunSts : 51|3@0+ (1,0) [0|7] "null" Vector__XXX
 
 BO_ 811 IAM_CONNCAN_100ms_FrP18: 8 Vector__XXX
+ SG_ IAM_100ms_Group18_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_100ms_Group18_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_100ms_Group18_Reserved15 : 15|4@0+ (1,0) [0|15] "null" IPD
  SG_ PitchRTK : 23|16@0- (0.01,0) [-327.68|327.67] "null" IPD
  SG_ HeadingSigma : 39|16@0+ (0.001,0) [0.000|65.535] "null" IPD
  SG_ PitchSigma : 55|16@0+ (0.001,0) [0.000|65.535] "null" IPD
@@ -356,22 +373,36 @@ BO_ 1358 IAM_CONNCAN_100ms_FrS21: 8 Vector__XXX
  SG_ AIParkngReq : 55|8@0+ (1,0) [0|255] "null" IPD
 
 BO_ 810 IAM_RHBKBCANFD_100ms_FrP57: 8 Vector__XXX
+ SG_ IAM_ZONE_100ms_Group57_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_ZONE_100ms_Group57_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_ZONE_100ms_Group57_Reserved1 : 15|4@0+ (1,0) [0|15] "null" IPD
  SG_ LongitudeRTK : 23|40@0- (1.0E-009,0) [-549.7558138880|549.7558138870] "null" IPD
+ SG_ IAM_ZONE_100ms_Group57_Reserved6 : 63|8@0+ (1,0) [0|255] "null" IPD
 
 BO_ 793 IAM_RZCUCANFD_100ms_FrP35: 8 Vector__XXX
+ SG_ IAM_ZONE_100ms_Group35_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_ZONE_100ms_Group35_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_ZONE_100ms_Group35_Reserved1 : 15|4@0+ (1,0) [0|15] "null" IPD
  SG_ GNSSUTCTime : 23|44@0+ (1,0) [0|17592186044415] "null" IPD
  SG_ GNSSF9HCounter : 59|4@0+ (1,0) [0|15] "null" IPD
 
 BO_ 773 IAM_ZONE_CONNCANFD_100ms_FrP03: 8 Vector__XXX
+ SG_ IAM_ZONE_100ms_Group13_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_ZONE_100ms_Group13_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_ZONE_100ms_Group13_Reserved1 : 13|2@0+ (1,0) [0|3] "null" IPD
  SG_ FixType : 15|2@0+ (1,0) [0|3] "null" IPD
  SG_ GNSSSeq : 23|32@0+ (1,0) [0|4294967295] "null" IPD
  SG_ GNSSUTCTimeH : 55|16@0+ (1,0) [0|65535] "null" IPD
 
 BO_ 974 IAM_ZONE_CONNCANFD_100ms_FrP56: 8 Vector__XXX
+ SG_ IAM_100ms_Group56_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IAM_100ms_Group56_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IAM_100ms_Group56_Reserved13 : 13|2@0+ (1,0) [0|3] "null" IPD
  SG_ IAM_GNSS_Signal_Status : 15|2@0+ (1,0) [0|3] "null" IPD
  SG_ LatitudeRTK : 23|40@0- (1.0E-009,0) [-549.7558138880|549.7558138870] "null" IPD
+ SG_ IAM_100ms_Group56_Reserved63 : 63|8@0+ (1,0) [0|255] "null" IPD
 
-BO_ 348 ICBAD_BKPCANFD_100ms_FrP27: 12 IPD
+BO_ 348 ICBAD_BKPCANFD_100ms_FrP27: 16 IPD
  SG_ FCWSnstvtLvl : 15|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ AEBDspCmd : 19|2@0+ (1,0) [0|3] "null" Vector__XXX
  SG_ AEBMsgReq : 23|4@0+ (1,0) [0|15] "null" Vector__XXX
@@ -657,12 +688,33 @@ BO_ 1282 ICBVC_BKPCANFD_1000ms_FrP50: 8 Vector__XXX
  SG_ SpdLmtNav : 55|5@0+ (5,0) [0|155] "kph" IPD
 
 BO_ 66 ICBVC_BKPCANFD_100ms_FrP01: 16 Vector__XXX
+ SG_ ICBVC_100ms_Group01_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_RC : 11|4@0+ (1,0) [0|15] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved14 : 14|3@0+ (1,0) [0|7] "null" IPD
  SG_ DspMeasmtSys : 15|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved21 : 21|6@0+ (1,0) [0|63] "null" IPD
  SG_ PDCSwReq : 23|2@0+ (1,0) [0|3] "null" IPD
  SG_ PwrMdExtrCtrlAvlbl : 24|1@0+ (1,0) [0|1] "null" IPD
  SG_ MdOfPwrMd : 25|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved31 : 31|6@0+ (1,0) [0|63] "null" IPD
  SG_ ClstrDspdVehSpd : 39|8@0+ (1,0) [0|255] "kph" IPD
+ SG_ ICBVC_100ms_Group01_Reserved47 : 47|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved55 : 55|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved63 : 63|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved71 : 71|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved72 : 72|1@0+ (1,0) [0|1] "null" IPD
+ SG_ FRSeatVentCtrlSts : 75|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved79 : 79|4@0+ (1,0) [0|15] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved80 : 80|1@0+ (1,0) [0|1] "null" IPD
+ SG_ FLSeatVentCtrlSts : 83|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved84 : 84|1@0+ (1,0) [0|1] "null" IPD
+ SG_ FRSeatHeatCtrlSts : 87|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved92 : 92|5@0+ (1,0) [0|31] "null" IPD
  SG_ FLSeatHeatCtrlSts : 95|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved103 : 103|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved111 : 111|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved119 : 119|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ICBVC_100ms_Group01_Reserved127 : 127|8@0+ (1,0) [0|255] "null" IPD
 
 BO_ 871 ICBVC_BKPCANFD_100ms_FrP17: 8 Vector__XXX
  SG_ AVMSt : 6|3@0+ (1,0) [0|7] "null" IPD
@@ -808,7 +860,7 @@ BO_ 922 ICBVC_RZCUCANFD_100ms_FrP27: 8 Vector__XXX
 
 BO_ 795 ICBVC_RZCUCANFD_100ms_FrP48: 8 Vector__XXX
  SG_ DCDCVolStpt : 7|8@0+ (0.03125,8.5) [8.50000|16.46875] "V" Vector__XXX
- SG_ SLIFUpdtIndReq : 27|1@0+ (1,0) [0|1] "null" IPD
+ SG_ SLIFUpdtIndReq : 27|2@0+ (1,0) [0|3] "null" IPD
  SG_ BatVol : 37|14@0+ (0.00097656,3) [3.00000000|18.99898248] "V" Vector__XXX
  SG_ SprSportSubItemReqV : 51|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ SprSportSubItemReq : 55|4@0+ (1,0) [0|15] "null" Vector__XXX
@@ -857,6 +909,7 @@ BO_ 361 ICBVC_RZCUCANFD_20ms_FrP00: 8 Vector__XXX
  SG_ EPSAvlbly : 10|1@0+ (1,0) [0|1] "null" IPD
  SG_ TC_PTAvlbly : 12|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ PICU_PTAvlbly : 13|1@0+ (1,0) [0|1] "null" IPD
+ SG_ LVBM_PTAvlbly : 14|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ PEU_PTAvlbly : 16|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ PEU_ERAvlbly : 17|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ PICU_ExtdAvlbly : 18|1@0+ (1,0) [0|1] "null" Vector__XXX
@@ -912,11 +965,13 @@ BO_ 60 ICBVC_SecOC_ComKeyReq: 8 Vector__XXX
  SG_ TripCntResetReq : 6|1@0+ (1,0) [0|1] "null" IPD
  SG_ ComKeyEnbReq : 7|1@0+ (1,0) [0|1] "null" IPD
 
-BO_ 1391 ICBVC_SecOC_SyncMsg: 8 Vector__XXX
+BO_ 1391 synthesized_ICBVC_SecOC_SyncMsg_: 8 Vector__XXX
+ SG_ synthesized_ICBVC_SecOC_SyncMsg_ : 47|24@0+ (1,0) [0|16777215] "Unitless" Vector__XXX
  SG_ TripCnt : 7|24@0+ (1,0) [0|16777215] "null" IPD
  SG_ ResetCnt : 31|16@0+ (1,0) [0|65535] "null" IPD
 
 BO_ 815 ICB_BKBCANFD_100ms_FrP146: 8 Vector__XXX
+ SG_ EMCLPwrSts : 12|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ IMMPwrSts : 14|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ ESCLPwrSts : 20|1@0+ (1,0) [0|1] "null" IPD
  SG_ BPEPSPwrSts : 25|1@0+ (1,0) [0|1] "null" Vector__XXX
@@ -976,7 +1031,7 @@ BO_ 955 ICB_BKPCANFD_100ms_FrP159: 64 Vector__XXX
  SG_ RrSsdPosCtrl : 15|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ ACCTJAMdSwReq : 18|3@0+ (1,0) [0|7] "null" IPD
  SG_ FICMACLTemReq : 23|5@0+ (0.5,15.5) [15.5|31] "null" Vector__XXX
- SG_ SpdLmtOfstSetReq : 31|5@0+ (2,-20) [-20|42] "null" IPD
+ SG_ SpdLmtOfstSetReq : 31|6@0+ (1,-20) [-20|43] "null" IPD
  SG_ ACCStsSwReq : 33|2@0+ (1,0) [0|3] "null" IPD
  SG_ ACCSpdLimtSwReq : 35|2@0+ (1,0) [0|3] "null" IPD
  SG_ ACCCurveSpdSwReq : 37|2@0+ (1,0) [0|3] "null" IPD
@@ -1123,9 +1178,9 @@ BO_ 527 IMM_BKPCANFD_50ms_FrP02: 24 Vector__XXX
  SG_ EyeGazepitch_IMM : 119|8@0- (1,0) [-128|127] "null" IPD
  SG_ EyeGazeyaw_IMM : 127|8@0- (1,0) [-128|127] "null" IPD
  SG_ EyeOpenDegree_IMM : 135|8@0+ (0.01,0) [0.00|2.55] "null" IPD
- SG_ Headpose_pitch : 143|8@0- (1,0) [-128|127] "null" IPD
- SG_ Headpose_yaw : 151|8@0- (1,0) [-128|127] "null" IPD
- SG_ Headpose_roll : 159|8@0- (1,0) [-128|127] "null" IPD
+ SG_ IMM_50ms_Group02_Reserved143 : 143|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IMM_50ms_Group02_Reserved151 : 151|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IMM_50ms_Group02_Reserved159 : 159|8@0+ (1,0) [0|255] "null" IPD
  SG_ IMM_50ms_Group02_Reserved7 : 163|4@0+ (1,0) [0|15] "null" IPD
  SG_ MouthOccludeStatus_IMM : 165|2@0+ (1,0) [0|3] "null" IPD
  SG_ YawnStatus_IMM : 167|2@0+ (1,0) [0|3] "null" IPD
@@ -1135,57 +1190,6 @@ BO_ 527 IMM_BKPCANFD_50ms_FrP02: 24 Vector__XXX
 
 BO_ 657 IMM_BKPCANFD_50ms_FrP04: 64 Vector__XXX
  SG_ DMSCameraFps_IMM : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ Headtrack_x1 : 15|8@0- (1,0) [-128|127] "null" IPD
- SG_ Headtrack_y1 : 23|8@0- (1,0) [-128|127] "null" IPD
- SG_ Headtrack_z1 : 31|8@0- (1,0) [-128|127] "null" IPD
- SG_ Headtrack_x2 : 39|8@0- (1,0) [-128|127] "null" IPD
- SG_ Headtrack_y2 : 47|8@0- (1,0) [-128|127] "null" IPD
- SG_ Headtrack_z2 : 55|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x1 : 63|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y1 : 71|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z1 : 79|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x2 : 87|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y2 : 95|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z2 : 103|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x3 : 111|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y3 : 119|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z3 : 127|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x4 : 135|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y4 : 143|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z4 : 151|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x5 : 159|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y5 : 167|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z5 : 175|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x6 : 183|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y6 : 191|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z6 : 199|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x7 : 207|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y7 : 215|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z7 : 223|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x8 : 231|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y8 : 239|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z8 : 247|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x9 : 255|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y9 : 263|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z9 : 271|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x10 : 279|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y10 : 287|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z10 : 295|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x11 : 303|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y11 : 311|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z11 : 319|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x12 : 327|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y12 : 335|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z12 : 343|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x13 : 351|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y13 : 359|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z13 : 367|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x14 : 375|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y14 : 383|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z14 : 391|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_x15 : 399|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_y15 : 407|8@0- (1,0) [-128|127] "null" IPD
- SG_ HumanPose_z15 : 415|8@0- (1,0) [-128|127] "null" IPD
 
 BO_ 1237 IMM_BKPCANFD_NM: 8 Vector__XXX
  SG_ IMM_NM_BSMtoRMS_BKPCANFD : 16|1@0+ (1,0) [0|1] "null" Vector__XXX
@@ -1262,12 +1266,13 @@ BO_ 807 IPD_BKPCANFD_100ms_FrP35: 64 IPD
  SG_ PilotSysUSSFltSts : 319|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ HORWarningEvtSts : 338|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ EORWarningEvtSts : 341|3@0+ (1,0) [0|7] "null" Vector__XXX
- SG_ SLIFUpdtIndResp_IPD : 342|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ PosALCFailed : 351|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ SLIFSysFltSts : 355|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ ADS_ISAMsgReq : 359|4@0+ (1,0) [0|15] "null" Vector__XXX
+ SG_ SLIFUpdtIndResp_IPD : 361|2@0+ (1,0) [0|3] "null" Vector__XXX
  SG_ ADS_ISASysFltSts : 364|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ ADS_ISASysSts : 367|3@0+ (1,0) [0|7] "null" Vector__XXX
+ SG_ ParkngSpdSwResp : 375|2@0+ (1,0) [0|3] "null" Vector__XXX
 
 BO_ 765 IPD_BKPCANFD_100ms_FrP50: 32 IPD
  SG_ FrtCamrHeatCtrl : 195|1@0+ (1,0) [0|1] "null" Vector__XXX
@@ -1291,7 +1296,7 @@ BO_ 844 IPD_BKPCANFD_100ms_FrP58: 32 IPD
  SG_ ADAudioSWSts : 143|2@0+ (1,0) [0|3] "null" Vector__XXX
  SG_ SpdLmtMdMsgReq : 147|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ NonDirectDMSSysSts : 151|3@0+ (1,0) [0|7] "null" Vector__XXX
- SG_ ParkngEndDis : 159|6@0+ (0.1,0) [0|6.3] "null" Vector__XXX
+ SG_ ParkngEndDis : 159|8@0+ (0.1,0) [0|25.5] "null" Vector__XXX
  SG_ IACCOvTSuppresCmd : 167|3@0+ (1,0) [0|7] "null" Vector__XXX
 
 BO_ 755 IPD_BKPCANFD_100ms_FrP61: 24 IPD
@@ -1347,7 +1352,7 @@ BO_ 755 IPD_BKPCANFD_100ms_FrP61: 24 IPD
  SG_ ParkngSlotFindSts : 149|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ ParkngOutFrtCrsSts : 150|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ ParkngOutFRParllSts : 151|1@0+ (1,0) [0|1] "null" Vector__XXX
- SG_ PEBSwResp : 158|1@0+ (1,0) [0|1] "null" Vector__XXX
+ SG_ PEBSwResp : 158|2@0+ (1,0) [0|3] "null" Vector__XXX
 
 BO_ 774 IPD_BKPCANFD_100ms_P31: 64 IPD
  SG_ TrfcMrgdForbidDist : 15|15@0+ (0.0156,-256) [-256.0000|255.1652] "null" Vector__XXX
@@ -1356,6 +1361,7 @@ BO_ 774 IPD_BKPCANFD_100ms_P31: 64 IPD
  SG_ ParkngInPrgs : 63|7@0+ (1,0) [0|127] "%" Vector__XXX
  SG_ ParkngNCPAvlSts : 76|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ TrfcLghtFuctionSwSts : 97|2@0+ (1,0) [0|3] "null" Vector__XXX
+ SG_ APASpdMdSwSts : 99|2@0+ (1,0) [0|3] "null" Vector__XXX
  SG_ TrfcMrgdWrnngSign : 175|64@0+ (1,0) [0|18446744073709551615] "null" Vector__XXX
  SG_ TrfcMrgdForbidSign : 239|64@0+ (1,0) [0|18446744073709551615] "null" Vector__XXX
  SG_ TrfcMrgdInfoSign : 303|64@0+ (1,0) [0|18446744073709551615] "null" Vector__XXX
@@ -1384,10 +1390,9 @@ BO_ 337 IPD_BKPCANFD_20ms_FrP60: 20 IPD
  SG_ IPD_20ms_Group60_Reserved1 : 23|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ IPD_20ms_Group60_Reserved2 : 31|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ APASCSToqReqVal : 39|16@0+ (1,0) [0|65535] "Nm" Vector__XXX
- SG_ APAVehCrdnatPosY : 55|10@0+ (1,-512) [-512|511] "cm" Vector__XXX
+ SG_ APAVehCrdnatPosY : 55|13@0+ (1,-4096) [-4096|4095] "cm" Vector__XXX
  SG_ APAVehCrdnatAzmth : 56|9@0+ (1,0) [0|511] "degree" Vector__XXX
  SG_ ESSDirInd : 58|2@0+ (1,0) [0|3] "null" Vector__XXX
- SG_ IPD_20ms_Group60_Reserved3 : 61|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ PilotTkovMsgReq : 75|4@0+ (1,0) [0|15] "null" Vector__XXX
  SG_ NOPSysSts_ZPD : 79|4@0+ (1,0) [0|15] "null" Vector__XXX
  SG_ PrkgDstCtrlSwResp : 81|2@0+ (1,0) [0|3] "null" Vector__XXX
@@ -1480,7 +1485,7 @@ BO_ 705 IPD_CHCANFD_100ms_FrP130: 16 IPD
  SG_ HWPEMStsForEdr : 124|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ HWPEMSts : 127|3@0+ (1,0) [0|7] "null" Vector__XXX
 
-BO_ 982 IPD_PTCANFD_100ms_FrP03: 8 IPD
+BO_ 982 IPD_PTCANFD_100ms_FrP03: 20 IPD
  SG_ ACCDetObjLongtRltvDist : 7|12@0+ (0.0625,0) [0.0000|255.9375] "null" Vector__XXX
  SG_ ACCDetObjSyncCtr : 11|4@0+ (1,0) [0|15] "null" Vector__XXX
  SG_ ACCDetObjLongtRltvSpd : 23|12@0+ (0.0625,-128) [-128.0000|127.9375] "null" Vector__XXX
@@ -2131,7 +2136,6 @@ BO_ 805 ZXD_BKBCANFD_100ms_FrP257: 24 Vector__XXX
  SG_ FICMIFPACOnOffSwReq : 57|2@0+ (1,0) [0|3] "null" Vector__XXX
  SG_ NOAReportSetSwReq : 60|3@0+ (1,0) [0|7] "null" IPD
  SG_ NarRoVslAssSwReq : 63|3@0+ (1,0) [0|7] "null" IPD
- SG_ ParkngSpdSwResp : 65|2@0+ (1,0) [0|3] "null" IPD
  SG_ NrwroadBwdAssSwReq : 68|3@0+ (1,0) [0|7] "null" IPD
  SG_ AutoLaneChngSwReq : 71|3@0+ (1,0) [0|7] "null" IPD
  SG_ ESSAdoWrnngReq : 73|2@0+ (1,0) [0|3] "null" IPD
@@ -2158,10 +2162,14 @@ BO_ 805 ZXD_BKBCANFD_100ms_FrP257: 24 Vector__XXX
  SG_ D2DPriETClanSwReq : 119|2@0+ (1,0) [0|3] "null" IPD
  SG_ SLIFWrnngMdReq : 126|2@0+ (1,0) [0|3] "null" IPD
  SG_ AIParkngEPAMdsw : 127|1@0+ (1,0) [0|1] "null" IPD
- SG_ PEBSwReq : 135|1@0+ (1,0) [0|1] "null" IPD
+ SG_ PEBSwReq : 135|2@0+ (1,0) [0|3] "null" IPD
 
 BO_ 711 ZXD_BKPCANFD_100ms_FrP76: 16 Vector__XXX
  SG_ SpedRegulaModSwReq : 55|3@0+ (1,0) [0|7] "null" IPD
+
+BO_ 707 ZXD_BKPCANFD_100ms_FrP77: 64 Vector__XXX
+ SG_ ICMSwReq_Reserve17 : 61|2@0+ (1,0) [0|3] "null" IPD
+ SG_ ICMSwReq_Reserve16 : 63|2@0+ (1,0) [0|3] "null" IPD
 
 BO_ 1216 ZXD_BKPCANFD_NM: 8 Vector__XXX
  SG_ ZXD_NM_BSMtoRMS_BKPCANFD : 16|1@0+ (1,0) [0|1] "null" Vector__XXX
@@ -2178,6 +2186,7 @@ BO_ 1216 ZXD_BKPCANFD_NM: 8 Vector__XXX
 
 
 
+CM_ SG_ 1391 synthesized_ICBVC_SecOC_SyncMsg_ "Truncated Auth-Info";
 
 
 BA_DEF_ BO_ "FrameTriggeringName" STRING;
@@ -2352,19 +2361,19 @@ BA_ "VFrameFormat" BO_ 335 14;
 BA_ "FrameTriggeringName" BO_ 887 "IAM_CONNCANFD_100ms_FrP08";
 BA_ "GenMsgCycleTime" BO_ 887 100;
 BA_ "GenMsgSendType" BO_ 887 0;
-BA_ "GenMsgStartValue" BO_ 887 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 887 "00f0000000000000";
 BA_ "PduName" BO_ 887 "IAM_100ms_PDU08";
 BA_ "VFrameFormat" BO_ 887 14;
 BA_ "FrameTriggeringName" BO_ 912 "IAM_CONNCANFD_100ms_FrP34";
 BA_ "GenMsgCycleTime" BO_ 912 100;
 BA_ "GenMsgSendType" BO_ 912 0;
-BA_ "GenMsgStartValue" BO_ 912 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 912 "00f0c000c000c000";
 BA_ "PduName" BO_ 912 "IAM_ZONE_100ms_PDU34";
 BA_ "VFrameFormat" BO_ 912 14;
 BA_ "FrameTriggeringName" BO_ 874 "IAM_CONNCANFD_100ms_FrP40";
 BA_ "GenMsgCycleTime" BO_ 874 100;
 BA_ "GenMsgSendType" BO_ 874 0;
-BA_ "GenMsgStartValue" BO_ 874 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 874 "00f00000000000ff";
 BA_ "PduName" BO_ 874 "IAM_ZONE_100ms_PDU40";
 BA_ "VFrameFormat" BO_ 874 14;
 BA_ "FrameTriggeringName" BO_ 336 "IAM_CONNCANFD_20ms_FrP32";
@@ -2387,7 +2396,7 @@ BA_ "VFrameFormat" BO_ 1000 14;
 BA_ "FrameTriggeringName" BO_ 811 "IAM_CONNCAN_100ms_FrP18";
 BA_ "GenMsgCycleTime" BO_ 811 100;
 BA_ "GenMsgSendType" BO_ 811 0;
-BA_ "GenMsgStartValue" BO_ 811 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 811 "00f0000000000000";
 BA_ "PduName" BO_ 811 "IAM_100ms_PDU18";
 BA_ "VFrameFormat" BO_ 811 14;
 BA_ "FrameTriggeringName" BO_ 1358 "IAM_CONNCAN_100ms_FrS21";
@@ -2399,31 +2408,31 @@ BA_ "VFrameFormat" BO_ 1358 14;
 BA_ "FrameTriggeringName" BO_ 810 "IAM_RHBKBCANFD_100ms_FrP57";
 BA_ "GenMsgCycleTime" BO_ 810 100;
 BA_ "GenMsgSendType" BO_ 810 0;
-BA_ "GenMsgStartValue" BO_ 810 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 810 "00f00000000000ff";
 BA_ "PduName" BO_ 810 "IAM_ZONE_100ms_PDU57";
 BA_ "VFrameFormat" BO_ 810 14;
 BA_ "FrameTriggeringName" BO_ 793 "IAM_RZCUCANFD_100ms_FrP35";
 BA_ "GenMsgCycleTime" BO_ 793 100;
 BA_ "GenMsgSendType" BO_ 793 0;
-BA_ "GenMsgStartValue" BO_ 793 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 793 "00f0000000000000";
 BA_ "PduName" BO_ 793 "IAM_ZONE_100ms_PDU35";
 BA_ "VFrameFormat" BO_ 793 14;
 BA_ "FrameTriggeringName" BO_ 773 "IAM_ZONE_CONNCANFD_100ms_FrP03";
 BA_ "GenMsgCycleTime" BO_ 773 100;
 BA_ "GenMsgSendType" BO_ 773 0;
-BA_ "GenMsgStartValue" BO_ 773 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 773 "0030000000000000";
 BA_ "PduName" BO_ 773 "IAM_ZONE_100ms_PDU13";
 BA_ "VFrameFormat" BO_ 773 14;
 BA_ "FrameTriggeringName" BO_ 974 "IAM_ZONE_CONNCANFD_100ms_FrP56";
 BA_ "GenMsgCycleTime" BO_ 974 100;
 BA_ "GenMsgSendType" BO_ 974 0;
-BA_ "GenMsgStartValue" BO_ 974 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 974 "00300000000000ff";
 BA_ "PduName" BO_ 974 "IAM_ZONE_100ms_PDU56";
 BA_ "VFrameFormat" BO_ 974 14;
 BA_ "FrameTriggeringName" BO_ 348 "ICBAD_BKPCANFD_100ms_FrP27";
 BA_ "GenMsgCycleTime" BO_ 348 100;
 BA_ "GenMsgSendType" BO_ 348 0;
-BA_ "GenMsgStartValue" BO_ 348 "000000000000000000001000";
+BA_ "GenMsgStartValue" BO_ 348 "00400802000000000000100000000000";
 BA_ "PduName" BO_ 348 "ICBAD_100ms_PDU27";
 BA_ "VFrameFormat" BO_ 348 14;
 BA_ "FrameTriggeringName" BO_ 917 "ICBAD_BKPCANFD_100ms_FrP29_NoSecOC";
@@ -2472,7 +2481,7 @@ BA_ "VFrameFormat" BO_ 151 14;
 BA_ "FrameTriggeringName" BO_ 382 "ICBAD_BKPCANFD_20ms_FrP07";
 BA_ "GenMsgCycleTime" BO_ 382 20;
 BA_ "GenMsgSendType" BO_ 382 0;
-BA_ "GenMsgStartValue" BO_ 382 "000005a40000f000";
+BA_ "GenMsgStartValue" BO_ 382 "000006b10000f000";
 BA_ "PduName" BO_ 382 "ICBAD_20ms_PDU07";
 BA_ "VFrameFormat" BO_ 382 14;
 BA_ "FrameTriggeringName" BO_ 385 "ICBAD_BKPCANFD_20ms_FrP09";
@@ -2554,7 +2563,7 @@ BA_ "VFrameFormat" BO_ 1282 14;
 BA_ "FrameTriggeringName" BO_ 66 "ICBVC_BKPCANFD_100ms_FrP01";
 BA_ "GenMsgCycleTime" BO_ 66 100;
 BA_ "GenMsgSendType" BO_ 66 0;
-BA_ "GenMsgStartValue" BO_ 66 "00000000000000000000000000000000";
+BA_ "GenMsgStartValue" BO_ 66 "00703ffc00fffffffff1111fffffffff";
 BA_ "PduName" BO_ 66 "ICBVC_100ms_PDU01";
 BA_ "VFrameFormat" BO_ 66 14;
 BA_ "FrameTriggeringName" BO_ 871 "ICBVC_BKPCANFD_100ms_FrP17";
@@ -2668,6 +2677,7 @@ BA_ "GenMsgDelayTime" BO_ 1391 5;
 BA_ "GenMsgSendType" BO_ 1391 1;
 BA_ "GenMsgStartValue" BO_ 1391 "0000010001000000";
 BA_ "PduName" BO_ 1391 "ICBVC_SecOC_SyncMsg";
+BA_ "SystemMessageLongSymbol" BO_ 1391 "synthesized_ICBVC_SecOC_SyncMsg_BKPCANFD";
 BA_ "VFrameFormat" BO_ 1391 14;
 BA_ "FrameTriggeringName" BO_ 815 "ICB_BKBCANFD_100ms_FrP146";
 BA_ "GenMsgCycleTime" BO_ 815 100;
@@ -2690,7 +2700,7 @@ BA_ "VFrameFormat" BO_ 902 14;
 BA_ "FrameTriggeringName" BO_ 955 "ICB_BKPCANFD_100ms_FrP159";
 BA_ "GenMsgCycleTime" BO_ 955 100;
 BA_ "GenMsgSendType" BO_ 955 0;
-BA_ "GenMsgStartValue" BO_ 955 "00fff8f800590000f0c0800000000000008898224c10000000008000000000000000000000000000000000000000000000000000000000000000000000000000";
+BA_ "GenMsgStartValue" BO_ 955 "00fff85000590000f0c0800000000000008898224c10000000008000000000000000000000000000000000000000000000000000000000000000000000000000";
 BA_ "PduName" BO_ 955 "ICB_100ms_PDU159";
 BA_ "VFrameFormat" BO_ 955 14;
 BA_ "FrameTriggeringName" BO_ 746 "ICB_BKPCANFD_100ms_FrP82";
@@ -2725,7 +2735,7 @@ BA_ "VFrameFormat" BO_ 1111 14;
 BA_ "FrameTriggeringName" BO_ 527 "IMM_BKPCANFD_50ms_FrP02";
 BA_ "GenMsgCycleTime" BO_ 527 50;
 BA_ "GenMsgSendType" BO_ 527 0;
-BA_ "GenMsgStartValue" BO_ 527 "00f0000003000700fffc010000000000000000000fffffff";
+BA_ "GenMsgStartValue" BO_ 527 "00f0000003000700fffc01000000000000ffffff0fffffff";
 BA_ "PduName" BO_ 527 "IMM_50ms_PDU02";
 BA_ "VFrameFormat" BO_ 527 14;
 BA_ "FrameTriggeringName" BO_ 657 "IMM_BKPCANFD_50ms_FrP04";
@@ -2789,7 +2799,7 @@ BA_ "VFrameFormat" BO_ 755 14;
 BA_ "FrameTriggeringName" BO_ 774 "IPD_BKPCANFD_100ms_P31";
 BA_ "GenMsgCycleTime" BO_ 774 100;
 BA_ "GenMsgSendType" BO_ 774 0;
-BA_ "GenMsgStartValue" BO_ 774 "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+BA_ "GenMsgStartValue" BO_ 774 "00000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
 BA_ "PduName" BO_ 774 "ICBAD_100ms_PDU31";
 BA_ "VFrameFormat" BO_ 774 14;
 BA_ "FrameTriggeringName" BO_ 208 "IPD_BKPCANFD_10ms_FrP59";
@@ -2807,7 +2817,7 @@ BA_ "VFrameFormat" BO_ 486 14;
 BA_ "FrameTriggeringName" BO_ 337 "IPD_BKPCANFD_20ms_FrP60";
 BA_ "GenMsgCycleTime" BO_ 337 20;
 BA_ "GenMsgSendType" BO_ 337 0;
-BA_ "GenMsgStartValue" BO_ 337 "0000ffff000000380000010000071d1fffffffff";
+BA_ "GenMsgStartValue" BO_ 337 "0000ffff000000000000010000071d1fffffffff";
 BA_ "PduName" BO_ 337 "IPD_20ms_PDU60";
 BA_ "VFrameFormat" BO_ 337 14;
 BA_ "FrameTriggeringName" BO_ 720 "IPD_BKPCANFD_50ms_FrP14";
@@ -2851,7 +2861,7 @@ BA_ "VFrameFormat" BO_ 705 14;
 BA_ "FrameTriggeringName" BO_ 982 "IPD_PTCANFD_100ms_FrP03";
 BA_ "GenMsgCycleTime" BO_ 982 100;
 BA_ "GenMsgSendType" BO_ 982 0;
-BA_ "GenMsgStartValue" BO_ 982 "0000000000000000";
+BA_ "GenMsgStartValue" BO_ 982 "0000000000000000000000000000000000000000";
 BA_ "PduName" BO_ 982 "IPD_100ms_PDU03";
 BA_ "VFrameFormat" BO_ 982 14;
 BA_ "FrameTriggeringName" BO_ 960 "IPD_PTCANFD_100ms_FrP16";
@@ -3080,6 +3090,12 @@ BA_ "GenMsgSendType" BO_ 711 0;
 BA_ "GenMsgStartValue" BO_ 711 "00000000000000000000000000000000";
 BA_ "PduName" BO_ 711 "ZXD_100ms_PDU76";
 BA_ "VFrameFormat" BO_ 711 14;
+BA_ "FrameTriggeringName" BO_ 707 "ZXD_BKPCANFD_100ms_FrP77";
+BA_ "GenMsgCycleTime" BO_ 707 100;
+BA_ "GenMsgSendType" BO_ 707 0;
+BA_ "GenMsgStartValue" BO_ 707 "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+BA_ "PduName" BO_ 707 "ZXD_100ms_PDU77";
+BA_ "VFrameFormat" BO_ 707 14;
 BA_ "FrameTriggeringName" BO_ 1216 "ZXD_BKPCANFD_NM";
 BA_ "GenMsgSendType" BO_ 1216 1;
 BA_ "GenMsgStartValue" BO_ 1216 "0000000000000000";
@@ -3289,6 +3305,10 @@ BA_ "CompuMethodName" SG_ 958 ACCDetObj1Typ "ACCDetObj1Typ";
 BA_ "ISignalName" SG_ 958 ACCDetObj1Typ "IACCDetObj1Typ";
 BA_ "LongName" SG_ 958 ACCDetObj1Typ "Adaptive_Cruise_Control_Detected_Object_1_Type";
 BA_ "SysSignalName" SG_ 958 ACCDetObj1Typ "ACCDetObj1Typ";
+BA_ "CompuMethodName" SG_ 958 ACCDrvrTkovReq "ACCDrvrTkovReq";
+BA_ "ISignalName" SG_ 958 ACCDrvrTkovReq "IACCDrvrTkovReq";
+BA_ "LongName" SG_ 958 ACCDrvrTkovReq "Adaptive_Cruise_Control_Driver_Takeover_Request";
+BA_ "SysSignalName" SG_ 958 ACCDrvrTkovReq "ACCDrvrTkovReq";
 BA_ "CompuMethodName" SG_ 958 ACCDetObj3Typ "ACCDetObj3Typ";
 BA_ "ISignalName" SG_ 958 ACCDetObj3Typ "IACCDetObj3Typ";
 BA_ "LongName" SG_ 958 ACCDetObj3Typ "Adaptive_Cruise_Control_Detected_Object_3_Type";
@@ -3506,7 +3526,7 @@ BA_ "ISignalName" SG_ 956 TLRMdSwDspCmd "ITLRMdSwDspCmd";
 BA_ "LongName" SG_ 956 TLRMdSwDspCmd "Traffic_lights_recognition_Mode_Switch_Display_Command";
 BA_ "SysSignalName" SG_ 956 TLRMdSwDspCmd "TLRMdSwDspCmd";
 BA_ "CompuMethodName" SG_ 956 SpdLmtOfstSetResp "SpdLmtOfstSetResp";
-BA_ "GenSigStartValue" SG_ 956 SpdLmtOfstSetResp 10;
+BA_ "GenSigStartValue" SG_ 956 SpdLmtOfstSetResp 20;
 BA_ "ISignalName" SG_ 956 SpdLmtOfstSetResp "ISpdLmtOfstSetResp";
 BA_ "LongName" SG_ 956 SpdLmtOfstSetResp "Speed Limit Offset Set Response";
 BA_ "SysSignalName" SG_ 956 SpdLmtOfstSetResp "SpdLmtOfstSetResp";
@@ -4038,6 +4058,16 @@ BA_ "CompuMethodName" SG_ 335 DownVelocityRTK "DownVelocityRTK";
 BA_ "ISignalName" SG_ 335 DownVelocityRTK "IDownVelocityRTK";
 BA_ "LongName" SG_ 335 DownVelocityRTK "DownVelocityRTK";
 BA_ "SysSignalName" SG_ 335 DownVelocityRTK "DownVelocityRTK";
+BA_ "CompuMethodName" SG_ 887 IAM_100ms_Group08_CRC "IAM_100ms_Group08_CRC";
+BA_ "ISignalName" SG_ 887 IAM_100ms_Group08_CRC "IIAM_100ms_Group08_CRC";
+BA_ "SysSignalName" SG_ 887 IAM_100ms_Group08_CRC "IAM_100ms_Group08_CRC";
+BA_ "CompuMethodName" SG_ 887 IAM_100ms_Group08_RC "IAM_100ms_Group08_RC";
+BA_ "ISignalName" SG_ 887 IAM_100ms_Group08_RC "IIAM_100ms_Group08_RC";
+BA_ "SysSignalName" SG_ 887 IAM_100ms_Group08_RC "IAM_100ms_Group08_RC";
+BA_ "CompuMethodName" SG_ 887 IAM_100ms_Group08_Reserved15 "IAM_100ms_Group08_Reserved15";
+BA_ "GenSigStartValue" SG_ 887 IAM_100ms_Group08_Reserved15 15;
+BA_ "ISignalName" SG_ 887 IAM_100ms_Group08_Reserved15 "IIAM_100ms_Group08_Reserved15";
+BA_ "SysSignalName" SG_ 887 IAM_100ms_Group08_Reserved15 "IAM_100ms_Group08_Reserved15";
 BA_ "CompuMethodName" SG_ 887 LatSigma "LatSigma";
 BA_ "ISignalName" SG_ 887 LatSigma "ILatSigma";
 BA_ "LongName" SG_ 887 LatSigma "LatSigma";
@@ -4050,18 +4080,55 @@ BA_ "CompuMethodName" SG_ 887 AltSigma "AltSigma";
 BA_ "ISignalName" SG_ 887 AltSigma "IAltSigma";
 BA_ "LongName" SG_ 887 AltSigma "AltSigma";
 BA_ "SysSignalName" SG_ 887 AltSigma "AltSigma";
+BA_ "CompuMethodName" SG_ 912 IAM_ZONE_100ms_Group34_CRC "IAM_ZONE_100ms_Group34_CRC";
+BA_ "ISignalName" SG_ 912 IAM_ZONE_100ms_Group34_CRC "IIAM_ZONE_100ms_Group34_CRC";
+BA_ "SysSignalName" SG_ 912 IAM_ZONE_100ms_Group34_CRC "IAM_ZONE_100ms_Group34_CRC";
+BA_ "CompuMethodName" SG_ 912 IAM_ZONE_100ms_Group34_RC "IAM_ZONE_100ms_Group34_RC";
+BA_ "ISignalName" SG_ 912 IAM_ZONE_100ms_Group34_RC "IIAM_ZONE_100ms_Group34_RC";
+BA_ "SysSignalName" SG_ 912 IAM_ZONE_100ms_Group34_RC "IAM_ZONE_100ms_Group34_RC";
+BA_ "CompuMethodName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved1 "IAM_ZONE_100ms_Group34_Reserved15";
+BA_ "GenSigStartValue" SG_ 912 IAM_ZONE_100ms_Group34_Reserved1 15;
+BA_ "ISignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved1 "IIAM_ZONE_100ms_Group34_Reserved15";
+BA_ "SysSignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved1 "IAM_ZONE_100ms_Group34_Reserved15";
+BA_ "SystemSignalLongSymbol" SG_ 912 IAM_ZONE_100ms_Group34_Reserved1 "IAM_ZONE_100ms_Group34_Reserved15";
 BA_ "CompuMethodName" SG_ 912 Pdop "Pdop";
 BA_ "ISignalName" SG_ 912 Pdop "IPdop";
 BA_ "LongName" SG_ 912 Pdop "Position Dilution Of Precision";
 BA_ "SysSignalName" SG_ 912 Pdop "Pdop";
+BA_ "CompuMethodName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved2 "IAM_ZONE_100ms_Group34_Reserved23";
+BA_ "GenSigStartValue" SG_ 912 IAM_ZONE_100ms_Group34_Reserved2 3;
+BA_ "ISignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved2 "IIAM_ZONE_100ms_Group34_Reserved23";
+BA_ "SysSignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved2 "IAM_ZONE_100ms_Group34_Reserved23";
+BA_ "SystemSignalLongSymbol" SG_ 912 IAM_ZONE_100ms_Group34_Reserved2 "IAM_ZONE_100ms_Group34_Reserved23";
 BA_ "CompuMethodName" SG_ 912 Vdop "Vdop";
 BA_ "ISignalName" SG_ 912 Vdop "IVdop";
 BA_ "LongName" SG_ 912 Vdop "Vertical Dilution Of Precision";
 BA_ "SysSignalName" SG_ 912 Vdop "Vdop";
+BA_ "CompuMethodName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved3 "IAM_ZONE_100ms_Group34_Reserved39";
+BA_ "GenSigStartValue" SG_ 912 IAM_ZONE_100ms_Group34_Reserved3 3;
+BA_ "ISignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved3 "IIAM_ZONE_100ms_Group34_Reserved39";
+BA_ "SysSignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved3 "IAM_ZONE_100ms_Group34_Reserved39";
+BA_ "SystemSignalLongSymbol" SG_ 912 IAM_ZONE_100ms_Group34_Reserved3 "IAM_ZONE_100ms_Group34_Reserved39";
 BA_ "CompuMethodName" SG_ 912 Hdop "Hdop";
 BA_ "ISignalName" SG_ 912 Hdop "IHdop";
 BA_ "LongName" SG_ 912 Hdop "Horizontal Dilution Of Position";
 BA_ "SysSignalName" SG_ 912 Hdop "Hdop";
+BA_ "CompuMethodName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved5 "IAM_ZONE_100ms_Group34_Reserved55";
+BA_ "GenSigStartValue" SG_ 912 IAM_ZONE_100ms_Group34_Reserved5 3;
+BA_ "ISignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved5 "IIAM_ZONE_100ms_Group34_Reserved55";
+BA_ "SysSignalName" SG_ 912 IAM_ZONE_100ms_Group34_Reserved5 "IAM_ZONE_100ms_Group34_Reserved55";
+BA_ "SystemSignalLongSymbol" SG_ 912 IAM_ZONE_100ms_Group34_Reserved5 "IAM_ZONE_100ms_Group34_Reserved55";
+BA_ "CompuMethodName" SG_ 874 IAM_ZONE_100ms_Group40_CRC "IAM_ZONE_100ms_Group40_CRC";
+BA_ "ISignalName" SG_ 874 IAM_ZONE_100ms_Group40_CRC "IIAM_ZONE_100ms_Group40_CRC";
+BA_ "SysSignalName" SG_ 874 IAM_ZONE_100ms_Group40_CRC "IAM_ZONE_100ms_Group40_CRC";
+BA_ "CompuMethodName" SG_ 874 IAM_ZONE_100ms_Group40_RC "IAM_ZONE_100ms_Group40_RC";
+BA_ "ISignalName" SG_ 874 IAM_ZONE_100ms_Group40_RC "IIAM_ZONE_100ms_Group40_RC";
+BA_ "SysSignalName" SG_ 874 IAM_ZONE_100ms_Group40_RC "IAM_ZONE_100ms_Group40_RC";
+BA_ "CompuMethodName" SG_ 874 IAM_ZONE_100ms_Group40_Reserved1 "IAM_ZONE_100ms_Group40_Reserved15";
+BA_ "GenSigStartValue" SG_ 874 IAM_ZONE_100ms_Group40_Reserved1 15;
+BA_ "ISignalName" SG_ 874 IAM_ZONE_100ms_Group40_Reserved1 "IIAM_ZONE_100ms_Group40_Reserved15";
+BA_ "SysSignalName" SG_ 874 IAM_ZONE_100ms_Group40_Reserved1 "IAM_ZONE_100ms_Group40_Reserved15";
+BA_ "SystemSignalLongSymbol" SG_ 874 IAM_ZONE_100ms_Group40_Reserved1 "IAM_ZONE_100ms_Group40_Reserved15";
 BA_ "CompuMethodName" SG_ 874 AltitudeRTK "AltitudeRTK";
 BA_ "ISignalName" SG_ 874 AltitudeRTK "IAltitudeRTK";
 BA_ "LongName" SG_ 874 AltitudeRTK "AltitudeRTK";
@@ -4070,6 +4137,11 @@ BA_ "CompuMethodName" SG_ 874 HeadingRTK "HeadingRTK";
 BA_ "ISignalName" SG_ 874 HeadingRTK "IHeadingRTK";
 BA_ "LongName" SG_ 874 HeadingRTK "HeadingRTK";
 BA_ "SysSignalName" SG_ 874 HeadingRTK "HeadingRTK";
+BA_ "CompuMethodName" SG_ 874 IAM_ZONE_100ms_Group40_Reserved6 "IAM_ZONE_100ms_Group40_Reserved63";
+BA_ "GenSigStartValue" SG_ 874 IAM_ZONE_100ms_Group40_Reserved6 255;
+BA_ "ISignalName" SG_ 874 IAM_ZONE_100ms_Group40_Reserved6 "IIAM_ZONE_100ms_Group40_Reserved63";
+BA_ "SysSignalName" SG_ 874 IAM_ZONE_100ms_Group40_Reserved6 "IAM_ZONE_100ms_Group40_Reserved63";
+BA_ "SystemSignalLongSymbol" SG_ 874 IAM_ZONE_100ms_Group40_Reserved6 "IAM_ZONE_100ms_Group40_Reserved63";
 BA_ "CompuMethodName" SG_ 336 IAM_20ms_Group32_CRC "IAM_20ms_Group32_CRC";
 BA_ "ISignalName" SG_ 336 IAM_20ms_Group32_CRC "IIAM_20ms_Group32_CRC";
 BA_ "SysSignalName" SG_ 336 IAM_20ms_Group32_CRC "IAM_20ms_Group32_CRC";
@@ -4190,6 +4262,16 @@ BA_ "CompuMethodName" SG_ 1000 SmtKeyAuthnSubModRunSts "SmtKeyAuthnSubModRunSts"
 BA_ "ISignalName" SG_ 1000 SmtKeyAuthnSubModRunSts "ISmtKeyAuthnSubModRunSts";
 BA_ "LongName" SG_ 1000 SmtKeyAuthnSubModRunSts "Smart_Key__Authentication_Smart_Key_Module_Run_Status";
 BA_ "SysSignalName" SG_ 1000 SmtKeyAuthnSubModRunSts "SmtKeyAuthnSubModRunSts";
+BA_ "CompuMethodName" SG_ 811 IAM_100ms_Group18_CRC "IAM_100ms_Group18_CRC";
+BA_ "ISignalName" SG_ 811 IAM_100ms_Group18_CRC "IIAM_100ms_Group18_CRC";
+BA_ "SysSignalName" SG_ 811 IAM_100ms_Group18_CRC "IAM_100ms_Group18_CRC";
+BA_ "CompuMethodName" SG_ 811 IAM_100ms_Group18_RC "IAM_100ms_Group18_RC";
+BA_ "ISignalName" SG_ 811 IAM_100ms_Group18_RC "IIAM_100ms_Group18_RC";
+BA_ "SysSignalName" SG_ 811 IAM_100ms_Group18_RC "IAM_100ms_Group18_RC";
+BA_ "CompuMethodName" SG_ 811 IAM_100ms_Group18_Reserved15 "IAM_100ms_Group18_Reserved15";
+BA_ "GenSigStartValue" SG_ 811 IAM_100ms_Group18_Reserved15 15;
+BA_ "ISignalName" SG_ 811 IAM_100ms_Group18_Reserved15 "IIAM_100ms_Group18_Reserved15";
+BA_ "SysSignalName" SG_ 811 IAM_100ms_Group18_Reserved15 "IAM_100ms_Group18_Reserved15";
 BA_ "CompuMethodName" SG_ 811 PitchRTK "PitchRTK";
 BA_ "ISignalName" SG_ 811 PitchRTK "IPitchRTK";
 BA_ "LongName" SG_ 811 PitchRTK "PitchRTK";
@@ -4210,10 +4292,37 @@ BA_ "CompuMethodName" SG_ 1358 AIParkngReq "AIParkngReq";
 BA_ "ISignalName" SG_ 1358 AIParkngReq "IAIParkngReq";
 BA_ "LongName" SG_ 1358 AIParkngReq "ParkingRequest";
 BA_ "SysSignalName" SG_ 1358 AIParkngReq "AIParkngReq";
+BA_ "CompuMethodName" SG_ 810 IAM_ZONE_100ms_Group57_CRC "IAM_ZONE_100ms_Group57_CRC";
+BA_ "ISignalName" SG_ 810 IAM_ZONE_100ms_Group57_CRC "IIAM_ZONE_100ms_Group57_CRC";
+BA_ "SysSignalName" SG_ 810 IAM_ZONE_100ms_Group57_CRC "IAM_ZONE_100ms_Group57_CRC";
+BA_ "CompuMethodName" SG_ 810 IAM_ZONE_100ms_Group57_RC "IAM_ZONE_100ms_Group57_RC";
+BA_ "ISignalName" SG_ 810 IAM_ZONE_100ms_Group57_RC "IIAM_ZONE_100ms_Group57_RC";
+BA_ "SysSignalName" SG_ 810 IAM_ZONE_100ms_Group57_RC "IAM_ZONE_100ms_Group57_RC";
+BA_ "CompuMethodName" SG_ 810 IAM_ZONE_100ms_Group57_Reserved1 "IAM_ZONE_100ms_Group57_Reserved15";
+BA_ "GenSigStartValue" SG_ 810 IAM_ZONE_100ms_Group57_Reserved1 15;
+BA_ "ISignalName" SG_ 810 IAM_ZONE_100ms_Group57_Reserved1 "IIAM_ZONE_100ms_Group57_Reserved15";
+BA_ "SysSignalName" SG_ 810 IAM_ZONE_100ms_Group57_Reserved1 "IAM_ZONE_100ms_Group57_Reserved15";
+BA_ "SystemSignalLongSymbol" SG_ 810 IAM_ZONE_100ms_Group57_Reserved1 "IAM_ZONE_100ms_Group57_Reserved15";
 BA_ "CompuMethodName" SG_ 810 LongitudeRTK "LongitudeRTK";
 BA_ "ISignalName" SG_ 810 LongitudeRTK "ILongitudeRTK";
 BA_ "LongName" SG_ 810 LongitudeRTK "LongitudeRTK";
 BA_ "SysSignalName" SG_ 810 LongitudeRTK "LongitudeRTK";
+BA_ "CompuMethodName" SG_ 810 IAM_ZONE_100ms_Group57_Reserved6 "IAM_ZONE_100ms_Group57_Reserved63";
+BA_ "GenSigStartValue" SG_ 810 IAM_ZONE_100ms_Group57_Reserved6 255;
+BA_ "ISignalName" SG_ 810 IAM_ZONE_100ms_Group57_Reserved6 "IIAM_ZONE_100ms_Group57_Reserved63";
+BA_ "SysSignalName" SG_ 810 IAM_ZONE_100ms_Group57_Reserved6 "IAM_ZONE_100ms_Group57_Reserved63";
+BA_ "SystemSignalLongSymbol" SG_ 810 IAM_ZONE_100ms_Group57_Reserved6 "IAM_ZONE_100ms_Group57_Reserved63";
+BA_ "CompuMethodName" SG_ 793 IAM_ZONE_100ms_Group35_CRC "IAM_ZONE_100ms_Group35_CRC";
+BA_ "ISignalName" SG_ 793 IAM_ZONE_100ms_Group35_CRC "IIAM_ZONE_100ms_Group35_CRC";
+BA_ "SysSignalName" SG_ 793 IAM_ZONE_100ms_Group35_CRC "IAM_ZONE_100ms_Group35_CRC";
+BA_ "CompuMethodName" SG_ 793 IAM_ZONE_100ms_Group35_RC "IAM_ZONE_100ms_Group35_RC";
+BA_ "ISignalName" SG_ 793 IAM_ZONE_100ms_Group35_RC "IIAM_ZONE_100ms_Group35_RC";
+BA_ "SysSignalName" SG_ 793 IAM_ZONE_100ms_Group35_RC "IAM_ZONE_100ms_Group35_RC";
+BA_ "CompuMethodName" SG_ 793 IAM_ZONE_100ms_Group35_Reserved1 "IAM_ZONE_100ms_Group35_Reserved15";
+BA_ "GenSigStartValue" SG_ 793 IAM_ZONE_100ms_Group35_Reserved1 15;
+BA_ "ISignalName" SG_ 793 IAM_ZONE_100ms_Group35_Reserved1 "IIAM_ZONE_100ms_Group35_Reserved15";
+BA_ "SysSignalName" SG_ 793 IAM_ZONE_100ms_Group35_Reserved1 "IAM_ZONE_100ms_Group35_Reserved15";
+BA_ "SystemSignalLongSymbol" SG_ 793 IAM_ZONE_100ms_Group35_Reserved1 "IAM_ZONE_100ms_Group35_Reserved15";
 BA_ "CompuMethodName" SG_ 793 GNSSUTCTime "GNSSUTCTime";
 BA_ "ISignalName" SG_ 793 GNSSUTCTime "IGNSSUTCTime";
 BA_ "LongName" SG_ 793 GNSSUTCTime "Gnss Utc Time";
@@ -4222,6 +4331,17 @@ BA_ "CompuMethodName" SG_ 793 GNSSF9HCounter "GNSSF9HCounter";
 BA_ "ISignalName" SG_ 793 GNSSF9HCounter "IGNSSF9HCounter";
 BA_ "LongName" SG_ 793 GNSSF9HCounter "GNSSF9HCounter";
 BA_ "SysSignalName" SG_ 793 GNSSF9HCounter "GNSSF9HCounter";
+BA_ "CompuMethodName" SG_ 773 IAM_ZONE_100ms_Group13_CRC "IAM_ZONE_100ms_Group13_CRC";
+BA_ "ISignalName" SG_ 773 IAM_ZONE_100ms_Group13_CRC "IIAM_ZONE_100ms_Group13_CRC";
+BA_ "SysSignalName" SG_ 773 IAM_ZONE_100ms_Group13_CRC "IAM_ZONE_100ms_Group13_CRC";
+BA_ "CompuMethodName" SG_ 773 IAM_ZONE_100ms_Group13_RC "IAM_ZONE_100ms_Group13_RC";
+BA_ "ISignalName" SG_ 773 IAM_ZONE_100ms_Group13_RC "IIAM_ZONE_100ms_Group13_RC";
+BA_ "SysSignalName" SG_ 773 IAM_ZONE_100ms_Group13_RC "IAM_ZONE_100ms_Group13_RC";
+BA_ "CompuMethodName" SG_ 773 IAM_ZONE_100ms_Group13_Reserved1 "IAM_ZONE_100ms_Group13_Reserved13";
+BA_ "GenSigStartValue" SG_ 773 IAM_ZONE_100ms_Group13_Reserved1 3;
+BA_ "ISignalName" SG_ 773 IAM_ZONE_100ms_Group13_Reserved1 "IIAM_ZONE_100ms_Group13_Reserved13";
+BA_ "SysSignalName" SG_ 773 IAM_ZONE_100ms_Group13_Reserved1 "IAM_ZONE_100ms_Group13_Reserved13";
+BA_ "SystemSignalLongSymbol" SG_ 773 IAM_ZONE_100ms_Group13_Reserved1 "IAM_ZONE_100ms_Group13_Reserved13";
 BA_ "CompuMethodName" SG_ 773 FixType "FixType";
 BA_ "ISignalName" SG_ 773 FixType "IFixType";
 BA_ "LongName" SG_ 773 FixType "Gnss Fix Type";
@@ -4234,6 +4354,16 @@ BA_ "CompuMethodName" SG_ 773 GNSSUTCTimeH "GNSSUTCTimeH";
 BA_ "ISignalName" SG_ 773 GNSSUTCTimeH "IGNSSUTCTimeH";
 BA_ "LongName" SG_ 773 GNSSUTCTimeH "Gnss Utc Time F9H";
 BA_ "SysSignalName" SG_ 773 GNSSUTCTimeH "GNSSUTCTimeH";
+BA_ "CompuMethodName" SG_ 974 IAM_100ms_Group56_CRC "IAM_100ms_Group56_CRC";
+BA_ "ISignalName" SG_ 974 IAM_100ms_Group56_CRC "IIAM_100ms_Group56_CRC";
+BA_ "SysSignalName" SG_ 974 IAM_100ms_Group56_CRC "IAM_100ms_Group56_CRC";
+BA_ "CompuMethodName" SG_ 974 IAM_100ms_Group56_RC "IAM_100ms_Group56_RC";
+BA_ "ISignalName" SG_ 974 IAM_100ms_Group56_RC "IIAM_100ms_Group56_RC";
+BA_ "SysSignalName" SG_ 974 IAM_100ms_Group56_RC "IAM_100ms_Group56_RC";
+BA_ "CompuMethodName" SG_ 974 IAM_100ms_Group56_Reserved13 "IAM_100ms_Group56_Reserved13";
+BA_ "GenSigStartValue" SG_ 974 IAM_100ms_Group56_Reserved13 3;
+BA_ "ISignalName" SG_ 974 IAM_100ms_Group56_Reserved13 "IIAM_100ms_Group56_Reserved13";
+BA_ "SysSignalName" SG_ 974 IAM_100ms_Group56_Reserved13 "IAM_100ms_Group56_Reserved13";
 BA_ "CompuMethodName" SG_ 974 IAM_GNSS_Signal_Status "IAM_GNSS_Signal_Status";
 BA_ "ISignalName" SG_ 974 IAM_GNSS_Signal_Status "IIAM_GNSS_Signal_Status";
 BA_ "LongName" SG_ 974 IAM_GNSS_Signal_Status "IAM GNSS signal status";
@@ -4242,11 +4372,17 @@ BA_ "CompuMethodName" SG_ 974 LatitudeRTK "LatitudeRTK";
 BA_ "ISignalName" SG_ 974 LatitudeRTK "ILatitudeRTK";
 BA_ "LongName" SG_ 974 LatitudeRTK "LatitudeRTK";
 BA_ "SysSignalName" SG_ 974 LatitudeRTK "LatitudeRTK";
+BA_ "CompuMethodName" SG_ 974 IAM_100ms_Group56_Reserved63 "IAM_100ms_Group56_Reserved63";
+BA_ "GenSigStartValue" SG_ 974 IAM_100ms_Group56_Reserved63 255;
+BA_ "ISignalName" SG_ 974 IAM_100ms_Group56_Reserved63 "IIAM_100ms_Group56_Reserved63";
+BA_ "SysSignalName" SG_ 974 IAM_100ms_Group56_Reserved63 "IAM_100ms_Group56_Reserved63";
 BA_ "CompuMethodName" SG_ 348 FCWSnstvtLvl "FCWSnstvtLvl";
+BA_ "GenSigStartValue" SG_ 348 FCWSnstvtLvl 2;
 BA_ "ISignalName" SG_ 348 FCWSnstvtLvl "IFCWSnstvtLvl";
 BA_ "LongName" SG_ 348 FCWSnstvtLvl "Forward_Collision_Warning_Sensitivity_Level";
 BA_ "SysSignalName" SG_ 348 FCWSnstvtLvl "FCWSnstvtLvl";
 BA_ "CompuMethodName" SG_ 348 AEBDspCmd "AEBDspCmd";
+BA_ "GenSigStartValue" SG_ 348 AEBDspCmd 2;
 BA_ "ISignalName" SG_ 348 AEBDspCmd "IAEBDspCmd";
 BA_ "LongName" SG_ 348 AEBDspCmd "Autonomous_Emergency_Braking_Display_Command";
 BA_ "SysSignalName" SG_ 348 AEBDspCmd "AEBDspCmd";
@@ -4255,6 +4391,7 @@ BA_ "ISignalName" SG_ 348 AEBMsgReq "IAEBMsgReq";
 BA_ "LongName" SG_ 348 AEBMsgReq "Autonomous_Emergency_Braking_Message_Request";
 BA_ "SysSignalName" SG_ 348 AEBMsgReq "AEBMsgReq";
 BA_ "CompuMethodName" SG_ 348 FCWDspCmd "FCWDspCmd";
+BA_ "GenSigStartValue" SG_ 348 FCWDspCmd 2;
 BA_ "ISignalName" SG_ 348 FCWDspCmd "IFCWDspCmd";
 BA_ "LongName" SG_ 348 FCWDspCmd "Forward_Collision_Warning_Display_Command";
 BA_ "SysSignalName" SG_ 348 FCWDspCmd "FCWDspCmd";
@@ -4474,7 +4611,7 @@ BA_ "ISignalName" SG_ 382 ACCAccReqSts_CH "IACCAccReqSts_CH";
 BA_ "LongName" SG_ 382 ACCAccReqSts_CH "Adaptive Cruise Control Acceleration Request Status";
 BA_ "SysSignalName" SG_ 382 ACCAccReqSts_CH "ACCAccReqSts_CH";
 BA_ "CompuMethodName" SG_ 382 ACCAccReqVal "ACCAccReqVal";
-BA_ "GenSigStartValue" SG_ 382 ACCAccReqVal 1444;
+BA_ "GenSigStartValue" SG_ 382 ACCAccReqVal 1713;
 BA_ "ISignalName" SG_ 382 ACCAccReqVal "IACCAccReqVal";
 BA_ "LongName" SG_ 382 ACCAccReqVal "Adaptive Cruise Control Acceleration Request Value";
 BA_ "SysSignalName" SG_ 382 ACCAccReqVal "ACCAccReqVal";
@@ -5221,10 +5358,24 @@ BA_ "GenSigStartValue" SG_ 1282 SpdLmtNav 31;
 BA_ "ISignalName" SG_ 1282 SpdLmtNav "ISpdLmtNav";
 BA_ "LongName" SG_ 1282 SpdLmtNav "Speed_Limit_Navigation";
 BA_ "SysSignalName" SG_ 1282 SpdLmtNav "SpdLmtNav";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_CRC "ICBVC_100ms_Group01_CRC";
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_CRC "IICBVC_100ms_Group01_CRC";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_CRC "ICBVC_100ms_Group01_CRC";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_RC "ICBVC_100ms_Group01_RC";
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_RC "IICBVC_100ms_Group01_RC";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_RC "ICBVC_100ms_Group01_RC";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved14 "ICBVC_100ms_Group01_Reserved14";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved14 7;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved14 "IICBVC_100ms_Group01_Reserved14";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved14 "ICBVC_100ms_Group01_Reserved14";
 BA_ "CompuMethodName" SG_ 66 DspMeasmtSys "DspMeasmtSys";
 BA_ "ISignalName" SG_ 66 DspMeasmtSys "IDspMeasmtSys";
 BA_ "LongName" SG_ 66 DspMeasmtSys "Display Measurement System";
 BA_ "SysSignalName" SG_ 66 DspMeasmtSys "DspMeasmtSys";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved21 "ICBVC_100ms_Group01_Reserved21";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved21 63;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved21 "IICBVC_100ms_Group01_Reserved21";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved21 "ICBVC_100ms_Group01_Reserved21";
 BA_ "CompuMethodName" SG_ 66 PDCSwReq "PDCSwReq";
 BA_ "ISignalName" SG_ 66 PDCSwReq "IPDCSwReq";
 BA_ "LongName" SG_ 66 PDCSwReq "Park Distance Control Switch Request";
@@ -5237,13 +5388,81 @@ BA_ "CompuMethodName" SG_ 66 MdOfPwrMd "MdOfPwrMd";
 BA_ "ISignalName" SG_ 66 MdOfPwrMd "IMdOfPwrMd";
 BA_ "LongName" SG_ 66 MdOfPwrMd "Mode_Of_Power_Mode";
 BA_ "SysSignalName" SG_ 66 MdOfPwrMd "MdOfPwrMd";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved31 "ICBVC_100ms_Group01_Reserved31";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved31 63;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved31 "IICBVC_100ms_Group01_Reserved31";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved31 "ICBVC_100ms_Group01_Reserved31";
 BA_ "CompuMethodName" SG_ 66 ClstrDspdVehSpd "ClstrDspdVehSpd";
 BA_ "ISignalName" SG_ 66 ClstrDspdVehSpd "IClstrDspdVehSpd";
 BA_ "LongName" SG_ 66 ClstrDspdVehSpd "Cluster Displayed Vehicle Speed";
 BA_ "SysSignalName" SG_ 66 ClstrDspdVehSpd "ClstrDspdVehSpd";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved47 "ICBVC_100ms_Group01_Reserved47";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved47 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved47 "IICBVC_100ms_Group01_Reserved47";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved47 "ICBVC_100ms_Group01_Reserved47";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved55 "ICBVC_100ms_Group01_Reserved55";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved55 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved55 "IICBVC_100ms_Group01_Reserved55";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved55 "ICBVC_100ms_Group01_Reserved55";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved63 "ICBVC_100ms_Group01_Reserved63";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved63 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved63 "IICBVC_100ms_Group01_Reserved63";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved63 "ICBVC_100ms_Group01_Reserved63";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved71 "ICBVC_100ms_Group01_Reserved71";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved71 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved71 "IICBVC_100ms_Group01_Reserved71";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved71 "ICBVC_100ms_Group01_Reserved71";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved72 "ICBVC_100ms_Group01_Reserved72";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved72 1;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved72 "IICBVC_100ms_Group01_Reserved72";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved72 "ICBVC_100ms_Group01_Reserved72";
+BA_ "CompuMethodName" SG_ 66 FRSeatVentCtrlSts "FRSeatVentCtrlSts";
+BA_ "ISignalName" SG_ 66 FRSeatVentCtrlSts "IFRSeatVentCtrlSts";
+BA_ "LongName" SG_ 66 FRSeatVentCtrlSts "Front Right Seat Vent Control Status";
+BA_ "SysSignalName" SG_ 66 FRSeatVentCtrlSts "FRSeatVentCtrlSts";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved79 "ICBVC_100ms_Group01_Reserved79";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved79 15;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved79 "IICBVC_100ms_Group01_Reserved79";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved79 "ICBVC_100ms_Group01_Reserved79";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved80 "ICBVC_100ms_Group01_Reserved80";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved80 1;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved80 "IICBVC_100ms_Group01_Reserved80";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved80 "ICBVC_100ms_Group01_Reserved80";
+BA_ "CompuMethodName" SG_ 66 FLSeatVentCtrlSts "FLSeatVentCtrlSts";
+BA_ "ISignalName" SG_ 66 FLSeatVentCtrlSts "IFLSeatVentCtrlSts";
+BA_ "LongName" SG_ 66 FLSeatVentCtrlSts "Front Left Seat Vent Control Status";
+BA_ "SysSignalName" SG_ 66 FLSeatVentCtrlSts "FLSeatVentCtrlSts";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved84 "ICBVC_100ms_Group01_Reserved84";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved84 1;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved84 "IICBVC_100ms_Group01_Reserved84";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved84 "ICBVC_100ms_Group01_Reserved84";
+BA_ "CompuMethodName" SG_ 66 FRSeatHeatCtrlSts "FRSeatHeatCtrlSts";
+BA_ "ISignalName" SG_ 66 FRSeatHeatCtrlSts "IFRSeatHeatCtrlSts";
+BA_ "LongName" SG_ 66 FRSeatHeatCtrlSts "Front Right Seat Heat Control Status";
+BA_ "SysSignalName" SG_ 66 FRSeatHeatCtrlSts "FRSeatHeatCtrlSts";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved92 "ICBVC_100ms_Group01_Reserved92";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved92 31;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved92 "IICBVC_100ms_Group01_Reserved92";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved92 "ICBVC_100ms_Group01_Reserved92";
 BA_ "CompuMethodName" SG_ 66 FLSeatHeatCtrlSts "FLSeatHeatCtrlSts";
 BA_ "ISignalName" SG_ 66 FLSeatHeatCtrlSts "IFLSeatHeatCtrlSts";
 BA_ "SysSignalName" SG_ 66 FLSeatHeatCtrlSts "FLSeatHeatCtrlSts";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved103 "ICBVC_100ms_Group01_Reserved103";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved103 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved103 "IICBVC_100ms_Group01_Reserved103";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved103 "ICBVC_100ms_Group01_Reserved103";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved111 "ICBVC_100ms_Group01_Reserved111";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved111 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved111 "IICBVC_100ms_Group01_Reserved111";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved111 "ICBVC_100ms_Group01_Reserved111";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved119 "ICBVC_100ms_Group01_Reserved119";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved119 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved119 "IICBVC_100ms_Group01_Reserved119";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved119 "ICBVC_100ms_Group01_Reserved119";
+BA_ "CompuMethodName" SG_ 66 ICBVC_100ms_Group01_Reserved127 "ICBVC_100ms_Group01_Reserved127";
+BA_ "GenSigStartValue" SG_ 66 ICBVC_100ms_Group01_Reserved127 255;
+BA_ "ISignalName" SG_ 66 ICBVC_100ms_Group01_Reserved127 "IICBVC_100ms_Group01_Reserved127";
+BA_ "SysSignalName" SG_ 66 ICBVC_100ms_Group01_Reserved127 "ICBVC_100ms_Group01_Reserved127";
 BA_ "CompuMethodName" SG_ 871 AVMSt "AVMSt";
 BA_ "ISignalName" SG_ 871 AVMSt "IAVMSt";
 BA_ "LongName" SG_ 871 AVMSt "AVM_Display_Stats";
@@ -5883,6 +6102,10 @@ BA_ "CompuMethodName" SG_ 361 PICU_PTAvlbly "PICU_PTAvlbly";
 BA_ "ISignalName" SG_ 361 PICU_PTAvlbly "IPICU_PTAvlbly";
 BA_ "LongName" SG_ 361 PICU_PTAvlbly "PICU PTCANFD Availability";
 BA_ "SysSignalName" SG_ 361 PICU_PTAvlbly "PICU_PTAvlbly";
+BA_ "CompuMethodName" SG_ 361 LVBM_PTAvlbly "LVBM_PTAvlbly";
+BA_ "ISignalName" SG_ 361 LVBM_PTAvlbly "ILVBM_PTAvlbly";
+BA_ "LongName" SG_ 361 LVBM_PTAvlbly "LVBM PTCANFD Availability";
+BA_ "SysSignalName" SG_ 361 LVBM_PTAvlbly "LVBM_PTAvlbly";
 BA_ "CompuMethodName" SG_ 361 PEU_PTAvlbly "PEU_PTAvlbly";
 BA_ "ISignalName" SG_ 361 PEU_PTAvlbly "IPEU_PTAvlbly";
 BA_ "LongName" SG_ 361 PEU_PTAvlbly "PEU PTCANFD Availability";
@@ -6086,6 +6309,7 @@ BA_ "CompuMethodName" SG_ 60 ComKeyEnbReq "ComKeyEnbReq";
 BA_ "ISignalName" SG_ 60 ComKeyEnbReq "IComKeyEnbReq";
 BA_ "LongName" SG_ 60 ComKeyEnbReq "Communication Key Enable Request";
 BA_ "SysSignalName" SG_ 60 ComKeyEnbReq "ComKeyEnbReq";
+BA_ "SystemSignalLongSymbol" SG_ 1391 synthesized_ICBVC_SecOC_SyncMsg_ "synthesized_ICBVC_SecOC_SyncMsg_BKPCANFD_AuthInfo";
 BA_ "CompuMethodName" SG_ 1391 TripCnt "TripCnt";
 BA_ "GenSigStartValue" SG_ 1391 TripCnt 1;
 BA_ "ISignalName" SG_ 1391 TripCnt "ITripCnt";
@@ -6096,6 +6320,10 @@ BA_ "GenSigStartValue" SG_ 1391 ResetCnt 1;
 BA_ "ISignalName" SG_ 1391 ResetCnt "IResetCnt";
 BA_ "LongName" SG_ 1391 ResetCnt "Reset Counter";
 BA_ "SysSignalName" SG_ 1391 ResetCnt "ResetCnt";
+BA_ "CompuMethodName" SG_ 815 EMCLPwrSts "EMCLPwrSts";
+BA_ "ISignalName" SG_ 815 EMCLPwrSts "IEMCLPwrSts";
+BA_ "LongName" SG_ 815 EMCLPwrSts "EMCL Power Status";
+BA_ "SysSignalName" SG_ 815 EMCLPwrSts "EMCLPwrSts";
 BA_ "CompuMethodName" SG_ 815 IMMPwrSts "IMMPwrSts";
 BA_ "ISignalName" SG_ 815 IMMPwrSts "IIMMPwrSts";
 BA_ "LongName" SG_ 815 IMMPwrSts "IMM Power Status";
@@ -6312,7 +6540,7 @@ BA_ "ISignalName" SG_ 955 FICMACLTemReq "IFICMACLTemReq";
 BA_ "LongName" SG_ 955 FICMACLTemReq "Front Infotainment Control Module Air Conditioning Left Temperature Request";
 BA_ "SysSignalName" SG_ 955 FICMACLTemReq "FICMACLTemReq";
 BA_ "CompuMethodName" SG_ 955 SpdLmtOfstSetReq "SpdLmtOfstSetReq";
-BA_ "GenSigStartValue" SG_ 955 SpdLmtOfstSetReq 31;
+BA_ "GenSigStartValue" SG_ 955 SpdLmtOfstSetReq 20;
 BA_ "ISignalName" SG_ 955 SpdLmtOfstSetReq "ISpdLmtOfstSetReq";
 BA_ "LongName" SG_ 955 SpdLmtOfstSetReq "Speed Limit Offset Set Request";
 BA_ "SysSignalName" SG_ 955 SpdLmtOfstSetReq "SpdLmtOfstSetReq";
@@ -6873,18 +7101,18 @@ BA_ "CompuMethodName" SG_ 527 EyeOpenDegree_IMM "EyeOpenDegree_IMM";
 BA_ "ISignalName" SG_ 527 EyeOpenDegree_IMM "IEyeOpenDegree_IMM";
 BA_ "LongName" SG_ 527 EyeOpenDegree_IMM "Eye Open Degree_IMM";
 BA_ "SysSignalName" SG_ 527 EyeOpenDegree_IMM "EyeOpenDegree_IMM";
-BA_ "CompuMethodName" SG_ 527 Headpose_pitch "Headpose_pitch";
-BA_ "ISignalName" SG_ 527 Headpose_pitch "IHeadpose_pitch";
-BA_ "LongName" SG_ 527 Headpose_pitch "Headpose_pitch";
-BA_ "SysSignalName" SG_ 527 Headpose_pitch "Headpose_pitch";
-BA_ "CompuMethodName" SG_ 527 Headpose_yaw "Headpose_yaw";
-BA_ "ISignalName" SG_ 527 Headpose_yaw "IHeadpose_yaw";
-BA_ "LongName" SG_ 527 Headpose_yaw "Headpose_yaw";
-BA_ "SysSignalName" SG_ 527 Headpose_yaw "Headpose_yaw";
-BA_ "CompuMethodName" SG_ 527 Headpose_roll "Headpose_roll";
-BA_ "ISignalName" SG_ 527 Headpose_roll "IHeadpose_roll";
-BA_ "LongName" SG_ 527 Headpose_roll "Headpose_roll";
-BA_ "SysSignalName" SG_ 527 Headpose_roll "Headpose_roll";
+BA_ "CompuMethodName" SG_ 527 IMM_50ms_Group02_Reserved143 "IMM_50ms_Group02_Reserved143";
+BA_ "GenSigStartValue" SG_ 527 IMM_50ms_Group02_Reserved143 255;
+BA_ "ISignalName" SG_ 527 IMM_50ms_Group02_Reserved143 "IIMM_50ms_Group02_Reserved143";
+BA_ "SysSignalName" SG_ 527 IMM_50ms_Group02_Reserved143 "IMM_50ms_Group02_Reserved143";
+BA_ "CompuMethodName" SG_ 527 IMM_50ms_Group02_Reserved151 "IMM_50ms_Group02_Reserved151";
+BA_ "GenSigStartValue" SG_ 527 IMM_50ms_Group02_Reserved151 255;
+BA_ "ISignalName" SG_ 527 IMM_50ms_Group02_Reserved151 "IIMM_50ms_Group02_Reserved151";
+BA_ "SysSignalName" SG_ 527 IMM_50ms_Group02_Reserved151 "IMM_50ms_Group02_Reserved151";
+BA_ "CompuMethodName" SG_ 527 IMM_50ms_Group02_Reserved159 "IMM_50ms_Group02_Reserved159";
+BA_ "GenSigStartValue" SG_ 527 IMM_50ms_Group02_Reserved159 255;
+BA_ "ISignalName" SG_ 527 IMM_50ms_Group02_Reserved159 "IIMM_50ms_Group02_Reserved159";
+BA_ "SysSignalName" SG_ 527 IMM_50ms_Group02_Reserved159 "IMM_50ms_Group02_Reserved159";
 BA_ "CompuMethodName" SG_ 527 IMM_50ms_Group02_Reserved7 "IMM_50ms_Group02_Reserved7";
 BA_ "GenSigStartValue" SG_ 527 IMM_50ms_Group02_Reserved7 15;
 BA_ "ISignalName" SG_ 527 IMM_50ms_Group02_Reserved7 "IIMM_50ms_Group02_Reserved7";
@@ -6913,210 +7141,6 @@ BA_ "CompuMethodName" SG_ 657 DMSCameraFps_IMM "DMSCameraFps_IMM";
 BA_ "ISignalName" SG_ 657 DMSCameraFps_IMM "IDMSCameraFps_IMM";
 BA_ "LongName" SG_ 657 DMSCameraFps_IMM "DMS Camera Frames per second_IMM";
 BA_ "SysSignalName" SG_ 657 DMSCameraFps_IMM "DMSCameraFps_IMM";
-BA_ "CompuMethodName" SG_ 657 Headtrack_x1 "Headtrack_x1";
-BA_ "ISignalName" SG_ 657 Headtrack_x1 "IHeadtrack_x1";
-BA_ "LongName" SG_ 657 Headtrack_x1 "Headtrack_x1";
-BA_ "SysSignalName" SG_ 657 Headtrack_x1 "Headtrack_x1";
-BA_ "CompuMethodName" SG_ 657 Headtrack_y1 "Headtrack_y1";
-BA_ "ISignalName" SG_ 657 Headtrack_y1 "IHeadtrack_y1";
-BA_ "LongName" SG_ 657 Headtrack_y1 "Headtrack_y1";
-BA_ "SysSignalName" SG_ 657 Headtrack_y1 "Headtrack_y1";
-BA_ "CompuMethodName" SG_ 657 Headtrack_z1 "Headtrack_z1";
-BA_ "ISignalName" SG_ 657 Headtrack_z1 "IHeadtrack_z1";
-BA_ "LongName" SG_ 657 Headtrack_z1 "Headtrack_z1";
-BA_ "SysSignalName" SG_ 657 Headtrack_z1 "Headtrack_z1";
-BA_ "CompuMethodName" SG_ 657 Headtrack_x2 "Headtrack_x2";
-BA_ "ISignalName" SG_ 657 Headtrack_x2 "IHeadtrack_x2";
-BA_ "LongName" SG_ 657 Headtrack_x2 "Headtrack_x2";
-BA_ "SysSignalName" SG_ 657 Headtrack_x2 "Headtrack_x2";
-BA_ "CompuMethodName" SG_ 657 Headtrack_y2 "Headtrack_y2";
-BA_ "ISignalName" SG_ 657 Headtrack_y2 "IHeadtrack_y2";
-BA_ "LongName" SG_ 657 Headtrack_y2 "Headtrack_y2";
-BA_ "SysSignalName" SG_ 657 Headtrack_y2 "Headtrack_y2";
-BA_ "CompuMethodName" SG_ 657 Headtrack_z2 "Headtrack_z2";
-BA_ "ISignalName" SG_ 657 Headtrack_z2 "IHeadtrack_z2";
-BA_ "LongName" SG_ 657 Headtrack_z2 "Headtrack_z2";
-BA_ "SysSignalName" SG_ 657 Headtrack_z2 "Headtrack_z2";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x1 "HumanPose_x1";
-BA_ "ISignalName" SG_ 657 HumanPose_x1 "IHumanPose_x1";
-BA_ "LongName" SG_ 657 HumanPose_x1 "HumanPose_x1";
-BA_ "SysSignalName" SG_ 657 HumanPose_x1 "HumanPose_x1";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y1 "HumanPose_y1";
-BA_ "ISignalName" SG_ 657 HumanPose_y1 "IHumanPose_y1";
-BA_ "LongName" SG_ 657 HumanPose_y1 "HumanPose_y1";
-BA_ "SysSignalName" SG_ 657 HumanPose_y1 "HumanPose_y1";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z1 "HumanPose_z1";
-BA_ "ISignalName" SG_ 657 HumanPose_z1 "IHumanPose_z1";
-BA_ "LongName" SG_ 657 HumanPose_z1 "HumanPose_z1";
-BA_ "SysSignalName" SG_ 657 HumanPose_z1 "HumanPose_z1";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x2 "HumanPose_x2";
-BA_ "ISignalName" SG_ 657 HumanPose_x2 "IHumanPose_x2";
-BA_ "LongName" SG_ 657 HumanPose_x2 "HumanPose_x2";
-BA_ "SysSignalName" SG_ 657 HumanPose_x2 "HumanPose_x2";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y2 "HumanPose_y2";
-BA_ "ISignalName" SG_ 657 HumanPose_y2 "IHumanPose_y2";
-BA_ "LongName" SG_ 657 HumanPose_y2 "HumanPose_y2";
-BA_ "SysSignalName" SG_ 657 HumanPose_y2 "HumanPose_y2";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z2 "HumanPose_z2";
-BA_ "ISignalName" SG_ 657 HumanPose_z2 "IHumanPose_z2";
-BA_ "LongName" SG_ 657 HumanPose_z2 "HumanPose_z2";
-BA_ "SysSignalName" SG_ 657 HumanPose_z2 "HumanPose_z2";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x3 "HumanPose_x3";
-BA_ "ISignalName" SG_ 657 HumanPose_x3 "IHumanPose_x3";
-BA_ "LongName" SG_ 657 HumanPose_x3 "HumanPose_x3";
-BA_ "SysSignalName" SG_ 657 HumanPose_x3 "HumanPose_x3";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y3 "HumanPose_y3";
-BA_ "ISignalName" SG_ 657 HumanPose_y3 "IHumanPose_y3";
-BA_ "LongName" SG_ 657 HumanPose_y3 "HumanPose_y3";
-BA_ "SysSignalName" SG_ 657 HumanPose_y3 "HumanPose_y3";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z3 "HumanPose_z3";
-BA_ "ISignalName" SG_ 657 HumanPose_z3 "IHumanPose_z3";
-BA_ "LongName" SG_ 657 HumanPose_z3 "HumanPose_z3";
-BA_ "SysSignalName" SG_ 657 HumanPose_z3 "HumanPose_z3";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x4 "HumanPose_x4";
-BA_ "ISignalName" SG_ 657 HumanPose_x4 "IHumanPose_x4";
-BA_ "LongName" SG_ 657 HumanPose_x4 "HumanPose_x4";
-BA_ "SysSignalName" SG_ 657 HumanPose_x4 "HumanPose_x4";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y4 "HumanPose_y4";
-BA_ "ISignalName" SG_ 657 HumanPose_y4 "IHumanPose_y4";
-BA_ "LongName" SG_ 657 HumanPose_y4 "HumanPose_y4";
-BA_ "SysSignalName" SG_ 657 HumanPose_y4 "HumanPose_y4";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z4 "HumanPose_z4";
-BA_ "ISignalName" SG_ 657 HumanPose_z4 "IHumanPose_z4";
-BA_ "LongName" SG_ 657 HumanPose_z4 "HumanPose_z4";
-BA_ "SysSignalName" SG_ 657 HumanPose_z4 "HumanPose_z4";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x5 "HumanPose_x5";
-BA_ "ISignalName" SG_ 657 HumanPose_x5 "IHumanPose_x5";
-BA_ "LongName" SG_ 657 HumanPose_x5 "HumanPose_x5";
-BA_ "SysSignalName" SG_ 657 HumanPose_x5 "HumanPose_x5";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y5 "HumanPose_y5";
-BA_ "ISignalName" SG_ 657 HumanPose_y5 "IHumanPose_y5";
-BA_ "LongName" SG_ 657 HumanPose_y5 "HumanPose_y5";
-BA_ "SysSignalName" SG_ 657 HumanPose_y5 "HumanPose_y5";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z5 "HumanPose_z5";
-BA_ "ISignalName" SG_ 657 HumanPose_z5 "IHumanPose_z5";
-BA_ "LongName" SG_ 657 HumanPose_z5 "HumanPose_z5";
-BA_ "SysSignalName" SG_ 657 HumanPose_z5 "HumanPose_z5";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x6 "HumanPose_x6";
-BA_ "ISignalName" SG_ 657 HumanPose_x6 "IHumanPose_x6";
-BA_ "LongName" SG_ 657 HumanPose_x6 "HumanPose_x6";
-BA_ "SysSignalName" SG_ 657 HumanPose_x6 "HumanPose_x6";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y6 "HumanPose_y6";
-BA_ "ISignalName" SG_ 657 HumanPose_y6 "IHumanPose_y6";
-BA_ "LongName" SG_ 657 HumanPose_y6 "HumanPose_y6";
-BA_ "SysSignalName" SG_ 657 HumanPose_y6 "HumanPose_y6";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z6 "HumanPose_z6";
-BA_ "ISignalName" SG_ 657 HumanPose_z6 "IHumanPose_z6";
-BA_ "LongName" SG_ 657 HumanPose_z6 "HumanPose_z6";
-BA_ "SysSignalName" SG_ 657 HumanPose_z6 "HumanPose_z6";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x7 "HumanPose_x7";
-BA_ "ISignalName" SG_ 657 HumanPose_x7 "IHumanPose_x7";
-BA_ "LongName" SG_ 657 HumanPose_x7 "HumanPose_x7";
-BA_ "SysSignalName" SG_ 657 HumanPose_x7 "HumanPose_x7";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y7 "HumanPose_y7";
-BA_ "ISignalName" SG_ 657 HumanPose_y7 "IHumanPose_y7";
-BA_ "LongName" SG_ 657 HumanPose_y7 "HumanPose_y7";
-BA_ "SysSignalName" SG_ 657 HumanPose_y7 "HumanPose_y7";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z7 "HumanPose_z7";
-BA_ "ISignalName" SG_ 657 HumanPose_z7 "IHumanPose_z7";
-BA_ "LongName" SG_ 657 HumanPose_z7 "HumanPose_z7";
-BA_ "SysSignalName" SG_ 657 HumanPose_z7 "HumanPose_z7";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x8 "HumanPose_x8";
-BA_ "ISignalName" SG_ 657 HumanPose_x8 "IHumanPose_x8";
-BA_ "LongName" SG_ 657 HumanPose_x8 "HumanPose_x8";
-BA_ "SysSignalName" SG_ 657 HumanPose_x8 "HumanPose_x8";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y8 "HumanPose_y8";
-BA_ "ISignalName" SG_ 657 HumanPose_y8 "IHumanPose_y8";
-BA_ "LongName" SG_ 657 HumanPose_y8 "HumanPose_y8";
-BA_ "SysSignalName" SG_ 657 HumanPose_y8 "HumanPose_y8";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z8 "HumanPose_z8";
-BA_ "ISignalName" SG_ 657 HumanPose_z8 "IHumanPose_z8";
-BA_ "LongName" SG_ 657 HumanPose_z8 "HumanPose_z8";
-BA_ "SysSignalName" SG_ 657 HumanPose_z8 "HumanPose_z8";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x9 "HumanPose_x9";
-BA_ "ISignalName" SG_ 657 HumanPose_x9 "IHumanPose_x9";
-BA_ "LongName" SG_ 657 HumanPose_x9 "HumanPose_x9";
-BA_ "SysSignalName" SG_ 657 HumanPose_x9 "HumanPose_x9";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y9 "HumanPose_y9";
-BA_ "ISignalName" SG_ 657 HumanPose_y9 "IHumanPose_y9";
-BA_ "LongName" SG_ 657 HumanPose_y9 "HumanPose_y9";
-BA_ "SysSignalName" SG_ 657 HumanPose_y9 "HumanPose_y9";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z9 "HumanPose_z9";
-BA_ "ISignalName" SG_ 657 HumanPose_z9 "IHumanPose_z9";
-BA_ "LongName" SG_ 657 HumanPose_z9 "HumanPose_z9";
-BA_ "SysSignalName" SG_ 657 HumanPose_z9 "HumanPose_z9";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x10 "HumanPose_x10";
-BA_ "ISignalName" SG_ 657 HumanPose_x10 "IHumanPose_x10";
-BA_ "LongName" SG_ 657 HumanPose_x10 "HumanPose_x10";
-BA_ "SysSignalName" SG_ 657 HumanPose_x10 "HumanPose_x10";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y10 "HumanPose_y10";
-BA_ "ISignalName" SG_ 657 HumanPose_y10 "IHumanPose_y10";
-BA_ "LongName" SG_ 657 HumanPose_y10 "HumanPose_y10";
-BA_ "SysSignalName" SG_ 657 HumanPose_y10 "HumanPose_y10";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z10 "HumanPose_z10";
-BA_ "ISignalName" SG_ 657 HumanPose_z10 "IHumanPose_z10";
-BA_ "LongName" SG_ 657 HumanPose_z10 "HumanPose_z10";
-BA_ "SysSignalName" SG_ 657 HumanPose_z10 "HumanPose_z10";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x11 "HumanPose_x11";
-BA_ "ISignalName" SG_ 657 HumanPose_x11 "IHumanPose_x11";
-BA_ "LongName" SG_ 657 HumanPose_x11 "HumanPose_x11";
-BA_ "SysSignalName" SG_ 657 HumanPose_x11 "HumanPose_x11";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y11 "HumanPose_y11";
-BA_ "ISignalName" SG_ 657 HumanPose_y11 "IHumanPose_y11";
-BA_ "LongName" SG_ 657 HumanPose_y11 "HumanPose_y11";
-BA_ "SysSignalName" SG_ 657 HumanPose_y11 "HumanPose_y11";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z11 "HumanPose_z11";
-BA_ "ISignalName" SG_ 657 HumanPose_z11 "IHumanPose_z11";
-BA_ "LongName" SG_ 657 HumanPose_z11 "HumanPose_z11";
-BA_ "SysSignalName" SG_ 657 HumanPose_z11 "HumanPose_z11";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x12 "HumanPose_x12";
-BA_ "ISignalName" SG_ 657 HumanPose_x12 "IHumanPose_x12";
-BA_ "LongName" SG_ 657 HumanPose_x12 "HumanPose_x12";
-BA_ "SysSignalName" SG_ 657 HumanPose_x12 "HumanPose_x12";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y12 "HumanPose_y12";
-BA_ "ISignalName" SG_ 657 HumanPose_y12 "IHumanPose_y12";
-BA_ "LongName" SG_ 657 HumanPose_y12 "HumanPose_y12";
-BA_ "SysSignalName" SG_ 657 HumanPose_y12 "HumanPose_y12";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z12 "HumanPose_z12";
-BA_ "ISignalName" SG_ 657 HumanPose_z12 "IHumanPose_z12";
-BA_ "LongName" SG_ 657 HumanPose_z12 "HumanPose_z12";
-BA_ "SysSignalName" SG_ 657 HumanPose_z12 "HumanPose_z12";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x13 "HumanPose_x13";
-BA_ "ISignalName" SG_ 657 HumanPose_x13 "IHumanPose_x13";
-BA_ "LongName" SG_ 657 HumanPose_x13 "HumanPose_x13";
-BA_ "SysSignalName" SG_ 657 HumanPose_x13 "HumanPose_x13";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y13 "HumanPose_y13";
-BA_ "ISignalName" SG_ 657 HumanPose_y13 "IHumanPose_y13";
-BA_ "LongName" SG_ 657 HumanPose_y13 "HumanPose_y13";
-BA_ "SysSignalName" SG_ 657 HumanPose_y13 "HumanPose_y13";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z13 "HumanPose_z13";
-BA_ "ISignalName" SG_ 657 HumanPose_z13 "IHumanPose_z13";
-BA_ "LongName" SG_ 657 HumanPose_z13 "HumanPose_z13";
-BA_ "SysSignalName" SG_ 657 HumanPose_z13 "HumanPose_z13";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x14 "HumanPose_x14";
-BA_ "ISignalName" SG_ 657 HumanPose_x14 "IHumanPose_x14";
-BA_ "LongName" SG_ 657 HumanPose_x14 "HumanPose_x14";
-BA_ "SysSignalName" SG_ 657 HumanPose_x14 "HumanPose_x14";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y14 "HumanPose_y14";
-BA_ "ISignalName" SG_ 657 HumanPose_y14 "IHumanPose_y14";
-BA_ "LongName" SG_ 657 HumanPose_y14 "HumanPose_y14";
-BA_ "SysSignalName" SG_ 657 HumanPose_y14 "HumanPose_y14";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z14 "HumanPose_z14";
-BA_ "ISignalName" SG_ 657 HumanPose_z14 "IHumanPose_z14";
-BA_ "LongName" SG_ 657 HumanPose_z14 "HumanPose_z14";
-BA_ "SysSignalName" SG_ 657 HumanPose_z14 "HumanPose_z14";
-BA_ "CompuMethodName" SG_ 657 HumanPose_x15 "HumanPose_x15";
-BA_ "ISignalName" SG_ 657 HumanPose_x15 "IHumanPose_x15";
-BA_ "LongName" SG_ 657 HumanPose_x15 "HumanPose_x15";
-BA_ "SysSignalName" SG_ 657 HumanPose_x15 "HumanPose_x15";
-BA_ "CompuMethodName" SG_ 657 HumanPose_y15 "HumanPose_y15";
-BA_ "ISignalName" SG_ 657 HumanPose_y15 "IHumanPose_y15";
-BA_ "LongName" SG_ 657 HumanPose_y15 "HumanPose_y15";
-BA_ "SysSignalName" SG_ 657 HumanPose_y15 "HumanPose_y15";
-BA_ "CompuMethodName" SG_ 657 HumanPose_z15 "HumanPose_z15";
-BA_ "ISignalName" SG_ 657 HumanPose_z15 "IHumanPose_z15";
-BA_ "LongName" SG_ 657 HumanPose_z15 "HumanPose_z15";
-BA_ "SysSignalName" SG_ 657 HumanPose_z15 "HumanPose_z15";
 BA_ "CompuMethodName" SG_ 1237 IMM_NM_BSMtoRMS_BKPCANFD "IMM_NM_BSMtoRMS_BKPCANFD";
 BA_ "ISignalName" SG_ 1237 IMM_NM_BSMtoRMS_BKPCANFD "IIMM_NM_BSMtoRMS_BKPCANFD";
 BA_ "LongName" SG_ 1237 IMM_NM_BSMtoRMS_BKPCANFD "IMM_NM_BSMtoRMS_BKPCANFD";
@@ -7379,10 +7403,6 @@ BA_ "CompuMethodName" SG_ 807 EORWarningEvtSts "EORWarningEvtSts";
 BA_ "ISignalName" SG_ 807 EORWarningEvtSts "IEORWarningEvtSts";
 BA_ "LongName" SG_ 807 EORWarningEvtSts "EOR Warning Event Status";
 BA_ "SysSignalName" SG_ 807 EORWarningEvtSts "EORWarningEvtSts";
-BA_ "CompuMethodName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
-BA_ "ISignalName" SG_ 807 SLIFUpdtIndResp_IPD "ISLIFUpdtIndResp_IPD";
-BA_ "LongName" SG_ 807 SLIFUpdtIndResp_IPD "Speed Limit Information Function Update Indication Response";
-BA_ "SysSignalName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
 BA_ "CompuMethodName" SG_ 807 PosALCFailed "PosALCFailed";
 BA_ "ISignalName" SG_ 807 PosALCFailed "IPosALCFailed";
 BA_ "LongName" SG_ 807 PosALCFailed "Positive ALC Failed";
@@ -7395,6 +7415,10 @@ BA_ "CompuMethodName" SG_ 807 ADS_ISAMsgReq "ADS_ISAMsgReq";
 BA_ "ISignalName" SG_ 807 ADS_ISAMsgReq "IADS_ISAMsgReq";
 BA_ "LongName" SG_ 807 ADS_ISAMsgReq "ADAS_Intelligence_Speed_Assist _System_Message_Request";
 BA_ "SysSignalName" SG_ 807 ADS_ISAMsgReq "ADS_ISAMsgReq";
+BA_ "CompuMethodName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
+BA_ "ISignalName" SG_ 807 SLIFUpdtIndResp_IPD "ISLIFUpdtIndResp_IPD";
+BA_ "LongName" SG_ 807 SLIFUpdtIndResp_IPD "Speed Limit Information Function Update Indication Response";
+BA_ "SysSignalName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
 BA_ "CompuMethodName" SG_ 807 ADS_ISASysFltSts "ADS_ISASysFltSts";
 BA_ "ISignalName" SG_ 807 ADS_ISASysFltSts "IADS_ISASysFltSts";
 BA_ "LongName" SG_ 807 ADS_ISASysFltSts "ADAS_Intelligence_Speed_Assist _System_Fault_Status";
@@ -7403,6 +7427,10 @@ BA_ "CompuMethodName" SG_ 807 ADS_ISASysSts "ADS_ISASysSts";
 BA_ "ISignalName" SG_ 807 ADS_ISASysSts "IADS_ISASysSts";
 BA_ "LongName" SG_ 807 ADS_ISASysSts "ADAS_Intelligence_Speed_Assist _System_Status";
 BA_ "SysSignalName" SG_ 807 ADS_ISASysSts "ADS_ISASysSts";
+BA_ "CompuMethodName" SG_ 807 ParkngSpdSwResp "ParkngSpdSwResp";
+BA_ "ISignalName" SG_ 807 ParkngSpdSwResp "IParkngSpdSwResp";
+BA_ "LongName" SG_ 807 ParkngSpdSwResp "Parking_Speed_Switch_Response";
+BA_ "SysSignalName" SG_ 807 ParkngSpdSwResp "ParkngSpdSwResp";
 BA_ "CompuMethodName" SG_ 765 FrtCamrHeatCtrl "FrtCamrHeatCtrl";
 BA_ "ISignalName" SG_ 765 FrtCamrHeatCtrl "IFrtCamrHeatCtrl";
 BA_ "LongName" SG_ 765 FrtCamrHeatCtrl "Front Camera Heat Control";
@@ -7727,6 +7755,11 @@ BA_ "CompuMethodName" SG_ 774 TrfcLghtFuctionSwSts "TrfcLghtFuctionSwSts";
 BA_ "ISignalName" SG_ 774 TrfcLghtFuctionSwSts "ITrfcLghtFuctionSwSts";
 BA_ "LongName" SG_ 774 TrfcLghtFuctionSwSts "Traffic Light Fuction Switch Status";
 BA_ "SysSignalName" SG_ 774 TrfcLghtFuctionSwSts "TrfcLghtFuctionSwSts";
+BA_ "CompuMethodName" SG_ 774 APASpdMdSwSts "APASpdMdSwSts";
+BA_ "GenSigStartValue" SG_ 774 APASpdMdSwSts 1;
+BA_ "ISignalName" SG_ 774 APASpdMdSwSts "IAPASpdMdSwSts";
+BA_ "LongName" SG_ 774 APASpdMdSwSts "Advanced Park Assist Speed Mode Switch Status";
+BA_ "SysSignalName" SG_ 774 APASpdMdSwSts "APASpdMdSwSts";
 BA_ "CompuMethodName" SG_ 774 TrfcMrgdWrnngSign "TrfcMrgdWrnngSign";
 BA_ "ISignalName" SG_ 774 TrfcMrgdWrnngSign "ITrfcMrgdWrnngSign";
 BA_ "LongName" SG_ 774 TrfcMrgdWrnngSign "Traffic_Merged_Warnning_Sign";
@@ -7827,10 +7860,6 @@ BA_ "CompuMethodName" SG_ 337 ESSDirInd "ESSDirInd";
 BA_ "ISignalName" SG_ 337 ESSDirInd "IESSDirInd";
 BA_ "LongName" SG_ 337 ESSDirInd "Emergency_Steering_System _Direction_Indication";
 BA_ "SysSignalName" SG_ 337 ESSDirInd "ESSDirInd";
-BA_ "CompuMethodName" SG_ 337 IPD_20ms_Group60_Reserved3 "IPD_20ms_Group60_Reserved3";
-BA_ "GenSigStartValue" SG_ 337 IPD_20ms_Group60_Reserved3 7;
-BA_ "ISignalName" SG_ 337 IPD_20ms_Group60_Reserved3 "IIPD_20ms_Group60_Reserved3";
-BA_ "SysSignalName" SG_ 337 IPD_20ms_Group60_Reserved3 "IPD_20ms_Group60_Reserved3";
 BA_ "CompuMethodName" SG_ 337 PilotTkovMsgReq "PilotTkovMsgReq";
 BA_ "ISignalName" SG_ 337 PilotTkovMsgReq "IPilotTkovMsgReq";
 BA_ "LongName" SG_ 337 PilotTkovMsgReq "Pilot Take Over Message Request";
@@ -10464,10 +10493,6 @@ BA_ "CompuMethodName" SG_ 805 NarRoVslAssSwReq "NarRoVslAssSwReq";
 BA_ "ISignalName" SG_ 805 NarRoVslAssSwReq "INarRoVslAssSwReq";
 BA_ "LongName" SG_ 805 NarRoVslAssSwReq "Narrow Road Visual Assist Switch Request";
 BA_ "SysSignalName" SG_ 805 NarRoVslAssSwReq "NarRoVslAssSwReq";
-BA_ "CompuMethodName" SG_ 805 ParkngSpdSwResp "ParkngSpdSwResp";
-BA_ "ISignalName" SG_ 805 ParkngSpdSwResp "IParkngSpdSwResp";
-BA_ "LongName" SG_ 805 ParkngSpdSwResp "Parking_Speed_Switch_Response";
-BA_ "SysSignalName" SG_ 805 ParkngSpdSwResp "ParkngSpdSwResp";
 BA_ "CompuMethodName" SG_ 805 NrwroadBwdAssSwReq "NrwroadBwdAssSwReq";
 BA_ "ISignalName" SG_ 805 NrwroadBwdAssSwReq "INrwroadBwdAssSwReq";
 BA_ "LongName" SG_ 805 NrwroadBwdAssSwReq "Narrow road Backward Assistance Switch Request";
@@ -10581,6 +10606,14 @@ BA_ "CompuMethodName" SG_ 711 SpedRegulaModSwReq "SpedRegulaModSwReq";
 BA_ "ISignalName" SG_ 711 SpedRegulaModSwReq "ISpedRegulaModSwReq";
 BA_ "LongName" SG_ 711 SpedRegulaModSwReq "Speed Regulation Mode Switch request";
 BA_ "SysSignalName" SG_ 711 SpedRegulaModSwReq "SpedRegulaModSwReq";
+BA_ "CompuMethodName" SG_ 707 ICMSwReq_Reserve17 "ICMSwReq_Reserve17";
+BA_ "ISignalName" SG_ 707 ICMSwReq_Reserve17 "IICMSwReq_Reserve17";
+BA_ "LongName" SG_ 707 ICMSwReq_Reserve17 "ICM_Switch_Request_Reserved17";
+BA_ "SysSignalName" SG_ 707 ICMSwReq_Reserve17 "ICMSwReq_Reserve17";
+BA_ "CompuMethodName" SG_ 707 ICMSwReq_Reserve16 "ICMSwReq_Reserve16";
+BA_ "ISignalName" SG_ 707 ICMSwReq_Reserve16 "IICMSwReq_Reserve16";
+BA_ "LongName" SG_ 707 ICMSwReq_Reserve16 "ICM_Switch_Request_Reserved16";
+BA_ "SysSignalName" SG_ 707 ICMSwReq_Reserve16 "ICMSwReq_Reserve16";
 BA_ "CompuMethodName" SG_ 1216 ZXD_NM_BSMtoRMS_BKPCANFD "ZXD_NM_BSMtoRMS_BKPCANFD";
 BA_ "ISignalName" SG_ 1216 ZXD_NM_BSMtoRMS_BKPCANFD "IZXD_NM_BSMtoRMS_BKPCANFD";
 BA_ "LongName" SG_ 1216 ZXD_NM_BSMtoRMS_BKPCANFD "ZXD_NM_BSMtoRMS_BKPCANFD";
@@ -10647,6 +10680,7 @@ VAL_ 958 ACCCurveSpdSw 0 "ACCCurveSpdSw_0_unavailable" 1 "ACCCurveSpdSw_1_Off" 2
 VAL_ 958 ELKWarning 0 "ELKWarning_0_LRoadedge" 1 "ELKWarning_1_RRoadedge" 2 "ELKWarning_2_LOncoming" 3 "ELKWarning_3_ROncoming" 4 "ELKWarning_4_LOvertaking" 5 "ELKWarning_5_ROvertaking" 6 "ELKWarning_6_no_warning" 7 "ELKWarning_7_Reserve2";
 VAL_ 958 ACCDetObj2Typ 0 "ACCDetObj2Typ_0_Unknown" 1 "ACCDetObj2Typ_1_Car" 2 "ACCDetObj2Typ_2_Truck" 3 "ACCDetObj2Typ_3_Motorbike" 4 "ACCDetObj2Typ_4_Bicycle" 5 "ACCDetObj2Typ_5_Reserved" 6 "ACCDetObj2Typ_6_Reserved" 7 "ACCDetObj2Typ_7_Reserved";
 VAL_ 958 ACCDetObj1Typ 0 "ACCDetObj1Typ_0_Unknown" 1 "ACCDetObj1Typ_1_Car" 2 "ACCDetObj1Typ_2_Truck" 3 "ACCDetObj1Typ_3_Motorbike" 4 "ACCDetObj1Typ_4_Bicycle" 5 "ACCDetObj1Typ_5_Reserved" 6 "ACCDetObj1Typ_6_Reserved" 7 "ACCDetObj1Typ_7_Reserved";
+VAL_ 958 ACCDrvrTkovReq 0 "ACCDrvrTkovReq_0_False" 1 "ACCDrvrTkovReq_1_True";
 VAL_ 958 ACCDetObj3Typ 0 "ACCDetObj3Typ_0_Unknown" 1 "ACCDetObj3Typ_1_Car" 2 "ACCDetObj3Typ_2_Truck" 3 "ACCDetObj3Typ_3_Motorbike" 4 "ACCDetObj3Typ_4_Bicycle" 5 "ACCDetObj3Typ_5_Reserved" 6 "ACCDetObj3Typ_6_Reserved" 7 "ACCDetObj3Typ_7_Reserved";
 VAL_ 956 PilotSysMsg 0 "PilotSysMsg_0_No_display" 1 "PilotSysMsg_1_ACC_Active" 2 "PilotSysMsg_2_ACC_Exit" 3 "PilotSysMsg_3_LCC_Active" 4 "PilotSysMsg_4_LCC_UpgradeFromACC" 5 "PilotSysMsg_5_LCC_DegradationToACC" 6 "PilotSysMsg_6_LCC_Exit" 7 "PilotSysMsg_7_NOA_Active" 8 "PilotSysMsg_8_NOA_Upgrade" 9 "PilotSysMsg_9_NOA_DegradationToLCC" 10 "PilotSysMsg_10_NOA_DegradationToACC" 11 "PilotSysMsg_11_NOA_Exit" 12 "PilotSysMsg_12_Reserved" 13 "PilotSysMsg_13_Reserved" 14 "PilotSysMsg_14_Reserved" 15 "PilotSysMsg_15_Reserved";
 VAL_ 956 TLRMsgReq 0 "TLRMsgReq_0_NoDisplay" 1 "TLRMsgReq_1_Countdown" 2 "TLRMsgReq_2_Reserved" 3 "TLRMsgReq_3_Reserved";
@@ -10730,7 +10764,7 @@ VAL_ 895 NarwSpcAstBtnSts 0 "NarwSpcAstBtnSts_0_Off" 1 "NarwSpcAstBtnSts_1_OnlyF
 VAL_ 895 IPD_VehLckCtrlReq 0 "VehLckCtrlReq_0_NoRequest" 1 "VehLckCtrlReq_1_InteriorUnlockRequest" 2 "VehLckCtrlReq_2_ExteriorUnlockRequest" 3 "VehLckCtrlReq_3_InteriorLockRequest" 4 "VehLckCtrlReq_4_ExteriorLockRequest";
 VAL_ 895 IPDMCUTemp 255 "IPDAurixTemp_255_Invalid_Value";
 VAL_ 895 IPDWtrClntInltReqFlg 0 "IPDWtrClntInltReqFlg_0_Request" 1 "IPDWtrClntInltReqFlg_1_No_Request";
-VAL_ 895 TrfGreenLghtActn 0 "TrfGreenLghtActn_0_NoDisplay_0x1EqualsTrfGreenLghtActn_1_GreenLight_warning";
+VAL_ 895 TrfGreenLghtActn 0 "TrfGreenLghtActn_0_NoDisplay" 1 "TrfGreenLghtActn_1_GreenLight_warning";
 VAL_ 820 DILampsCtrl 0 "DILampsCtrl_0_No_Request" 1 "DILampsCtrl_1_Left_ON" 2 "DILampsCtrl_2_Right_ON" 3 "DILampsCtrl_3_OFF";
 VAL_ 820 AutoLaneChngSetResp 0 "AutoLaneChngSetResp_0_unavailable" 1 "AutoLaneChngSetResp_1_Level1" 2 "AutoLaneChngSetResp_2_Level2" 3 "AutoLaneChngSetResp_3_Level3";
 VAL_ 820 AutoLaneChngSwDspCmd 0 "AutoLaneChngSwDspCmd_0_unavailable" 1 "AutoLaneChngSwDspCmd_1_off" 2 "AutoLaneChngSwDspCmd_2_LaneChangeSuggestion" 3 "AutoLaneChngSwDspCmd_3_AlcWithDriver" 4 "AutoLaneChngSwDspCmd_4_AlcWithoutDriver_reserved" 5 "AutoLaneChngSwDspCmd_5_Reserved" 6 "AutoLaneChngSwDspCmd_6_Reserved" 7 "AutoLaneChngSwDspCmd_7_Reserved";
@@ -10834,8 +10868,11 @@ VAL_ 66 PDCSwReq 0 "PDCSwReq_0_No_request" 1 "PDCSwReq_1_Short_press" 2 "PDCSwRe
 VAL_ 66 PwrMdExtrCtrlAvlbl 0 "PwrMdExtrCtrlAvlbl_0_NotAvailable" 1 "PwrMdExtrCtrlAvlbl_1_Available";
 VAL_ 66 MdOfPwrMd 0 "MdOfPwrMd_0_NormalMode" 1 "MdOfPwrMd_1_AutomatedDrivingMode";
 VAL_ 66 ClstrDspdVehSpd 255 "ClstrDspdVehSpd_255_Speed_Signal_Missing_Error_of_SCS";
+VAL_ 66 FRSeatVentCtrlSts 0 "FRSeatVentCtrlSts_0_Inactive" 1 "FRSeatVentCtrlSts_1_Local_control" 2 "FRSeatVentCtrlSts_2__1" 3 "FRSeatVentCtrlSts_3__2" 4 "FRSeatVentCtrlSts_4_Remote_control";
+VAL_ 66 FLSeatVentCtrlSts 0 "FLSeatVentCtrlSts_0_Inactive" 1 "FLSeatVentCtrlSts_1_Local_control" 2 "FLSeatVentCtrlSts_2__1" 3 "FLSeatVentCtrlSts_3__2" 4 "FLSeatVentCtrlSts_4_Remote_control";
+VAL_ 66 FRSeatHeatCtrlSts 0 "FRSeatHeatCtrlSts_0_Inactive" 1 "FRSeatHeatCtrlSts_1_Local_control" 2 "FRSeatHeatCtrlSts_2__1" 3 "FRSeatHeatCtrlSts_3__2" 4 "FRSeatHeatCtrlSts_4_Remote_control";
 VAL_ 66 FLSeatHeatCtrlSts 0 "FLSeatHeatCtrlSts_0_Inactive" 1 "FLSeatHeatCtrlSts_1_Local_control" 2 "FLSeatHeatCtrlSts_2__1" 3 "FLSeatHeatCtrlSts_3__2" 4 "FLSeatHeatCtrlSts_4_Remote_control";
-VAL_ 871 AVMSt 0 "AVMSt_0_NoDisplay_0x1EqualsAVMSt_1_Display_0x2EqualsAVMSt_2_DriverCloseAVM_0x3EqualsAVMSt_3_Fault";
+VAL_ 871 AVMSt 0 "AVMSt_0_NoDisplay" 1 "AVMSt_1_Display" 2 "AVMSt_2_DriverCloseAVM" 3 "AVMSt_3_Fault";
 VAL_ 871 RstrFctryDeftsReq 0 "RstrFctryDeftsReq_0_False" 1 "RstrFctryDeftsReq_1_True";
 VAL_ 871 AudiopilotMICSts 0 "AudiopilotMICSts_0_Ture" 1 "AudiopilotMICSts_1_Fault";
 VAL_ 871 ZXDSkndReq 0 "ZXDSkndReq_0_false" 1 "ZXDSkndReq_1_ture";
@@ -10857,7 +10894,7 @@ VAL_ 832 FCWSnstvtLvlReq 0 "FCWSnstvtLvlReq_0_NoRequest" 1 "FCWSnstvtLvlReq_1_le
 VAL_ 832 ELKSwReq 0 "ELKSwReq_0_no_request" 1 "ELKSwReq_1_off" 2 "ELKSwReq_2_on" 3 "ELKSwReq_3_reserved";
 VAL_ 832 LDWAdoWrnngReq 0 "LDWAdoWrnngReq_0_no_request" 1 "LDWAdoWrnngReq_1_off" 2 "LDWAdoWrnngReq_2_on";
 VAL_ 832 FCWSwReq 0 "FCWSwReq_0_NoRequest" 1 "FCWSwReq_1_off" 2 "FCWSwReq_2_on" 3 "FCWSwReq_3_reserved";
-VAL_ 832 TrfcLghtFuctionSwReq 0 "TrfcLghtFuctionSwReq_0_TrfcLghtFnSwReq_0_NoRequest_0x1EqualsTrfcLghtFuctionSwReq_1_TrfcLghtFnSwReq_1_OFF_0x2EqualsTrfcLghtFuctionSwReq_2_TrfcLghtFnSwReq_2_Warning_0x3EqualsTrfcLghtFuctionSwReq_3_TrfcLghtFnSwReq_3_Contorl";
+VAL_ 832 TrfcLghtFuctionSwReq 0 "TrfcLghtFuctionSwReq_0_TrfcLghtFnSwReq_0_NoRequest" 1 "TrfcLghtFuctionSwReq_1_TrfcLghtFnSwReq_1_OFF" 2 "TrfcLghtFuctionSwReq_2_TrfcLghtFnSwReq_2_Warning" 3 "TrfcLghtFuctionSwReq_3_TrfcLghtFnSwReq_3_Contorl";
 VAL_ 832 DOWSelReq 0 "DOWSelReq_0_no_request" 1 "DOWSelReq_1_driver_switch_Off_request" 2 "DOWSelReq_2_driver_switch_on_request" 3 "DOWSelReq_3_reserve";
 VAL_ 832 BSDSelReq 0 "BSDSelReq_0_no_request" 1 "BSDSelReq_1_driver_switch_Off_request" 2 "BSDSelReq_2_driver_switch_on_request" 3 "BSDSelReq_3_reserve";
 VAL_ 832 AEBSwReq 0 "AEBSwReq_0_NoRequest" 1 "AEBSwReq_1_off" 2 "AEBSwReq_2_on" 3 "AEBSwReq_3_reserved";
@@ -10892,7 +10929,7 @@ VAL_ 482 CCSwStsRsmSwA 0 "CCSwStsRsmSwA_0_False" 1 "CCSwStsRsmSwA_1_True";
 VAL_ 482 HMISafFltsts 0 "HMISafFltsts_0_normal" 1 "HMISafFltsts_1_ZXDFault" 2 "HMISafFltsts_2_IPKFault" 3 "HMISafFltsts_3_CheckIPDE2EFault" 4 "HMISafFltsts_4_HMIFault" 5 "HMISafFltsts_5_HMINonCriricalFault" 6 "HMISafFltsts_6_Reserved" 7 "HMISafFltsts_7_Reserved";
 VAL_ 482 SwStaE2EErr 0 "SwStaE2EErr_0_OK" 1 "SwStaE2EErr_1_NONEWDATA" 2 "SwStaE2EErr_2_WRONGCRC" 3 "SwStaE2EErr_3_SYNC" 4 "SwStaE2EErr_4_INITIAL" 5 "SwStaE2EErr_5_REPEATED" 6 "SwStaE2EErr_6_OKSOMELOST" 7 "SwStaE2EErr_7_WRONGSEQUENCE";
 VAL_ 482 TrPfShftPtrnSw4A 0 "TrPfShftPtrnSw4A_0_False" 1 "TrPfShftPtrnSw4A_1_True";
-VAL_ 1010 TgtParkingChosed 0 "TgtParkingChosed_0_NoChosed_0x1EqualsTgtParkingChosed_1_ChosedId1_0x2EqualsTgtParkingChosed_2_ChosedId2_0x3EqualsTgtParkingChosed_3_ChosedId3_0x4EqualsTgtParkingChosed_4_ChosedId4_0x5EqualsTgtParkingChosed_5_ChosedId5_0x6EqualsTgtParkingChosed_6_ChosedId6_0x7EqualsTgtParkingChosed_7_ChosedId7_0x8EqualsTgtParkingChosed_8_ChosedId8_0x9EqualsTgtParkingChosed_9_ChosedId9_0xAEqualsTgtParkingChosed_10_ChosedId10_0xBEqualsTgtParkingChosed_11_ChosedId11_0xCEqualsTgtParkingChosed_12_ChosedId12_0xDEqualsTgtParkingChosed_13_Reserved_0xEEqualsTgtParkingChosed_14_Reserved_0xFEqualsTgtParkingChosed_15_Reserved";
+VAL_ 1010 TgtParkingChosed 0 "TgtParkingChosed_0_NoChosed" 1 "TgtParkingChosed_1_ChosedId1" 2 "TgtParkingChosed_2_ChosedId2" 3 "TgtParkingChosed_3_ChosedId3" 4 "TgtParkingChosed_4_ChosedId4" 5 "TgtParkingChosed_5_ChosedId5" 6 "TgtParkingChosed_6_ChosedId6" 7 "TgtParkingChosed_7_ChosedId7" 8 "TgtParkingChosed_8_ChosedId8" 9 "TgtParkingChosed_9_ChosedId9" 10 "TgtParkingChosed_10_ChosedId10" 11 "TgtParkingChosed_11_ChosedId11" 12 "TgtParkingChosed_12_ChosedId12" 13 "TgtParkingChosed_13_Reserved" 14 "TgtParkingChosed_14_Reserved" 15 "TgtParkingChosed_15_Reserved";
 VAL_ 1010 SpdLmtMdFICM 0 "SpdLmtMdFICM_0_NoRequest" 1 "SpdLmtMdFICM_1_Off" 2 "SpdLmtMdFICM_2_SLIF" 3 "SpdLmtMdFICM_3_ISA";
 VAL_ 1010 AutocParkngSwReq 0 "AutocParkngSwReq_0_Idle" 1 "AutocParkngSwReq_1_Press" 2 "AutocParkngSwReq_2_off" 3 "AutocParkngSwReq_3_Error";
 VAL_ 1010 IMATESysSts 0 "IMATESysSts_0_Off" 1 "IMATESysSts_1_Standby" 2 "IMATESysSts_2_Active" 3 "IMATESysSts_3_Fault" 4 "IMATESysSts_4_DMS_unknown" 5 "IMATESysSts_5_DMS_normal" 6 "IMATESysSts_6_DMS_abnormal" 7 "IMATESysSts_7_DMS_obstruction";
@@ -10902,7 +10939,7 @@ VAL_ 1010 FLDircnLghtFltsts 0 "FLDircnLghtFltsts_0_False" 1 "FLDircnLghtFltsts_1
 VAL_ 1010 FrSsdManuCtrl 0 "FrSsdManuCtrl_0_No_Request" 1 "FrSsdManuCtrl_1_Manual_Open" 2 "FrSsdManuCtrl_2_Manual_Close" 3 "FrSsdManuCtrl_3_Reserve";
 VAL_ 591 DrvrFtgLvl 0 "DrvrFtgLvl_0_Unknown" 1 "DrvrFtgLvl_1_No_Drowsiness" 2 "DrvrFtgLvl_2_Low_level_Drowsiness" 3 "DrvrFtgLvl_3_Middle_level_Drowsiness" 4 "DrvrFtgLvl_4_High_level_Drowsiness" 5 "DrvrFtgLvl_5_Reserve" 6 "DrvrFtgLvl_6_Reserve" 7 "DrvrFtgLvl_7_Reserve";
 VAL_ 591 ICMEyeOnRoad 0 "ICMEyeOnRoad_0_Unavailable_0x1EqualsICMEyeOnRoad_1_Eyes_On_Road_0x2EqualsICMEyeOnRoad_2_Eyes_Off_Road_driving_task_related_region_0x3EqualsICMEyeOnRoad_3_Eyes_Off_Road_non_driving_task_related_region_0x4EqualsICMEyeOnRoad_4_Reserve_0x5EqualsICMEyeOnRoad_5_Reserve_0x6EqualsICMEyeOnRoad_6_Reserve_0x7EqualsICMEyeOnRoad_7_Reserve";
-VAL_ 591 DrvrDstrctnSts 0 "DrvrDstrctnSts_0_Unknown" 1 "DrvrDstrctnSts_1_Nodistraction" 2 "DrvrDstrctnSts_2_Lowleveldistraction" 3 "DrvrDstrctnSts_3_Middleleveldistraction" 4 "DrvrDstrctnSts_4_Highleveldistraction";
+VAL_ 591 DrvrDstrctnSts 0 "DrvrDstrctnSts_0_Unknown" 1 "DrvrDstrctnSts_1_NoDistraction" 2 "DrvrDstrctnSts_2_LowLevelDistraction" 3 "DrvrDstrctnSts_3_MiddleLevelDistraction" 4 "DrvrDstrctnSts_4_HighLevelDistraction" 5 "DrvrDstrctnSts_5_ShortTiemDistraction" 6 "DrvrDstrctnSts_6_LongTimeDistraction" 7 "DrvrDstrctnSts_7_Reserved";
 VAL_ 591 ICMDrvrDstcnSts 0 "ICMDrvrDstcnSts_0_Unknown_0x1EqualsICMDrvrDstcnSts_1_No_distraction_0x2EqualsICMDrvrDstcnSts_2_Low_level_distraction_0x3EqualsICMDrvrDstcnSts_3_Middle_level_distraction_0x4EqualsICMDrvrDstcnSts_4_High_level_distraction_0x5EqualsICMDrvrDstcnSts_5_Reserve_0x6EqualsICMDrvrDstcnSts_6_Reserve_0x7EqualsICMDrvrDstcnSts_7_Reserve";
 VAL_ 591 ICMDrvrPrst 0 "ICMDrvrPrst_0_Unknown_0x1EqualsICMDrvrPrst_1_Driver_Not_Presence_0x2EqualsICMDrvrPrst_2_Driver_Presence_0x3EqualsICMDrvrPrst_3_Reserve_0x4EqualsICMDrvrPrst_4_Reserve_0x5EqualsICMDrvrPrst_5_Reserve_0x6EqualsICMDrvrPrst_6_Reserve_0x7EqualsICMDrvrPrst_7_Reserve";
 VAL_ 591 ICMDrvrFtgLvl 0 "ICMDrvrFtgLvl_0_Unknown_0x1EqualsICMDrvrFtgLvl_1_No_Drowsiness_0x2EqualsICMDrvrFtgLvl_2_Low_level_Drowsiness_0x3EqualsICMDrvrFtgLvl_3_Middle_level_Drowsiness_0x4EqualsICMDrvrFtgLvl_4_High_level_Drowsiness_0x5EqualsICMDrvrFtgLvl_5_Unresponsive_Driver_0x6EqualsICMDrvrFtgLvl_6_Reserved_0x7EqualsICMDrvrFtgLvl_7_Reserved";
@@ -10914,7 +10951,7 @@ VAL_ 790 FOTATargetValid 0 "FOTATargetValid_0_invalid" 1 "FOTATargetValid_1_vali
 VAL_ 1008 OtsdAirTemCrValV 0 "OtsdAirTemCrValV_0_Valid" 1 "OtsdAirTemCrValV_1_Invalid";
 VAL_ 1008 OtsdAirTemCrValMsk 0 "OtsdAirTemCrValMsk_0_Dont_Use_Data" 1 "OtsdAirTemCrValMsk_1_Use_Data";
 VAL_ 1008 OtsdAirTemVDA 0 "OtsdAirTemVDA_0__Virtual_Device_Unavailable" 1 "OtsdAirTemVDA_1__Virtual_Device_Available";
-VAL_ 922 AVMDspReq 0 "AVMDspReq_0_NoRequest_0x1EqualsAVMDspReq_1_open_0x2EqualsAVMDspReq_2_close_0x3EqualsAVMDspReq_3_reserve";
+VAL_ 922 AVMDspReq 0 "AVMDspReq_0_NoRequest" 1 "AVMDspReq_1_open" 2 "AVMDspReq_2_close" 3 "AVMDspReq_3_reserve";
 VAL_ 922 HDCReq 0 "HDCReq_0_Norequest" 1 "HDCReq_1_ActiveHDC" 2 "HDCReq_2_DeactiveHDC" 3 "HDCReq_3_PressedHDCButton";
 VAL_ 922 EmmsnTestMdFICMV 0 "EmmsnTestMdFICMV_0_valid" 1 "EmmsnTestMdFICMV_1_invalid";
 VAL_ 922 FICMPwrDMdReq 0 "FICMPwrDMdReq_0_Auto" 1 "FICMPwrDMdReq_1_EVFirst" 2 "FICMPwrDMdReq_2_HEVFirst" 3 "FICMPwrDMdReq_3_Reserved";
@@ -10925,7 +10962,7 @@ VAL_ 922 SusDmpngCtrlCustSetngReq 0 "SusDmpngCtrlCustSetngReq_0_NoRequest" 1 "Su
 VAL_ 922 TrgtSOCReqFICMV 0 "TrgtSOCReqFICMV_0_valid" 1 "TrgtSOCReqFICMV_1_invalid";
 VAL_ 922 FICMPwrDMdReq_AIHEV 0 "FICMPwrDMdReq_0_ForceEV" 1 "FICMPwrDMdReq_1_EVFirst" 2 "FICMPwrDMdReq_2_HEV" 3 "FICMPwrDMdReq_3_BatteryHold" 4 "FICMPwrDMdReq_4_AIHEV" 5 "FICMPwrDMdReq_5_Reserved" 6 "FICMPwrDMdReq_6_Reserved" 7 "FICMPwrDMdReq_7_Reserved";
 VAL_ 795 DCDCVolStpt 254 "DCDCVolStpt_254_Init" 255 "DCDCVolStpt_255_Invalid";
-VAL_ 795 SLIFUpdtIndReq 0 "SLIFUpdtIndReq_0_Off" 1 "SLIFUpdtIndReq_1_On";
+VAL_ 795 SLIFUpdtIndReq 0 "SLIFUpdtIndReq_0_NoRequest" 1 "SLIFUpdtIndReq_1_Off" 2 "SLIFUpdtIndReq_2_On" 3 "SLIFUpdtIndReq_3_reserve";
 VAL_ 795 SprSportSubItemReqV 0 "SprSportSubItemReqV_0_Valid" 1 "SprSportSubItemReqV_1_Invalid";
 VAL_ 795 SprSportSubItemReq 0 "SprSportSubItemReq_0_Default" 1 "SprSportSubItemReq_1_AstonMartin" 2 "SprSportSubItemReq_2_Lamborghini" 3 "SprSportSubItemReq_3_Ferrari";
 VAL_ 907 VehDrvngMd 0 "VehDrvngMd_0_No_Driving_Mode" 1 "VehDrvngMd_1_Super_ECO" 2 "VehDrvngMd_2_ECO" 3 "VehDrvngMd_3_Normal" 4 "VehDrvngMd_4_Sport" 5 "VehDrvngMd_5_OffRoad" 6 "VehDrvngMd_6_Snow" 7 "VehDrvngMd_7_Customization_Mode" 8 "VehDrvngMd_8_Trace" 9 "VehDrvngMd_9_Uncarsickness" 10 "VehDrvngMd_10_Reserved" 11 "VehDrvngMd_11_Reserved" 12 "VehDrvngMd_12_Sand";
@@ -10949,6 +10986,7 @@ VAL_ 361 IBS_SFAvlbly 0 "IBS_SFAvlbly_0_False" 1 "IBS_SFAvlbly_1_True";
 VAL_ 361 EPSAvlbly 0 "EPSAvlbly_0_False" 1 "EPSAvlbly_1_True";
 VAL_ 361 TC_PTAvlbly 0 "TC_PTAvlbly_0_False" 1 "TC_PTAvlbly_1_True";
 VAL_ 361 PICU_PTAvlbly 0 "PICU_PTAvlbly_0_False" 1 "PICU_PTAvlbly_1_True";
+VAL_ 361 LVBM_PTAvlbly 0 "LVBMAvlbly_0_False" 1 "LVBMAvlbly_1_True";
 VAL_ 361 PEU_PTAvlbly 0 "PEU_PTAvlbly_0_False" 1 "PEU_PTAvlbly_1_True";
 VAL_ 361 PEU_ERAvlbly 0 "PEU_ERAvlbly_0_False" 1 "PEU_ERAvlbly_1_True";
 VAL_ 361 PICU_ExtdAvlbly 0 "PICU_PTAvlbly_0_False" 1 "PICU_PTAvlbly_1_True";
@@ -10992,6 +11030,7 @@ VAL_ 497 BPMMstrAvlbly 0 "BPMMstrAvlbly_0_False" 1 "BPMMstrAvlbly_1_True";
 VAL_ 497 SysVolMd 0 "SysVolMd_0_Normal" 1 "SysVolMd_1_Low_System_Voltage" 2 "SysVolMd_2_High_System_Voltage" 3 "SysVolMd_3_Illegal_System_Voltage";
 VAL_ 60 TripCntResetReq 0 "TripCntResetReq_0_NoRequest" 1 "TripCntResetReq_1_EnableRequest";
 VAL_ 60 ComKeyEnbReq 0 "ComKeyEnbReq_0_NoRequest" 1 "ComKeyEnbReq_1_EnableRequest";
+VAL_ 815 EMCLPwrSts 0 "EMCLPwrSts_0_OFF" 1 "EMCLPwrSts_1_ON";
 VAL_ 815 IMMPwrSts 0 "IMMPwrSts_0_OFF" 1 "IMMPwrSts_1_ON";
 VAL_ 815 ESCLPwrSts 0 "ESCLPwrSts_0_OFF" 1 "ESCLPwrSts_1_ON";
 VAL_ 815 BPEPSPwrSts 0 "BPEPSPwrSts_0_OFF" 1 "BPEPSPwrSts_1_ON";
@@ -11193,16 +11232,17 @@ VAL_ 807 PilotSysRHRDAFltSts 0 "PilotSysRHRDAFltSts_0_NoError" 1 "PilotSysRHRDAF
 VAL_ 807 PilotSysUSSFltSts 0 "PilotSysUSSFltSts_0_NoError" 1 "PilotSysUSSFltSts_1_BlockError" 2 "PilotSysUSSFltSts_2_SystemTemporaryUnvailable" 3 "PilotSysUSSFltSts_3_ServiceRequired" 4 "PilotSysUSSFltSts_4_Reserved";
 VAL_ 807 HORWarningEvtSts 0 "HORWarningEvtSts_0_default" 1 "HORWarningEvtSts_1_HORForbiddenPilot";
 VAL_ 807 EORWarningEvtSts 0 "EORWarningEvtSts_0_default" 1 "EORWarningEvtSts_1_EORForbiddenPilot";
-VAL_ 807 SLIFUpdtIndResp_IPD 0 "SLIFUpdtIndResp_IPD_0__Off" 1 "SLIFUpdtIndResp_IPD_1__On";
 VAL_ 807 PosALCFailed 0 "PosALCFailed_0_default" 1 "PosALCFailed_1_PositiveALCFailed";
 VAL_ 807 SLIFSysFltSts 0 "SLIFSysFltSts_0_NoError" 1 "SLIFSysFltSts_1_PerformanceDegradation" 2 "SLIFSysFltSts_2_SystemTemporaryUnavailable" 3 "SLIFSysFltSts_3_ServiceRequired";
 VAL_ 807 ADS_ISAMsgReq 0 "ADS_ISAMsgReq_0_Nowarning" 1 "ADS_ISAMsgReq_1_MSG1" 2 "ADS_ISAMsgReq_2_MSG2" 3 "ADS_ISAMsgReq_3_MSG3" 4 "ADS_ISAMsgReq_4_MSG4" 5 "ADS_ISAMsgReq_5_MSG5" 6 "ADS_ISAMsgReq_6_MSG6" 7 "ADS_ISAMsgReq_7_MSG7" 8 "ADS_ISAMsgReq_8_MSG8" 9 "ADS_ISAMsgReq_9_MSG9";
+VAL_ 807 SLIFUpdtIndResp_IPD 0 "SLIFUpdtIndResp_IPD_0_Unavailable" 1 "SLIFUpdtIndResp_IPD_1_Off" 2 "SLIFUpdtIndResp_IPD_2_On" 3 "SLIFUpdtIndResp_IPD_3_reserve";
 VAL_ 807 ADS_ISASysFltSts 0 "ADS_ISASysFltSts_0_NoError" 1 "ADS_ISASysFltSts_1_PerformanceDegradation" 2 "ADS_ISASysFltSts_2_SystemTemporaryUnavailable" 3 "ADS_ISASysFltSts_3_ServiceRequired";
 VAL_ 807 ADS_ISASysSts 0 "ADS_ISASysSts_0_Off" 1 "ADS_ISASysSts_1_Passive" 2 "ADS_ISASysSts_2_Active" 3 "ADS_ISASysSts_3_Overspeed" 4 "ADS_ISASysSts_4_Standby" 5 "ADS_ISASysSts_5_Fault" 6 "ADS_ISASysSts_6_reserve" 7 "ADS_ISASysSts_7_reserve";
+VAL_ 807 ParkngSpdSwResp 0 "ParkngSpdSwResp_0_Default" 1 "ParkngSpdSwResp_1_LowSpeed" 2 "ParkngSpdSwResp_2_MiddleSpeed" 3 "ParkngSpdSwResp_3_HighSpeed";
 VAL_ 765 FrtCamrHeatCtrl 0 "FrtCamrHeatCtrl_0_no_request" 1 "FrtCamrHeatCtrl_1_request";
 VAL_ 844 IACCPreSpdLimtCmd 0 "IACCPreSpdLimtCmd_0_Unavallable" 1 "IACCPreSpdLimtCmd_1_Off" 2 "IACCPreSpdLimtCmd_2_On" 3 "IACCPreSpdLimtCmd_3_Reserve";
 VAL_ 844 IACCPreMsgReq 0 "IACCPreMsgReq_0_NoDisplay" 1 "IACCPreMsgReq_1_Roundabout" 2 "IACCPreMsgReq_2_Trafficlight" 3 "IACCPreMsgReq_3_Intersection" 4 "IACCPreMsgReq_4_Curve" 5 "IACCPreMsgReq_5_StopSign" 6 "IACCPreMsgReq_6_Tollstation" 7 "IACCPreMsgReq_7_OvtakingSuppress" 8 "IACCPreMsgReq_8_SpeedLimit" 9 "IACCPreMsgReq_9_Reserve" 10 "IACCPreMsgReq_10_Reserve" 11 "IACCPreMsgReq_11_Reserve" 12 "IACCPreMsgReq_12_Reserve" 13 "IACCPreMsgReq_13_Reserve" 14 "IACCPreMsgReq_14_Reserve" 15 "IACCPreMsgReq_15_Reserve";
-VAL_ 844 TgtParkingFavorite 0 "TgtParkingFavorite_0_NoFavorite_0x1EqualsTgtParkingFavorite_1_FavoriteId1_0x2EqualsTgtParkingFavorite_2_FavoriteId2_0x3EqualsTgtParkingFavorite_3_FavoriteId3_0x4EqualsTgtParkingFavorite_4_FavoriteId4_0x5EqualsTgtParkingFavorite_5_FavoriteId5_0x6EqualsTgtParkingFavorite_6_FavoriteId6_0x7EqualsTgtParkingFavorite_7_FavoriteId7_0x8EqualsTgtParkingFavorite_8_FavoriteId8_0x9EqualsTgtParkingFavorite_9_FavoriteId9_0xAEqualsTgtParkingFavorite_10_FavoriteId10_0xBEqualsTgtParkingFavorite_11_FavoriteId11_0xCEqualsTgtParkingFavorite_12_FavoriteId12_0xDEqualsTgtParkingFavorite_13_Reserved1_0xEEqualsTgtParkingFavorite_14_Reserved2_0xFEqualsTgtParkingFavorite_15_Reserved3";
+VAL_ 844 TgtParkingFavorite 0 "TgtParkingFavorite_0_NoFavorite" 1 "TgtParkingFavorite_1_FavoriteId1" 2 "TgtParkingFavorite_2_FavoriteId2" 3 "TgtParkingFavorite_3_FavoriteId3" 4 "TgtParkingFavorite_4_FavoriteId4" 5 "TgtParkingFavorite_5_FavoriteId5" 6 "TgtParkingFavorite_6_FavoriteId6" 7 "TgtParkingFavorite_7_FavoriteId7" 8 "TgtParkingFavorite_8_FavoriteId8" 9 "TgtParkingFavorite_9_FavoriteId9" 10 "TgtParkingFavorite_10_FavoriteId10" 11 "TgtParkingFavorite_11_FavoriteId11" 12 "TgtParkingFavorite_12_FavoriteId12" 13 "TgtParkingFavorite_13_Reserved1" 14 "TgtParkingFavorite_14_Reserved2" 15 "TgtParkingFavorite_15_Reserved3";
 VAL_ 844 IPDWtrClntInltFlwReq 0 "IPDWtrClntInltFlwReq_0_1_L_min" 1 "IPDWtrClntInltFlwReq_1_2_L_min" 2 "IPDWtrClntInltFlwReq_2_3_L_min" 3 "IPDWtrClntInltFlwReq_3_4_L_min" 4 "IPDWtrClntInltFlwReq_4_5_L_min" 5 "IPDWtrClntInltFlwReq_5_6_L_min" 6 "IPDWtrClntInltFlwReq_6_7_L_min" 7 "IPDWtrClntInltFlwReq_7_8_L_min" 8 "IPDWtrClntInltFlwReq_8_9_L_min" 9 "IPDWtrClntInltFlwReq_9_10_L_min" 10 "IPDWtrClntInltFlwReq_10_11_L_min" 11 "IPDWtrClntInltFlwReq_11_12_L_min" 12 "IPDWtrClntInltFlwReq_12_16_L_min" 13 "IPDWtrClntInltFlwReq_13_Reserved0" 14 "IPDWtrClntInltFlwReq_14_Reserved1" 15 "IPDWtrClntInltFlwReq_15_SysMax";
 VAL_ 844 IPDAVCamrHeatReq 0 "IPDAVCamrHeatReq_0_Off" 1 "IPDAVCamrHeatReq_1_On";
 VAL_ 844 IPDWtrClntInltTimeReq 0 "IPDWtrClntInltTimeReq_0_No_Request" 1 "IPDWtrClntInltTimeReq_1_Request";
@@ -11269,9 +11309,10 @@ VAL_ 755 ParkngDirSwResp 0 "ParkngDirSwResp_0_No_Request" 1 "ParkngDirSwResp_1_F
 VAL_ 755 ParkngSlotFindSts 0 "ParkngSlotFindSts_0_False" 1 "ParkngSlotFindSts_1_True";
 VAL_ 755 ParkngOutFrtCrsSts 0 "ParkngOutFrtCrsSts_0_Invalid" 1 "ParkngOutFrtCrsSts_1_Valid";
 VAL_ 755 ParkngOutFRParllSts 0 "ParkngOutFRParllSts_0_Invalid" 1 "ParkngOutFRParllSts_1_Valid";
-VAL_ 755 PEBSwResp 0 "PEBSwResp_0_On" 1 "PEBSwResp_1_Off";
+VAL_ 755 PEBSwResp 0 "PEBSwResp_0_unavailable" 1 "PEBSwResp_1_On" 2 "PEBSwResp_2_Off" 3 "PEBSwResp_3_Reserve";
 VAL_ 774 ParkngNCPAvlSts 0 "ParkngNCPAvlSts_0_None" 1 "ParkngNCPAvlSts_1_Middle" 2 "ParkngNCPAvlSts_2_Left" 3 "ParkngNCPAvlSts_3_Left_and_Middle" 4 "ParkngNCPAvlSts_4_Righht" 5 "ParkngNCPAvlSts_5_Right_and_Middle" 6 "ParkngNCPAvlSts_6_Right_and_Left" 7 "ParkngNCPAvlSts_7_ALL";
-VAL_ 774 TrfcLghtFuctionSwSts 0 "TrfcLghtFuctionSwSts_0_Trfclghtfnswsts_0_Unavailable_0x1EqualsTrfcLghtFuctionSwSts_1_TrfcLghtFnSwSts_1_OFF_0x2EqualsTrfcLghtFuctionSwSts_2_TrfcLghtFnSwSts_2_Warning_0x3EqualsTrfcLghtFuctionSwSts_3_TrfcLghtFnSwSts_3_Contorl";
+VAL_ 774 TrfcLghtFuctionSwSts 0 "TrfcLghtFuctionSwSts_0_Trfclghtfnswsts_0_Unavailable" 1 "TrfcLghtFuctionSwSts_1_TrfcLghtFnSwSts_1_OFF" 2 "TrfcLghtFuctionSwSts_2_TrfcLghtFnSwSts_2_Warning" 3 "TrfcLghtFuctionSwSts_3_TrfcLghtFnSwSts_3_Contorl";
+VAL_ 774 APASpdMdSwSts 0 "APASpdMdSwSts_0_Disable" 1 "APASpdMdSwSts_1_Fast" 2 "APASpdMdSwSts_2_Slow" 3 "APASpdMdSwSts_3_Reserved";
 VAL_ 208 APAParkInOffsetType 0 "APAParkInOffsetType_0_INVALID" 1 "APAParkInOffsetType_1_LEFT" 2 "APAParkInOffsetType_2_MIDDLE" 3 "APAParkInOffsetType_3_RIGHT";
 VAL_ 208 APASW 0 "APASW_0_CLOSE" 1 "APASW_1_OPEN";
 VAL_ 486 FrtCarGoNotfr 0 "FrtCarGoNotfr_0_False" 1 "FrtCarGoNotfr_1_Waminglevel1" 2 "FrtCarGoNotfr_2_Warninglevel2" 3 "FrtCarGoNotfr_3_Warninglevel3";
@@ -11709,7 +11750,6 @@ VAL_ 805 APAParkInOffsetTypeReq 0 "APAParkInOffsetTypeReq_0_INVALID" 1 "APAParkI
 VAL_ 805 FICMIFPACOnOffSwReq 0 "FICMIFPACOnOffSwReq_0_No_request" 1 "FICMIFPACOnOffSwReq_1_Short_press" 2 "FICMIFPACOnOffSwReq_2_Long_press";
 VAL_ 805 NOAReportSetSwReq 0 "NOAReportSetSwReq_0_no_request" 1 "NOAReportSetSwReq_1_detail" 2 "NOAReportSetSwReq_2_concision" 3 "NOAReportSetSwReq_3_minimal" 4 "NOAReportSetSwReq_4_Reserved";
 VAL_ 805 NarRoVslAssSwReq 0 "NarRoVslAssSwReq_0_0_Norequest" 1 "NarRoVslAssSwReq_1_1_Off" 2 "NarRoVslAssSwReq_2_2_Near" 3 "NarRoVslAssSwReq_3_3_Middle" 4 "NarRoVslAssSwReq_4_4_Far";
-VAL_ 805 ParkngSpdSwResp 0 "ParkngSpdSwResp_0_Default" 1 "ParkngSpdSwResp_1_LowSpeed" 2 "ParkngSpdSwResp_2_MiddleSpeed" 3 "ParkngSpdSwResp_3_HighSpeed";
 VAL_ 805 NrwroadBwdAssSwReq 0 "NrwroadBwdAssSwReq_0_0_No_request" 1 "NrwroadBwdAssSwReq_1_1_RequestStart" 2 "NrwroadBwdAssSwReq_2_2_RequestActive" 3 "NrwroadBwdAssSwReq_3_3_Pause" 4 "NrwroadBwdAssSwReq_4_4_Continue" 5 "NrwroadBwdAssSwReq_5_5_Quit";
 VAL_ 805 AutoLaneChngSwReq 0 "AutoLaneChngSwReq_0_AutoLaneChngSwReq_0_no_request" 1 "AutoLaneChngSwReq_1_AutoLaneChngSwReq_1_off" 2 "AutoLaneChngSwReq_2_AutoLaneChngSwReq_2_lane_change_suggestion" 3 "AutoLaneChngSwReq_3_AutoLaneChngSwReq_3_AlcWithDriver" 4 "AutoLaneChngSwReq_4_AutoLaneChngSwReq_4_AlcWithoutDriver_reserved" 5 "AutoLaneChngSwReq_5_AutoLaneChngSwReq_5_Reserved" 6 "AutoLaneChngSwReq_6_AutoLaneChngSwReq_6_Reserved" 7 "AutoLaneChngSwReq_7_AutoLaneChngSwReq_7_Reserved";
 VAL_ 805 ESSAdoWrnngReq 0 "ESSAdoWrnngReq_0_no_request" 1 "ESSAdoWrnngReq_1_off" 2 "ESSAdoWrnngReq_2_on";
@@ -11735,8 +11775,10 @@ VAL_ 805 FVCMPowerFailSwReq 0 "FVCMPowerFailSwReq_0_NoRequest" 1 "FVCMPowerFailS
 VAL_ 805 D2DPriETClanSwReq 0 "D2DPriETClanSwReq_0_no_request" 1 "D2DPriETClanSwReq_1_off" 2 "D2DPriETClanSwReq_2_on" 3 "D2DPriETClanSwReq_3_reserved";
 VAL_ 805 SLIFWrnngMdReq 0 "SLIFWrnngMdReq_0__NoRequest" 1 "SLIFWrnngMdReq_1__Off" 2 "SLIFWrnngMdReq_2__Visual" 3 "SLIFWrnngMdReq_3__Audible";
 VAL_ 805 AIParkngEPAMdsw 0 "AIParkngEPAMdsw_0_Lockmode" 1 "AIParkngEPAMdsw_1_Simplemode";
-VAL_ 805 PEBSwReq 0 "PEBSwReq_0_No_Request" 1 "PEBSwReq_1_Request";
+VAL_ 805 PEBSwReq 0 "PEBSwReq_0_No_Request" 1 "PEBSwReq_1_ON" 2 "PEBSwReq_2_OFF" 3 "PEBSwReq_3_Reserve";
 VAL_ 711 SpedRegulaModSwReq 0 "SpedRegulaModSwReq_0_no_request" 1 "SpedRegulaModSwReq_1_ON_request" 2 "SpedRegulaModSwReq_2_OFF_request" 3 "SpedRegulaModSwReq_3_Reserved" 4 "SpedRegulaModSwReq_4_Reserved" 5 "SpedRegulaModSwReq_5_Reserved" 6 "SpedRegulaModSwReq_6_Reserved" 7 "SpedRegulaModSwReq_7_Reserved";
+VAL_ 707 ICMSwReq_Reserve17 0 "ICMSwReq_Reserve17_0_unable" 1 "ICMSwReq_Reserve17_1_enable";
+VAL_ 707 ICMSwReq_Reserve16 0 "ICMSwReq_Reserve16_0_unable" 1 "ICMSwReq_Reserve16_1_enable";
 VAL_ 1216 ZXD_NM_BSMtoRMS_BKPCANFD 0 "ZXD_NM_BSMtoRMS_BKPCANFD_0_False" 1 "ZXD_NM_BSMtoRMS_BKPCANFD_1_True";
 VAL_ 1216 ZXD_NM_PBSMtoRMS_BKPCANFD 0 "ZXD_NM_PBSMtoRMS_BKPCANFD_0_False" 1 "ZXD_NM_PBSMtoRMS_BKPCANFD_1_True";
 VAL_ 1216 ZXD_NM_RMStoNOS_BKPCANFD 0 "ZXD_NM_RMStoNOS_BKPCANFD_0_False" 1 "ZXD_NM_RMStoNOS_BKPCANFD_1_True";
@@ -11750,7 +11792,15 @@ VAL_ 1216 ZXD_NOI_BKPCANFD 0 "ZXD_NOI_BKPCANFD_0_NoRequest" 65535 "ZXD_NOI_BKPCA
 VAL_ 1216 ZXD_NKI_BKPCANFD 0 "ZXD_NKI_BKPCANFD_0_NoRequest" 1 "ZXD_NKI_BKPCANFD_1_PowerModeIsNonOFF";
 SIG_GROUP_ 898 IFDR_100ms_Group01 1 : FDRSts FDR_100ms_Group01_CRC FDR_100ms_Group01_RC FDR_100ms_Group01_Reserved1 FDR_100ms_Group01_Reserved2 FDR_100ms_Group01_Reserved3 FDR_100ms_Group01_Reserved4 FDR_100ms_Group01_Reserved5 FDR_100ms_Group01_Reserved6 FDR_100ms_Group01_Reserved7;
 SIG_GROUP_ 307 IFVCM_20ms_Group02 1 : ACCDetObjDistLvl ACCDrvrSelTrgtSpd ACCGoNotfr ACCMsgReq ACCSeldTrgtDistLvl ACCTJAMdSwDspCmd ACCTotWhlToqReqSts ACCTotWhlToqReqVal ELKSysSts_IPD EyeOffRoadDetnSta EyeOffRoadDetnStaV FVCM_20ms_Group02_CRC FVCM_20ms_Group02_RC FVCM_20ms_Group02_Reserved1 FVCM_20ms_Group02_Reserved2 FVCM_20ms_Group02_Reserved3 FVCM_20ms_Group02_Reserved4 FVCM_20ms_Group02_Reserved5 FVCM_20ms_Group02_Reserved6 FVCM_20ms_Group02_Reserved7 FVCM_20ms_Group02_Reserved8 HandOffStrgWhlDetnSta HandOffStrgWhlDetnStaV ILCActvnDircnDspCmd ILCActvnVelDspCmd ILCSwDspCmd ILCSysSts LDWAdoWrnngDspCmd LDWLKAAudReq LDWLKADspCmd LDWLKAHptWrnngDspCmd LDWSnstvtLvl LKADrvrTkovReq;
+SIG_GROUP_ 887 IIAM_100ms_Group08 1 : AltSigma IAM_100ms_Group08_CRC IAM_100ms_Group08_RC IAM_100ms_Group08_Reserved15 LatSigma LonSigma;
+SIG_GROUP_ 912 IIAM_ZONE_100ms_Group34 1 : Hdop IAM_ZONE_100ms_Group34_CRC IAM_ZONE_100ms_Group34_RC IAM_ZONE_100ms_Group34_Reserved1 IAM_ZONE_100ms_Group34_Reserved2 IAM_ZONE_100ms_Group34_Reserved3 IAM_ZONE_100ms_Group34_Reserved5 Pdop Vdop;
+SIG_GROUP_ 874 IIAM_ZONE_100ms_Group40 1 : AltitudeRTK HeadingRTK IAM_ZONE_100ms_Group40_CRC IAM_ZONE_100ms_Group40_RC IAM_ZONE_100ms_Group40_Reserved1 IAM_ZONE_100ms_Group40_Reserved6;
 SIG_GROUP_ 336 IIAM_20ms_Group32 1 : IAM_20ms_Group32_CRC IAM_20ms_Group32_RC IAM_20ms_Group32_Reserved1 IAM_20ms_Group32_Reserved10 IAM_20ms_Group32_Reserved2 IAM_20ms_Group32_Reserved3 IAM_20ms_Group32_Reserved4 IAM_20ms_Group32_Reserved5 IAM_20ms_Group32_Reserved6 IAM_20ms_Group32_Reserved7 IAM_20ms_Group32_Reserved8 IAM_20ms_Group32_Reserved9 RmtDrvrTrgtEPSStrgWhlAng RmtParkngAstAbotBtnSts RmtParkngAstBtnSts RmtParkngAstDvcFlrRsn RmtParkngAstDvcSts RmtParkngAstParkngOutDircnSeln VehBkwdSwReq VehBkwdSwReqV VehFwdSwReq VehFwdSwReqV VehRoadWhlLReq VehRoadWhlLReqV VehRoadWhlRReq VehRoadWhlRReqV;
+SIG_GROUP_ 811 IIAM_100ms_Group18 1 : HeadingSigma IAM_100ms_Group18_CRC IAM_100ms_Group18_RC IAM_100ms_Group18_Reserved15 PitchRTK PitchSigma;
+SIG_GROUP_ 810 IIAM_ZONE_100ms_Group57 1 : IAM_ZONE_100ms_Group57_CRC IAM_ZONE_100ms_Group57_RC IAM_ZONE_100ms_Group57_Reserved1 IAM_ZONE_100ms_Group57_Reserved6 LongitudeRTK;
+SIG_GROUP_ 793 IIAM_ZONE_100ms_Group35 1 : GNSSF9HCounter GNSSUTCTime IAM_ZONE_100ms_Group35_CRC IAM_ZONE_100ms_Group35_RC IAM_ZONE_100ms_Group35_Reserved1;
+SIG_GROUP_ 773 IIAM_ZONE_100ms_Group13 1 : FixType GNSSSeq GNSSUTCTimeH IAM_ZONE_100ms_Group13_CRC IAM_ZONE_100ms_Group13_RC IAM_ZONE_100ms_Group13_Reserved1;
+SIG_GROUP_ 974 IIAM_100ms_Group56 1 : IAM_100ms_Group56_CRC IAM_100ms_Group56_RC IAM_100ms_Group56_Reserved13 IAM_100ms_Group56_Reserved63 IAM_GNSS_Signal_Status LatitudeRTK;
 SIG_GROUP_ 820 IICBAD_100ms_Group37 1 : AutoLaneChngMsgReq AutoLaneChngSetResp AutoLaneChngSwDspCmd DILampsCtrl HzrdLampsCtrl ICBAD_100ms_Group37_CRC ICBAD_100ms_Group37_RC ICBAD_100ms_Group37_Reserved1 ICBAD_100ms_Group37_Reserved2 ICBAD_100ms_Group37_Reserved3 ICBAD_100ms_Group37_Reserved4 ICBAD_100ms_Group37_Reserved5 ICBAD_100ms_Group37_Reserved6 ICBAD_100ms_Group37_Reserved7 ICBAD_100ms_Group37_Reserved8;
 SIG_GROUP_ 382 IICBAD_20ms_Group07 1 : ACCAccReqSts_CH ACCAccReqVal ACCGoReq ACCSdslReq ACCSysFltSts ACCSysSts AIPkgAPASCSAcclReqVal APAEPBOPReq APAEPBOPReqV APASCSAcclReqSts AutodDrvngSysEmgcBrkReq AutodDrvngSysEmgcBrkReqV AutodDrvngSysFlrSts AutodDrvngSysFlrStsV AutodDrvngSysMdReq AutodDrvngSysMdReqV AutodDrvngSysSCSDrvOffReq AutodDrvngSysSCSDrvOffReqV AutodDrvngSysSCSSdslReq AutodDrvngSysSCSSdslReqV ICBAD_20ms_Group07_CRC ICBAD_20ms_Group07_RC ICBAD_20ms_Group07_Reserved1;
 SIG_GROUP_ 385 IICBAD_20ms_Group09 1 : ICBAD_20ms_Group09_CRC ICBAD_20ms_Group09_RC ICBAD_20ms_Group09_Reserved1 ICBAD_20ms_Group09_Reserved2 ICBAD_20ms_Group09_Reserved3 ICBAD_20ms_Group09_Reserved4 ICBAD_20ms_Group09_Reserved5 ICBAD_20ms_Group09_Reserved6 NSABacSysSts NSADisFucSts NSAForSysSts NSAReqAVMDis;
@@ -11761,15 +11811,16 @@ SIG_GROUP_ 474 IICBAD_20ms_Group48 1 : ICBAD_20ms_Group48_CRC ICBAD_20ms_Group48
 SIG_GROUP_ 351 IICBAD_20ms_Group05 1 : APACrpSpdReqVal_IPD APARevrDrgReq APAToqReqVal APATotWhlToqReqVal APAVCUReqSts ICBAD_20ms_Group05_CRC ICBAD_20ms_Group05_RC ICBAD_20ms_Group05_Reserved1 ICBAD_20ms_Group05_Reserved10 ICBAD_20ms_Group05_Reserved11 ICBAD_20ms_Group05_Reserved12 ICBAD_20ms_Group05_Reserved13 ICBAD_20ms_Group05_Reserved14 ICBAD_20ms_Group05_Reserved15 ICBAD_20ms_Group05_Reserved2 ICBAD_20ms_Group05_Reserved3 ICBAD_20ms_Group05_Reserved4 ICBAD_20ms_Group05_Reserved5 ICBAD_20ms_Group05_Reserved6 ICBAD_20ms_Group05_Reserved7 ICBAD_20ms_Group05_Reserved8 ICBAD_20ms_Group05_Reserved9;
 SIG_GROUP_ 424 IICBAD_20ms_Group12 1 : APASts AutodDrvngSysSts AutodDrvngSysStsV ICBAD_20ms_Group12_CRC ICBAD_20ms_Group12_RC ICBAD_20ms_Group12_Reserved1 ICBAD_20ms_Group12_Reserved2 ICBAD_20ms_Group12_Reserved3 ICBAD_20ms_Group12_Reserved4 ICBAD_20ms_Group12_Reserved5 ICBAD_20ms_Group12_Reserved6;
 SIG_GROUP_ 81 IICBAD_ZONE_20ms_Group13 1 : ACCToqReqSts ACCToqReqVal ICBAD_ZONE_20ms_Group13_CRC ICBAD_ZONE_20ms_Group13_RC ICBAD_ZONE_20ms_Group13_Reserved0 ICBAD_ZONE_20ms_Group13_Reserved1 ICBAD_ZONE_20ms_Group13_Reserved2 ICBAD_ZONE_20ms_Group13_Reserved3 ICBAD_ZONE_20ms_Group13_Reserved4 ICBAD_ZONE_20ms_Group13_Reserved5 LKASysFltSts LKASysSts TJAICASysFltSts TJAICASysSts;
+SIG_GROUP_ 66 IICBVC_100ms_Group01 1 : ClstrDspdVehSpd DspMeasmtSys FLSeatHeatCtrlSts FLSeatVentCtrlSts FRSeatHeatCtrlSts FRSeatVentCtrlSts ICBVC_100ms_Group01_CRC ICBVC_100ms_Group01_RC ICBVC_100ms_Group01_Reserved103 ICBVC_100ms_Group01_Reserved111 ICBVC_100ms_Group01_Reserved119 ICBVC_100ms_Group01_Reserved127 ICBVC_100ms_Group01_Reserved14 ICBVC_100ms_Group01_Reserved21 ICBVC_100ms_Group01_Reserved31 ICBVC_100ms_Group01_Reserved47 ICBVC_100ms_Group01_Reserved55 ICBVC_100ms_Group01_Reserved63 ICBVC_100ms_Group01_Reserved71 ICBVC_100ms_Group01_Reserved72 ICBVC_100ms_Group01_Reserved79 ICBVC_100ms_Group01_Reserved80 ICBVC_100ms_Group01_Reserved84 ICBVC_100ms_Group01_Reserved92 MdOfPwrMd PDCSwReq PwrMdExtrCtrlAvlbl;
 SIG_GROUP_ 482 IICBVC_50ms_Group11 1 : CCSwStsCanclSwA CCSwStsDistDecSwA CCSwStsDistIncSwA CCSwStsOnSwA CCSwStsRsmSwA CCSwStsSpdDecSwA CCSwStsSpdIncSwA CCSwStsSwDataIntgty HMISafFltsts ICBVC_50ms_Group11_CRC ICBVC_50ms_Group11_RC ICBVC_50ms_Group11_Reserved1 ICBVC_50ms_Group11_Reserved2 ICBVC_50ms_Group11_Reserved3 ICBVC_50ms_Group11_Reserved4 ICBVC_50ms_Group11_Reserved5 ICBVC_50ms_Group11_Reserved6 PfTrTapUpDwnEnbSwSta PfTrTapUpDwnSecySwSta PfTrTapUpDwnSwSta SWSCnfmSwA SWSSelDwnSwA SWSSelLSwA SWSSelRSwA SWSSelUpSwA StrgWhlTipcSwDataIntgty SwStaE2EErr TrPfShftPtrnSw1A TrPfShftPtrnSw2A TrPfShftPtrnSw3A TrPfShftPtrnSw4A;
 SIG_GROUP_ 1010 IICBVC_50ms_Group13 1 : AutocParkngSwReq FLDircnLghtFltsts FRDircnLghtFltsts FrSsdManuCtrl ICBVC_50ms_Group13_CRC ICBVC_50ms_Group13_RC ICBVC_50ms_Group13_Reserved1 ICBVC_50ms_Group13_Reserved10 ICBVC_50ms_Group13_Reserved11 ICBVC_50ms_Group13_Reserved12 ICBVC_50ms_Group13_Reserved13 ICBVC_50ms_Group13_Reserved14 ICBVC_50ms_Group13_Reserved15 ICBVC_50ms_Group13_Reserved16 ICBVC_50ms_Group13_Reserved2 ICBVC_50ms_Group13_Reserved3 ICBVC_50ms_Group13_Reserved4 ICBVC_50ms_Group13_Reserved5 ICBVC_50ms_Group13_Reserved6 ICBVC_50ms_Group13_Reserved7 ICBVC_50ms_Group13_Reserved8 ICBVC_50ms_Group13_Reserved9 IMATESysSts PwrMdCtrlResp SpdLmtMdFICM TgtParkingChosed;
 SIG_GROUP_ 907 IICBVC_100ms_Group80 1 : FrtPsngAirbagSwStsReqV_Sfty FrtPsngAirbagSwStsReq_Sfty ICBVC_100ms_Group80_CRC ICBVC_100ms_Group80_RC ICBVC_100ms_Group80_Reserved1 ICBVC_100ms_Group80_Reserved2 ICBVC_100ms_Group80_Reserved3 VehDrvngMd VehLdShedLvl VehOdo VehOdoV;
 SIG_GROUP_ 1151 IICBVC_200ms_Group79 1 : ClstrDspdAirbagWrnng EPTNotReadyReq ICBVC_200ms_Group79_CRC ICBVC_200ms_Group79_RC ICBVC_200ms_Group79_Reserved1 ICBVC_200ms_Group79_Reserved2 OdoPriyPrcs OdoPriyPrcsV TrlrMdSts;
 SIG_GROUP_ 497 IICBVC_20ms_Group03 1 : AMRPrtensonReq BPMMstrAvlbly ICBVC_20ms_Group03_CRC ICBVC_20ms_Group03_RC ICBVC_20ms_Group03_Reserved1 ICBVC_20ms_Group03_Reserved2 ICBVC_20ms_Group03_Reserved3 ICBVC_20ms_Group03_Reserved4 PwrMdMstrAccryA PwrMdMstrRunCrkA SysOpnlMd SysPwrMd SysPwrMdV SysVol SysVolMd SysVolMdV SysVolV UsgMd UsgMdV VehMd VehMdV;
 SIG_GROUP_ 368 IICBVC_50ms_Group158 1 : CCDisAdjtVcCmd CCDisDecAndIncVcCmd CCSpdDecAndIncVcCmd CCSpdVcCmd CCSpdVcCmdSwReq CCSwStsCCASwA CCSwStsSetSwA ICBVC_50ms_Group158_CRC ICBVC_50ms_Group158_RC ICBVC_50ms_Group158_Reserved1 ICBVC_50ms_Group158_Reserved10 ICBVC_50ms_Group158_Reserved11 ICBVC_50ms_Group158_Reserved12 ICBVC_50ms_Group158_Reserved13 ICBVC_50ms_Group158_Reserved2 ICBVC_50ms_Group158_Reserved3 ICBVC_50ms_Group158_Reserved4 ICBVC_50ms_Group158_Reserved5 ICBVC_50ms_Group158_Reserved6 ICBVC_50ms_Group158_Reserved7 ICBVC_50ms_Group158_Reserved8 ICBVC_50ms_Group158_Reserved9;
-SIG_GROUP_ 527 IIMM_50ms_Group02 1 : DMSSts_IMM DrvrAbnormBehvor_IMM DrvrAbnormConf_IMM DrvrDstcnConf_IMM DrvrDstcnStsINST_IMM DrvrDstcnSts_IMM DrvrFtgConf_IMM DrvrFtgLvlINST_IMM DrvrFtgLvl_IMM DrvrGazeRgn_IMM DrvrPrst_IMM EyeGazepitch_IMM EyeGazeyaw_IMM EyeOnRoad_IMM EyeOpenDegree_IMM EyeOpenStatus_IMM Headpose_pitch Headpose_roll Headpose_yaw ILBRReq_IMM IMM_50ms_Group02_CRC IMM_50ms_Group02_RC IMM_50ms_Group02_Reserved1 IMM_50ms_Group02_Reserved10 IMM_50ms_Group02_Reserved2 IMM_50ms_Group02_Reserved3 IMM_50ms_Group02_Reserved4 IMM_50ms_Group02_Reserved5 IMM_50ms_Group02_Reserved6 IMM_50ms_Group02_Reserved7 IMM_50ms_Group02_Reserved8 IMM_50ms_Group02_Reserved9 LeftEyeOccludeStatus_IMM MouthOccludeStatus_IMM OMSSts_IMM RightEyeOccludeStatus_IMM SpfngDet_IMM YawnStatus_IMM;
+SIG_GROUP_ 527 IIMM_50ms_Group02 1 : DMSSts_IMM DrvrAbnormBehvor_IMM DrvrAbnormConf_IMM DrvrDstcnConf_IMM DrvrDstcnStsINST_IMM DrvrDstcnSts_IMM DrvrFtgConf_IMM DrvrFtgLvlINST_IMM DrvrFtgLvl_IMM DrvrGazeRgn_IMM DrvrPrst_IMM EyeGazepitch_IMM EyeGazeyaw_IMM EyeOnRoad_IMM EyeOpenDegree_IMM EyeOpenStatus_IMM ILBRReq_IMM IMM_50ms_Group02_CRC IMM_50ms_Group02_RC IMM_50ms_Group02_Reserved1 IMM_50ms_Group02_Reserved10 IMM_50ms_Group02_Reserved143 IMM_50ms_Group02_Reserved151 IMM_50ms_Group02_Reserved159 IMM_50ms_Group02_Reserved2 IMM_50ms_Group02_Reserved3 IMM_50ms_Group02_Reserved4 IMM_50ms_Group02_Reserved5 IMM_50ms_Group02_Reserved6 IMM_50ms_Group02_Reserved7 IMM_50ms_Group02_Reserved8 IMM_50ms_Group02_Reserved9 LeftEyeOccludeStatus_IMM MouthOccludeStatus_IMM OMSSts_IMM RightEyeOccludeStatus_IMM SpfngDet_IMM YawnStatus_IMM;
 SIG_GROUP_ 486 IIPD_20ms_Group43 1 : ACCAccReqToqVal ACCSysFltSts_SCS FrtCarGoNotfr IPD_20ms_Group43_CRC IPD_20ms_Group43_RC IPD_20ms_Group43_Reserved1 IPD_20ms_Group43_Reserved2 IPD_20ms_Group43_Reserved3 IPD_20ms_Group43_Reserved4 IPD_20ms_Group43_Reserved5;
-SIG_GROUP_ 337 IIPD_20ms_Group60 1 : ALCSysFltSts ALCSysSts APASCSToqReqVal APAVehCrdnatAzmth APAVehCrdnatPosX APAVehCrdnatPosY AutoLaneChngLLaneSts AutoLaneChngRLaneSts ESSDirInd ESSDrvrTkovReq ESSSysFltSts ESSSysSts IPD_20ms_Group60_CRC IPD_20ms_Group60_RC IPD_20ms_Group60_Reserved1 IPD_20ms_Group60_Reserved10 IPD_20ms_Group60_Reserved11 IPD_20ms_Group60_Reserved2 IPD_20ms_Group60_Reserved3 IPD_20ms_Group60_Reserved4 IPD_20ms_Group60_Reserved5 IPD_20ms_Group60_Reserved6 IPD_20ms_Group60_Reserved7 IPD_20ms_Group60_Reserved8 IPD_20ms_Group60_Reserved9 NOPSysFltSts NOPSysSts_ZPD Parkngslottype PilotTkovMsgReq PrkgDstCtrlSwResp;
+SIG_GROUP_ 337 IIPD_20ms_Group60 1 : ALCSysFltSts ALCSysSts APASCSToqReqVal APAVehCrdnatAzmth APAVehCrdnatPosX APAVehCrdnatPosY AutoLaneChngLLaneSts AutoLaneChngRLaneSts ESSDirInd ESSDrvrTkovReq ESSSysFltSts ESSSysSts IPD_20ms_Group60_CRC IPD_20ms_Group60_RC IPD_20ms_Group60_Reserved1 IPD_20ms_Group60_Reserved10 IPD_20ms_Group60_Reserved11 IPD_20ms_Group60_Reserved2 IPD_20ms_Group60_Reserved4 IPD_20ms_Group60_Reserved5 IPD_20ms_Group60_Reserved6 IPD_20ms_Group60_Reserved7 IPD_20ms_Group60_Reserved8 IPD_20ms_Group60_Reserved9 NOPSysFltSts NOPSysSts_ZPD Parkngslottype PilotTkovMsgReq PrkgDstCtrlSwResp;
 SIG_GROUP_ 720 IIPD_50ms_Group14 1 : IPD_50ms_Group14_CRC IPD_50ms_Group14_RC IPD_50ms_Group14_Reserved1 IPD_50ms_Group14_Reserved10 IPD_50ms_Group14_Reserved11 IPD_50ms_Group14_Reserved2 IPD_50ms_Group14_Reserved3 IPD_50ms_Group14_Reserved4 IPD_50ms_Group14_Reserved5 IPD_50ms_Group14_Reserved6 IPD_50ms_Group14_Reserved7 IPD_50ms_Group14_Reserved8 IPD_50ms_Group14_Reserved9 LADSInfoDispReq LADSInfoDispReqToICM LADSProgressBar SDWLSFObsRng SDWLSRObsRng SDWRSFObsRng SDWRSRObsRng;
 SIG_GROUP_ 733 IIPD_50ms_Group49 1 : APAEnRunReq IPD_50ms_Group49_CRC IPD_50ms_Group49_RC IPD_50ms_Group49_Reserved1 IPD_50ms_Group49_Reserved2 IPD_50ms_Group49_Reserved3 IPD_50ms_Group49_Reserved4 IPD_50ms_Group49_Reserved5 IPD_50ms_Group49_Reserved6 KeepPwrRsnIPD LADSAFnInd SysPwrMdCtrl;
 SIG_GROUP_ 1143 IIPD_Sporadic_TimeSync_Group 1 : SyncMsgCheckSum SyncMsgOVS SyncMsgSGW SyncMsgSequenceCounter SyncMsgTime SyncMsgTimeDomain SyncMsgType SyncMsgreserved;

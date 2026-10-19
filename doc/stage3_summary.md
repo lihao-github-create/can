@@ -6,7 +6,7 @@
 
 ## 1. 本阶段使用的文件
 
-- DBC：[BKPCANFD_split.dbc](../dbc/20260612-lb1-AS5PM-IPD_V5.0_DBC/20260612-lb1-AS5PM-IPD_V5.0_BKPCANFD_split.dbc)
+- DBC：[BKPCANFD_split.dbc](../dbc/dbc_out/20260825-lb1-AS5PR%26AS5PM%26AS5PR%20X1%26%E5%A4%A7%E9%80%9A%E5%B0%8FVAN-IPD_V6.1_BKPCANFD_split.dbc)
 - 练习脚本：[read_dbc.py](../exercises/stage3/read_dbc.py)
 - 本次安装并验证的 `cantools` 版本：45.0.0。
 
@@ -35,7 +35,7 @@ BO_ 805 ZXD_BKBCANFD_100ms_FrP257: 24 Vector__XXX
 上述报文中包含以下信号：
 
 ```text
- SG_ PEBSwReq : 135|1@0+ (1,0) [0|1] "null" IPD
+ SG_ PEBSwReq : 135|2@0+ (1,0) [0|3] "null" IPD
 ```
 
 | 内容 | 含义 |
@@ -159,10 +159,10 @@ raw = 0x5AB = 1451
 真实枚举定义：
 
 ```text
-VAL_ 805 PEBSwReq 0 "PEBSwReq_0_No_Request" 1 "PEBSwReq_1_Request";
+VAL_ 805 PEBSwReq 0 "PEBSwReq_0_No_Request" 1 "PEBSwReq_1_ON" 2 "PEBSwReq_2_OFF" 3 "PEBSwReq_3_Reserve";
 ```
 
-这为报文 805 中的 `PEBSwReq` 定义了数值含义：0 表示无请求，1 表示有请求。**有请求不等于对应动作已经执行。**
+这为报文 805 中的 `PEBSwReq` 定义了数值含义：0 表示无请求，1 表示开启，2 表示关闭，3 为保留值。**请求状态不等于对应动作已经执行。**
 
 真实属性赋值：
 
@@ -203,12 +203,12 @@ signal = message.get_signal_by_name("PEBSwReq")
 |---|---|---|
 | `message.length` | 24 | 报文字节数 |
 | `signal.start` | 135 | 起始位 |
-| `signal.length` | 1 | 信号 bit 数 |
+| `signal.length` | 2 | 信号 bit 数 |
 | `signal.byte_order` | `big_endian` | `@0` |
 | `signal.is_signed` | `False` | `+`，无符号 |
 | `signal.scale` | 1 | factor |
 | `signal.offset` | 0 | offset |
-| `signal.choices` | 0/1 对应的状态名称 | `VAL_` |
+| `signal.choices` | 0/1/2/3 对应的状态名称 | `VAL_` |
 
 运行命令（在项目根目录执行）：
 
@@ -239,9 +239,9 @@ for value in (0x00, 0x40, 0x80, 0x85):
 | Byte 16 | 数值 | 状态 |
 |---|---:|---|
 | `0x00` | 0 | `PEBSwReq_0_No_Request` |
-| `0x40` | 0 | `PEBSwReq_0_No_Request` |
-| `0x80` | 1 | `PEBSwReq_1_Request` |
-| `0x85` | 1 | `PEBSwReq_1_Request` |
+| `0x40` | 1 | `PEBSwReq_1_ON` |
+| `0x80` | 2 | `PEBSwReq_2_OFF` |
+| `0x85` | 2 | `PEBSwReq_2_OFF` |
 
 `decode_choices=False` 只关闭枚举文字转换，**不会关闭 factor 和 offset 换算**。本例系数为 1、偏移为 0，所以返回数值恰好等于原始值。
 

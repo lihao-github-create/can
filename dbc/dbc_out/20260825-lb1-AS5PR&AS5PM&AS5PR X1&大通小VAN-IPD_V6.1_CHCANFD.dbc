@@ -89,7 +89,7 @@ BO_ 956 FVCM_BKPCANFD_100ms_FrP05: 64 IPD
  SG_ Lane3_MarkerColor : 383|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ TLRWarning : 388|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ TLRMdSwDspCmd : 391|3@0+ (1,0) [0|7] "null" Vector__XXX
- SG_ SpdLmtOfstSetResp : 399|5@0+ (2,-20) [-20|42] "null" Vector__XXX
+ SG_ SpdLmtOfstSetResp : 399|6@0+ (1,-20) [-20|43] "null" Vector__XXX
  SG_ ACCDetObjHdngAng : 495|8@0+ (2,-180) [-180|330] "null" Vector__XXX
  SG_ CCSpdVcCmdCnfm : 503|3@0+ (1,0) [0|7] "null" Vector__XXX
 
@@ -312,6 +312,20 @@ BO_ 382 ICBAD_BKPCANFD_20ms_FrP07: 8 IPD
  SG_ AutodDrvngSysFlrStsV : 60|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ AutodDrvngSysFlrSts : 63|3@0+ (1,0) [0|7] "null" Vector__XXX
 
+BO_ 385 ICBAD_BKPCANFD_20ms_FrP09: 8 IPD
+ SG_ ICBAD_20ms_Group09_CRC : 7|8@0+ (1,0) [0|255] "null" Vector__XXX
+ SG_ ICBAD_20ms_Group09_RC : 11|4@0+ (1,0) [0|15] "null" Vector__XXX
+ SG_ NSAReqAVMDis : 12|1@0+ (1,0) [0|1] "null" Vector__XXX
+ SG_ NSADisFucSts : 15|3@0+ (1,0) [0|7] "null" Vector__XXX
+ SG_ ICBAD_20ms_Group09_Reserved1 : 17|2@0+ (1,0) [0|3] "null" Vector__XXX
+ SG_ NSABacSysSts : 20|3@0+ (1,0) [0|7] "null" Vector__XXX
+ SG_ NSAForSysSts : 23|3@0+ (1,0) [0|7] "null" Vector__XXX
+ SG_ ICBAD_20ms_Group09_Reserved2 : 31|8@0+ (1,0) [0|255] "null" Vector__XXX
+ SG_ ICBAD_20ms_Group09_Reserved3 : 39|8@0+ (1,0) [0|255] "null" Vector__XXX
+ SG_ ICBAD_20ms_Group09_Reserved4 : 47|8@0+ (1,0) [0|255] "null" Vector__XXX
+ SG_ ICBAD_20ms_Group09_Reserved5 : 55|8@0+ (1,0) [0|255] "null" Vector__XXX
+ SG_ ICBAD_20ms_Group09_Reserved6 : 63|8@0+ (1,0) [0|255] "null" Vector__XXX
+
 BO_ 343 ICBAD_BKPCANFD_20ms_FrP46: 8 IPD
  SG_ ICBAD_20ms_Group46_CRC : 7|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ ICBAD_20ms_Group46_RC : 11|4@0+ (1,0) [0|15] "null" Vector__XXX
@@ -489,12 +503,13 @@ BO_ 807 IPD_BKPCANFD_100ms_FrP35: 64 IPD
  SG_ PilotSysUSSFltSts : 319|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ HORWarningEvtSts : 338|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ EORWarningEvtSts : 341|3@0+ (1,0) [0|7] "null" Vector__XXX
- SG_ SLIFUpdtIndResp_IPD : 342|1@0+ (1,0) [0|1] "null" Vector__XXX
  SG_ PosALCFailed : 351|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ SLIFSysFltSts : 355|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ ADS_ISAMsgReq : 359|4@0+ (1,0) [0|15] "null" Vector__XXX
+ SG_ SLIFUpdtIndResp_IPD : 361|2@0+ (1,0) [0|3] "null" Vector__XXX
  SG_ ADS_ISASysFltSts : 364|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ ADS_ISASysSts : 367|3@0+ (1,0) [0|7] "null" Vector__XXX
+ SG_ ParkngSpdSwResp : 375|2@0+ (1,0) [0|3] "null" Vector__XXX
 
 BO_ 486 IPD_BKPCANFD_20ms_FrP43: 8 IPD
  SG_ IPD_20ms_Group43_CRC : 7|8@0+ (1,0) [0|255] "null" Vector__XXX
@@ -515,10 +530,9 @@ BO_ 337 IPD_BKPCANFD_20ms_FrP60: 20 IPD
  SG_ IPD_20ms_Group60_Reserved1 : 23|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ IPD_20ms_Group60_Reserved2 : 31|8@0+ (1,0) [0|255] "null" Vector__XXX
  SG_ APASCSToqReqVal : 39|16@0+ (1,0) [0|65535] "Nm" Vector__XXX
- SG_ APAVehCrdnatPosY : 55|10@0+ (1,-512) [-512|511] "cm" Vector__XXX
+ SG_ APAVehCrdnatPosY : 55|13@0+ (1,-4096) [-4096|4095] "cm" Vector__XXX
  SG_ APAVehCrdnatAzmth : 56|9@0+ (1,0) [0|511] "degree" Vector__XXX
  SG_ ESSDirInd : 58|2@0+ (1,0) [0|3] "null" Vector__XXX
- SG_ IPD_20ms_Group60_Reserved3 : 61|3@0+ (1,0) [0|7] "null" Vector__XXX
  SG_ PilotTkovMsgReq : 75|4@0+ (1,0) [0|15] "null" Vector__XXX
  SG_ NOPSysSts_ZPD : 79|4@0+ (1,0) [0|15] "null" Vector__XXX
  SG_ PrkgDstCtrlSwResp : 81|2@0+ (1,0) [0|3] "null" Vector__XXX
@@ -648,153 +662,155 @@ BO_ 1216 ZXD_CHCANFD_NM: 8 Vector__XXX
  SG_ ZXD_NOI_CHCANFD : 39|16@0+ (1,0) [0|65535] "null" Vector__XXX
  SG_ ZXD_NKI_CHCANFD : 55|16@0+ (1,0) [0|65535] "null" Vector__XXX
 
-BO_ 2164461571 EPS_010ms_PDU03: 8 Vector__XXX
- SG_ EPS_010ms_Group03_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPS_010ms_Group03_RC : 11|4@0+ (1,0) [0|15] "null" IPD
- SG_ EPSAESReqResp : 15|4@0+ (1,0) [0|15] "null" IPD
- SG_ EPSAESStsInh : 23|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPSAESReqTorResp : 31|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
- SG_ EPS_010ms_Group03_Reserved1 : 32|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPSVMCAngRespSts : 35|3@0+ (1,0) [0|7] "null" IPD
- SG_ EPSAESReqTorRespV : 36|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPSVMCRespStsInh : 47|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPS_010ms_Group03_Reserved2 : 53|6@0+ (1,0) [0|63] "null" IPD
- SG_ EPSVMCCodrivingSts : 55|2@0+ (1,0) [0|3] "null" IPD
- SG_ EPS_010ms_Group03_Reserved3 : 63|8@0+ (1,0) [0|255] "null" IPD
+BO_ 429 EPS_CHCANFD_10ms_ConFrP01: 64 Vector__XXX
+ SG_ Header_ID M : 7|24@0- (1,0) [-8388608|8388607] "" Vector__XXX
+ SG_ Header_DLC : 31|8@0- (1,0) [-128|127] "" Vector__XXX
+ SG_ EPS_010ms_Group03_CRC m200707 : 39|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_010ms_Group03_RC m200707 : 43|4@0+ (1,0) [0|15] "null" IPD
+ SG_ EPSAESReqResp m200707 : 47|4@0+ (1,0) [0|15] "null" IPD
+ SG_ EPSAESStsInh m200707 : 55|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPSAESReqTorResp m200707 : 63|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
+ SG_ EPS_010ms_Group03_Reserved1 m200707 : 64|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPSVMCAngRespSts m200707 : 67|3@0+ (1,0) [0|7] "null" IPD
+ SG_ EPSAESReqTorRespV m200707 : 68|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPSVMCRespStsInh m200707 : 79|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_010ms_Group03_Reserved2 m200707 : 85|6@0+ (1,0) [0|63] "null" IPD
+ SG_ EPSVMCCodrivingSts m200707 : 87|2@0+ (1,0) [0|3] "null" IPD
+ SG_ EPS_010ms_Group03_Reserved3 m200707 : 95|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_10ms_Group01_CRC m468229 : 39|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_10ms_Group01_RC m468229 : 43|4@0+ (1,0) [0|15] "null" IPD
+ SG_ ActuRoadWhlAngV m468229 : 44|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ADASStrgDlvrdToqV m468229 : 45|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPSDrvngMdCtrlInh m468229 : 46|1@0+ (1,0) [0|1] "null" IPD
+ SG_ DrvrStrgDlvrdToqV m468229 : 47|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ActuPnonAng m468229 : 55|16@0+ (0.0625,-2048) [-2048.0000|2047.9375] "degree" IPD
+ SG_ ActuRoadWhlAng m468229 : 71|16@0+ (0.005,-163) [-163.000|164.675] "degree" IPD
+ SG_ StrgCustSetngDspCmd m468229 : 81|2@0+ (1,0) [0|3] "null" IPD
+ SG_ EPSPriyChnlFlrSts m468229 : 83|2@0+ (1,0) [0|3] "null" IPD
+ SG_ EPSFlrSts m468229 : 85|2@0+ (1,0) [0|3] "null" IPD
+ SG_ EPSCurntDrvMd m468229 : 87|2@0+ (1,0) [0|3] "null" IPD
+ SG_ ActuPnonAngV m468229 : 88|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPSToqValAldMaxV m468229 : 89|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPSLimMotToqV m468229 : 90|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPSActRetMotToqV m468229 : 91|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPS_10ms_Group01_Reserved1 m468229 : 92|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ChLKAAngReqResp m468229 : 95|3@0+ (1,0) [0|7] "null" IPD
+ SG_ EPS_10ms_Group01_Reserved2 m468229 : 99|4@0+ (1,0) [0|15] "null" IPD
+ SG_ EPSToqValAldMinV m468229 : 100|1@0+ (1,0) [0|1] "null" IPD
+ SG_ CHLKAHptResp m468229 : 103|3@0+ (1,0) [0|7] "null" IPD
+ SG_ EPS_10ms_Group01_Reserved3 m468229 : 111|8@0+ (1,0) [0|255] "null" IPD
+ SG_ ADASStrgDlvrdToq m468229 : 114|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
+ SG_ EPS_10ms_Group01_Reserved4 m468229 : 116|2@0+ (1,0) [0|3] "null" IPD
+ SG_ ChLKAToqReqResp m468229 : 119|3@0+ (1,0) [0|7] "null" IPD
+ SG_ EPSToqValAldMax m468229 : 130|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
+ SG_ EPSCoDrivingSts m468229 : 132|2@0+ (1,0) [0|3] "null" IPD
+ SG_ EPS_10ms_Group01_Reserved5 m468229 : 135|3@0+ (1,0) [0|7] "null" IPD
+ SG_ EPSToqValAldMin m468229 : 146|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
+ SG_ EPS_10ms_Group01_Reserved6 m468229 : 151|5@0+ (1,0) [0|31] "null" IPD
+ SG_ EPSActRetMotToq m468229 : 167|16@0+ (0.00097656,-32) [-32.00000000|31.99885960] "Nm" IPD
+ SG_ EPS_10ms_Group01_Reserved7 m468229 : 183|8@0+ (1,0) [0|255] "null" IPD
+ SG_ DrvrStrgDlvrdToq m468229 : 191|12@0+ (0.01,-20.48) [-20.48|20.47] "Nm" IPD
+ SG_ EPS_10ms_Group01_Reserved8 m468229 : 195|4@0+ (1,0) [0|15] "null" IPD
+ SG_ EPS_10ms_Group01_Reserved9 m468229 : 207|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPSLimMotToq m468229 : 215|16@0+ (0.00097656,-32) [-32.00000000|31.99885960] "Nm" IPD
+ SG_ EPS_10ms_Group02_CRC m468230 : 39|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_10ms_Group02_RC m468230 : 43|4@0+ (1,0) [0|15] "null" IPD
+ SG_ EPSAIPkgAngReqResp m468230 : 47|4@0+ (1,0) [0|15] "null" IPD
+ SG_ EPSAIPkgAngReqRespInh m468230 : 55|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPSAIPltAngRespStsInh m468230 : 63|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_10ms_Group02_Reserved1 m468230 : 66|3@0+ (1,0) [0|7] "null" IPD
+ SG_ EPSAIPltAvlLvl m468230 : 68|2@0+ (1,0) [0|3] "null" IPD
+ SG_ EPSAIPltAngRespSts m468230 : 71|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ActuRoadWhlAngGrdV m468230 : 72|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EPS_10ms_Group02_Reserved2 m468230 : 78|6@0+ (1,0) [0|63] "null" IPD
+ SG_ EPSAIPltCtrlChannel m468230 : 79|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ActuRoadWhlAngGrd m468230 : 87|16@0+ (0.005,-163) [-163.000|164.675] "deg_s" IPD
 
-BO_ 2164729093 EPS_10ms_PDU01: 24 Vector__XXX
- SG_ EPS_10ms_Group01_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPS_10ms_Group01_RC : 11|4@0+ (1,0) [0|15] "null" IPD
- SG_ ActuRoadWhlAngV : 12|1@0+ (1,0) [0|1] "null" IPD
- SG_ ADASStrgDlvrdToqV : 13|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPSDrvngMdCtrlInh : 14|1@0+ (1,0) [0|1] "null" IPD
- SG_ DrvrStrgDlvrdToqV : 15|1@0+ (1,0) [0|1] "null" IPD
- SG_ ActuPnonAng : 23|16@0+ (0.0625,-2048) [-2048.0000|2047.9375] "degree" IPD
- SG_ ActuRoadWhlAng : 39|16@0+ (0.005,-163) [-163.000|164.675] "degree" IPD
- SG_ StrgCustSetngDspCmd : 49|2@0+ (1,0) [0|3] "null" IPD
- SG_ EPSPriyChnlFlrSts : 51|2@0+ (1,0) [0|3] "null" IPD
- SG_ EPSFlrSts : 53|2@0+ (1,0) [0|3] "null" IPD
- SG_ EPSCurntDrvMd : 55|2@0+ (1,0) [0|3] "null" IPD
- SG_ ActuPnonAngV : 56|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPSToqValAldMaxV : 57|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPSLimMotToqV : 58|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPSActRetMotToqV : 59|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPS_10ms_Group01_Reserved1 : 60|1@0+ (1,0) [0|1] "null" IPD
- SG_ ChLKAAngReqResp : 63|3@0+ (1,0) [0|7] "null" IPD
- SG_ EPS_10ms_Group01_Reserved2 : 67|4@0+ (1,0) [0|15] "null" IPD
- SG_ EPSToqValAldMinV : 68|1@0+ (1,0) [0|1] "null" IPD
- SG_ CHLKAHptResp : 71|3@0+ (1,0) [0|7] "null" IPD
- SG_ EPS_10ms_Group01_Reserved3 : 79|8@0+ (1,0) [0|255] "null" IPD
- SG_ ADASStrgDlvrdToq : 82|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
- SG_ EPS_10ms_Group01_Reserved4 : 84|2@0+ (1,0) [0|3] "null" IPD
- SG_ ChLKAToqReqResp : 87|3@0+ (1,0) [0|7] "null" IPD
- SG_ EPSToqValAldMax : 98|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
- SG_ EPSCoDrivingSts : 100|2@0+ (1,0) [0|3] "null" IPD
- SG_ EPS_10ms_Group01_Reserved5 : 103|3@0+ (1,0) [0|7] "null" IPD
- SG_ EPSToqValAldMin : 114|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm" IPD
- SG_ EPS_10ms_Group01_Reserved6 : 119|5@0+ (1,0) [0|31] "null" IPD
- SG_ EPSActRetMotToq : 135|16@0+ (0.00097656,-32) [-32.00000000|31.99885960] "Nm" IPD
- SG_ EPS_10ms_Group01_Reserved7 : 151|8@0+ (1,0) [0|255] "null" IPD
- SG_ DrvrStrgDlvrdToq : 159|12@0+ (0.01,-20.48) [-20.48|20.47] "Nm" IPD
- SG_ EPS_10ms_Group01_Reserved8 : 163|4@0+ (1,0) [0|15] "null" IPD
- SG_ EPS_10ms_Group01_Reserved9 : 175|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPSLimMotToq : 183|16@0+ (0.00097656,-32) [-32.00000000|31.99885960] "Nm" IPD
+BO_ 173 EPS_CHCANFD_10ms_ConFrP05: 64 Vector__XXX
+ SG_ Header_ID M : 7|24@0- (1,0) [-8388608|8388607] "" Vector__XXX
+ SG_ Header_DLC : 31|8@0- (1,0) [-128|127] "" Vector__XXX
+ SG_ EPS_10ms_Group05_CRC m468244 : 39|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_10ms_Group05_RC m468244 : 43|4@0+ (1,0) [0|15] "null" IPD
+ SG_ StrgWhlAngSnsrFlt m468244 : 44|1@0+ (1,0) [0|1] "null" IPD
+ SG_ StrgWhlAngV m468244 : 45|1@0+ (1,0) [0|1] "null" IPD
+ SG_ StrgWhlAngSnsrMultCapb m468244 : 46|1@0+ (1,0) [0|1] "null" IPD
+ SG_ StrgWhlAngSnsrInid m468244 : 47|1@0+ (1,0) [0|1] "null" IPD
+ SG_ StrgWhlAng m468244 : 55|16@0+ (0.0625,-2048) [-2048.0000|2047.9375] "degree" IPD
+ SG_ StrgWhlAngGrd m468244 : 71|12@0+ (1,-2048) [-2048|2047] "degree/s" IPD
+ SG_ EPS_10ms_Group05_Reserved1 m468244 : 73|2@0+ (1,0) [0|3] "null" IPD
+ SG_ StrgWhlAngSnsrCalSts m468244 : 75|2@0+ (1,0) [0|3] "null" IPD
+ SG_ EPS_10ms_Group05_Reserved2 m468244 : 87|8@0+ (1,0) [0|255] "null" IPD
+ SG_ EPS_10ms_Group05_Reserved3 m468244 : 95|8@0+ (1,0) [0|255] "null" IPD
 
-BO_ 2164729094 EPS_10ms_PDU02: 8 Vector__XXX
- SG_ EPS_10ms_Group02_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPS_10ms_Group02_RC : 11|4@0+ (1,0) [0|15] "null" IPD
- SG_ EPSAIPkgAngReqResp : 15|4@0+ (1,0) [0|15] "null" IPD
- SG_ EPSAIPkgAngReqRespInh : 23|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPSAIPltAngRespStsInh : 31|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPS_10ms_Group02_Reserved1 : 34|3@0+ (1,0) [0|7] "null" IPD
- SG_ EPSAIPltAvlLvl : 36|2@0+ (1,0) [0|3] "null" IPD
- SG_ EPSAIPltAngRespSts : 39|3@0+ (1,0) [0|7] "null" IPD
- SG_ ActuRoadWhlAngGrdV : 40|1@0+ (1,0) [0|1] "null" IPD
- SG_ EPS_10ms_Group02_Reserved2 : 46|6@0+ (1,0) [0|63] "null" IPD
- SG_ EPSAIPltCtrlChannel : 47|1@0+ (1,0) [0|1] "null" IPD
- SG_ ActuRoadWhlAngGrd : 55|16@0+ (0.005,-163) [-163.000|164.675] "deg_s" IPD
+BO_ 184 IBS_CHCANFD_10ms_ConFrP04: 64 Vector__XXX
+ SG_ Header_ID M : 7|24@0- (1,0) [-8388608|8388607] "" Vector__XXX
+ SG_ Header_DLC : 31|8@0- (1,0) [-128|127] "" Vector__XXX
+ SG_ IBS_10ms_Group04_CRC m468231 : 39|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IBS_10ms_Group04_RC m468231 : 43|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IBS_10ms_Group04_Reserved1 m468231 : 47|4@0+ (1,0) [0|15] "null" IPD
+ SG_ BrkPdlPos m468231 : 55|8@0+ (0.392157,0) [0.000000|100.000035] "Percent" IPD
+ SG_ IBS_10ms_Group04_Reserved3 m468231 : 59|4@0+ (1,0) [0|15] "null" IPD
+ SG_ EPBSysBrkLghtsReqdA m468231 : 60|1@0+ (1,0) [0|1] "null" IPD
+ SG_ IBS_10ms_Group04_Reserved2 m468231 : 61|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkSysBrkLghtsReqd m468231 : 62|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkPdlPosV m468231 : 63|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ChSysEnToqReqProtn m468231 : 71|14@0+ (1,0) [0|16383] "null" IPD
+ SG_ IBS_10ms_Group04_Reserved4 m468231 : 73|2@0+ (1,0) [0|3] "null" IPD
+ SG_ IBS_10ms_Group04_Reserved5 m468231 : 87|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IBS_10ms_Group04_Reserved6 m468231 : 95|8@0+ (1,0) [0|255] "null" IPD
 
-BO_ 2164729108 EPS_10ms_PDU05: 8 Vector__XXX
- SG_ EPS_10ms_Group05_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPS_10ms_Group05_RC : 11|4@0+ (1,0) [0|15] "null" IPD
- SG_ StrgWhlAngSnsrFlt : 12|1@0+ (1,0) [0|1] "null" IPD
- SG_ StrgWhlAngV : 13|1@0+ (1,0) [0|1] "null" IPD
- SG_ StrgWhlAngSnsrMultCapb : 14|1@0+ (1,0) [0|1] "null" IPD
- SG_ StrgWhlAngSnsrInid : 15|1@0+ (1,0) [0|1] "null" IPD
- SG_ StrgWhlAng : 23|16@0+ (0.0625,-2048) [-2048.0000|2047.9375] "degree" IPD
- SG_ StrgWhlAngGrd : 39|12@0+ (1,-2048) [-2048|2047] "degree/s" IPD
- SG_ EPS_10ms_Group05_Reserved1 : 41|2@0+ (1,0) [0|3] "null" IPD
- SG_ StrgWhlAngSnsrCalSts : 43|2@0+ (1,0) [0|3] "null" IPD
- SG_ EPS_10ms_Group05_Reserved2 : 55|8@0+ (1,0) [0|255] "null" IPD
- SG_ EPS_10ms_Group05_Reserved3 : 63|8@0+ (1,0) [0|255] "null" IPD
-
-BO_ 2164729095 IBS_10ms_PDU04: 8 Vector__XXX
- SG_ IBS_10ms_Group04_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ IBS_10ms_Group04_RC : 11|4@0+ (1,0) [0|15] "null" IPD
- SG_ IBS_10ms_Group04_Reserved1 : 15|4@0+ (1,0) [0|15] "null" IPD
- SG_ BrkPdlPos : 23|8@0+ (0.392157,0) [0.000000|100.000035] "Percent" IPD
- SG_ IBS_10ms_Group04_Reserved3 : 27|4@0+ (1,0) [0|15] "null" IPD
- SG_ EPBSysBrkLghtsReqdA : 28|1@0+ (1,0) [0|1] "null" IPD
- SG_ IBS_10ms_Group04_Reserved2 : 29|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkSysBrkLghtsReqd : 30|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkPdlPosV : 31|1@0+ (1,0) [0|1] "null" IPD
- SG_ ChSysEnToqReqProtn : 39|14@0+ (1,0) [0|16383] "null" IPD
- SG_ IBS_10ms_Group04_Reserved4 : 41|2@0+ (1,0) [0|3] "null" IPD
- SG_ IBS_10ms_Group04_Reserved5 : 55|8@0+ (1,0) [0|255] "null" IPD
- SG_ IBS_10ms_Group04_Reserved6 : 63|8@0+ (1,0) [0|255] "null" IPD
-
-BO_ 2164729097 IBS_20ms_PDU10: 8 Vector__XXX
- SG_ IBS_20ms_Group10_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ IBS_20ms_Group10_RC : 11|4@0+ (1,0) [0|15] "null" IPD
- SG_ BrkPdlDrvrAppdPrsV : 12|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkPdlDrvrAppdPrsDetV : 13|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkPdlDrvrAppdPrsDet : 14|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkDiscTemSts : 15|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkPdlDrvrAppdPrs : 23|8@0+ (75,0) [0|19125] "kPa" IPD
- SG_ BrkPdlMdlSts : 25|2@0+ (1,0) [0|3] "null" IPD
- SG_ DrvrReqOtptRodTrvlSts : 27|2@0+ (1,0) [0|3] "null" IPD
- SG_ BrkPdlSimltdPrsV : 28|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkPdlAppd : 29|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkPdlAppdV : 31|2@0+ (1,0) [0|3] "null" IPD
- SG_ BrkPdlSimltdPrs : 39|8@0+ (75,0) [0|19125] "kPa" IPD
- SG_ BrkFludLvlLowV : 40|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkFludLvlLow : 41|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkPdlMdlActSts : 43|2@0+ (1,0) [0|3] "null" IPD
- SG_ IBS_20ms_Group10_Reserved1 : 47|4@0+ (1,0) [0|15] "null" IPD
- SG_ DrvrReqOtptRodTrvl : 51|12@0+ (0.015625,-5) [-5.000000|58.984375] "mm" IPD
- SG_ IBS_20ms_Group10_Reserved2 : 55|4@0+ (1,0) [0|15] "null" IPD
-
-BO_ 2164729104 IBS_20ms_PDU13: 8 Vector__XXX
- SG_ IBS_20ms_Group13_CRC : 7|8@0+ (1,0) [0|255] "null" IPD
- SG_ IBS_20ms_Group13_RC : 11|4@0+ (1,0) [0|15] "null" IPD
- SG_ ACCBrkngA : 12|1@0+ (1,0) [0|1] "null" IPD
- SG_ ChAEBDclReqResp : 15|3@0+ (1,0) [0|7] "null" IPD
- SG_ ChACCReqFlrSts : 17|2@0+ (1,0) [0|3] "null" IPD
- SG_ ChACCAccReqResp : 20|3@0+ (1,0) [0|7] "null" IPD
- SG_ ChAEBPrflReqResp : 23|3@0+ (1,0) [0|7] "null" IPD
- SG_ AutodDrvngSysMdReqRespV : 24|1@0+ (1,0) [0|1] "null" IPD
- SG_ AutodDrvngSysMdReqResp : 25|1@0+ (1,0) [0|1] "null" IPD
- SG_ ChAEBHydBrkAstReqResp : 28|3@0+ (1,0) [0|7] "null" IPD
- SG_ ChAEBBrkJerkReqResp : 31|3@0+ (1,0) [0|7] "null" IPD
- SG_ SCSAutodDrvngSysSts : 34|3@0+ (1,0) [0|7] "null" IPD
- SG_ SCSAPAAcclAV : 35|1@0+ (1,0) [0|1] "null" IPD
- SG_ SCSAPAAcclA : 36|1@0+ (1,0) [0|1] "null" IPD
- SG_ ExtnlBrkPrioV : 37|1@0+ (1,0) [0|1] "null" IPD
- SG_ ExtnlBrkPrio : 38|1@0+ (1,0) [0|1] "null" IPD
- SG_ EmgcBrkReqdByIECUSts : 39|1@0+ (1,0) [0|1] "null" IPD
- SG_ TCSDrvrItnt : 40|1@0+ (1,0) [0|1] "null" IPD
- SG_ MultColBrkAvlblySts : 41|1@0+ (1,0) [0|1] "null" IPD
- SG_ ChRCTBDclReqResp : 44|3@0+ (1,0) [0|7] "null" IPD
- SG_ SCSVehHoldAV : 45|1@0+ (1,0) [0|1] "null" IPD
- SG_ SCSVehHoldA : 46|1@0+ (1,0) [0|1] "null" IPD
- SG_ SCSAutodDrvngSysStsV : 47|1@0+ (1,0) [0|1] "null" IPD
- SG_ VehSdslStsV : 48|1@0+ (1,0) [0|1] "null" IPD
- SG_ ChRCTBPrflReqResp : 51|3@0+ (1,0) [0|7] "null" IPD
- SG_ WhlBrkPrsSts : 52|1@0+ (1,0) [0|1] "null" IPD
- SG_ BrkSysRddySysSts : 53|1@0+ (1,0) [0|1] "null" IPD
- SG_ VehSdslSts : 55|2@0+ (1,0) [0|3] "null" IPD
- SG_ ChEBADclReqResp : 60|5@0+ (1,0) [0|31] "null" IPD
- SG_ IBSAPASysFltSts : 63|3@0+ (1,0) [0|7] "null" IPD
+BO_ 394 IBS_CHCANFD_20ms_ConFrP10: 64 Vector__XXX
+ SG_ Header_ID M : 7|24@0- (1,0) [-8388608|8388607] "" Vector__XXX
+ SG_ Header_DLC : 31|8@0- (1,0) [-128|127] "" Vector__XXX
+ SG_ IBS_20ms_Group10_CRC m468233 : 39|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IBS_20ms_Group10_RC m468233 : 43|4@0+ (1,0) [0|15] "null" IPD
+ SG_ BrkPdlDrvrAppdPrsV m468233 : 44|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkPdlDrvrAppdPrsDetV m468233 : 45|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkPdlDrvrAppdPrsDet m468233 : 46|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkDiscTemSts m468233 : 47|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkPdlDrvrAppdPrs m468233 : 55|8@0+ (75,0) [0|19125] "kPa" IPD
+ SG_ BrkPdlMdlSts m468233 : 57|2@0+ (1,0) [0|3] "null" IPD
+ SG_ DrvrReqOtptRodTrvlSts m468233 : 59|2@0+ (1,0) [0|3] "null" IPD
+ SG_ BrkPdlSimltdPrsV m468233 : 60|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkPdlAppd m468233 : 61|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkPdlAppdV m468233 : 63|2@0+ (1,0) [0|3] "null" IPD
+ SG_ BrkPdlSimltdPrs m468233 : 71|8@0+ (75,0) [0|19125] "kPa" IPD
+ SG_ BrkFludLvlLowV m468233 : 72|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkFludLvlLow m468233 : 73|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkPdlMdlActSts m468233 : 75|2@0+ (1,0) [0|3] "null" IPD
+ SG_ IBS_20ms_Group10_Reserved1 m468233 : 79|4@0+ (1,0) [0|15] "null" IPD
+ SG_ DrvrReqOtptRodTrvl m468233 : 83|12@0+ (0.015625,-5) [-5.000000|58.984375] "mm" IPD
+ SG_ IBS_20ms_Group10_Reserved2 m468233 : 87|4@0+ (1,0) [0|15] "null" IPD
+ SG_ IBS_20ms_Group13_CRC m468240 : 39|8@0+ (1,0) [0|255] "null" IPD
+ SG_ IBS_20ms_Group13_RC m468240 : 43|4@0+ (1,0) [0|15] "null" IPD
+ SG_ ACCBrkngA m468240 : 44|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ChAEBDclReqResp m468240 : 47|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ChACCReqFlrSts m468240 : 49|2@0+ (1,0) [0|3] "null" IPD
+ SG_ ChACCAccReqResp m468240 : 52|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ChAEBPrflReqResp m468240 : 55|3@0+ (1,0) [0|7] "null" IPD
+ SG_ AutodDrvngSysMdReqRespV m468240 : 56|1@0+ (1,0) [0|1] "null" IPD
+ SG_ AutodDrvngSysMdReqResp m468240 : 57|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ChAEBHydBrkAstReqResp m468240 : 60|3@0+ (1,0) [0|7] "null" IPD
+ SG_ ChAEBBrkJerkReqResp m468240 : 63|3@0+ (1,0) [0|7] "null" IPD
+ SG_ SCSAutodDrvngSysSts m468240 : 66|3@0+ (1,0) [0|7] "null" IPD
+ SG_ SCSAPAAcclAV m468240 : 67|1@0+ (1,0) [0|1] "null" IPD
+ SG_ SCSAPAAcclA m468240 : 68|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ExtnlBrkPrioV m468240 : 69|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ExtnlBrkPrio m468240 : 70|1@0+ (1,0) [0|1] "null" IPD
+ SG_ EmgcBrkReqdByIECUSts m468240 : 71|1@0+ (1,0) [0|1] "null" IPD
+ SG_ TCSDrvrItnt m468240 : 72|1@0+ (1,0) [0|1] "null" IPD
+ SG_ MultColBrkAvlblySts m468240 : 73|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ChRCTBDclReqResp m468240 : 76|3@0+ (1,0) [0|7] "null" IPD
+ SG_ SCSVehHoldAV m468240 : 77|1@0+ (1,0) [0|1] "null" IPD
+ SG_ SCSVehHoldA m468240 : 78|1@0+ (1,0) [0|1] "null" IPD
+ SG_ SCSAutodDrvngSysStsV m468240 : 79|1@0+ (1,0) [0|1] "null" IPD
+ SG_ VehSdslStsV m468240 : 80|1@0+ (1,0) [0|1] "null" IPD
+ SG_ ChRCTBPrflReqResp m468240 : 83|3@0+ (1,0) [0|7] "null" IPD
+ SG_ WhlBrkPrsSts m468240 : 84|1@0+ (1,0) [0|1] "null" IPD
+ SG_ BrkSysRddySysSts m468240 : 85|1@0+ (1,0) [0|1] "null" IPD
+ SG_ VehSdslSts m468240 : 87|2@0+ (1,0) [0|3] "null" IPD
+ SG_ ChEBADclReqResp m468240 : 92|5@0+ (1,0) [0|31] "null" IPD
+ SG_ IBSAPASysFltSts m468240 : 95|3@0+ (1,0) [0|7] "null" IPD
 
 
 
@@ -919,9 +935,15 @@ BA_ "VFrameFormat" BO_ 507 14;
 BA_ "FrameTriggeringName" BO_ 382 "ICBAD_BKPCANFD_20ms_FrP07";
 BA_ "GenMsgCycleTime" BO_ 382 20;
 BA_ "GenMsgSendType" BO_ 382 0;
-BA_ "GenMsgStartValue" BO_ 382 "000005a40000f000";
+BA_ "GenMsgStartValue" BO_ 382 "000006b10000f000";
 BA_ "PduName" BO_ 382 "ICBAD_20ms_PDU07";
 BA_ "VFrameFormat" BO_ 382 14;
+BA_ "FrameTriggeringName" BO_ 385 "ICBAD_BKPCANFD_20ms_FrP09";
+BA_ "GenMsgCycleTime" BO_ 385 20;
+BA_ "GenMsgSendType" BO_ 385 0;
+BA_ "GenMsgStartValue" BO_ 385 "000003ffffffffff";
+BA_ "PduName" BO_ 385 "ICBAD_20ms_PDU09";
+BA_ "VFrameFormat" BO_ 385 14;
 BA_ "FrameTriggeringName" BO_ 343 "ICBAD_BKPCANFD_20ms_FrP46";
 BA_ "GenMsgCycleTime" BO_ 343 20;
 BA_ "GenMsgSendType" BO_ 343 0;
@@ -996,7 +1018,7 @@ BA_ "VFrameFormat" BO_ 486 14;
 BA_ "FrameTriggeringName" BO_ 337 "IPD_BKPCANFD_20ms_FrP60";
 BA_ "GenMsgCycleTime" BO_ 337 20;
 BA_ "GenMsgSendType" BO_ 337 0;
-BA_ "GenMsgStartValue" BO_ 337 "0000ffff000000380000010000071d1fffffffff";
+BA_ "GenMsgStartValue" BO_ 337 "0000ffff000000000000010000071d1fffffffff";
 BA_ "PduName" BO_ 337 "IPD_20ms_PDU60";
 BA_ "VFrameFormat" BO_ 337 14;
 BA_ "FrameTriggeringName" BO_ 733 "IPD_BKPCANFD_50ms_FrP49";
@@ -1032,41 +1054,26 @@ BA_ "GenMsgSendType" BO_ 1216 1;
 BA_ "GenMsgStartValue" BO_ 1216 "0000000000000000";
 BA_ "PduName" BO_ 1216 "NmPDU_CHCANFD_ZXD";
 BA_ "VFrameFormat" BO_ 1216 14;
-BA_ "FrameTriggeringName" BO_ 2164461571 "EPS_CHCANFD_10ms_ConFrP01__EPS_010ms_PDU03";
-BA_ "GenMsgCycleTime" BO_ 2164461571 10;
-BA_ "GenMsgSendType" BO_ 2164461571 1;
-BA_ "PduName" BO_ 2164461571 "EPS_010ms_PDU03";
-BA_ "VFrameFormat" BO_ 2164461571 15;
-BA_ "FrameTriggeringName" BO_ 2164729093 "EPS_CHCANFD_10ms_ConFrP01__EPS_10ms_PDU01";
-BA_ "GenMsgCycleTime" BO_ 2164729093 10;
-BA_ "GenMsgSendType" BO_ 2164729093 1;
-BA_ "PduName" BO_ 2164729093 "EPS_10ms_PDU01";
-BA_ "VFrameFormat" BO_ 2164729093 15;
-BA_ "FrameTriggeringName" BO_ 2164729094 "EPS_CHCANFD_10ms_ConFrP01__EPS_10ms_PDU02";
-BA_ "GenMsgCycleTime" BO_ 2164729094 10;
-BA_ "GenMsgSendType" BO_ 2164729094 1;
-BA_ "PduName" BO_ 2164729094 "EPS_10ms_PDU02";
-BA_ "VFrameFormat" BO_ 2164729094 15;
-BA_ "FrameTriggeringName" BO_ 2164729108 "EPS_CHCANFD_10ms_ConFrP05__EPS_10ms_PDU05";
-BA_ "GenMsgCycleTime" BO_ 2164729108 10;
-BA_ "GenMsgSendType" BO_ 2164729108 1;
-BA_ "PduName" BO_ 2164729108 "EPS_10ms_PDU05";
-BA_ "VFrameFormat" BO_ 2164729108 15;
-BA_ "FrameTriggeringName" BO_ 2164729095 "IBS_CHCANFD_10ms_ConFrP04__IBS_10ms_PDU04";
-BA_ "GenMsgCycleTime" BO_ 2164729095 10;
-BA_ "GenMsgSendType" BO_ 2164729095 1;
-BA_ "PduName" BO_ 2164729095 "IBS_10ms_PDU04";
-BA_ "VFrameFormat" BO_ 2164729095 15;
-BA_ "FrameTriggeringName" BO_ 2164729097 "IBS_CHCANFD_20ms_ConFrP10__IBS_20ms_PDU10";
-BA_ "GenMsgCycleTime" BO_ 2164729097 20;
-BA_ "GenMsgSendType" BO_ 2164729097 1;
-BA_ "PduName" BO_ 2164729097 "IBS_20ms_PDU10";
-BA_ "VFrameFormat" BO_ 2164729097 15;
-BA_ "FrameTriggeringName" BO_ 2164729104 "IBS_CHCANFD_20ms_ConFrP10__IBS_20ms_PDU13";
-BA_ "GenMsgCycleTime" BO_ 2164729104 20;
-BA_ "GenMsgSendType" BO_ 2164729104 1;
-BA_ "PduName" BO_ 2164729104 "IBS_20ms_PDU13";
-BA_ "VFrameFormat" BO_ 2164729104 15;
+BA_ "FrameTriggeringName" BO_ 429 "EPS_CHCANFD_10ms_ConFrP01";
+BA_ "GenMsgCycleTime" BO_ 429 10;
+BA_ "GenMsgSendType" BO_ 429 1;
+BA_ "PduName" BO_ 429 "EPS_ZONE_CHCANFD_10ms_Container01";
+BA_ "VFrameFormat" BO_ 429 14;
+BA_ "FrameTriggeringName" BO_ 173 "EPS_CHCANFD_10ms_ConFrP05";
+BA_ "GenMsgCycleTime" BO_ 173 10;
+BA_ "GenMsgSendType" BO_ 173 1;
+BA_ "PduName" BO_ 173 "SAS_ZONE_CHCANFD_10ms_Container01";
+BA_ "VFrameFormat" BO_ 173 14;
+BA_ "FrameTriggeringName" BO_ 184 "IBS_CHCANFD_10ms_ConFrP04";
+BA_ "GenMsgCycleTime" BO_ 184 10;
+BA_ "GenMsgSendType" BO_ 184 1;
+BA_ "PduName" BO_ 184 "IBS_CHCANFD_10ms_Container01";
+BA_ "VFrameFormat" BO_ 184 14;
+BA_ "FrameTriggeringName" BO_ 394 "IBS_CHCANFD_20ms_ConFrP10";
+BA_ "GenMsgCycleTime" BO_ 394 20;
+BA_ "GenMsgSendType" BO_ 394 1;
+BA_ "PduName" BO_ 394 "IBS_CHCANFD_20ms_Container01";
+BA_ "VFrameFormat" BO_ 394 14;
 
 BA_ "CompuMethodName" SG_ 430 EPS_20ms_Group03_CRC "EPS_20ms_Group03_CRC";
 BA_ "ISignalName" SG_ 430 EPS_20ms_Group03_CRC "IEPS_20ms_Group03_CRC";
@@ -1364,7 +1371,7 @@ BA_ "ISignalName" SG_ 956 TLRMdSwDspCmd "ITLRMdSwDspCmd";
 BA_ "LongName" SG_ 956 TLRMdSwDspCmd "Traffic_lights_recognition_Mode_Switch_Display_Command";
 BA_ "SysSignalName" SG_ 956 TLRMdSwDspCmd "TLRMdSwDspCmd";
 BA_ "CompuMethodName" SG_ 956 SpdLmtOfstSetResp "SpdLmtOfstSetResp";
-BA_ "GenSigStartValue" SG_ 956 SpdLmtOfstSetResp 10;
+BA_ "GenSigStartValue" SG_ 956 SpdLmtOfstSetResp 20;
 BA_ "ISignalName" SG_ 956 SpdLmtOfstSetResp "ISpdLmtOfstSetResp";
 BA_ "LongName" SG_ 956 SpdLmtOfstSetResp "Speed Limit Offset Set Response";
 BA_ "SysSignalName" SG_ 956 SpdLmtOfstSetResp "SpdLmtOfstSetResp";
@@ -2089,7 +2096,7 @@ BA_ "ISignalName" SG_ 382 ACCAccReqSts_CH "IACCAccReqSts_CH";
 BA_ "LongName" SG_ 382 ACCAccReqSts_CH "Adaptive Cruise Control Acceleration Request Status";
 BA_ "SysSignalName" SG_ 382 ACCAccReqSts_CH "ACCAccReqSts_CH";
 BA_ "CompuMethodName" SG_ 382 ACCAccReqVal "ACCAccReqVal";
-BA_ "GenSigStartValue" SG_ 382 ACCAccReqVal 1444;
+BA_ "GenSigStartValue" SG_ 382 ACCAccReqVal 1713;
 BA_ "ISignalName" SG_ 382 ACCAccReqVal "IACCAccReqVal";
 BA_ "LongName" SG_ 382 ACCAccReqVal "Adaptive Cruise Control Acceleration Request Value";
 BA_ "SysSignalName" SG_ 382 ACCAccReqVal "ACCAccReqVal";
@@ -2161,6 +2168,54 @@ BA_ "CompuMethodName" SG_ 382 AutodDrvngSysFlrSts "AutodDrvngSysFlrSts";
 BA_ "ISignalName" SG_ 382 AutodDrvngSysFlrSts "IAutodDrvngSysFlrSts";
 BA_ "LongName" SG_ 382 AutodDrvngSysFlrSts "Automated Driving System Failure Status";
 BA_ "SysSignalName" SG_ 382 AutodDrvngSysFlrSts "AutodDrvngSysFlrSts";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_CRC "ICBAD_20ms_Group09_CRC";
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_CRC "IICBAD_20ms_Group09_CRC";
+BA_ "LongName" SG_ 385 ICBAD_20ms_Group09_CRC "ICBAD_20ms_Group09_CRC";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_CRC "ICBAD_20ms_Group09_CRC";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_RC "ICBAD_20ms_Group09_RC";
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_RC "IICBAD_20ms_Group09_RC";
+BA_ "LongName" SG_ 385 ICBAD_20ms_Group09_RC "ICBAD_20ms_Group09_RC";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_RC "ICBAD_20ms_Group09_RC";
+BA_ "CompuMethodName" SG_ 385 NSAReqAVMDis "NSAReqAVMDis";
+BA_ "ISignalName" SG_ 385 NSAReqAVMDis "INSAReqAVMDis";
+BA_ "LongName" SG_ 385 NSAReqAVMDis "NSA Request AVM Display";
+BA_ "SysSignalName" SG_ 385 NSAReqAVMDis "NSAReqAVMDis";
+BA_ "CompuMethodName" SG_ 385 NSADisFucSts "NSADisFucSts";
+BA_ "ISignalName" SG_ 385 NSADisFucSts "INSADisFucSts";
+BA_ "LongName" SG_ 385 NSADisFucSts "NSA Display Function Status";
+BA_ "SysSignalName" SG_ 385 NSADisFucSts "NSADisFucSts";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_Reserved1 "ICBAD_20ms_Group09_Reserved1";
+BA_ "GenSigStartValue" SG_ 385 ICBAD_20ms_Group09_Reserved1 3;
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_Reserved1 "IICBAD_20ms_Group09_Reserved1";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_Reserved1 "ICBAD_20ms_Group09_Reserved1";
+BA_ "CompuMethodName" SG_ 385 NSABacSysSts "NSABacSysSts";
+BA_ "ISignalName" SG_ 385 NSABacSysSts "INSABacSysSts";
+BA_ "LongName" SG_ 385 NSABacSysSts "NSA Backward Systerm Status";
+BA_ "SysSignalName" SG_ 385 NSABacSysSts "NSABacSysSts";
+BA_ "CompuMethodName" SG_ 385 NSAForSysSts "NSAForSysSts";
+BA_ "ISignalName" SG_ 385 NSAForSysSts "INSAForSysSts";
+BA_ "LongName" SG_ 385 NSAForSysSts "NSA Forward Systerm Status";
+BA_ "SysSignalName" SG_ 385 NSAForSysSts "NSAForSysSts";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_Reserved2 "ICBAD_20ms_Group09_Reserved2";
+BA_ "GenSigStartValue" SG_ 385 ICBAD_20ms_Group09_Reserved2 255;
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_Reserved2 "IICBAD_20ms_Group09_Reserved2";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_Reserved2 "ICBAD_20ms_Group09_Reserved2";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_Reserved3 "ICBAD_20ms_Group09_Reserved3";
+BA_ "GenSigStartValue" SG_ 385 ICBAD_20ms_Group09_Reserved3 255;
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_Reserved3 "IICBAD_20ms_Group09_Reserved3";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_Reserved3 "ICBAD_20ms_Group09_Reserved3";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_Reserved4 "ICBAD_20ms_Group09_Reserved4";
+BA_ "GenSigStartValue" SG_ 385 ICBAD_20ms_Group09_Reserved4 255;
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_Reserved4 "IICBAD_20ms_Group09_Reserved4";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_Reserved4 "ICBAD_20ms_Group09_Reserved4";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_Reserved5 "ICBAD_20ms_Group09_Reserved5";
+BA_ "GenSigStartValue" SG_ 385 ICBAD_20ms_Group09_Reserved5 255;
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_Reserved5 "IICBAD_20ms_Group09_Reserved5";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_Reserved5 "ICBAD_20ms_Group09_Reserved5";
+BA_ "CompuMethodName" SG_ 385 ICBAD_20ms_Group09_Reserved6 "ICBAD_20ms_Group09_Reserved6";
+BA_ "GenSigStartValue" SG_ 385 ICBAD_20ms_Group09_Reserved6 255;
+BA_ "ISignalName" SG_ 385 ICBAD_20ms_Group09_Reserved6 "IICBAD_20ms_Group09_Reserved6";
+BA_ "SysSignalName" SG_ 385 ICBAD_20ms_Group09_Reserved6 "ICBAD_20ms_Group09_Reserved6";
 BA_ "CompuMethodName" SG_ 343 ICBAD_20ms_Group46_CRC "ICBAD_20ms_Group46_CRC";
 BA_ "ISignalName" SG_ 343 ICBAD_20ms_Group46_CRC "IICBAD_20ms_Group46_CRC";
 BA_ "LongName" SG_ 343 ICBAD_20ms_Group46_CRC "ICBAD_20ms_Group46_CRC";
@@ -2801,10 +2856,6 @@ BA_ "CompuMethodName" SG_ 807 EORWarningEvtSts "EORWarningEvtSts";
 BA_ "ISignalName" SG_ 807 EORWarningEvtSts "IEORWarningEvtSts";
 BA_ "LongName" SG_ 807 EORWarningEvtSts "EOR Warning Event Status";
 BA_ "SysSignalName" SG_ 807 EORWarningEvtSts "EORWarningEvtSts";
-BA_ "CompuMethodName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
-BA_ "ISignalName" SG_ 807 SLIFUpdtIndResp_IPD "ISLIFUpdtIndResp_IPD";
-BA_ "LongName" SG_ 807 SLIFUpdtIndResp_IPD "Speed Limit Information Function Update Indication Response";
-BA_ "SysSignalName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
 BA_ "CompuMethodName" SG_ 807 PosALCFailed "PosALCFailed";
 BA_ "ISignalName" SG_ 807 PosALCFailed "IPosALCFailed";
 BA_ "LongName" SG_ 807 PosALCFailed "Positive ALC Failed";
@@ -2817,6 +2868,10 @@ BA_ "CompuMethodName" SG_ 807 ADS_ISAMsgReq "ADS_ISAMsgReq";
 BA_ "ISignalName" SG_ 807 ADS_ISAMsgReq "IADS_ISAMsgReq";
 BA_ "LongName" SG_ 807 ADS_ISAMsgReq "ADAS_Intelligence_Speed_Assist _System_Message_Request";
 BA_ "SysSignalName" SG_ 807 ADS_ISAMsgReq "ADS_ISAMsgReq";
+BA_ "CompuMethodName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
+BA_ "ISignalName" SG_ 807 SLIFUpdtIndResp_IPD "ISLIFUpdtIndResp_IPD";
+BA_ "LongName" SG_ 807 SLIFUpdtIndResp_IPD "Speed Limit Information Function Update Indication Response";
+BA_ "SysSignalName" SG_ 807 SLIFUpdtIndResp_IPD "SLIFUpdtIndResp_IPD";
 BA_ "CompuMethodName" SG_ 807 ADS_ISASysFltSts "ADS_ISASysFltSts";
 BA_ "ISignalName" SG_ 807 ADS_ISASysFltSts "IADS_ISASysFltSts";
 BA_ "LongName" SG_ 807 ADS_ISASysFltSts "ADAS_Intelligence_Speed_Assist _System_Fault_Status";
@@ -2825,6 +2880,10 @@ BA_ "CompuMethodName" SG_ 807 ADS_ISASysSts "ADS_ISASysSts";
 BA_ "ISignalName" SG_ 807 ADS_ISASysSts "IADS_ISASysSts";
 BA_ "LongName" SG_ 807 ADS_ISASysSts "ADAS_Intelligence_Speed_Assist _System_Status";
 BA_ "SysSignalName" SG_ 807 ADS_ISASysSts "ADS_ISASysSts";
+BA_ "CompuMethodName" SG_ 807 ParkngSpdSwResp "ParkngSpdSwResp";
+BA_ "ISignalName" SG_ 807 ParkngSpdSwResp "IParkngSpdSwResp";
+BA_ "LongName" SG_ 807 ParkngSpdSwResp "Parking_Speed_Switch_Response";
+BA_ "SysSignalName" SG_ 807 ParkngSpdSwResp "ParkngSpdSwResp";
 BA_ "CompuMethodName" SG_ 486 IPD_20ms_Group43_CRC "IPD_20ms_Group43_CRC";
 BA_ "ISignalName" SG_ 486 IPD_20ms_Group43_CRC "IIPD_20ms_Group43_CRC";
 BA_ "LongName" SG_ 486 IPD_20ms_Group43_CRC "IPD_20ms_Group43_CRC";
@@ -2901,10 +2960,6 @@ BA_ "CompuMethodName" SG_ 337 ESSDirInd "ESSDirInd";
 BA_ "ISignalName" SG_ 337 ESSDirInd "IESSDirInd";
 BA_ "LongName" SG_ 337 ESSDirInd "Emergency_Steering_System _Direction_Indication";
 BA_ "SysSignalName" SG_ 337 ESSDirInd "ESSDirInd";
-BA_ "CompuMethodName" SG_ 337 IPD_20ms_Group60_Reserved3 "IPD_20ms_Group60_Reserved3";
-BA_ "GenSigStartValue" SG_ 337 IPD_20ms_Group60_Reserved3 7;
-BA_ "ISignalName" SG_ 337 IPD_20ms_Group60_Reserved3 "IIPD_20ms_Group60_Reserved3";
-BA_ "SysSignalName" SG_ 337 IPD_20ms_Group60_Reserved3 "IPD_20ms_Group60_Reserved3";
 BA_ "CompuMethodName" SG_ 337 PilotTkovMsgReq "PilotTkovMsgReq";
 BA_ "ISignalName" SG_ 337 PilotTkovMsgReq "IPilotTkovMsgReq";
 BA_ "LongName" SG_ 337 PilotTkovMsgReq "Pilot Take Over Message Request";
@@ -3358,553 +3413,553 @@ BA_ "CompuMethodName" SG_ 1216 ZXD_NKI_CHCANFD "ZXD_NKI_CHCANFD";
 BA_ "ISignalName" SG_ 1216 ZXD_NKI_CHCANFD "IZXD_NKI_CHCANFD";
 BA_ "LongName" SG_ 1216 ZXD_NKI_CHCANFD "ZXD CHCANFD Network Keep Indication";
 BA_ "SysSignalName" SG_ 1216 ZXD_NKI_CHCANFD "ZXD_NKI_CHCANFD";
-BA_ "CompuMethodName" SG_ 2164461571 EPS_010ms_Group03_CRC "EPS_010ms_Group03_CRC";
-BA_ "ISignalName" SG_ 2164461571 EPS_010ms_Group03_CRC "IEPS_010ms_Group03_CRC";
-BA_ "LongName" SG_ 2164461571 EPS_010ms_Group03_CRC "EPS_010ms_Group03_CRC";
-BA_ "SysSignalName" SG_ 2164461571 EPS_010ms_Group03_CRC "EPS_010ms_Group03_CRC";
-BA_ "CompuMethodName" SG_ 2164461571 EPS_010ms_Group03_RC "EPS_010ms_Group03_RC";
-BA_ "ISignalName" SG_ 2164461571 EPS_010ms_Group03_RC "IEPS_010ms_Group03_RC";
-BA_ "LongName" SG_ 2164461571 EPS_010ms_Group03_RC "EPS_010ms_Group03_RC";
-BA_ "SysSignalName" SG_ 2164461571 EPS_010ms_Group03_RC "EPS_010ms_Group03_RC";
-BA_ "CompuMethodName" SG_ 2164461571 EPSAESReqResp "EPSAESReqResp";
-BA_ "ISignalName" SG_ 2164461571 EPSAESReqResp "IEPSAESReqResp";
-BA_ "LongName" SG_ 2164461571 EPSAESReqResp "Steering_AES_Request_Response";
-BA_ "SysSignalName" SG_ 2164461571 EPSAESReqResp "EPSAESReqResp";
-BA_ "CompuMethodName" SG_ 2164461571 EPSAESStsInh "EPSAESStsInh";
-BA_ "ISignalName" SG_ 2164461571 EPSAESStsInh "IEPSAESStsInh";
-BA_ "LongName" SG_ 2164461571 EPSAESStsInh "Electric_Power_Steering_AES_Request_Response_Inhibit_Reason";
-BA_ "SysSignalName" SG_ 2164461571 EPSAESStsInh "EPSAESStsInh";
-BA_ "CompuMethodName" SG_ 2164461571 EPSAESReqTorResp "EPSAESReqTorResp";
-BA_ "GenSigStartValue" SG_ 2164461571 EPSAESReqTorResp 1024;
-BA_ "ISignalName" SG_ 2164461571 EPSAESReqTorResp "IEPSAESReqTorResp";
-BA_ "LongName" SG_ 2164461571 EPSAESReqTorResp "Electric_Power_Steering_AES_Request_Torque_Response";
-BA_ "SysSignalName" SG_ 2164461571 EPSAESReqTorResp "EPSAESReqTorResp";
-BA_ "CompuMethodName" SG_ 2164461571 EPS_010ms_Group03_Reserved1 "EPS_010ms_Group03_Reserved1";
-BA_ "GenSigStartValue" SG_ 2164461571 EPS_010ms_Group03_Reserved1 1;
-BA_ "ISignalName" SG_ 2164461571 EPS_010ms_Group03_Reserved1 "IEPS_010ms_Group03_Reserved1";
-BA_ "SysSignalName" SG_ 2164461571 EPS_010ms_Group03_Reserved1 "EPS_010ms_Group03_Reserved1";
-BA_ "CompuMethodName" SG_ 2164461571 EPSVMCAngRespSts "EPSVMCAngRespSts";
-BA_ "ISignalName" SG_ 2164461571 EPSVMCAngRespSts "IEPSVMCAngRespSts";
-BA_ "LongName" SG_ 2164461571 EPSVMCAngRespSts "Electric_Power_Steering_VMC_Angle_Response_Status";
-BA_ "SysSignalName" SG_ 2164461571 EPSVMCAngRespSts "EPSVMCAngRespSts";
-BA_ "CompuMethodName" SG_ 2164461571 EPSAESReqTorRespV "EPSAESReqTorRespV";
-BA_ "ISignalName" SG_ 2164461571 EPSAESReqTorRespV "IEPSAESReqTorRespV";
-BA_ "LongName" SG_ 2164461571 EPSAESReqTorRespV "Electric_Power_Steering_AES_Request_Torque_Response_Validity";
-BA_ "SysSignalName" SG_ 2164461571 EPSAESReqTorRespV "EPSAESReqTorRespV";
-BA_ "CompuMethodName" SG_ 2164461571 EPSVMCRespStsInh "EPSVMCRespStsInh";
-BA_ "ISignalName" SG_ 2164461571 EPSVMCRespStsInh "IEPSVMCRespStsInh";
-BA_ "LongName" SG_ 2164461571 EPSVMCRespStsInh "Electric_Power_Steering_VMC_Request_Response_Inhibit_Reason";
-BA_ "SysSignalName" SG_ 2164461571 EPSVMCRespStsInh "EPSVMCRespStsInh";
-BA_ "CompuMethodName" SG_ 2164461571 EPS_010ms_Group03_Reserved2 "EPS_010ms_Group03_Reserved2";
-BA_ "GenSigStartValue" SG_ 2164461571 EPS_010ms_Group03_Reserved2 63;
-BA_ "ISignalName" SG_ 2164461571 EPS_010ms_Group03_Reserved2 "IEPS_010ms_Group03_Reserved2";
-BA_ "SysSignalName" SG_ 2164461571 EPS_010ms_Group03_Reserved2 "EPS_010ms_Group03_Reserved2";
-BA_ "CompuMethodName" SG_ 2164461571 EPSVMCCodrivingSts "EPSVMCCodrivingSts";
-BA_ "ISignalName" SG_ 2164461571 EPSVMCCodrivingSts "IEPSVMCCodrivingSts";
-BA_ "LongName" SG_ 2164461571 EPSVMCCodrivingSts "Electric_Power_Steering_VMC_Codriving_Status";
-BA_ "SysSignalName" SG_ 2164461571 EPSVMCCodrivingSts "EPSVMCCodrivingSts";
-BA_ "CompuMethodName" SG_ 2164461571 EPS_010ms_Group03_Reserved3 "EPS_010ms_Group03_Reserved3";
-BA_ "GenSigStartValue" SG_ 2164461571 EPS_010ms_Group03_Reserved3 255;
-BA_ "ISignalName" SG_ 2164461571 EPS_010ms_Group03_Reserved3 "IEPS_010ms_Group03_Reserved3";
-BA_ "SysSignalName" SG_ 2164461571 EPS_010ms_Group03_Reserved3 "EPS_010ms_Group03_Reserved3";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_CRC "EPS_10ms_Group01_CRC";
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_CRC "IEPS_10ms_Group01_CRC";
-BA_ "LongName" SG_ 2164729093 EPS_10ms_Group01_CRC "EPS_10ms_Group01_CRC";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_CRC "EPS_10ms_Group01_CRC";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_RC "EPS_10ms_Group01_RC";
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_RC "IEPS_10ms_Group01_RC";
-BA_ "LongName" SG_ 2164729093 EPS_10ms_Group01_RC "EPS_10ms_Group01_RC";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_RC "EPS_10ms_Group01_RC";
-BA_ "CompuMethodName" SG_ 2164729093 ActuRoadWhlAngV "ActuRoadWhlAngV";
-BA_ "ISignalName" SG_ 2164729093 ActuRoadWhlAngV "IActuRoadWhlAngV";
-BA_ "LongName" SG_ 2164729093 ActuRoadWhlAngV "Actual Road Wheel Angle Validity";
-BA_ "SysSignalName" SG_ 2164729093 ActuRoadWhlAngV "ActuRoadWhlAngV";
-BA_ "CompuMethodName" SG_ 2164729093 ADASStrgDlvrdToqV "ADASStrgDlvrdToqV";
-BA_ "ISignalName" SG_ 2164729093 ADASStrgDlvrdToqV "IADASStrgDlvrdToqV";
-BA_ "LongName" SG_ 2164729093 ADASStrgDlvrdToqV "Advanced Driver Assistance System Steering Delivered Torque Validity";
-BA_ "SysSignalName" SG_ 2164729093 ADASStrgDlvrdToqV "ADASStrgDlvrdToqV";
-BA_ "CompuMethodName" SG_ 2164729093 EPSDrvngMdCtrlInh "EPSDrvngMdCtrlInh";
-BA_ "GenSigStartValue" SG_ 2164729093 EPSDrvngMdCtrlInh 1;
-BA_ "ISignalName" SG_ 2164729093 EPSDrvngMdCtrlInh "IEPSDrvngMdCtrlInh";
-BA_ "LongName" SG_ 2164729093 EPSDrvngMdCtrlInh "Electric Power Steering Driving Mode Control Inhibit";
-BA_ "SysSignalName" SG_ 2164729093 EPSDrvngMdCtrlInh "EPSDrvngMdCtrlInh";
-BA_ "CompuMethodName" SG_ 2164729093 DrvrStrgDlvrdToqV "DrvrStrgDlvrdToqV";
-BA_ "ISignalName" SG_ 2164729093 DrvrStrgDlvrdToqV "IDrvrStrgDlvrdToqV";
-BA_ "LongName" SG_ 2164729093 DrvrStrgDlvrdToqV "Driver Steering Delivered Torque Validity";
-BA_ "SysSignalName" SG_ 2164729093 DrvrStrgDlvrdToqV "DrvrStrgDlvrdToqV";
-BA_ "CompuMethodName" SG_ 2164729093 ActuPnonAng "ActuPnonAng";
-BA_ "GenSigStartValue" SG_ 2164729093 ActuPnonAng 32768;
-BA_ "ISignalName" SG_ 2164729093 ActuPnonAng "IActuPnonAng";
-BA_ "LongName" SG_ 2164729093 ActuPnonAng "Actual Pinion Angle";
-BA_ "SysSignalName" SG_ 2164729093 ActuPnonAng "ActuPnonAng";
-BA_ "CompuMethodName" SG_ 2164729093 ActuRoadWhlAng "ActuRoadWhlAng";
-BA_ "GenSigStartValue" SG_ 2164729093 ActuRoadWhlAng 32600;
-BA_ "ISignalName" SG_ 2164729093 ActuRoadWhlAng "IActuRoadWhlAng";
-BA_ "LongName" SG_ 2164729093 ActuRoadWhlAng "Actual Road Wheel Angle";
-BA_ "SysSignalName" SG_ 2164729093 ActuRoadWhlAng "ActuRoadWhlAng";
-BA_ "CompuMethodName" SG_ 2164729093 StrgCustSetngDspCmd "StrgCustSetngDspCmd";
-BA_ "ISignalName" SG_ 2164729093 StrgCustSetngDspCmd "IStrgCustSetngDspCmd";
-BA_ "LongName" SG_ 2164729093 StrgCustSetngDspCmd "Steering Customization Setting Display Command";
-BA_ "SysSignalName" SG_ 2164729093 StrgCustSetngDspCmd "StrgCustSetngDspCmd";
-BA_ "CompuMethodName" SG_ 2164729093 EPSPriyChnlFlrSts "EPSPriyChnlFlrSts";
-BA_ "ISignalName" SG_ 2164729093 EPSPriyChnlFlrSts "IEPSPriyChnlFlrSts";
-BA_ "LongName" SG_ 2164729093 EPSPriyChnlFlrSts "Electric Power Steering Primary Channel Failure Status";
-BA_ "SysSignalName" SG_ 2164729093 EPSPriyChnlFlrSts "EPSPriyChnlFlrSts";
-BA_ "CompuMethodName" SG_ 2164729093 EPSFlrSts "EPSFlrSts";
-BA_ "ISignalName" SG_ 2164729093 EPSFlrSts "IEPSFlrSts";
-BA_ "LongName" SG_ 2164729093 EPSFlrSts "Electric Power Steering Failure Status";
-BA_ "SysSignalName" SG_ 2164729093 EPSFlrSts "EPSFlrSts";
-BA_ "CompuMethodName" SG_ 2164729093 EPSCurntDrvMd "EPSCurntDrvMd";
-BA_ "ISignalName" SG_ 2164729093 EPSCurntDrvMd "IEPSCurntDrvMd";
-BA_ "LongName" SG_ 2164729093 EPSCurntDrvMd "Eps Current Drive Mode";
-BA_ "SysSignalName" SG_ 2164729093 EPSCurntDrvMd "EPSCurntDrvMd";
-BA_ "CompuMethodName" SG_ 2164729093 ActuPnonAngV "ActuPnonAngV";
-BA_ "ISignalName" SG_ 2164729093 ActuPnonAngV "IActuPnonAngV";
-BA_ "LongName" SG_ 2164729093 ActuPnonAngV "Actual Pinion Angle Validity";
-BA_ "SysSignalName" SG_ 2164729093 ActuPnonAngV "ActuPnonAngV";
-BA_ "CompuMethodName" SG_ 2164729093 EPSToqValAldMaxV "EPSToqValAldMaxV";
-BA_ "ISignalName" SG_ 2164729093 EPSToqValAldMaxV "IEPSToqValAldMaxV";
-BA_ "LongName" SG_ 2164729093 EPSToqValAldMaxV "Electric Power Steering Torque Value Allowed Maximum Validity";
-BA_ "SysSignalName" SG_ 2164729093 EPSToqValAldMaxV "EPSToqValAldMaxV";
-BA_ "CompuMethodName" SG_ 2164729093 EPSLimMotToqV "EPSLimMotToqV";
-BA_ "GenSigStartValue" SG_ 2164729093 EPSLimMotToqV 1;
-BA_ "ISignalName" SG_ 2164729093 EPSLimMotToqV "IEPSLimMotToqV";
-BA_ "LongName" SG_ 2164729093 EPSLimMotToqV "Electric_Power_Steering_Limited_Motor_Torque_Validity";
-BA_ "SysSignalName" SG_ 2164729093 EPSLimMotToqV "EPSLimMotToqV";
-BA_ "CompuMethodName" SG_ 2164729093 EPSActRetMotToqV "EPSActRetMotToqV";
-BA_ "GenSigStartValue" SG_ 2164729093 EPSActRetMotToqV 1;
-BA_ "ISignalName" SG_ 2164729093 EPSActRetMotToqV "IEPSActRetMotToqV";
-BA_ "LongName" SG_ 2164729093 EPSActRetMotToqV "Electric_Power_Steering_Active_Return_Motor_Torque_Validity";
-BA_ "SysSignalName" SG_ 2164729093 EPSActRetMotToqV "EPSActRetMotToqV";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved1 "EPS_10ms_Group01_Reserved1";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved1 1;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved1 "IEPS_10ms_Group01_Reserved1";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved1 "EPS_10ms_Group01_Reserved1";
-BA_ "CompuMethodName" SG_ 2164729093 ChLKAAngReqResp "ChLKAAngReqResp";
-BA_ "ISignalName" SG_ 2164729093 ChLKAAngReqResp "IChLKAAngReqResp";
-BA_ "LongName" SG_ 2164729093 ChLKAAngReqResp "Chassis Lane Keeping Assist Angle Request Response";
-BA_ "SysSignalName" SG_ 2164729093 ChLKAAngReqResp "ChLKAAngReqResp";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved2 "EPS_10ms_Group01_Reserved2";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved2 15;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved2 "IEPS_10ms_Group01_Reserved2";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved2 "EPS_10ms_Group01_Reserved2";
-BA_ "CompuMethodName" SG_ 2164729093 EPSToqValAldMinV "EPSToqValAldMinV";
-BA_ "ISignalName" SG_ 2164729093 EPSToqValAldMinV "IEPSToqValAldMinV";
-BA_ "LongName" SG_ 2164729093 EPSToqValAldMinV "Electric Power Steering Torque Value Allowed Minimum Validity";
-BA_ "SysSignalName" SG_ 2164729093 EPSToqValAldMinV "EPSToqValAldMinV";
-BA_ "CompuMethodName" SG_ 2164729093 CHLKAHptResp "CHLKAHptResp";
-BA_ "ISignalName" SG_ 2164729093 CHLKAHptResp "ICHLKAHptResp";
-BA_ "LongName" SG_ 2164729093 CHLKAHptResp "Lane Keeping Assist Haptic Response";
-BA_ "SysSignalName" SG_ 2164729093 CHLKAHptResp "CHLKAHptResp";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved3 "EPS_10ms_Group01_Reserved3";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved3 255;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved3 "IEPS_10ms_Group01_Reserved3";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved3 "EPS_10ms_Group01_Reserved3";
-BA_ "CompuMethodName" SG_ 2164729093 ADASStrgDlvrdToq "ADASStrgDlvrdToq";
-BA_ "GenSigStartValue" SG_ 2164729093 ADASStrgDlvrdToq 1024;
-BA_ "ISignalName" SG_ 2164729093 ADASStrgDlvrdToq "IADASStrgDlvrdToq";
-BA_ "LongName" SG_ 2164729093 ADASStrgDlvrdToq "Advanced Driver Assistance System Steering Delivered Torque";
-BA_ "SysSignalName" SG_ 2164729093 ADASStrgDlvrdToq "ADASStrgDlvrdToq";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved4 "EPS_10ms_Group01_Reserved4";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved4 3;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved4 "IEPS_10ms_Group01_Reserved4";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved4 "EPS_10ms_Group01_Reserved4";
-BA_ "CompuMethodName" SG_ 2164729093 ChLKAToqReqResp "ChLKAToqReqResp";
-BA_ "ISignalName" SG_ 2164729093 ChLKAToqReqResp "IChLKAToqReqResp";
-BA_ "LongName" SG_ 2164729093 ChLKAToqReqResp "Chassis Lane Keeping Assist Torque Request Response";
-BA_ "SysSignalName" SG_ 2164729093 ChLKAToqReqResp "ChLKAToqReqResp";
-BA_ "CompuMethodName" SG_ 2164729093 EPSToqValAldMax "EPSToqValAldMax";
-BA_ "GenSigStartValue" SG_ 2164729093 EPSToqValAldMax 1024;
-BA_ "ISignalName" SG_ 2164729093 EPSToqValAldMax "IEPSToqValAldMax";
-BA_ "LongName" SG_ 2164729093 EPSToqValAldMax "Electric Power Steering Torque Value Allowed Maximum";
-BA_ "SysSignalName" SG_ 2164729093 EPSToqValAldMax "EPSToqValAldMax";
-BA_ "CompuMethodName" SG_ 2164729093 EPSCoDrivingSts "EPSCoDrivingSts";
-BA_ "GenSigStartValue" SG_ 2164729093 EPSCoDrivingSts 3;
-BA_ "ISignalName" SG_ 2164729093 EPSCoDrivingSts "IEPSCoDrivingSts";
-BA_ "LongName" SG_ 2164729093 EPSCoDrivingSts "Electric Power Steering Coperation Driving Status";
-BA_ "SysSignalName" SG_ 2164729093 EPSCoDrivingSts "EPSCoDrivingSts";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved5 "EPS_10ms_Group01_Reserved5";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved5 7;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved5 "IEPS_10ms_Group01_Reserved5";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved5 "EPS_10ms_Group01_Reserved5";
-BA_ "CompuMethodName" SG_ 2164729093 EPSToqValAldMin "EPSToqValAldMin";
-BA_ "GenSigStartValue" SG_ 2164729093 EPSToqValAldMin 1024;
-BA_ "ISignalName" SG_ 2164729093 EPSToqValAldMin "IEPSToqValAldMin";
-BA_ "LongName" SG_ 2164729093 EPSToqValAldMin "Electric Power Steering Torque Value Allowed Minimum";
-BA_ "SysSignalName" SG_ 2164729093 EPSToqValAldMin "EPSToqValAldMin";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved6 "EPS_10ms_Group01_Reserved6";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved6 31;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved6 "IEPS_10ms_Group01_Reserved6";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved6 "EPS_10ms_Group01_Reserved6";
-BA_ "CompuMethodName" SG_ 2164729093 EPSActRetMotToq "EPSActRetMotToq";
-BA_ "ISignalName" SG_ 2164729093 EPSActRetMotToq "IEPSActRetMotToq";
-BA_ "LongName" SG_ 2164729093 EPSActRetMotToq "Electric_Power_Steering_Active_Return_Motor_Torque";
-BA_ "SysSignalName" SG_ 2164729093 EPSActRetMotToq "EPSActRetMotToq";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved7 "EPS_10ms_Group01_Reserved7";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved7 255;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved7 "IEPS_10ms_Group01_Reserved7";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved7 "EPS_10ms_Group01_Reserved7";
-BA_ "CompuMethodName" SG_ 2164729093 DrvrStrgDlvrdToq "DrvrStrgDlvrdToq";
-BA_ "GenSigStartValue" SG_ 2164729093 DrvrStrgDlvrdToq 2048;
-BA_ "ISignalName" SG_ 2164729093 DrvrStrgDlvrdToq "IDrvrStrgDlvrdToq";
-BA_ "LongName" SG_ 2164729093 DrvrStrgDlvrdToq "Driver Steering Delivered Torque";
-BA_ "SysSignalName" SG_ 2164729093 DrvrStrgDlvrdToq "DrvrStrgDlvrdToq";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved8 "EPS_10ms_Group01_Reserved8";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved8 15;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved8 "IEPS_10ms_Group01_Reserved8";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved8 "EPS_10ms_Group01_Reserved8";
-BA_ "CompuMethodName" SG_ 2164729093 EPS_10ms_Group01_Reserved9 "EPS_10ms_Group01_Reserved9";
-BA_ "GenSigStartValue" SG_ 2164729093 EPS_10ms_Group01_Reserved9 255;
-BA_ "ISignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved9 "IEPS_10ms_Group01_Reserved9";
-BA_ "SysSignalName" SG_ 2164729093 EPS_10ms_Group01_Reserved9 "EPS_10ms_Group01_Reserved9";
-BA_ "CompuMethodName" SG_ 2164729093 EPSLimMotToq "EPSLimMotToq";
-BA_ "ISignalName" SG_ 2164729093 EPSLimMotToq "IEPSLimMotToq";
-BA_ "LongName" SG_ 2164729093 EPSLimMotToq "Electric_Power_Steering_Limited_Motor_Torque";
-BA_ "SysSignalName" SG_ 2164729093 EPSLimMotToq "EPSLimMotToq";
-BA_ "CompuMethodName" SG_ 2164729094 EPS_10ms_Group02_CRC "EPS_10ms_Group02_CRC";
-BA_ "ISignalName" SG_ 2164729094 EPS_10ms_Group02_CRC "IEPS_10ms_Group02_CRC";
-BA_ "LongName" SG_ 2164729094 EPS_10ms_Group02_CRC "EPS_10ms_Group02_CRC";
-BA_ "SysSignalName" SG_ 2164729094 EPS_10ms_Group02_CRC "EPS_10ms_Group02_CRC";
-BA_ "CompuMethodName" SG_ 2164729094 EPS_10ms_Group02_RC "EPS_10ms_Group02_RC";
-BA_ "ISignalName" SG_ 2164729094 EPS_10ms_Group02_RC "IEPS_10ms_Group02_RC";
-BA_ "LongName" SG_ 2164729094 EPS_10ms_Group02_RC "EPS_10ms_Group02_RC";
-BA_ "SysSignalName" SG_ 2164729094 EPS_10ms_Group02_RC "EPS_10ms_Group02_RC";
-BA_ "CompuMethodName" SG_ 2164729094 EPSAIPkgAngReqResp "EPSAIPkgAngReqResp";
-BA_ "GenSigStartValue" SG_ 2164729094 EPSAIPkgAngReqResp 7;
-BA_ "ISignalName" SG_ 2164729094 EPSAIPkgAngReqResp "IEPSAIPkgAngReqResp";
-BA_ "LongName" SG_ 2164729094 EPSAIPkgAngReqResp "Electric Power Steering Ai Parking Angle Request Response";
-BA_ "SysSignalName" SG_ 2164729094 EPSAIPkgAngReqResp "EPSAIPkgAngReqResp";
-BA_ "CompuMethodName" SG_ 2164729094 EPSAIPkgAngReqRespInh "EPSAIPkgAngReqRespInh";
-BA_ "ISignalName" SG_ 2164729094 EPSAIPkgAngReqRespInh "IEPSAIPkgAngReqRespInh";
-BA_ "LongName" SG_ 2164729094 EPSAIPkgAngReqRespInh "Electric Power Steering Ai Parking Angle Request Response Inhibit Reason";
-BA_ "SysSignalName" SG_ 2164729094 EPSAIPkgAngReqRespInh "EPSAIPkgAngReqRespInh";
-BA_ "CompuMethodName" SG_ 2164729094 EPSAIPltAngRespStsInh "EPSAIPltAngRespStsInh";
-BA_ "ISignalName" SG_ 2164729094 EPSAIPltAngRespStsInh "IEPSAIPltAngRespStsInh";
-BA_ "LongName" SG_ 2164729094 EPSAIPltAngRespStsInh "Electric_Power_Steering_Ai_Pilot_Angle_Request_Response_Inhibit_Reason";
-BA_ "SysSignalName" SG_ 2164729094 EPSAIPltAngRespStsInh "EPSAIPltAngRespStsInh";
-BA_ "CompuMethodName" SG_ 2164729094 EPS_10ms_Group02_Reserved1 "EPS_10ms_Group02_Reserved1";
-BA_ "GenSigStartValue" SG_ 2164729094 EPS_10ms_Group02_Reserved1 7;
-BA_ "ISignalName" SG_ 2164729094 EPS_10ms_Group02_Reserved1 "IEPS_10ms_Group02_Reserved1";
-BA_ "SysSignalName" SG_ 2164729094 EPS_10ms_Group02_Reserved1 "EPS_10ms_Group02_Reserved1";
-BA_ "CompuMethodName" SG_ 2164729094 EPSAIPltAvlLvl "EPSAIPltAvlLvl";
-BA_ "ISignalName" SG_ 2164729094 EPSAIPltAvlLvl "IEPSAIPltAvlLvl";
-BA_ "LongName" SG_ 2164729094 EPSAIPltAvlLvl "Electric Power Steering Ai Pilot Availablity Level";
-BA_ "SysSignalName" SG_ 2164729094 EPSAIPltAvlLvl "EPSAIPltAvlLvl";
-BA_ "CompuMethodName" SG_ 2164729094 EPSAIPltAngRespSts "EPSAIPltAngRespSts";
-BA_ "ISignalName" SG_ 2164729094 EPSAIPltAngRespSts "IEPSAIPltAngRespSts";
-BA_ "LongName" SG_ 2164729094 EPSAIPltAngRespSts "Electric Power Steering Ai Pilot Angle Response Status";
-BA_ "SysSignalName" SG_ 2164729094 EPSAIPltAngRespSts "EPSAIPltAngRespSts";
-BA_ "CompuMethodName" SG_ 2164729094 ActuRoadWhlAngGrdV "ActuRoadWhlAngGrdV";
-BA_ "ISignalName" SG_ 2164729094 ActuRoadWhlAngGrdV "IActuRoadWhlAngGrdV";
-BA_ "LongName" SG_ 2164729094 ActuRoadWhlAngGrdV "Actual Road Wheel Angle Gradient Validity";
-BA_ "SysSignalName" SG_ 2164729094 ActuRoadWhlAngGrdV "ActuRoadWhlAngGrdV";
-BA_ "CompuMethodName" SG_ 2164729094 EPS_10ms_Group02_Reserved2 "EPS_10ms_Group02_Reserved2";
-BA_ "GenSigStartValue" SG_ 2164729094 EPS_10ms_Group02_Reserved2 63;
-BA_ "ISignalName" SG_ 2164729094 EPS_10ms_Group02_Reserved2 "IEPS_10ms_Group02_Reserved2";
-BA_ "SysSignalName" SG_ 2164729094 EPS_10ms_Group02_Reserved2 "EPS_10ms_Group02_Reserved2";
-BA_ "CompuMethodName" SG_ 2164729094 EPSAIPltCtrlChannel "EPSAIPltCtrlChannel";
-BA_ "ISignalName" SG_ 2164729094 EPSAIPltCtrlChannel "IEPSAIPltCtrlChannel";
-BA_ "LongName" SG_ 2164729094 EPSAIPltCtrlChannel "EPSAIPltCtrlChannel";
-BA_ "SysSignalName" SG_ 2164729094 EPSAIPltCtrlChannel "EPSAIPltCtrlChannel";
-BA_ "CompuMethodName" SG_ 2164729094 ActuRoadWhlAngGrd "ActuRoadWhlAngGrd";
-BA_ "GenSigStartValue" SG_ 2164729094 ActuRoadWhlAngGrd 32600;
-BA_ "ISignalName" SG_ 2164729094 ActuRoadWhlAngGrd "IActuRoadWhlAngGrd";
-BA_ "LongName" SG_ 2164729094 ActuRoadWhlAngGrd "Actual Road Wheel Angle Gradient";
-BA_ "SysSignalName" SG_ 2164729094 ActuRoadWhlAngGrd "ActuRoadWhlAngGrd";
-BA_ "CompuMethodName" SG_ 2164729108 EPS_10ms_Group05_CRC "EPS_10ms_Group05_CRC";
-BA_ "ISignalName" SG_ 2164729108 EPS_10ms_Group05_CRC "IEPS_10ms_Group05_CRC";
-BA_ "LongName" SG_ 2164729108 EPS_10ms_Group05_CRC "EPS_10ms_Group05_CRC";
-BA_ "SysSignalName" SG_ 2164729108 EPS_10ms_Group05_CRC "EPS_10ms_Group05_CRC";
-BA_ "CompuMethodName" SG_ 2164729108 EPS_10ms_Group05_RC "EPS_10ms_Group05_RC";
-BA_ "ISignalName" SG_ 2164729108 EPS_10ms_Group05_RC "IEPS_10ms_Group05_RC";
-BA_ "LongName" SG_ 2164729108 EPS_10ms_Group05_RC "EPS_10ms_Group05_RC";
-BA_ "SysSignalName" SG_ 2164729108 EPS_10ms_Group05_RC "EPS_10ms_Group05_RC";
-BA_ "CompuMethodName" SG_ 2164729108 StrgWhlAngSnsrFlt "StrgWhlAngSnsrFlt";
-BA_ "ISignalName" SG_ 2164729108 StrgWhlAngSnsrFlt "IStrgWhlAngSnsrFlt";
-BA_ "LongName" SG_ 2164729108 StrgWhlAngSnsrFlt "Steering Wheel Angle Sensor Fault";
-BA_ "SysSignalName" SG_ 2164729108 StrgWhlAngSnsrFlt "StrgWhlAngSnsrFlt";
-BA_ "CompuMethodName" SG_ 2164729108 StrgWhlAngV "StrgWhlAngV";
-BA_ "ISignalName" SG_ 2164729108 StrgWhlAngV "IStrgWhlAngV";
-BA_ "LongName" SG_ 2164729108 StrgWhlAngV "Steering Wheel Angle Validity";
-BA_ "SysSignalName" SG_ 2164729108 StrgWhlAngV "StrgWhlAngV";
-BA_ "CompuMethodName" SG_ 2164729108 StrgWhlAngSnsrMultCapb "StrgWhlAngSnsrMultCapb";
-BA_ "ISignalName" SG_ 2164729108 StrgWhlAngSnsrMultCapb "IStrgWhlAngSnsrMultCapb";
-BA_ "LongName" SG_ 2164729108 StrgWhlAngSnsrMultCapb "Steering Wheel Angle Sensor Multiturn Capable";
-BA_ "SysSignalName" SG_ 2164729108 StrgWhlAngSnsrMultCapb "StrgWhlAngSnsrMultCapb";
-BA_ "CompuMethodName" SG_ 2164729108 StrgWhlAngSnsrInid "StrgWhlAngSnsrInid";
-BA_ "ISignalName" SG_ 2164729108 StrgWhlAngSnsrInid "IStrgWhlAngSnsrInid";
-BA_ "LongName" SG_ 2164729108 StrgWhlAngSnsrInid "Steering Wheel Angle Sensor Initialized";
-BA_ "SysSignalName" SG_ 2164729108 StrgWhlAngSnsrInid "StrgWhlAngSnsrInid";
-BA_ "CompuMethodName" SG_ 2164729108 StrgWhlAng "StrgWhlAng";
-BA_ "ISignalName" SG_ 2164729108 StrgWhlAng "IStrgWhlAng";
-BA_ "LongName" SG_ 2164729108 StrgWhlAng "Steering Wheel Angle";
-BA_ "SysSignalName" SG_ 2164729108 StrgWhlAng "StrgWhlAng";
-BA_ "CompuMethodName" SG_ 2164729108 StrgWhlAngGrd "StrgWhlAngGrd";
-BA_ "ISignalName" SG_ 2164729108 StrgWhlAngGrd "IStrgWhlAngGrd";
-BA_ "LongName" SG_ 2164729108 StrgWhlAngGrd "Steering Wheel Angle Gradient";
-BA_ "SysSignalName" SG_ 2164729108 StrgWhlAngGrd "StrgWhlAngGrd";
-BA_ "CompuMethodName" SG_ 2164729108 EPS_10ms_Group05_Reserved1 "EPS_10ms_Group05_Reserved1";
-BA_ "GenSigStartValue" SG_ 2164729108 EPS_10ms_Group05_Reserved1 3;
-BA_ "ISignalName" SG_ 2164729108 EPS_10ms_Group05_Reserved1 "IEPS_10ms_Group05_Reserved1";
-BA_ "SysSignalName" SG_ 2164729108 EPS_10ms_Group05_Reserved1 "EPS_10ms_Group05_Reserved1";
-BA_ "CompuMethodName" SG_ 2164729108 StrgWhlAngSnsrCalSts "StrgWhlAngSnsrCalSts";
-BA_ "ISignalName" SG_ 2164729108 StrgWhlAngSnsrCalSts "IStrgWhlAngSnsrCalSts";
-BA_ "LongName" SG_ 2164729108 StrgWhlAngSnsrCalSts "Steering Wheel Angle Sensor Calibration Status";
-BA_ "SysSignalName" SG_ 2164729108 StrgWhlAngSnsrCalSts "StrgWhlAngSnsrCalSts";
-BA_ "CompuMethodName" SG_ 2164729108 EPS_10ms_Group05_Reserved2 "EPS_10ms_Group05_Reserved2";
-BA_ "GenSigStartValue" SG_ 2164729108 EPS_10ms_Group05_Reserved2 255;
-BA_ "ISignalName" SG_ 2164729108 EPS_10ms_Group05_Reserved2 "IEPS_10ms_Group05_Reserved2";
-BA_ "SysSignalName" SG_ 2164729108 EPS_10ms_Group05_Reserved2 "EPS_10ms_Group05_Reserved2";
-BA_ "CompuMethodName" SG_ 2164729108 EPS_10ms_Group05_Reserved3 "EPS_10ms_Group05_Reserved3";
-BA_ "GenSigStartValue" SG_ 2164729108 EPS_10ms_Group05_Reserved3 255;
-BA_ "ISignalName" SG_ 2164729108 EPS_10ms_Group05_Reserved3 "IEPS_10ms_Group05_Reserved3";
-BA_ "SysSignalName" SG_ 2164729108 EPS_10ms_Group05_Reserved3 "EPS_10ms_Group05_Reserved3";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_CRC "IBS_10ms_Group04_CRC";
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_CRC "IIBS_10ms_Group04_CRC";
-BA_ "LongName" SG_ 2164729095 IBS_10ms_Group04_CRC "IBS_10ms_Group04_CRC";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_CRC "IBS_10ms_Group04_CRC";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_RC "IBS_10ms_Group04_RC";
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_RC "IIBS_10ms_Group04_RC";
-BA_ "LongName" SG_ 2164729095 IBS_10ms_Group04_RC "IBS_10ms_Group04_RC";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_RC "IBS_10ms_Group04_RC";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_Reserved1 "IBS_10ms_Group04_Reserved1";
-BA_ "GenSigStartValue" SG_ 2164729095 IBS_10ms_Group04_Reserved1 15;
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved1 "IIBS_10ms_Group04_Reserved1";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved1 "IBS_10ms_Group04_Reserved1";
-BA_ "CompuMethodName" SG_ 2164729095 BrkPdlPos "BrkPdlPos";
-BA_ "ISignalName" SG_ 2164729095 BrkPdlPos "IBrkPdlPos";
-BA_ "LongName" SG_ 2164729095 BrkPdlPos "Brake Pedal Position";
-BA_ "SysSignalName" SG_ 2164729095 BrkPdlPos "BrkPdlPos";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_Reserved3 "IBS_10ms_Group04_Reserved3";
-BA_ "GenSigStartValue" SG_ 2164729095 IBS_10ms_Group04_Reserved3 15;
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved3 "IIBS_10ms_Group04_Reserved3";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved3 "IBS_10ms_Group04_Reserved3";
-BA_ "CompuMethodName" SG_ 2164729095 EPBSysBrkLghtsReqdA "EPBSysBrkLghtsReqdA";
-BA_ "ISignalName" SG_ 2164729095 EPBSysBrkLghtsReqdA "IEPBSysBrkLghtsReqdA";
-BA_ "SysSignalName" SG_ 2164729095 EPBSysBrkLghtsReqdA "EPBSysBrkLghtsReqdA";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_Reserved2 "IBS_10ms_Group04_Reserved2";
-BA_ "GenSigStartValue" SG_ 2164729095 IBS_10ms_Group04_Reserved2 1;
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved2 "IIBS_10ms_Group04_Reserved2";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved2 "IBS_10ms_Group04_Reserved2";
-BA_ "CompuMethodName" SG_ 2164729095 BrkSysBrkLghtsReqd "BrkSysBrkLghtsReqd";
-BA_ "ISignalName" SG_ 2164729095 BrkSysBrkLghtsReqd "IBrkSysBrkLghtsReqd";
-BA_ "LongName" SG_ 2164729095 BrkSysBrkLghtsReqd "Brake System Brake Lights Requested";
-BA_ "SysSignalName" SG_ 2164729095 BrkSysBrkLghtsReqd "BrkSysBrkLghtsReqd";
-BA_ "CompuMethodName" SG_ 2164729095 BrkPdlPosV "BrkPdlPosV";
-BA_ "ISignalName" SG_ 2164729095 BrkPdlPosV "IBrkPdlPosV";
-BA_ "LongName" SG_ 2164729095 BrkPdlPosV "Brake Pedal Position Validity";
-BA_ "SysSignalName" SG_ 2164729095 BrkPdlPosV "BrkPdlPosV";
-BA_ "CompuMethodName" SG_ 2164729095 ChSysEnToqReqProtn "ChSysEnToqReqProtn";
-BA_ "ISignalName" SG_ 2164729095 ChSysEnToqReqProtn "IChSysEnToqReqProtn";
-BA_ "SysSignalName" SG_ 2164729095 ChSysEnToqReqProtn "ChSysEnToqReqProtn";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_Reserved4 "IBS_10ms_Group04_Reserved4";
-BA_ "GenSigStartValue" SG_ 2164729095 IBS_10ms_Group04_Reserved4 3;
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved4 "IIBS_10ms_Group04_Reserved4";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved4 "IBS_10ms_Group04_Reserved4";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_Reserved5 "IBS_10ms_Group04_Reserved5";
-BA_ "GenSigStartValue" SG_ 2164729095 IBS_10ms_Group04_Reserved5 255;
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved5 "IIBS_10ms_Group04_Reserved5";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved5 "IBS_10ms_Group04_Reserved5";
-BA_ "CompuMethodName" SG_ 2164729095 IBS_10ms_Group04_Reserved6 "IBS_10ms_Group04_Reserved6";
-BA_ "GenSigStartValue" SG_ 2164729095 IBS_10ms_Group04_Reserved6 255;
-BA_ "ISignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved6 "IIBS_10ms_Group04_Reserved6";
-BA_ "SysSignalName" SG_ 2164729095 IBS_10ms_Group04_Reserved6 "IBS_10ms_Group04_Reserved6";
-BA_ "CompuMethodName" SG_ 2164729097 IBS_20ms_Group10_CRC "IBS_20ms_Group10_CRC";
-BA_ "ISignalName" SG_ 2164729097 IBS_20ms_Group10_CRC "IIBS_20ms_Group10_CRC";
-BA_ "LongName" SG_ 2164729097 IBS_20ms_Group10_CRC "IBS_20ms_Group10_CRC";
-BA_ "SysSignalName" SG_ 2164729097 IBS_20ms_Group10_CRC "IBS_20ms_Group10_CRC";
-BA_ "CompuMethodName" SG_ 2164729097 IBS_20ms_Group10_RC "IBS_20ms_Group10_RC";
-BA_ "ISignalName" SG_ 2164729097 IBS_20ms_Group10_RC "IIBS_20ms_Group10_RC";
-BA_ "LongName" SG_ 2164729097 IBS_20ms_Group10_RC "IBS_20ms_Group10_RC";
-BA_ "SysSignalName" SG_ 2164729097 IBS_20ms_Group10_RC "IBS_20ms_Group10_RC";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlDrvrAppdPrsV "BrkPdlDrvrAppdPrsV";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlDrvrAppdPrsV "IBrkPdlDrvrAppdPrsV";
-BA_ "LongName" SG_ 2164729097 BrkPdlDrvrAppdPrsV "Brake Pedal Driver Applied Pressure Validity";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlDrvrAppdPrsV "BrkPdlDrvrAppdPrsV";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlDrvrAppdPrsDetV "BrkPdlDrvrAppdPrsDetV";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlDrvrAppdPrsDetV "IBrkPdlDrvrAppdPrsDetV";
-BA_ "LongName" SG_ 2164729097 BrkPdlDrvrAppdPrsDetV "Brake_Pedal_Driver_Applied_Pressure_Detected_Validity";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlDrvrAppdPrsDetV "BrkPdlDrvrAppdPrsDetV";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlDrvrAppdPrsDet "BrkPdlDrvrAppdPrsDet";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlDrvrAppdPrsDet "IBrkPdlDrvrAppdPrsDet";
-BA_ "LongName" SG_ 2164729097 BrkPdlDrvrAppdPrsDet "Brake_Pedal_Driver_Applied_Pressure_Detected";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlDrvrAppdPrsDet "BrkPdlDrvrAppdPrsDet";
-BA_ "CompuMethodName" SG_ 2164729097 BrkDiscTemSts "BrkDiscTemSts";
-BA_ "ISignalName" SG_ 2164729097 BrkDiscTemSts "IBrkDiscTemSts";
-BA_ "LongName" SG_ 2164729097 BrkDiscTemSts "Brake Disc Temperature Status";
-BA_ "SysSignalName" SG_ 2164729097 BrkDiscTemSts "BrkDiscTemSts";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlDrvrAppdPrs "BrkPdlDrvrAppdPrs";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlDrvrAppdPrs "IBrkPdlDrvrAppdPrs";
-BA_ "LongName" SG_ 2164729097 BrkPdlDrvrAppdPrs "Brake Pedal Driver Applied Pressure";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlDrvrAppdPrs "BrkPdlDrvrAppdPrs";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlMdlSts "BrkPdlMdlSts";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlMdlSts "IBrkPdlMdlSts";
-BA_ "LongName" SG_ 2164729097 BrkPdlMdlSts "Brake Pedal Model Status";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlMdlSts "BrkPdlMdlSts";
-BA_ "CompuMethodName" SG_ 2164729097 DrvrReqOtptRodTrvlSts "DrvrReqOtptRodTrvlSts";
-BA_ "ISignalName" SG_ 2164729097 DrvrReqOtptRodTrvlSts "IDrvrReqOtptRodTrvlSts";
-BA_ "LongName" SG_ 2164729097 DrvrReqOtptRodTrvlSts "Driver Request Output Rod Travel Status";
-BA_ "SysSignalName" SG_ 2164729097 DrvrReqOtptRodTrvlSts "DrvrReqOtptRodTrvlSts";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlSimltdPrsV "BrkPdlSimltdPrsV";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlSimltdPrsV "IBrkPdlSimltdPrsV";
-BA_ "LongName" SG_ 2164729097 BrkPdlSimltdPrsV "Brake Pedal Simulated Pressure Validity";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlSimltdPrsV "BrkPdlSimltdPrsV";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlAppd "BrkPdlAppd";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlAppd "IBrkPdlAppd";
-BA_ "LongName" SG_ 2164729097 BrkPdlAppd "Brake Pedal Applied";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlAppd "BrkPdlAppd";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlAppdV "BrkPdlAppdV";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlAppdV "IBrkPdlAppdV";
-BA_ "LongName" SG_ 2164729097 BrkPdlAppdV "Brake Pedal Applied Validity";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlAppdV "BrkPdlAppdV";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlSimltdPrs "BrkPdlSimltdPrs";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlSimltdPrs "IBrkPdlSimltdPrs";
-BA_ "LongName" SG_ 2164729097 BrkPdlSimltdPrs "Brake Pedal Simulated Pressure";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlSimltdPrs "BrkPdlSimltdPrs";
-BA_ "CompuMethodName" SG_ 2164729097 BrkFludLvlLowV "BrkFludLvlLowV";
-BA_ "ISignalName" SG_ 2164729097 BrkFludLvlLowV "IBrkFludLvlLowV";
-BA_ "LongName" SG_ 2164729097 BrkFludLvlLowV "Brake Fluid Level Low Validity";
-BA_ "SysSignalName" SG_ 2164729097 BrkFludLvlLowV "BrkFludLvlLowV";
-BA_ "CompuMethodName" SG_ 2164729097 BrkFludLvlLow "BrkFludLvlLow";
-BA_ "ISignalName" SG_ 2164729097 BrkFludLvlLow "IBrkFludLvlLow";
-BA_ "LongName" SG_ 2164729097 BrkFludLvlLow "Brake Fluid Level Low";
-BA_ "SysSignalName" SG_ 2164729097 BrkFludLvlLow "BrkFludLvlLow";
-BA_ "CompuMethodName" SG_ 2164729097 BrkPdlMdlActSts "BrkPdlMdlActSts";
-BA_ "ISignalName" SG_ 2164729097 BrkPdlMdlActSts "IBrkPdlMdlActSts";
-BA_ "LongName" SG_ 2164729097 BrkPdlMdlActSts "Brake Pedal Model Actual Status";
-BA_ "SysSignalName" SG_ 2164729097 BrkPdlMdlActSts "BrkPdlMdlActSts";
-BA_ "CompuMethodName" SG_ 2164729097 IBS_20ms_Group10_Reserved1 "IBS_20ms_Group10_Reserved1";
-BA_ "GenSigStartValue" SG_ 2164729097 IBS_20ms_Group10_Reserved1 15;
-BA_ "ISignalName" SG_ 2164729097 IBS_20ms_Group10_Reserved1 "IIBS_20ms_Group10_Reserved1";
-BA_ "SysSignalName" SG_ 2164729097 IBS_20ms_Group10_Reserved1 "IBS_20ms_Group10_Reserved1";
-BA_ "CompuMethodName" SG_ 2164729097 DrvrReqOtptRodTrvl "DrvrReqOtptRodTrvl";
-BA_ "ISignalName" SG_ 2164729097 DrvrReqOtptRodTrvl "IDrvrReqOtptRodTrvl";
-BA_ "LongName" SG_ 2164729097 DrvrReqOtptRodTrvl "Driver Request Output Rod Travel";
-BA_ "SysSignalName" SG_ 2164729097 DrvrReqOtptRodTrvl "DrvrReqOtptRodTrvl";
-BA_ "CompuMethodName" SG_ 2164729097 IBS_20ms_Group10_Reserved2 "IBS_20ms_Group10_Reserved2";
-BA_ "GenSigStartValue" SG_ 2164729097 IBS_20ms_Group10_Reserved2 15;
-BA_ "ISignalName" SG_ 2164729097 IBS_20ms_Group10_Reserved2 "IIBS_20ms_Group10_Reserved2";
-BA_ "SysSignalName" SG_ 2164729097 IBS_20ms_Group10_Reserved2 "IBS_20ms_Group10_Reserved2";
-BA_ "CompuMethodName" SG_ 2164729104 IBS_20ms_Group13_CRC "IBS_20ms_Group13_CRC";
-BA_ "ISignalName" SG_ 2164729104 IBS_20ms_Group13_CRC "IIBS_20ms_Group13_CRC";
-BA_ "LongName" SG_ 2164729104 IBS_20ms_Group13_CRC "IBS_20ms_Group13_CRC";
-BA_ "SysSignalName" SG_ 2164729104 IBS_20ms_Group13_CRC "IBS_20ms_Group13_CRC";
-BA_ "CompuMethodName" SG_ 2164729104 IBS_20ms_Group13_RC "IBS_20ms_Group13_RC";
-BA_ "ISignalName" SG_ 2164729104 IBS_20ms_Group13_RC "IIBS_20ms_Group13_RC";
-BA_ "LongName" SG_ 2164729104 IBS_20ms_Group13_RC "IBS_20ms_Group13_RC";
-BA_ "SysSignalName" SG_ 2164729104 IBS_20ms_Group13_RC "IBS_20ms_Group13_RC";
-BA_ "CompuMethodName" SG_ 2164729104 ACCBrkngA "ACCBrkngA";
-BA_ "ISignalName" SG_ 2164729104 ACCBrkngA "IACCBrkngA";
-BA_ "LongName" SG_ 2164729104 ACCBrkngA "Adaptive Cruise Control Braking Active";
-BA_ "SysSignalName" SG_ 2164729104 ACCBrkngA "ACCBrkngA";
-BA_ "CompuMethodName" SG_ 2164729104 ChAEBDclReqResp "ChAEBDclReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChAEBDclReqResp "IChAEBDclReqResp";
-BA_ "LongName" SG_ 2164729104 ChAEBDclReqResp "Chassis Autonomous Emergency Braking Deceleration Request Response";
-BA_ "SysSignalName" SG_ 2164729104 ChAEBDclReqResp "ChAEBDclReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 ChACCReqFlrSts "ChACCReqFlrSts";
-BA_ "ISignalName" SG_ 2164729104 ChACCReqFlrSts "IChACCReqFlrSts";
-BA_ "LongName" SG_ 2164729104 ChACCReqFlrSts "Chassis Adaptive Cruise Control Request Failure Status";
-BA_ "SysSignalName" SG_ 2164729104 ChACCReqFlrSts "ChACCReqFlrSts";
-BA_ "CompuMethodName" SG_ 2164729104 ChACCAccReqResp "ChACCAccReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChACCAccReqResp "IChACCAccReqResp";
-BA_ "LongName" SG_ 2164729104 ChACCAccReqResp "Chassis Adaptive Cruise Control Acceleration Request Response";
-BA_ "SysSignalName" SG_ 2164729104 ChACCAccReqResp "ChACCAccReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 ChAEBPrflReqResp "ChAEBPrflReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChAEBPrflReqResp "IChAEBPrflReqResp";
-BA_ "LongName" SG_ 2164729104 ChAEBPrflReqResp "Chassis Autonomous Emergency Braking Prefill Request Response";
-BA_ "SysSignalName" SG_ 2164729104 ChAEBPrflReqResp "ChAEBPrflReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 AutodDrvngSysMdReqRespV "AutodDrvngSysMdReqRespV";
-BA_ "ISignalName" SG_ 2164729104 AutodDrvngSysMdReqRespV "IAutodDrvngSysMdReqRespV";
-BA_ "LongName" SG_ 2164729104 AutodDrvngSysMdReqRespV "Automated Driving System Mode Request Response Validity";
-BA_ "SysSignalName" SG_ 2164729104 AutodDrvngSysMdReqRespV "AutodDrvngSysMdReqRespV";
-BA_ "CompuMethodName" SG_ 2164729104 AutodDrvngSysMdReqResp "AutodDrvngSysMdReqResp";
-BA_ "ISignalName" SG_ 2164729104 AutodDrvngSysMdReqResp "IAutodDrvngSysMdReqResp";
-BA_ "LongName" SG_ 2164729104 AutodDrvngSysMdReqResp "Automated Driving System Mode Request Response";
-BA_ "SysSignalName" SG_ 2164729104 AutodDrvngSysMdReqResp "AutodDrvngSysMdReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 ChAEBHydBrkAstReqResp "ChAEBHydBrkAstReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChAEBHydBrkAstReqResp "IChAEBHydBrkAstReqResp";
-BA_ "LongName" SG_ 2164729104 ChAEBHydBrkAstReqResp "Chassis Autonomous Emergency Braking Hydraulic Brake Assist Request Response";
-BA_ "SysSignalName" SG_ 2164729104 ChAEBHydBrkAstReqResp "ChAEBHydBrkAstReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 ChAEBBrkJerkReqResp "ChAEBBrkJerkReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChAEBBrkJerkReqResp "IChAEBBrkJerkReqResp";
-BA_ "LongName" SG_ 2164729104 ChAEBBrkJerkReqResp "Chassis Autonomous Emergency Braking Brake Jerk Request Response";
-BA_ "SysSignalName" SG_ 2164729104 ChAEBBrkJerkReqResp "ChAEBBrkJerkReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 SCSAutodDrvngSysSts "SCSAutodDrvngSysSts";
-BA_ "ISignalName" SG_ 2164729104 SCSAutodDrvngSysSts "ISCSAutodDrvngSysSts";
-BA_ "LongName" SG_ 2164729104 SCSAutodDrvngSysSts "Stability Control System Automated Driving System Status";
-BA_ "SysSignalName" SG_ 2164729104 SCSAutodDrvngSysSts "SCSAutodDrvngSysSts";
-BA_ "CompuMethodName" SG_ 2164729104 SCSAPAAcclAV "SCSAPAAcclAV";
-BA_ "ISignalName" SG_ 2164729104 SCSAPAAcclAV "ISCSAPAAcclAV";
-BA_ "LongName" SG_ 2164729104 SCSAPAAcclAV "Stability Control System Advanced Park Assist Acceleration Active Validity";
-BA_ "SysSignalName" SG_ 2164729104 SCSAPAAcclAV "SCSAPAAcclAV";
-BA_ "CompuMethodName" SG_ 2164729104 SCSAPAAcclA "SCSAPAAcclA";
-BA_ "ISignalName" SG_ 2164729104 SCSAPAAcclA "ISCSAPAAcclA";
-BA_ "LongName" SG_ 2164729104 SCSAPAAcclA "Stability Control System Advanced Park Assist Acceleration Active";
-BA_ "SysSignalName" SG_ 2164729104 SCSAPAAcclA "SCSAPAAcclA";
-BA_ "CompuMethodName" SG_ 2164729104 ExtnlBrkPrioV "ExtnlBrkPrioV";
-BA_ "ISignalName" SG_ 2164729104 ExtnlBrkPrioV "IExtnlBrkPrioV";
-BA_ "LongName" SG_ 2164729104 ExtnlBrkPrioV "External Brake Priority Validity";
-BA_ "SysSignalName" SG_ 2164729104 ExtnlBrkPrioV "ExtnlBrkPrioV";
-BA_ "CompuMethodName" SG_ 2164729104 ExtnlBrkPrio "ExtnlBrkPrio";
-BA_ "ISignalName" SG_ 2164729104 ExtnlBrkPrio "IExtnlBrkPrio";
-BA_ "LongName" SG_ 2164729104 ExtnlBrkPrio "External Brake Priority";
-BA_ "SysSignalName" SG_ 2164729104 ExtnlBrkPrio "ExtnlBrkPrio";
-BA_ "CompuMethodName" SG_ 2164729104 EmgcBrkReqdByIECUSts "EmgcBrkReqdByIECUSts";
-BA_ "ISignalName" SG_ 2164729104 EmgcBrkReqdByIECUSts "IEmgcBrkReqdByIECUSts";
-BA_ "LongName" SG_ 2164729104 EmgcBrkReqdByIECUSts "Emergency_Brake_Requested_By_Intelligent_Electric_Control_Unit_Status";
-BA_ "SysSignalName" SG_ 2164729104 EmgcBrkReqdByIECUSts "EmgcBrkReqdByIECUSts";
-BA_ "CompuMethodName" SG_ 2164729104 TCSDrvrItnt "TCSDrvrItnt";
-BA_ "ISignalName" SG_ 2164729104 TCSDrvrItnt "ITCSDrvrItnt";
-BA_ "LongName" SG_ 2164729104 TCSDrvrItnt "Traction_Control_System_Driver_Intent";
-BA_ "SysSignalName" SG_ 2164729104 TCSDrvrItnt "TCSDrvrItnt";
-BA_ "CompuMethodName" SG_ 2164729104 MultColBrkAvlblySts "MultColBrkAvlblySts";
-BA_ "ISignalName" SG_ 2164729104 MultColBrkAvlblySts "IMultColBrkAvlblySts";
-BA_ "LongName" SG_ 2164729104 MultColBrkAvlblySts "Multi_Collision_Brake_Availability_Status";
-BA_ "SysSignalName" SG_ 2164729104 MultColBrkAvlblySts "MultColBrkAvlblySts";
-BA_ "CompuMethodName" SG_ 2164729104 ChRCTBDclReqResp "ChRCTBDclReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChRCTBDclReqResp "IChRCTBDclReqResp";
-BA_ "LongName" SG_ 2164729104 ChRCTBDclReqResp "Chassis Rear Cross Traffic Braking Deceleration Request Response";
-BA_ "SysSignalName" SG_ 2164729104 ChRCTBDclReqResp "ChRCTBDclReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 SCSVehHoldAV "SCSVehHoldAV";
-BA_ "ISignalName" SG_ 2164729104 SCSVehHoldAV "ISCSVehHoldAV";
-BA_ "LongName" SG_ 2164729104 SCSVehHoldAV "Stability Control System Vehicle Hold A Validity";
-BA_ "SysSignalName" SG_ 2164729104 SCSVehHoldAV "SCSVehHoldAV";
-BA_ "CompuMethodName" SG_ 2164729104 SCSVehHoldA "SCSVehHoldA";
-BA_ "ISignalName" SG_ 2164729104 SCSVehHoldA "ISCSVehHoldA";
-BA_ "LongName" SG_ 2164729104 SCSVehHoldA "Stability Control System Vehicle Hold Active";
-BA_ "SysSignalName" SG_ 2164729104 SCSVehHoldA "SCSVehHoldA";
-BA_ "CompuMethodName" SG_ 2164729104 SCSAutodDrvngSysStsV "SCSAutodDrvngSysStsV";
-BA_ "ISignalName" SG_ 2164729104 SCSAutodDrvngSysStsV "ISCSAutodDrvngSysStsV";
-BA_ "LongName" SG_ 2164729104 SCSAutodDrvngSysStsV "Stability Control System Automated Driving System Status Validity";
-BA_ "SysSignalName" SG_ 2164729104 SCSAutodDrvngSysStsV "SCSAutodDrvngSysStsV";
-BA_ "CompuMethodName" SG_ 2164729104 VehSdslStsV "VehSdslStsV";
-BA_ "ISignalName" SG_ 2164729104 VehSdslStsV "IVehSdslStsV";
-BA_ "LongName" SG_ 2164729104 VehSdslStsV "Vehicle Standstill Status Valid";
-BA_ "SysSignalName" SG_ 2164729104 VehSdslStsV "VehSdslStsV";
-BA_ "CompuMethodName" SG_ 2164729104 ChRCTBPrflReqResp "ChRCTBPrflReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChRCTBPrflReqResp "IChRCTBPrflReqResp";
-BA_ "LongName" SG_ 2164729104 ChRCTBPrflReqResp "Chassis Rear Cross Traffic Braking Prefill Request Response";
-BA_ "SysSignalName" SG_ 2164729104 ChRCTBPrflReqResp "ChRCTBPrflReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 WhlBrkPrsSts "WhlBrkPrsSts";
-BA_ "GenSigStartValue" SG_ 2164729104 WhlBrkPrsSts 1;
-BA_ "ISignalName" SG_ 2164729104 WhlBrkPrsSts "IWhlBrkPrsSts";
-BA_ "LongName" SG_ 2164729104 WhlBrkPrsSts "Wheel Brake Pressure Status";
-BA_ "SysSignalName" SG_ 2164729104 WhlBrkPrsSts "WhlBrkPrsSts";
-BA_ "CompuMethodName" SG_ 2164729104 BrkSysRddySysSts "BrkSysRddySysSts";
-BA_ "ISignalName" SG_ 2164729104 BrkSysRddySysSts "IBrkSysRddySysSts";
-BA_ "LongName" SG_ 2164729104 BrkSysRddySysSts "Brake Redundancy System Status";
-BA_ "SysSignalName" SG_ 2164729104 BrkSysRddySysSts "BrkSysRddySysSts";
-BA_ "CompuMethodName" SG_ 2164729104 VehSdslSts "VehSdslSts";
-BA_ "ISignalName" SG_ 2164729104 VehSdslSts "IVehSdslSts";
-BA_ "LongName" SG_ 2164729104 VehSdslSts "Vehicle Standstill Status";
-BA_ "SysSignalName" SG_ 2164729104 VehSdslSts "VehSdslSts";
-BA_ "CompuMethodName" SG_ 2164729104 ChEBADclReqResp "ChEBADclReqResp";
-BA_ "ISignalName" SG_ 2164729104 ChEBADclReqResp "IChEBADclReqResp";
-BA_ "SysSignalName" SG_ 2164729104 ChEBADclReqResp "ChEBADclReqResp";
-BA_ "CompuMethodName" SG_ 2164729104 IBSAPASysFltSts "IBSAPASysFltSts";
-BA_ "ISignalName" SG_ 2164729104 IBSAPASysFltSts "IIBSAPASysFltSts";
-BA_ "LongName" SG_ 2164729104 IBSAPASysFltSts "Ibs Apa System Fault Status";
-BA_ "SysSignalName" SG_ 2164729104 IBSAPASysFltSts "IBSAPASysFltSts";
+BA_ "CompuMethodName" SG_ 429 EPS_010ms_Group03_CRC "EPS_010ms_Group03_CRC";
+BA_ "ISignalName" SG_ 429 EPS_010ms_Group03_CRC "IEPS_010ms_Group03_CRC";
+BA_ "LongName" SG_ 429 EPS_010ms_Group03_CRC "EPS_010ms_Group03_CRC";
+BA_ "SysSignalName" SG_ 429 EPS_010ms_Group03_CRC "EPS_010ms_Group03_CRC";
+BA_ "CompuMethodName" SG_ 429 EPS_010ms_Group03_RC "EPS_010ms_Group03_RC";
+BA_ "ISignalName" SG_ 429 EPS_010ms_Group03_RC "IEPS_010ms_Group03_RC";
+BA_ "LongName" SG_ 429 EPS_010ms_Group03_RC "EPS_010ms_Group03_RC";
+BA_ "SysSignalName" SG_ 429 EPS_010ms_Group03_RC "EPS_010ms_Group03_RC";
+BA_ "CompuMethodName" SG_ 429 EPSAESReqResp "EPSAESReqResp";
+BA_ "ISignalName" SG_ 429 EPSAESReqResp "IEPSAESReqResp";
+BA_ "LongName" SG_ 429 EPSAESReqResp "Steering_AES_Request_Response";
+BA_ "SysSignalName" SG_ 429 EPSAESReqResp "EPSAESReqResp";
+BA_ "CompuMethodName" SG_ 429 EPSAESStsInh "EPSAESStsInh";
+BA_ "ISignalName" SG_ 429 EPSAESStsInh "IEPSAESStsInh";
+BA_ "LongName" SG_ 429 EPSAESStsInh "Electric_Power_Steering_AES_Request_Response_Inhibit_Reason";
+BA_ "SysSignalName" SG_ 429 EPSAESStsInh "EPSAESStsInh";
+BA_ "CompuMethodName" SG_ 429 EPSAESReqTorResp "EPSAESReqTorResp";
+BA_ "GenSigStartValue" SG_ 429 EPSAESReqTorResp 1024;
+BA_ "ISignalName" SG_ 429 EPSAESReqTorResp "IEPSAESReqTorResp";
+BA_ "LongName" SG_ 429 EPSAESReqTorResp "Electric_Power_Steering_AES_Request_Torque_Response";
+BA_ "SysSignalName" SG_ 429 EPSAESReqTorResp "EPSAESReqTorResp";
+BA_ "CompuMethodName" SG_ 429 EPS_010ms_Group03_Reserved1 "EPS_010ms_Group03_Reserved1";
+BA_ "GenSigStartValue" SG_ 429 EPS_010ms_Group03_Reserved1 1;
+BA_ "ISignalName" SG_ 429 EPS_010ms_Group03_Reserved1 "IEPS_010ms_Group03_Reserved1";
+BA_ "SysSignalName" SG_ 429 EPS_010ms_Group03_Reserved1 "EPS_010ms_Group03_Reserved1";
+BA_ "CompuMethodName" SG_ 429 EPSVMCAngRespSts "EPSVMCAngRespSts";
+BA_ "ISignalName" SG_ 429 EPSVMCAngRespSts "IEPSVMCAngRespSts";
+BA_ "LongName" SG_ 429 EPSVMCAngRespSts "Electric_Power_Steering_VMC_Angle_Response_Status";
+BA_ "SysSignalName" SG_ 429 EPSVMCAngRespSts "EPSVMCAngRespSts";
+BA_ "CompuMethodName" SG_ 429 EPSAESReqTorRespV "EPSAESReqTorRespV";
+BA_ "ISignalName" SG_ 429 EPSAESReqTorRespV "IEPSAESReqTorRespV";
+BA_ "LongName" SG_ 429 EPSAESReqTorRespV "Electric_Power_Steering_AES_Request_Torque_Response_Validity";
+BA_ "SysSignalName" SG_ 429 EPSAESReqTorRespV "EPSAESReqTorRespV";
+BA_ "CompuMethodName" SG_ 429 EPSVMCRespStsInh "EPSVMCRespStsInh";
+BA_ "ISignalName" SG_ 429 EPSVMCRespStsInh "IEPSVMCRespStsInh";
+BA_ "LongName" SG_ 429 EPSVMCRespStsInh "Electric_Power_Steering_VMC_Request_Response_Inhibit_Reason";
+BA_ "SysSignalName" SG_ 429 EPSVMCRespStsInh "EPSVMCRespStsInh";
+BA_ "CompuMethodName" SG_ 429 EPS_010ms_Group03_Reserved2 "EPS_010ms_Group03_Reserved2";
+BA_ "GenSigStartValue" SG_ 429 EPS_010ms_Group03_Reserved2 63;
+BA_ "ISignalName" SG_ 429 EPS_010ms_Group03_Reserved2 "IEPS_010ms_Group03_Reserved2";
+BA_ "SysSignalName" SG_ 429 EPS_010ms_Group03_Reserved2 "EPS_010ms_Group03_Reserved2";
+BA_ "CompuMethodName" SG_ 429 EPSVMCCodrivingSts "EPSVMCCodrivingSts";
+BA_ "ISignalName" SG_ 429 EPSVMCCodrivingSts "IEPSVMCCodrivingSts";
+BA_ "LongName" SG_ 429 EPSVMCCodrivingSts "Electric_Power_Steering_VMC_Codriving_Status";
+BA_ "SysSignalName" SG_ 429 EPSVMCCodrivingSts "EPSVMCCodrivingSts";
+BA_ "CompuMethodName" SG_ 429 EPS_010ms_Group03_Reserved3 "EPS_010ms_Group03_Reserved3";
+BA_ "GenSigStartValue" SG_ 429 EPS_010ms_Group03_Reserved3 255;
+BA_ "ISignalName" SG_ 429 EPS_010ms_Group03_Reserved3 "IEPS_010ms_Group03_Reserved3";
+BA_ "SysSignalName" SG_ 429 EPS_010ms_Group03_Reserved3 "EPS_010ms_Group03_Reserved3";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_CRC "EPS_10ms_Group01_CRC";
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_CRC "IEPS_10ms_Group01_CRC";
+BA_ "LongName" SG_ 429 EPS_10ms_Group01_CRC "EPS_10ms_Group01_CRC";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_CRC "EPS_10ms_Group01_CRC";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_RC "EPS_10ms_Group01_RC";
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_RC "IEPS_10ms_Group01_RC";
+BA_ "LongName" SG_ 429 EPS_10ms_Group01_RC "EPS_10ms_Group01_RC";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_RC "EPS_10ms_Group01_RC";
+BA_ "CompuMethodName" SG_ 429 ActuRoadWhlAngV "ActuRoadWhlAngV";
+BA_ "ISignalName" SG_ 429 ActuRoadWhlAngV "IActuRoadWhlAngV";
+BA_ "LongName" SG_ 429 ActuRoadWhlAngV "Actual Road Wheel Angle Validity";
+BA_ "SysSignalName" SG_ 429 ActuRoadWhlAngV "ActuRoadWhlAngV";
+BA_ "CompuMethodName" SG_ 429 ADASStrgDlvrdToqV "ADASStrgDlvrdToqV";
+BA_ "ISignalName" SG_ 429 ADASStrgDlvrdToqV "IADASStrgDlvrdToqV";
+BA_ "LongName" SG_ 429 ADASStrgDlvrdToqV "Advanced Driver Assistance System Steering Delivered Torque Validity";
+BA_ "SysSignalName" SG_ 429 ADASStrgDlvrdToqV "ADASStrgDlvrdToqV";
+BA_ "CompuMethodName" SG_ 429 EPSDrvngMdCtrlInh "EPSDrvngMdCtrlInh";
+BA_ "GenSigStartValue" SG_ 429 EPSDrvngMdCtrlInh 1;
+BA_ "ISignalName" SG_ 429 EPSDrvngMdCtrlInh "IEPSDrvngMdCtrlInh";
+BA_ "LongName" SG_ 429 EPSDrvngMdCtrlInh "Electric Power Steering Driving Mode Control Inhibit";
+BA_ "SysSignalName" SG_ 429 EPSDrvngMdCtrlInh "EPSDrvngMdCtrlInh";
+BA_ "CompuMethodName" SG_ 429 DrvrStrgDlvrdToqV "DrvrStrgDlvrdToqV";
+BA_ "ISignalName" SG_ 429 DrvrStrgDlvrdToqV "IDrvrStrgDlvrdToqV";
+BA_ "LongName" SG_ 429 DrvrStrgDlvrdToqV "Driver Steering Delivered Torque Validity";
+BA_ "SysSignalName" SG_ 429 DrvrStrgDlvrdToqV "DrvrStrgDlvrdToqV";
+BA_ "CompuMethodName" SG_ 429 ActuPnonAng "ActuPnonAng";
+BA_ "GenSigStartValue" SG_ 429 ActuPnonAng 32768;
+BA_ "ISignalName" SG_ 429 ActuPnonAng "IActuPnonAng";
+BA_ "LongName" SG_ 429 ActuPnonAng "Actual Pinion Angle";
+BA_ "SysSignalName" SG_ 429 ActuPnonAng "ActuPnonAng";
+BA_ "CompuMethodName" SG_ 429 ActuRoadWhlAng "ActuRoadWhlAng";
+BA_ "GenSigStartValue" SG_ 429 ActuRoadWhlAng 32600;
+BA_ "ISignalName" SG_ 429 ActuRoadWhlAng "IActuRoadWhlAng";
+BA_ "LongName" SG_ 429 ActuRoadWhlAng "Actual Road Wheel Angle";
+BA_ "SysSignalName" SG_ 429 ActuRoadWhlAng "ActuRoadWhlAng";
+BA_ "CompuMethodName" SG_ 429 StrgCustSetngDspCmd "StrgCustSetngDspCmd";
+BA_ "ISignalName" SG_ 429 StrgCustSetngDspCmd "IStrgCustSetngDspCmd";
+BA_ "LongName" SG_ 429 StrgCustSetngDspCmd "Steering Customization Setting Display Command";
+BA_ "SysSignalName" SG_ 429 StrgCustSetngDspCmd "StrgCustSetngDspCmd";
+BA_ "CompuMethodName" SG_ 429 EPSPriyChnlFlrSts "EPSPriyChnlFlrSts";
+BA_ "ISignalName" SG_ 429 EPSPriyChnlFlrSts "IEPSPriyChnlFlrSts";
+BA_ "LongName" SG_ 429 EPSPriyChnlFlrSts "Electric Power Steering Primary Channel Failure Status";
+BA_ "SysSignalName" SG_ 429 EPSPriyChnlFlrSts "EPSPriyChnlFlrSts";
+BA_ "CompuMethodName" SG_ 429 EPSFlrSts "EPSFlrSts";
+BA_ "ISignalName" SG_ 429 EPSFlrSts "IEPSFlrSts";
+BA_ "LongName" SG_ 429 EPSFlrSts "Electric Power Steering Failure Status";
+BA_ "SysSignalName" SG_ 429 EPSFlrSts "EPSFlrSts";
+BA_ "CompuMethodName" SG_ 429 EPSCurntDrvMd "EPSCurntDrvMd";
+BA_ "ISignalName" SG_ 429 EPSCurntDrvMd "IEPSCurntDrvMd";
+BA_ "LongName" SG_ 429 EPSCurntDrvMd "Eps Current Drive Mode";
+BA_ "SysSignalName" SG_ 429 EPSCurntDrvMd "EPSCurntDrvMd";
+BA_ "CompuMethodName" SG_ 429 ActuPnonAngV "ActuPnonAngV";
+BA_ "ISignalName" SG_ 429 ActuPnonAngV "IActuPnonAngV";
+BA_ "LongName" SG_ 429 ActuPnonAngV "Actual Pinion Angle Validity";
+BA_ "SysSignalName" SG_ 429 ActuPnonAngV "ActuPnonAngV";
+BA_ "CompuMethodName" SG_ 429 EPSToqValAldMaxV "EPSToqValAldMaxV";
+BA_ "ISignalName" SG_ 429 EPSToqValAldMaxV "IEPSToqValAldMaxV";
+BA_ "LongName" SG_ 429 EPSToqValAldMaxV "Electric Power Steering Torque Value Allowed Maximum Validity";
+BA_ "SysSignalName" SG_ 429 EPSToqValAldMaxV "EPSToqValAldMaxV";
+BA_ "CompuMethodName" SG_ 429 EPSLimMotToqV "EPSLimMotToqV";
+BA_ "GenSigStartValue" SG_ 429 EPSLimMotToqV 1;
+BA_ "ISignalName" SG_ 429 EPSLimMotToqV "IEPSLimMotToqV";
+BA_ "LongName" SG_ 429 EPSLimMotToqV "Electric_Power_Steering_Limited_Motor_Torque_Validity";
+BA_ "SysSignalName" SG_ 429 EPSLimMotToqV "EPSLimMotToqV";
+BA_ "CompuMethodName" SG_ 429 EPSActRetMotToqV "EPSActRetMotToqV";
+BA_ "GenSigStartValue" SG_ 429 EPSActRetMotToqV 1;
+BA_ "ISignalName" SG_ 429 EPSActRetMotToqV "IEPSActRetMotToqV";
+BA_ "LongName" SG_ 429 EPSActRetMotToqV "Electric_Power_Steering_Active_Return_Motor_Torque_Validity";
+BA_ "SysSignalName" SG_ 429 EPSActRetMotToqV "EPSActRetMotToqV";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved1 "EPS_10ms_Group01_Reserved1";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved1 1;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved1 "IEPS_10ms_Group01_Reserved1";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved1 "EPS_10ms_Group01_Reserved1";
+BA_ "CompuMethodName" SG_ 429 ChLKAAngReqResp "ChLKAAngReqResp";
+BA_ "ISignalName" SG_ 429 ChLKAAngReqResp "IChLKAAngReqResp";
+BA_ "LongName" SG_ 429 ChLKAAngReqResp "Chassis Lane Keeping Assist Angle Request Response";
+BA_ "SysSignalName" SG_ 429 ChLKAAngReqResp "ChLKAAngReqResp";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved2 "EPS_10ms_Group01_Reserved2";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved2 15;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved2 "IEPS_10ms_Group01_Reserved2";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved2 "EPS_10ms_Group01_Reserved2";
+BA_ "CompuMethodName" SG_ 429 EPSToqValAldMinV "EPSToqValAldMinV";
+BA_ "ISignalName" SG_ 429 EPSToqValAldMinV "IEPSToqValAldMinV";
+BA_ "LongName" SG_ 429 EPSToqValAldMinV "Electric Power Steering Torque Value Allowed Minimum Validity";
+BA_ "SysSignalName" SG_ 429 EPSToqValAldMinV "EPSToqValAldMinV";
+BA_ "CompuMethodName" SG_ 429 CHLKAHptResp "CHLKAHptResp";
+BA_ "ISignalName" SG_ 429 CHLKAHptResp "ICHLKAHptResp";
+BA_ "LongName" SG_ 429 CHLKAHptResp "Lane Keeping Assist Haptic Response";
+BA_ "SysSignalName" SG_ 429 CHLKAHptResp "CHLKAHptResp";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved3 "EPS_10ms_Group01_Reserved3";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved3 255;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved3 "IEPS_10ms_Group01_Reserved3";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved3 "EPS_10ms_Group01_Reserved3";
+BA_ "CompuMethodName" SG_ 429 ADASStrgDlvrdToq "ADASStrgDlvrdToq";
+BA_ "GenSigStartValue" SG_ 429 ADASStrgDlvrdToq 1024;
+BA_ "ISignalName" SG_ 429 ADASStrgDlvrdToq "IADASStrgDlvrdToq";
+BA_ "LongName" SG_ 429 ADASStrgDlvrdToq "Advanced Driver Assistance System Steering Delivered Torque";
+BA_ "SysSignalName" SG_ 429 ADASStrgDlvrdToq "ADASStrgDlvrdToq";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved4 "EPS_10ms_Group01_Reserved4";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved4 3;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved4 "IEPS_10ms_Group01_Reserved4";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved4 "EPS_10ms_Group01_Reserved4";
+BA_ "CompuMethodName" SG_ 429 ChLKAToqReqResp "ChLKAToqReqResp";
+BA_ "ISignalName" SG_ 429 ChLKAToqReqResp "IChLKAToqReqResp";
+BA_ "LongName" SG_ 429 ChLKAToqReqResp "Chassis Lane Keeping Assist Torque Request Response";
+BA_ "SysSignalName" SG_ 429 ChLKAToqReqResp "ChLKAToqReqResp";
+BA_ "CompuMethodName" SG_ 429 EPSToqValAldMax "EPSToqValAldMax";
+BA_ "GenSigStartValue" SG_ 429 EPSToqValAldMax 1024;
+BA_ "ISignalName" SG_ 429 EPSToqValAldMax "IEPSToqValAldMax";
+BA_ "LongName" SG_ 429 EPSToqValAldMax "Electric Power Steering Torque Value Allowed Maximum";
+BA_ "SysSignalName" SG_ 429 EPSToqValAldMax "EPSToqValAldMax";
+BA_ "CompuMethodName" SG_ 429 EPSCoDrivingSts "EPSCoDrivingSts";
+BA_ "GenSigStartValue" SG_ 429 EPSCoDrivingSts 3;
+BA_ "ISignalName" SG_ 429 EPSCoDrivingSts "IEPSCoDrivingSts";
+BA_ "LongName" SG_ 429 EPSCoDrivingSts "Electric Power Steering Coperation Driving Status";
+BA_ "SysSignalName" SG_ 429 EPSCoDrivingSts "EPSCoDrivingSts";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved5 "EPS_10ms_Group01_Reserved5";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved5 7;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved5 "IEPS_10ms_Group01_Reserved5";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved5 "EPS_10ms_Group01_Reserved5";
+BA_ "CompuMethodName" SG_ 429 EPSToqValAldMin "EPSToqValAldMin";
+BA_ "GenSigStartValue" SG_ 429 EPSToqValAldMin 1024;
+BA_ "ISignalName" SG_ 429 EPSToqValAldMin "IEPSToqValAldMin";
+BA_ "LongName" SG_ 429 EPSToqValAldMin "Electric Power Steering Torque Value Allowed Minimum";
+BA_ "SysSignalName" SG_ 429 EPSToqValAldMin "EPSToqValAldMin";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved6 "EPS_10ms_Group01_Reserved6";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved6 31;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved6 "IEPS_10ms_Group01_Reserved6";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved6 "EPS_10ms_Group01_Reserved6";
+BA_ "CompuMethodName" SG_ 429 EPSActRetMotToq "EPSActRetMotToq";
+BA_ "ISignalName" SG_ 429 EPSActRetMotToq "IEPSActRetMotToq";
+BA_ "LongName" SG_ 429 EPSActRetMotToq "Electric_Power_Steering_Active_Return_Motor_Torque";
+BA_ "SysSignalName" SG_ 429 EPSActRetMotToq "EPSActRetMotToq";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved7 "EPS_10ms_Group01_Reserved7";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved7 255;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved7 "IEPS_10ms_Group01_Reserved7";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved7 "EPS_10ms_Group01_Reserved7";
+BA_ "CompuMethodName" SG_ 429 DrvrStrgDlvrdToq "DrvrStrgDlvrdToq";
+BA_ "GenSigStartValue" SG_ 429 DrvrStrgDlvrdToq 2048;
+BA_ "ISignalName" SG_ 429 DrvrStrgDlvrdToq "IDrvrStrgDlvrdToq";
+BA_ "LongName" SG_ 429 DrvrStrgDlvrdToq "Driver Steering Delivered Torque";
+BA_ "SysSignalName" SG_ 429 DrvrStrgDlvrdToq "DrvrStrgDlvrdToq";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved8 "EPS_10ms_Group01_Reserved8";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved8 15;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved8 "IEPS_10ms_Group01_Reserved8";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved8 "EPS_10ms_Group01_Reserved8";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group01_Reserved9 "EPS_10ms_Group01_Reserved9";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group01_Reserved9 255;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group01_Reserved9 "IEPS_10ms_Group01_Reserved9";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group01_Reserved9 "EPS_10ms_Group01_Reserved9";
+BA_ "CompuMethodName" SG_ 429 EPSLimMotToq "EPSLimMotToq";
+BA_ "ISignalName" SG_ 429 EPSLimMotToq "IEPSLimMotToq";
+BA_ "LongName" SG_ 429 EPSLimMotToq "Electric_Power_Steering_Limited_Motor_Torque";
+BA_ "SysSignalName" SG_ 429 EPSLimMotToq "EPSLimMotToq";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group02_CRC "EPS_10ms_Group02_CRC";
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group02_CRC "IEPS_10ms_Group02_CRC";
+BA_ "LongName" SG_ 429 EPS_10ms_Group02_CRC "EPS_10ms_Group02_CRC";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group02_CRC "EPS_10ms_Group02_CRC";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group02_RC "EPS_10ms_Group02_RC";
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group02_RC "IEPS_10ms_Group02_RC";
+BA_ "LongName" SG_ 429 EPS_10ms_Group02_RC "EPS_10ms_Group02_RC";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group02_RC "EPS_10ms_Group02_RC";
+BA_ "CompuMethodName" SG_ 429 EPSAIPkgAngReqResp "EPSAIPkgAngReqResp";
+BA_ "GenSigStartValue" SG_ 429 EPSAIPkgAngReqResp 7;
+BA_ "ISignalName" SG_ 429 EPSAIPkgAngReqResp "IEPSAIPkgAngReqResp";
+BA_ "LongName" SG_ 429 EPSAIPkgAngReqResp "Electric Power Steering Ai Parking Angle Request Response";
+BA_ "SysSignalName" SG_ 429 EPSAIPkgAngReqResp "EPSAIPkgAngReqResp";
+BA_ "CompuMethodName" SG_ 429 EPSAIPkgAngReqRespInh "EPSAIPkgAngReqRespInh";
+BA_ "ISignalName" SG_ 429 EPSAIPkgAngReqRespInh "IEPSAIPkgAngReqRespInh";
+BA_ "LongName" SG_ 429 EPSAIPkgAngReqRespInh "Electric Power Steering Ai Parking Angle Request Response Inhibit Reason";
+BA_ "SysSignalName" SG_ 429 EPSAIPkgAngReqRespInh "EPSAIPkgAngReqRespInh";
+BA_ "CompuMethodName" SG_ 429 EPSAIPltAngRespStsInh "EPSAIPltAngRespStsInh";
+BA_ "ISignalName" SG_ 429 EPSAIPltAngRespStsInh "IEPSAIPltAngRespStsInh";
+BA_ "LongName" SG_ 429 EPSAIPltAngRespStsInh "Electric_Power_Steering_Ai_Pilot_Angle_Request_Response_Inhibit_Reason";
+BA_ "SysSignalName" SG_ 429 EPSAIPltAngRespStsInh "EPSAIPltAngRespStsInh";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group02_Reserved1 "EPS_10ms_Group02_Reserved1";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group02_Reserved1 7;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group02_Reserved1 "IEPS_10ms_Group02_Reserved1";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group02_Reserved1 "EPS_10ms_Group02_Reserved1";
+BA_ "CompuMethodName" SG_ 429 EPSAIPltAvlLvl "EPSAIPltAvlLvl";
+BA_ "ISignalName" SG_ 429 EPSAIPltAvlLvl "IEPSAIPltAvlLvl";
+BA_ "LongName" SG_ 429 EPSAIPltAvlLvl "Electric Power Steering Ai Pilot Availablity Level";
+BA_ "SysSignalName" SG_ 429 EPSAIPltAvlLvl "EPSAIPltAvlLvl";
+BA_ "CompuMethodName" SG_ 429 EPSAIPltAngRespSts "EPSAIPltAngRespSts";
+BA_ "ISignalName" SG_ 429 EPSAIPltAngRespSts "IEPSAIPltAngRespSts";
+BA_ "LongName" SG_ 429 EPSAIPltAngRespSts "Electric Power Steering Ai Pilot Angle Response Status";
+BA_ "SysSignalName" SG_ 429 EPSAIPltAngRespSts "EPSAIPltAngRespSts";
+BA_ "CompuMethodName" SG_ 429 ActuRoadWhlAngGrdV "ActuRoadWhlAngGrdV";
+BA_ "ISignalName" SG_ 429 ActuRoadWhlAngGrdV "IActuRoadWhlAngGrdV";
+BA_ "LongName" SG_ 429 ActuRoadWhlAngGrdV "Actual Road Wheel Angle Gradient Validity";
+BA_ "SysSignalName" SG_ 429 ActuRoadWhlAngGrdV "ActuRoadWhlAngGrdV";
+BA_ "CompuMethodName" SG_ 429 EPS_10ms_Group02_Reserved2 "EPS_10ms_Group02_Reserved2";
+BA_ "GenSigStartValue" SG_ 429 EPS_10ms_Group02_Reserved2 63;
+BA_ "ISignalName" SG_ 429 EPS_10ms_Group02_Reserved2 "IEPS_10ms_Group02_Reserved2";
+BA_ "SysSignalName" SG_ 429 EPS_10ms_Group02_Reserved2 "EPS_10ms_Group02_Reserved2";
+BA_ "CompuMethodName" SG_ 429 EPSAIPltCtrlChannel "EPSAIPltCtrlChannel";
+BA_ "ISignalName" SG_ 429 EPSAIPltCtrlChannel "IEPSAIPltCtrlChannel";
+BA_ "LongName" SG_ 429 EPSAIPltCtrlChannel "EPSAIPltCtrlChannel";
+BA_ "SysSignalName" SG_ 429 EPSAIPltCtrlChannel "EPSAIPltCtrlChannel";
+BA_ "CompuMethodName" SG_ 429 ActuRoadWhlAngGrd "ActuRoadWhlAngGrd";
+BA_ "GenSigStartValue" SG_ 429 ActuRoadWhlAngGrd 32600;
+BA_ "ISignalName" SG_ 429 ActuRoadWhlAngGrd "IActuRoadWhlAngGrd";
+BA_ "LongName" SG_ 429 ActuRoadWhlAngGrd "Actual Road Wheel Angle Gradient";
+BA_ "SysSignalName" SG_ 429 ActuRoadWhlAngGrd "ActuRoadWhlAngGrd";
+BA_ "CompuMethodName" SG_ 173 EPS_10ms_Group05_CRC "EPS_10ms_Group05_CRC";
+BA_ "ISignalName" SG_ 173 EPS_10ms_Group05_CRC "IEPS_10ms_Group05_CRC";
+BA_ "LongName" SG_ 173 EPS_10ms_Group05_CRC "EPS_10ms_Group05_CRC";
+BA_ "SysSignalName" SG_ 173 EPS_10ms_Group05_CRC "EPS_10ms_Group05_CRC";
+BA_ "CompuMethodName" SG_ 173 EPS_10ms_Group05_RC "EPS_10ms_Group05_RC";
+BA_ "ISignalName" SG_ 173 EPS_10ms_Group05_RC "IEPS_10ms_Group05_RC";
+BA_ "LongName" SG_ 173 EPS_10ms_Group05_RC "EPS_10ms_Group05_RC";
+BA_ "SysSignalName" SG_ 173 EPS_10ms_Group05_RC "EPS_10ms_Group05_RC";
+BA_ "CompuMethodName" SG_ 173 StrgWhlAngSnsrFlt "StrgWhlAngSnsrFlt";
+BA_ "ISignalName" SG_ 173 StrgWhlAngSnsrFlt "IStrgWhlAngSnsrFlt";
+BA_ "LongName" SG_ 173 StrgWhlAngSnsrFlt "Steering Wheel Angle Sensor Fault";
+BA_ "SysSignalName" SG_ 173 StrgWhlAngSnsrFlt "StrgWhlAngSnsrFlt";
+BA_ "CompuMethodName" SG_ 173 StrgWhlAngV "StrgWhlAngV";
+BA_ "ISignalName" SG_ 173 StrgWhlAngV "IStrgWhlAngV";
+BA_ "LongName" SG_ 173 StrgWhlAngV "Steering Wheel Angle Validity";
+BA_ "SysSignalName" SG_ 173 StrgWhlAngV "StrgWhlAngV";
+BA_ "CompuMethodName" SG_ 173 StrgWhlAngSnsrMultCapb "StrgWhlAngSnsrMultCapb";
+BA_ "ISignalName" SG_ 173 StrgWhlAngSnsrMultCapb "IStrgWhlAngSnsrMultCapb";
+BA_ "LongName" SG_ 173 StrgWhlAngSnsrMultCapb "Steering Wheel Angle Sensor Multiturn Capable";
+BA_ "SysSignalName" SG_ 173 StrgWhlAngSnsrMultCapb "StrgWhlAngSnsrMultCapb";
+BA_ "CompuMethodName" SG_ 173 StrgWhlAngSnsrInid "StrgWhlAngSnsrInid";
+BA_ "ISignalName" SG_ 173 StrgWhlAngSnsrInid "IStrgWhlAngSnsrInid";
+BA_ "LongName" SG_ 173 StrgWhlAngSnsrInid "Steering Wheel Angle Sensor Initialized";
+BA_ "SysSignalName" SG_ 173 StrgWhlAngSnsrInid "StrgWhlAngSnsrInid";
+BA_ "CompuMethodName" SG_ 173 StrgWhlAng "StrgWhlAng";
+BA_ "ISignalName" SG_ 173 StrgWhlAng "IStrgWhlAng";
+BA_ "LongName" SG_ 173 StrgWhlAng "Steering Wheel Angle";
+BA_ "SysSignalName" SG_ 173 StrgWhlAng "StrgWhlAng";
+BA_ "CompuMethodName" SG_ 173 StrgWhlAngGrd "StrgWhlAngGrd";
+BA_ "ISignalName" SG_ 173 StrgWhlAngGrd "IStrgWhlAngGrd";
+BA_ "LongName" SG_ 173 StrgWhlAngGrd "Steering Wheel Angle Gradient";
+BA_ "SysSignalName" SG_ 173 StrgWhlAngGrd "StrgWhlAngGrd";
+BA_ "CompuMethodName" SG_ 173 EPS_10ms_Group05_Reserved1 "EPS_10ms_Group05_Reserved1";
+BA_ "GenSigStartValue" SG_ 173 EPS_10ms_Group05_Reserved1 3;
+BA_ "ISignalName" SG_ 173 EPS_10ms_Group05_Reserved1 "IEPS_10ms_Group05_Reserved1";
+BA_ "SysSignalName" SG_ 173 EPS_10ms_Group05_Reserved1 "EPS_10ms_Group05_Reserved1";
+BA_ "CompuMethodName" SG_ 173 StrgWhlAngSnsrCalSts "StrgWhlAngSnsrCalSts";
+BA_ "ISignalName" SG_ 173 StrgWhlAngSnsrCalSts "IStrgWhlAngSnsrCalSts";
+BA_ "LongName" SG_ 173 StrgWhlAngSnsrCalSts "Steering Wheel Angle Sensor Calibration Status";
+BA_ "SysSignalName" SG_ 173 StrgWhlAngSnsrCalSts "StrgWhlAngSnsrCalSts";
+BA_ "CompuMethodName" SG_ 173 EPS_10ms_Group05_Reserved2 "EPS_10ms_Group05_Reserved2";
+BA_ "GenSigStartValue" SG_ 173 EPS_10ms_Group05_Reserved2 255;
+BA_ "ISignalName" SG_ 173 EPS_10ms_Group05_Reserved2 "IEPS_10ms_Group05_Reserved2";
+BA_ "SysSignalName" SG_ 173 EPS_10ms_Group05_Reserved2 "EPS_10ms_Group05_Reserved2";
+BA_ "CompuMethodName" SG_ 173 EPS_10ms_Group05_Reserved3 "EPS_10ms_Group05_Reserved3";
+BA_ "GenSigStartValue" SG_ 173 EPS_10ms_Group05_Reserved3 255;
+BA_ "ISignalName" SG_ 173 EPS_10ms_Group05_Reserved3 "IEPS_10ms_Group05_Reserved3";
+BA_ "SysSignalName" SG_ 173 EPS_10ms_Group05_Reserved3 "EPS_10ms_Group05_Reserved3";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_CRC "IBS_10ms_Group04_CRC";
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_CRC "IIBS_10ms_Group04_CRC";
+BA_ "LongName" SG_ 184 IBS_10ms_Group04_CRC "IBS_10ms_Group04_CRC";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_CRC "IBS_10ms_Group04_CRC";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_RC "IBS_10ms_Group04_RC";
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_RC "IIBS_10ms_Group04_RC";
+BA_ "LongName" SG_ 184 IBS_10ms_Group04_RC "IBS_10ms_Group04_RC";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_RC "IBS_10ms_Group04_RC";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_Reserved1 "IBS_10ms_Group04_Reserved1";
+BA_ "GenSigStartValue" SG_ 184 IBS_10ms_Group04_Reserved1 15;
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_Reserved1 "IIBS_10ms_Group04_Reserved1";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_Reserved1 "IBS_10ms_Group04_Reserved1";
+BA_ "CompuMethodName" SG_ 184 BrkPdlPos "BrkPdlPos";
+BA_ "ISignalName" SG_ 184 BrkPdlPos "IBrkPdlPos";
+BA_ "LongName" SG_ 184 BrkPdlPos "Brake Pedal Position";
+BA_ "SysSignalName" SG_ 184 BrkPdlPos "BrkPdlPos";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_Reserved3 "IBS_10ms_Group04_Reserved3";
+BA_ "GenSigStartValue" SG_ 184 IBS_10ms_Group04_Reserved3 15;
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_Reserved3 "IIBS_10ms_Group04_Reserved3";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_Reserved3 "IBS_10ms_Group04_Reserved3";
+BA_ "CompuMethodName" SG_ 184 EPBSysBrkLghtsReqdA "EPBSysBrkLghtsReqdA";
+BA_ "ISignalName" SG_ 184 EPBSysBrkLghtsReqdA "IEPBSysBrkLghtsReqdA";
+BA_ "SysSignalName" SG_ 184 EPBSysBrkLghtsReqdA "EPBSysBrkLghtsReqdA";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_Reserved2 "IBS_10ms_Group04_Reserved2";
+BA_ "GenSigStartValue" SG_ 184 IBS_10ms_Group04_Reserved2 1;
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_Reserved2 "IIBS_10ms_Group04_Reserved2";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_Reserved2 "IBS_10ms_Group04_Reserved2";
+BA_ "CompuMethodName" SG_ 184 BrkSysBrkLghtsReqd "BrkSysBrkLghtsReqd";
+BA_ "ISignalName" SG_ 184 BrkSysBrkLghtsReqd "IBrkSysBrkLghtsReqd";
+BA_ "LongName" SG_ 184 BrkSysBrkLghtsReqd "Brake System Brake Lights Requested";
+BA_ "SysSignalName" SG_ 184 BrkSysBrkLghtsReqd "BrkSysBrkLghtsReqd";
+BA_ "CompuMethodName" SG_ 184 BrkPdlPosV "BrkPdlPosV";
+BA_ "ISignalName" SG_ 184 BrkPdlPosV "IBrkPdlPosV";
+BA_ "LongName" SG_ 184 BrkPdlPosV "Brake Pedal Position Validity";
+BA_ "SysSignalName" SG_ 184 BrkPdlPosV "BrkPdlPosV";
+BA_ "CompuMethodName" SG_ 184 ChSysEnToqReqProtn "ChSysEnToqReqProtn";
+BA_ "ISignalName" SG_ 184 ChSysEnToqReqProtn "IChSysEnToqReqProtn";
+BA_ "SysSignalName" SG_ 184 ChSysEnToqReqProtn "ChSysEnToqReqProtn";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_Reserved4 "IBS_10ms_Group04_Reserved4";
+BA_ "GenSigStartValue" SG_ 184 IBS_10ms_Group04_Reserved4 3;
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_Reserved4 "IIBS_10ms_Group04_Reserved4";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_Reserved4 "IBS_10ms_Group04_Reserved4";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_Reserved5 "IBS_10ms_Group04_Reserved5";
+BA_ "GenSigStartValue" SG_ 184 IBS_10ms_Group04_Reserved5 255;
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_Reserved5 "IIBS_10ms_Group04_Reserved5";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_Reserved5 "IBS_10ms_Group04_Reserved5";
+BA_ "CompuMethodName" SG_ 184 IBS_10ms_Group04_Reserved6 "IBS_10ms_Group04_Reserved6";
+BA_ "GenSigStartValue" SG_ 184 IBS_10ms_Group04_Reserved6 255;
+BA_ "ISignalName" SG_ 184 IBS_10ms_Group04_Reserved6 "IIBS_10ms_Group04_Reserved6";
+BA_ "SysSignalName" SG_ 184 IBS_10ms_Group04_Reserved6 "IBS_10ms_Group04_Reserved6";
+BA_ "CompuMethodName" SG_ 394 IBS_20ms_Group10_CRC "IBS_20ms_Group10_CRC";
+BA_ "ISignalName" SG_ 394 IBS_20ms_Group10_CRC "IIBS_20ms_Group10_CRC";
+BA_ "LongName" SG_ 394 IBS_20ms_Group10_CRC "IBS_20ms_Group10_CRC";
+BA_ "SysSignalName" SG_ 394 IBS_20ms_Group10_CRC "IBS_20ms_Group10_CRC";
+BA_ "CompuMethodName" SG_ 394 IBS_20ms_Group10_RC "IBS_20ms_Group10_RC";
+BA_ "ISignalName" SG_ 394 IBS_20ms_Group10_RC "IIBS_20ms_Group10_RC";
+BA_ "LongName" SG_ 394 IBS_20ms_Group10_RC "IBS_20ms_Group10_RC";
+BA_ "SysSignalName" SG_ 394 IBS_20ms_Group10_RC "IBS_20ms_Group10_RC";
+BA_ "CompuMethodName" SG_ 394 BrkPdlDrvrAppdPrsV "BrkPdlDrvrAppdPrsV";
+BA_ "ISignalName" SG_ 394 BrkPdlDrvrAppdPrsV "IBrkPdlDrvrAppdPrsV";
+BA_ "LongName" SG_ 394 BrkPdlDrvrAppdPrsV "Brake Pedal Driver Applied Pressure Validity";
+BA_ "SysSignalName" SG_ 394 BrkPdlDrvrAppdPrsV "BrkPdlDrvrAppdPrsV";
+BA_ "CompuMethodName" SG_ 394 BrkPdlDrvrAppdPrsDetV "BrkPdlDrvrAppdPrsDetV";
+BA_ "ISignalName" SG_ 394 BrkPdlDrvrAppdPrsDetV "IBrkPdlDrvrAppdPrsDetV";
+BA_ "LongName" SG_ 394 BrkPdlDrvrAppdPrsDetV "Brake_Pedal_Driver_Applied_Pressure_Detected_Validity";
+BA_ "SysSignalName" SG_ 394 BrkPdlDrvrAppdPrsDetV "BrkPdlDrvrAppdPrsDetV";
+BA_ "CompuMethodName" SG_ 394 BrkPdlDrvrAppdPrsDet "BrkPdlDrvrAppdPrsDet";
+BA_ "ISignalName" SG_ 394 BrkPdlDrvrAppdPrsDet "IBrkPdlDrvrAppdPrsDet";
+BA_ "LongName" SG_ 394 BrkPdlDrvrAppdPrsDet "Brake_Pedal_Driver_Applied_Pressure_Detected";
+BA_ "SysSignalName" SG_ 394 BrkPdlDrvrAppdPrsDet "BrkPdlDrvrAppdPrsDet";
+BA_ "CompuMethodName" SG_ 394 BrkDiscTemSts "BrkDiscTemSts";
+BA_ "ISignalName" SG_ 394 BrkDiscTemSts "IBrkDiscTemSts";
+BA_ "LongName" SG_ 394 BrkDiscTemSts "Brake Disc Temperature Status";
+BA_ "SysSignalName" SG_ 394 BrkDiscTemSts "BrkDiscTemSts";
+BA_ "CompuMethodName" SG_ 394 BrkPdlDrvrAppdPrs "BrkPdlDrvrAppdPrs";
+BA_ "ISignalName" SG_ 394 BrkPdlDrvrAppdPrs "IBrkPdlDrvrAppdPrs";
+BA_ "LongName" SG_ 394 BrkPdlDrvrAppdPrs "Brake Pedal Driver Applied Pressure";
+BA_ "SysSignalName" SG_ 394 BrkPdlDrvrAppdPrs "BrkPdlDrvrAppdPrs";
+BA_ "CompuMethodName" SG_ 394 BrkPdlMdlSts "BrkPdlMdlSts";
+BA_ "ISignalName" SG_ 394 BrkPdlMdlSts "IBrkPdlMdlSts";
+BA_ "LongName" SG_ 394 BrkPdlMdlSts "Brake Pedal Model Status";
+BA_ "SysSignalName" SG_ 394 BrkPdlMdlSts "BrkPdlMdlSts";
+BA_ "CompuMethodName" SG_ 394 DrvrReqOtptRodTrvlSts "DrvrReqOtptRodTrvlSts";
+BA_ "ISignalName" SG_ 394 DrvrReqOtptRodTrvlSts "IDrvrReqOtptRodTrvlSts";
+BA_ "LongName" SG_ 394 DrvrReqOtptRodTrvlSts "Driver Request Output Rod Travel Status";
+BA_ "SysSignalName" SG_ 394 DrvrReqOtptRodTrvlSts "DrvrReqOtptRodTrvlSts";
+BA_ "CompuMethodName" SG_ 394 BrkPdlSimltdPrsV "BrkPdlSimltdPrsV";
+BA_ "ISignalName" SG_ 394 BrkPdlSimltdPrsV "IBrkPdlSimltdPrsV";
+BA_ "LongName" SG_ 394 BrkPdlSimltdPrsV "Brake Pedal Simulated Pressure Validity";
+BA_ "SysSignalName" SG_ 394 BrkPdlSimltdPrsV "BrkPdlSimltdPrsV";
+BA_ "CompuMethodName" SG_ 394 BrkPdlAppd "BrkPdlAppd";
+BA_ "ISignalName" SG_ 394 BrkPdlAppd "IBrkPdlAppd";
+BA_ "LongName" SG_ 394 BrkPdlAppd "Brake Pedal Applied";
+BA_ "SysSignalName" SG_ 394 BrkPdlAppd "BrkPdlAppd";
+BA_ "CompuMethodName" SG_ 394 BrkPdlAppdV "BrkPdlAppdV";
+BA_ "ISignalName" SG_ 394 BrkPdlAppdV "IBrkPdlAppdV";
+BA_ "LongName" SG_ 394 BrkPdlAppdV "Brake Pedal Applied Validity";
+BA_ "SysSignalName" SG_ 394 BrkPdlAppdV "BrkPdlAppdV";
+BA_ "CompuMethodName" SG_ 394 BrkPdlSimltdPrs "BrkPdlSimltdPrs";
+BA_ "ISignalName" SG_ 394 BrkPdlSimltdPrs "IBrkPdlSimltdPrs";
+BA_ "LongName" SG_ 394 BrkPdlSimltdPrs "Brake Pedal Simulated Pressure";
+BA_ "SysSignalName" SG_ 394 BrkPdlSimltdPrs "BrkPdlSimltdPrs";
+BA_ "CompuMethodName" SG_ 394 BrkFludLvlLowV "BrkFludLvlLowV";
+BA_ "ISignalName" SG_ 394 BrkFludLvlLowV "IBrkFludLvlLowV";
+BA_ "LongName" SG_ 394 BrkFludLvlLowV "Brake Fluid Level Low Validity";
+BA_ "SysSignalName" SG_ 394 BrkFludLvlLowV "BrkFludLvlLowV";
+BA_ "CompuMethodName" SG_ 394 BrkFludLvlLow "BrkFludLvlLow";
+BA_ "ISignalName" SG_ 394 BrkFludLvlLow "IBrkFludLvlLow";
+BA_ "LongName" SG_ 394 BrkFludLvlLow "Brake Fluid Level Low";
+BA_ "SysSignalName" SG_ 394 BrkFludLvlLow "BrkFludLvlLow";
+BA_ "CompuMethodName" SG_ 394 BrkPdlMdlActSts "BrkPdlMdlActSts";
+BA_ "ISignalName" SG_ 394 BrkPdlMdlActSts "IBrkPdlMdlActSts";
+BA_ "LongName" SG_ 394 BrkPdlMdlActSts "Brake Pedal Model Actual Status";
+BA_ "SysSignalName" SG_ 394 BrkPdlMdlActSts "BrkPdlMdlActSts";
+BA_ "CompuMethodName" SG_ 394 IBS_20ms_Group10_Reserved1 "IBS_20ms_Group10_Reserved1";
+BA_ "GenSigStartValue" SG_ 394 IBS_20ms_Group10_Reserved1 15;
+BA_ "ISignalName" SG_ 394 IBS_20ms_Group10_Reserved1 "IIBS_20ms_Group10_Reserved1";
+BA_ "SysSignalName" SG_ 394 IBS_20ms_Group10_Reserved1 "IBS_20ms_Group10_Reserved1";
+BA_ "CompuMethodName" SG_ 394 DrvrReqOtptRodTrvl "DrvrReqOtptRodTrvl";
+BA_ "ISignalName" SG_ 394 DrvrReqOtptRodTrvl "IDrvrReqOtptRodTrvl";
+BA_ "LongName" SG_ 394 DrvrReqOtptRodTrvl "Driver Request Output Rod Travel";
+BA_ "SysSignalName" SG_ 394 DrvrReqOtptRodTrvl "DrvrReqOtptRodTrvl";
+BA_ "CompuMethodName" SG_ 394 IBS_20ms_Group10_Reserved2 "IBS_20ms_Group10_Reserved2";
+BA_ "GenSigStartValue" SG_ 394 IBS_20ms_Group10_Reserved2 15;
+BA_ "ISignalName" SG_ 394 IBS_20ms_Group10_Reserved2 "IIBS_20ms_Group10_Reserved2";
+BA_ "SysSignalName" SG_ 394 IBS_20ms_Group10_Reserved2 "IBS_20ms_Group10_Reserved2";
+BA_ "CompuMethodName" SG_ 394 IBS_20ms_Group13_CRC "IBS_20ms_Group13_CRC";
+BA_ "ISignalName" SG_ 394 IBS_20ms_Group13_CRC "IIBS_20ms_Group13_CRC";
+BA_ "LongName" SG_ 394 IBS_20ms_Group13_CRC "IBS_20ms_Group13_CRC";
+BA_ "SysSignalName" SG_ 394 IBS_20ms_Group13_CRC "IBS_20ms_Group13_CRC";
+BA_ "CompuMethodName" SG_ 394 IBS_20ms_Group13_RC "IBS_20ms_Group13_RC";
+BA_ "ISignalName" SG_ 394 IBS_20ms_Group13_RC "IIBS_20ms_Group13_RC";
+BA_ "LongName" SG_ 394 IBS_20ms_Group13_RC "IBS_20ms_Group13_RC";
+BA_ "SysSignalName" SG_ 394 IBS_20ms_Group13_RC "IBS_20ms_Group13_RC";
+BA_ "CompuMethodName" SG_ 394 ACCBrkngA "ACCBrkngA";
+BA_ "ISignalName" SG_ 394 ACCBrkngA "IACCBrkngA";
+BA_ "LongName" SG_ 394 ACCBrkngA "Adaptive Cruise Control Braking Active";
+BA_ "SysSignalName" SG_ 394 ACCBrkngA "ACCBrkngA";
+BA_ "CompuMethodName" SG_ 394 ChAEBDclReqResp "ChAEBDclReqResp";
+BA_ "ISignalName" SG_ 394 ChAEBDclReqResp "IChAEBDclReqResp";
+BA_ "LongName" SG_ 394 ChAEBDclReqResp "Chassis Autonomous Emergency Braking Deceleration Request Response";
+BA_ "SysSignalName" SG_ 394 ChAEBDclReqResp "ChAEBDclReqResp";
+BA_ "CompuMethodName" SG_ 394 ChACCReqFlrSts "ChACCReqFlrSts";
+BA_ "ISignalName" SG_ 394 ChACCReqFlrSts "IChACCReqFlrSts";
+BA_ "LongName" SG_ 394 ChACCReqFlrSts "Chassis Adaptive Cruise Control Request Failure Status";
+BA_ "SysSignalName" SG_ 394 ChACCReqFlrSts "ChACCReqFlrSts";
+BA_ "CompuMethodName" SG_ 394 ChACCAccReqResp "ChACCAccReqResp";
+BA_ "ISignalName" SG_ 394 ChACCAccReqResp "IChACCAccReqResp";
+BA_ "LongName" SG_ 394 ChACCAccReqResp "Chassis Adaptive Cruise Control Acceleration Request Response";
+BA_ "SysSignalName" SG_ 394 ChACCAccReqResp "ChACCAccReqResp";
+BA_ "CompuMethodName" SG_ 394 ChAEBPrflReqResp "ChAEBPrflReqResp";
+BA_ "ISignalName" SG_ 394 ChAEBPrflReqResp "IChAEBPrflReqResp";
+BA_ "LongName" SG_ 394 ChAEBPrflReqResp "Chassis Autonomous Emergency Braking Prefill Request Response";
+BA_ "SysSignalName" SG_ 394 ChAEBPrflReqResp "ChAEBPrflReqResp";
+BA_ "CompuMethodName" SG_ 394 AutodDrvngSysMdReqRespV "AutodDrvngSysMdReqRespV";
+BA_ "ISignalName" SG_ 394 AutodDrvngSysMdReqRespV "IAutodDrvngSysMdReqRespV";
+BA_ "LongName" SG_ 394 AutodDrvngSysMdReqRespV "Automated Driving System Mode Request Response Validity";
+BA_ "SysSignalName" SG_ 394 AutodDrvngSysMdReqRespV "AutodDrvngSysMdReqRespV";
+BA_ "CompuMethodName" SG_ 394 AutodDrvngSysMdReqResp "AutodDrvngSysMdReqResp";
+BA_ "ISignalName" SG_ 394 AutodDrvngSysMdReqResp "IAutodDrvngSysMdReqResp";
+BA_ "LongName" SG_ 394 AutodDrvngSysMdReqResp "Automated Driving System Mode Request Response";
+BA_ "SysSignalName" SG_ 394 AutodDrvngSysMdReqResp "AutodDrvngSysMdReqResp";
+BA_ "CompuMethodName" SG_ 394 ChAEBHydBrkAstReqResp "ChAEBHydBrkAstReqResp";
+BA_ "ISignalName" SG_ 394 ChAEBHydBrkAstReqResp "IChAEBHydBrkAstReqResp";
+BA_ "LongName" SG_ 394 ChAEBHydBrkAstReqResp "Chassis Autonomous Emergency Braking Hydraulic Brake Assist Request Response";
+BA_ "SysSignalName" SG_ 394 ChAEBHydBrkAstReqResp "ChAEBHydBrkAstReqResp";
+BA_ "CompuMethodName" SG_ 394 ChAEBBrkJerkReqResp "ChAEBBrkJerkReqResp";
+BA_ "ISignalName" SG_ 394 ChAEBBrkJerkReqResp "IChAEBBrkJerkReqResp";
+BA_ "LongName" SG_ 394 ChAEBBrkJerkReqResp "Chassis Autonomous Emergency Braking Brake Jerk Request Response";
+BA_ "SysSignalName" SG_ 394 ChAEBBrkJerkReqResp "ChAEBBrkJerkReqResp";
+BA_ "CompuMethodName" SG_ 394 SCSAutodDrvngSysSts "SCSAutodDrvngSysSts";
+BA_ "ISignalName" SG_ 394 SCSAutodDrvngSysSts "ISCSAutodDrvngSysSts";
+BA_ "LongName" SG_ 394 SCSAutodDrvngSysSts "Stability Control System Automated Driving System Status";
+BA_ "SysSignalName" SG_ 394 SCSAutodDrvngSysSts "SCSAutodDrvngSysSts";
+BA_ "CompuMethodName" SG_ 394 SCSAPAAcclAV "SCSAPAAcclAV";
+BA_ "ISignalName" SG_ 394 SCSAPAAcclAV "ISCSAPAAcclAV";
+BA_ "LongName" SG_ 394 SCSAPAAcclAV "Stability Control System Advanced Park Assist Acceleration Active Validity";
+BA_ "SysSignalName" SG_ 394 SCSAPAAcclAV "SCSAPAAcclAV";
+BA_ "CompuMethodName" SG_ 394 SCSAPAAcclA "SCSAPAAcclA";
+BA_ "ISignalName" SG_ 394 SCSAPAAcclA "ISCSAPAAcclA";
+BA_ "LongName" SG_ 394 SCSAPAAcclA "Stability Control System Advanced Park Assist Acceleration Active";
+BA_ "SysSignalName" SG_ 394 SCSAPAAcclA "SCSAPAAcclA";
+BA_ "CompuMethodName" SG_ 394 ExtnlBrkPrioV "ExtnlBrkPrioV";
+BA_ "ISignalName" SG_ 394 ExtnlBrkPrioV "IExtnlBrkPrioV";
+BA_ "LongName" SG_ 394 ExtnlBrkPrioV "External Brake Priority Validity";
+BA_ "SysSignalName" SG_ 394 ExtnlBrkPrioV "ExtnlBrkPrioV";
+BA_ "CompuMethodName" SG_ 394 ExtnlBrkPrio "ExtnlBrkPrio";
+BA_ "ISignalName" SG_ 394 ExtnlBrkPrio "IExtnlBrkPrio";
+BA_ "LongName" SG_ 394 ExtnlBrkPrio "External Brake Priority";
+BA_ "SysSignalName" SG_ 394 ExtnlBrkPrio "ExtnlBrkPrio";
+BA_ "CompuMethodName" SG_ 394 EmgcBrkReqdByIECUSts "EmgcBrkReqdByIECUSts";
+BA_ "ISignalName" SG_ 394 EmgcBrkReqdByIECUSts "IEmgcBrkReqdByIECUSts";
+BA_ "LongName" SG_ 394 EmgcBrkReqdByIECUSts "Emergency_Brake_Requested_By_Intelligent_Electric_Control_Unit_Status";
+BA_ "SysSignalName" SG_ 394 EmgcBrkReqdByIECUSts "EmgcBrkReqdByIECUSts";
+BA_ "CompuMethodName" SG_ 394 TCSDrvrItnt "TCSDrvrItnt";
+BA_ "ISignalName" SG_ 394 TCSDrvrItnt "ITCSDrvrItnt";
+BA_ "LongName" SG_ 394 TCSDrvrItnt "Traction_Control_System_Driver_Intent";
+BA_ "SysSignalName" SG_ 394 TCSDrvrItnt "TCSDrvrItnt";
+BA_ "CompuMethodName" SG_ 394 MultColBrkAvlblySts "MultColBrkAvlblySts";
+BA_ "ISignalName" SG_ 394 MultColBrkAvlblySts "IMultColBrkAvlblySts";
+BA_ "LongName" SG_ 394 MultColBrkAvlblySts "Multi_Collision_Brake_Availability_Status";
+BA_ "SysSignalName" SG_ 394 MultColBrkAvlblySts "MultColBrkAvlblySts";
+BA_ "CompuMethodName" SG_ 394 ChRCTBDclReqResp "ChRCTBDclReqResp";
+BA_ "ISignalName" SG_ 394 ChRCTBDclReqResp "IChRCTBDclReqResp";
+BA_ "LongName" SG_ 394 ChRCTBDclReqResp "Chassis Rear Cross Traffic Braking Deceleration Request Response";
+BA_ "SysSignalName" SG_ 394 ChRCTBDclReqResp "ChRCTBDclReqResp";
+BA_ "CompuMethodName" SG_ 394 SCSVehHoldAV "SCSVehHoldAV";
+BA_ "ISignalName" SG_ 394 SCSVehHoldAV "ISCSVehHoldAV";
+BA_ "LongName" SG_ 394 SCSVehHoldAV "Stability Control System Vehicle Hold A Validity";
+BA_ "SysSignalName" SG_ 394 SCSVehHoldAV "SCSVehHoldAV";
+BA_ "CompuMethodName" SG_ 394 SCSVehHoldA "SCSVehHoldA";
+BA_ "ISignalName" SG_ 394 SCSVehHoldA "ISCSVehHoldA";
+BA_ "LongName" SG_ 394 SCSVehHoldA "Stability Control System Vehicle Hold Active";
+BA_ "SysSignalName" SG_ 394 SCSVehHoldA "SCSVehHoldA";
+BA_ "CompuMethodName" SG_ 394 SCSAutodDrvngSysStsV "SCSAutodDrvngSysStsV";
+BA_ "ISignalName" SG_ 394 SCSAutodDrvngSysStsV "ISCSAutodDrvngSysStsV";
+BA_ "LongName" SG_ 394 SCSAutodDrvngSysStsV "Stability Control System Automated Driving System Status Validity";
+BA_ "SysSignalName" SG_ 394 SCSAutodDrvngSysStsV "SCSAutodDrvngSysStsV";
+BA_ "CompuMethodName" SG_ 394 VehSdslStsV "VehSdslStsV";
+BA_ "ISignalName" SG_ 394 VehSdslStsV "IVehSdslStsV";
+BA_ "LongName" SG_ 394 VehSdslStsV "Vehicle Standstill Status Valid";
+BA_ "SysSignalName" SG_ 394 VehSdslStsV "VehSdslStsV";
+BA_ "CompuMethodName" SG_ 394 ChRCTBPrflReqResp "ChRCTBPrflReqResp";
+BA_ "ISignalName" SG_ 394 ChRCTBPrflReqResp "IChRCTBPrflReqResp";
+BA_ "LongName" SG_ 394 ChRCTBPrflReqResp "Chassis Rear Cross Traffic Braking Prefill Request Response";
+BA_ "SysSignalName" SG_ 394 ChRCTBPrflReqResp "ChRCTBPrflReqResp";
+BA_ "CompuMethodName" SG_ 394 WhlBrkPrsSts "WhlBrkPrsSts";
+BA_ "GenSigStartValue" SG_ 394 WhlBrkPrsSts 1;
+BA_ "ISignalName" SG_ 394 WhlBrkPrsSts "IWhlBrkPrsSts";
+BA_ "LongName" SG_ 394 WhlBrkPrsSts "Wheel Brake Pressure Status";
+BA_ "SysSignalName" SG_ 394 WhlBrkPrsSts "WhlBrkPrsSts";
+BA_ "CompuMethodName" SG_ 394 BrkSysRddySysSts "BrkSysRddySysSts";
+BA_ "ISignalName" SG_ 394 BrkSysRddySysSts "IBrkSysRddySysSts";
+BA_ "LongName" SG_ 394 BrkSysRddySysSts "Brake Redundancy System Status";
+BA_ "SysSignalName" SG_ 394 BrkSysRddySysSts "BrkSysRddySysSts";
+BA_ "CompuMethodName" SG_ 394 VehSdslSts "VehSdslSts";
+BA_ "ISignalName" SG_ 394 VehSdslSts "IVehSdslSts";
+BA_ "LongName" SG_ 394 VehSdslSts "Vehicle Standstill Status";
+BA_ "SysSignalName" SG_ 394 VehSdslSts "VehSdslSts";
+BA_ "CompuMethodName" SG_ 394 ChEBADclReqResp "ChEBADclReqResp";
+BA_ "ISignalName" SG_ 394 ChEBADclReqResp "IChEBADclReqResp";
+BA_ "SysSignalName" SG_ 394 ChEBADclReqResp "ChEBADclReqResp";
+BA_ "CompuMethodName" SG_ 394 IBSAPASysFltSts "IBSAPASysFltSts";
+BA_ "ISignalName" SG_ 394 IBSAPASysFltSts "IIBSAPASysFltSts";
+BA_ "LongName" SG_ 394 IBSAPASysFltSts "Ibs Apa System Fault Status";
+BA_ "SysSignalName" SG_ 394 IBSAPASysFltSts "IBSAPASysFltSts";
 
 VAL_ 430 EPSAPASts 0 "EPSAPASts_0_Inhibit" 1 "EPSAPASts_1_Available" 2 "EPSAPASts_2_Active" 3 "EPSAPASts_3_Abort" 4 "EPSAPASts_4_ReplyForControl" 5 "EPSAPASts_5_NrcdActive" 6 "EPSAPASts_6_AdasActive" 7 "EPSAPASts_7_Failure";
 VAL_ 430 EPSAPAInh 0 "EPSAPAInh_0_Normal_Operation" 1 "EPSAPAInh_1_Over_Speed" 2 "EPSAPAInh_2_Driver_Interference" 4 "EPSAPAInh_4_Abnormal_CAN_input" 8 "EPSAPAInh_8_Excess_Angle_Deviation" 16 "EPSAPAInh_16_EPS_failure";
@@ -4056,6 +4111,10 @@ VAL_ 382 AutodDrvngSysMdReqV 0 "AutodDrvngSysMdReqV_0_Valid" 1 "AutodDrvngSysMdR
 VAL_ 382 AutodDrvngSysMdReq 0 "AutodDrvngSysMdReq_0_DriverModeRequest" 1 "AutodDrvngSysMdReq_1_AutomatedDriverModeRequest";
 VAL_ 382 AutodDrvngSysFlrStsV 0 "AutodDrvngSysFlrStsV_0_Valid" 1 "AutodDrvngSysFlrStsV_1_Invalid";
 VAL_ 382 AutodDrvngSysFlrSts 0 "AutodDrvngSysFlrSts_0_NoError" 1 "AutodDrvngSysFlrSts_1_PerformanceDegradation" 2 "AutodDrvngSysFlrSts_2_SystemUnavailable" 3 "AutodDrvngSysFlrSts_3_Reserved" 4 "AutodDrvngSysFlrSts_4_Reserved" 5 "AutodDrvngSysFlrSts_5_Reserved" 6 "AutodDrvngSysFlrSts_6_Reserved" 7 "AutodDrvngSysFlrSts_7_Reserved";
+VAL_ 385 NSAReqAVMDis 0 "NSAReqAVMDis_0_NoRequest" 1 "NSAReqAVMDis_1_Request";
+VAL_ 385 NSADisFucSts 0 "NSADisFucSts_0_Off" 1 "NSADisFucSts_1_Standby" 2 "NSADisFucSts_2_Active" 3 "NSADisFucSts_3_Fault";
+VAL_ 385 NSABacSysSts 0 "NSABacSysSts_0_Off" 1 "NSABacSysSts_1_Standby" 2 "NSABacSysSts_2_BackwardActive" 3 "NSABacSysSts_3_Quit" 4 "NSABacSysSts_4_Error";
+VAL_ 385 NSAForSysSts 0 "NSAForSysSts_0_Off" 1 "NSAForSysSts_1_Standby" 2 "NSAForSysSts_2_ForwardActive" 3 "NSAForSysSts_3_Quit" 4 "NSAForSysSts_4_Error" 5 "NSAForSysSts_5_Pause" 6 "NSAForSysSts_6_Complete" 7 "NSAForSysSts_7_Passive";
 VAL_ 343 AEBPrflReq 0 "AEBPrflReq_0_False" 1 "AEBPrflReq_1_True";
 VAL_ 343 AEBSysSts 0 "AEBSysSts_0_Off" 1 "AEBSysSts_1_Standby" 2 "AEBSysSts_2_Disable" 3 "AEBSysSts_3_Override" 4 "AEBSysSts_4_Active" 5 "AEBSysSts_5_Reserved" 6 "AEBSysSts_6_Reserved" 7 "AEBSysSts_7_Reserved";
 VAL_ 343 AEBDclReqSts 0 "AEBDclReqSts_0_NoRequest" 1 "AEBDclReqSts_1_AebDecelerationRequest" 2 "AEBDclReqSts_2_PebDecelerationRequest";
@@ -4129,12 +4188,13 @@ VAL_ 807 PilotSysRHRDAFltSts 0 "PilotSysRHRDAFltSts_0_NoError" 1 "PilotSysRHRDAF
 VAL_ 807 PilotSysUSSFltSts 0 "PilotSysUSSFltSts_0_NoError" 1 "PilotSysUSSFltSts_1_BlockError" 2 "PilotSysUSSFltSts_2_SystemTemporaryUnvailable" 3 "PilotSysUSSFltSts_3_ServiceRequired" 4 "PilotSysUSSFltSts_4_Reserved";
 VAL_ 807 HORWarningEvtSts 0 "HORWarningEvtSts_0_default" 1 "HORWarningEvtSts_1_HORForbiddenPilot";
 VAL_ 807 EORWarningEvtSts 0 "EORWarningEvtSts_0_default" 1 "EORWarningEvtSts_1_EORForbiddenPilot";
-VAL_ 807 SLIFUpdtIndResp_IPD 0 "SLIFUpdtIndResp_IPD_0__Off" 1 "SLIFUpdtIndResp_IPD_1__On";
 VAL_ 807 PosALCFailed 0 "PosALCFailed_0_default" 1 "PosALCFailed_1_PositiveALCFailed";
 VAL_ 807 SLIFSysFltSts 0 "SLIFSysFltSts_0_NoError" 1 "SLIFSysFltSts_1_PerformanceDegradation" 2 "SLIFSysFltSts_2_SystemTemporaryUnavailable" 3 "SLIFSysFltSts_3_ServiceRequired";
 VAL_ 807 ADS_ISAMsgReq 0 "ADS_ISAMsgReq_0_Nowarning" 1 "ADS_ISAMsgReq_1_MSG1" 2 "ADS_ISAMsgReq_2_MSG2" 3 "ADS_ISAMsgReq_3_MSG3" 4 "ADS_ISAMsgReq_4_MSG4" 5 "ADS_ISAMsgReq_5_MSG5" 6 "ADS_ISAMsgReq_6_MSG6" 7 "ADS_ISAMsgReq_7_MSG7" 8 "ADS_ISAMsgReq_8_MSG8" 9 "ADS_ISAMsgReq_9_MSG9";
+VAL_ 807 SLIFUpdtIndResp_IPD 0 "SLIFUpdtIndResp_IPD_0_Unavailable" 1 "SLIFUpdtIndResp_IPD_1_Off" 2 "SLIFUpdtIndResp_IPD_2_On" 3 "SLIFUpdtIndResp_IPD_3_reserve";
 VAL_ 807 ADS_ISASysFltSts 0 "ADS_ISASysFltSts_0_NoError" 1 "ADS_ISASysFltSts_1_PerformanceDegradation" 2 "ADS_ISASysFltSts_2_SystemTemporaryUnavailable" 3 "ADS_ISASysFltSts_3_ServiceRequired";
 VAL_ 807 ADS_ISASysSts 0 "ADS_ISASysSts_0_Off" 1 "ADS_ISASysSts_1_Passive" 2 "ADS_ISASysSts_2_Active" 3 "ADS_ISASysSts_3_Overspeed" 4 "ADS_ISASysSts_4_Standby" 5 "ADS_ISASysSts_5_Fault" 6 "ADS_ISASysSts_6_reserve" 7 "ADS_ISASysSts_7_reserve";
+VAL_ 807 ParkngSpdSwResp 0 "ParkngSpdSwResp_0_Default" 1 "ParkngSpdSwResp_1_LowSpeed" 2 "ParkngSpdSwResp_2_MiddleSpeed" 3 "ParkngSpdSwResp_3_HighSpeed";
 VAL_ 486 FrtCarGoNotfr 0 "FrtCarGoNotfr_0_False" 1 "FrtCarGoNotfr_1_Waminglevel1" 2 "FrtCarGoNotfr_2_Warninglevel2" 3 "FrtCarGoNotfr_3_Warninglevel3";
 VAL_ 486 ACCSysFltSts_SCS 0 "ACCSysFltSts_SCS_0_NoError" 1 "ACCSysFltSts_SCS_1_PerformanceDegradation" 2 "ACCSysFltSts_SCS_2_SystemTemporaryUnvailable" 3 "ACCSysFltSts_SCS_3_ServiceRequired" 4 "ACCSysFltSts_SCS_4_Reserved" 5 "ACCSysFltSts_SCS_5_Reserved" 6 "ACCSysFltSts_SCS_6_Reserved" 7 "ACCSysFltSts_SCS_7_Reserved";
 VAL_ 337 AutoLaneChngRLaneSts 0 "AutoLaneChngRLaneSts_0_NoRequest" 1 "AutoLaneChngRLaneSts_1_LaneChangeInhibit" 2 "AutoLaneChngRLaneSts_2_WaitingForLaneChangeStarting" 3 "AutoLaneChngRLaneSts_3_LaneChangeInProgress" 4 "AutoLaneChngRLaneSts_4_LaneChangeSucces" 5 "AutoLaneChngRLaneSts_5_LaneChangeFailed" 6 "AutoLaneChngRLaneSts_6_LaneChangeSuppressByDriver" 7 "AutoLaneChngRLaneSts_7_ReturnToEgoLaneByDriver" 8 "AutoLaneChngRLaneSts_8_ReturnToEgoLaneByAlc" 9 "AutoLaneChngRLaneSts_9_LaneChangeManoeuvreWithRisk" 10 "AutoLaneChngRLaneSts_10_ReturnToEgoLaneSuccess" 11 "AutoLaneChngRLaneSts_11_WaitingForALCBecauseVehicleSpeedTooLow" 12 "AutoLaneChngRLaneSts_12_WaitingForALCBecauseVehicleSpeedTooHigh" 13 "AutoLaneChngRLaneSts_13_Vehiclegothroughthelane";
@@ -4202,87 +4262,87 @@ VAL_ 1216 ZXD_NM_RMSSta_CHCANFD 0 "ZXD_NM_RMSSta_CHCANFD_0_False" 1 "ZXD_NM_RMSS
 VAL_ 1216 ZXD_NWI_CHCANFD 0 "ZXD_NWI_CHCANFD_0_NoWakeNetworkSource" 1 "ZXD_NWI_CHCANFD_1_PowerModeIsNonOFF";
 VAL_ 1216 ZXD_NOI_CHCANFD 0 "ZXD_NOI_CHCANFD_0_NoRequest" 65535 "ZXD_NOI_CHCANFD_65535_AllNetworkOperationActive";
 VAL_ 1216 ZXD_NKI_CHCANFD 0 "ZXD_NKI_CHCANFD_0_NoRequest" 1 "ZXD_NKI_CHCANFD_1_PowerModeIsNonOFF";
-VAL_ 2164461571 EPSAESReqResp 0 "EPSAESResp_0_Inhibit" 1 "EPSAESReqResp_1_Available" 2 "EPSAESReqResp_2_Active" 3 "EPSAESReqResp_3_Abort" 4 "EPSAESReqResp_4_ReplyForControl" 5 "EPSAESReqResp_5_Reserve" 6 "EPSAESReqResp_6_Reserve" 7 "EPSAESResp_7_Failure" 8 "EPSAESResp_8_Reserve";
-VAL_ 2164461571 EPSAESStsInh 0 "EPSAIPkgAngReqResp_0_Inhibit" 1 "EPSAIPkgAngReqResp_1_Available" 2 "EPSAIPkgAngReqResp_2_Active" 3 "EPSAIPkgAngReqResp_3_Abort" 4 "EPSAIPkgAngReqResp_4_ReplyForControl" 5 "EPSAIPkgAngReqResp_5_Reserve" 6 "EPSAIPkgAngReqResp_6_Reserve" 7 "EPSAIPkgAngReqResp_7_Failure" 8 "EPSAIPkgAngReqResp_8_Reserve";
-VAL_ 2164461571 EPSVMCAngRespSts 0 "EPSVMCAngRespSts_0_Init" 1 "EPSVMCAngRespSts_1_Off" 2 "EPSVMCAngRespSts_2_Ready" 3 "EPSVMCAngRespSts_3_Fadeln" 4 "EPSVMCAngRespSts_4_Active" 5 "EPSVMCAngRespSts_5_FadeOut" 6 "EPSVMCAngRespSts_6_Error" 7 "EPSVMCAngRespSts_7_Reserved";
-VAL_ 2164461571 EPSAESReqTorRespV 0 "EPSAESReqTorV_0_Valid" 1 "EPSAESReqTorV_1_Invalid";
-VAL_ 2164461571 EPSVMCRespStsInh 0 "EPSVMCRespStsInh_0_NormalOperation" 1 "EPSVMCRespStsInh_1_OverSpeed" 2 "EPSVMCRespStsInh_2_DriverInterference" 4 "EPSVMCRespStsInh_4_AbnormalCanInput" 8 "EPSVMCRespStsInh_8_Reserve" 16 "EPSVMCRespStsInh_16_EpsFailure" 32 "EPSVMCRespStsInh_32_Reserve" 64 "EPSVMCRespStsInh_64_Reserve" 128 "EPSVMCRespStsInh_128_Reserve";
-VAL_ 2164461571 EPSVMCCodrivingSts 0 "EPSVMCCodrivingSts_0_Unavaliable" 1 "EPSVMCCodrivingSts_1_Non_Co_DrivingMode" 2 "EPSVMCCodrivingSts_2_Co_DrivingMode" 3 "EPSVMCCodrivingSts_3_Reserved";
-VAL_ 2164729093 ActuRoadWhlAngV 0 "ActuRoadWhlAngV_0_Valid" 1 "ActuRoadWhlAngV_1_Invalid";
-VAL_ 2164729093 ADASStrgDlvrdToqV 0 "ADASStrgDlvrdToqV_0_Valid" 1 "ADASStrgDlvrdToqV_1_Invalid";
-VAL_ 2164729093 EPSDrvngMdCtrlInh 0 "EPSDrvngMdCtrlInh_0_False" 1 "EPSDrvngMdCtrlInh_1_True";
-VAL_ 2164729093 DrvrStrgDlvrdToqV 0 "DrvrStrgDlvrdToqV_0_Valid" 1 "DrvrStrgDlvrdToqV_1_Invalid";
-VAL_ 2164729093 StrgCustSetngDspCmd 0 "StrgCustSetngDspCmd_0_FunctionDisable" 1 "StrgCustSetngDspCmd_1_ComfortableMode" 2 "StrgCustSetngDspCmd_2_NormalMode" 3 "StrgCustSetngDspCmd_3_SportMode";
-VAL_ 2164729093 EPSPriyChnlFlrSts 0 "EPSPriyChnlFlrSts_0_NoFailure" 1 "EPSPriyChnlFlrSts_1_LightLevelFailure" 2 "EPSPriyChnlFlrSts_2_HeavyLevelFailure";
-VAL_ 2164729093 EPSFlrSts 0 "EPSFlrSts_0_EpsNoFailure_indicationOff" 1 "EPSFlrSts_1_EpsLightLevelFailureIndication_orange" 2 "EPSFlrSts_2_EpsHeavyLevelFailureIndication_red" 3 "EPSFlrSts_3_Invalid";
-VAL_ 2164729093 EPSCurntDrvMd 0 "EPSCurntDrvMd_0_ADASMode" 1 "EPSCurntDrvMd_1_ComfortableMode" 2 "EPSCurntDrvMd_2_NormalMode" 3 "EPSCurntDrvMd_3_SportMode";
-VAL_ 2164729093 ActuPnonAngV 0 "ActuPnonAngV_0_Valid" 1 "ActuPnonAngV_1_Invalid";
-VAL_ 2164729093 EPSToqValAldMaxV 0 "EPSToqValAldMaxV_0_Valid" 1 "EPSToqValAldMaxV_1_Invalid";
-VAL_ 2164729093 EPSLimMotToqV 0 "EPSLimMotToqV_0_Valid" 1 "EPSLimMotToqV_1_Invalid";
-VAL_ 2164729093 EPSActRetMotToqV 0 "EPSActRetMotToqV_0_Valid" 1 "EPSActRetMotToqV_1_Invalid";
-VAL_ 2164729093 ChLKAAngReqResp 0 "ChLKAAngReqResp_0_NoRequest" 1 "ChLKAAngReqResp_1_RequestHonored" 2 "ChLKAAngReqResp_2_LostArbitrary" 3 "ChLKAAngReqResp_3_ControlNotAllowedForFailure" 4 "ChLKAAngReqResp_4_Pre_conditionNotSatisfied" 5 "ChLKAAngReqResp_5_Initialization" 6 "ChLKAAngReqResp_6_EMA" 7 "ChLKAAngReqResp_7_Reserved";
-VAL_ 2164729093 EPSToqValAldMinV 0 "EPSToqValAldMinV_0_Valid" 1 "EPSToqValAldMinV_1_Invalid";
-VAL_ 2164729093 CHLKAHptResp 0 "CHLKAHptResp_0_NoRequest" 1 "CHLKAHptResp_1_RequestHonored" 2 "CHLKAHptResp_2_LostArbitrary" 3 "CHLKAHptResp_3_ControlNotAllowedForFailure" 4 "CHLKAHptResp_4_Pre_conditionNotSatisfied" 5 "CHLKAHptResp_5_Initialization";
-VAL_ 2164729093 ChLKAToqReqResp 0 "ChLKAToqReqResp_0_NoRequest" 1 "ChLKAToqReqResp_1_RequestHonored" 2 "ChLKAToqReqResp_2_LostArbitrary" 3 "ChLKAToqReqResp_3_ControlNotAllowedForFailure" 4 "ChLKAToqReqResp_4_Pre_conditionNotSatisfied" 5 "ChLKAToqReqResp_5_Initialization" 6 "ChLKAToqReqResp_6_Reserved" 7 "ChLKAToqReqResp_7_Reserved";
-VAL_ 2164729093 EPSCoDrivingSts 0 "EPSCoDrivingSts_0_Unavaliable" 1 "EPSCoDrivingSts_1_Non_Co_DrivingMode" 2 "EPSCoDrivingSts_2_Co_DrivingMode" 3 "EPSCoDrivingSts_3_Reserved";
-VAL_ 2164729094 EPSAIPkgAngReqResp 0 "EPSAIPkgAngReqResp_0_Inhibit" 1 "EPSAIPkgAngReqResp_1_Available" 2 "EPSAIPkgAngReqResp_2_Active" 3 "EPSAIPkgAngReqResp_3_Abort" 4 "EPSAIPkgAngReqResp_4_ReplyForControl" 5 "EPSAIPkgAngReqResp_5_Reserve" 6 "EPSAIPkgAngReqResp_6_Reserve" 7 "EPSAIPkgAngReqResp_7_Failure" 8 "EPSAIPkgAngReqResp_8_Reserve";
-VAL_ 2164729094 EPSAIPkgAngReqRespInh 0 "EPSAIPkgAngReqRespInh_0_NormalOperation" 1 "EPSAIPkgAngReqRespInh_1_OverSpeed" 2 "EPSAIPkgAngReqRespInh_2_DriverInterference" 4 "EPSAIPkgAngReqRespInh_4_AbnormalCanInput" 8 "EPSAIPkgAngReqRespInh_8_ExcessAngleDeviation" 16 "EPSAIPkgAngReqRespInh_16_EpsFailure" 32 "EPSAIPkgAngReqRespInh_32_Reserve" 64 "EPSAIPkgAngReqRespInh_64_Reserve" 128 "EPSAIPkgAngReqRespInh_128_Reserve";
-VAL_ 2164729094 EPSAIPltAngRespStsInh 0 "EPSAIPltAngRespStsInh_0_NormalOperation" 1 "EPSAIPltAngRespStsInh_1_OverSpeed" 2 "EPSAIPltAngRespStsInh_2_DriverInterference" 4 "EPSAIPltAngRespStsInh_4_AbnormalCanInputtoFVCM" 8 "EPSAIPltAngRespStsInh_8_AbnormalCanInputtoZXD" 16 "EPSAIPltAngRespStsInh_10_EpsFailure" 18 "EPSAIPltAngRespStsInh_12_AbnormalCanInputtoFVCMandZXD" 32 "EPSAIPltAngRespStsInh_20_Reserve" 64 "EPSAIPltAngRespStsInh_40_Reserve" 128 "EPSAIPltAngRespStsInh_80_Reserve";
-VAL_ 2164729094 EPSAIPltAvlLvl 0 "EPSAIPltAvlLvl_0_HadNotAvailable" 1 "EPSAIPltAvlLvl_1_HadAvailableDegraded" 2 "EPSAIPltAvlLvl_2_HadAvailable" 3 "EPSAIPltAvlLvl_3_Minor_Error";
-VAL_ 2164729094 EPSAIPltAngRespSts 0 "EPSAIPltAngRespSts_0_Init" 1 "EPSAIPltAngRespSts_1_Off" 2 "EPSAIPltAngRespSts_2_Ready" 3 "EPSAIPltAngRespSts_3_Fadeln" 4 "EPSAIPltAngRespSts_4_HO_Active" 5 "EPSAIPltAngRespSts_5_Emergency_function_active" 6 "EPSAIPltAngRespSts_6_Error" 7 "EPSAIPltAngRespSts_7_HF_active";
-VAL_ 2164729094 ActuRoadWhlAngGrdV 0 "ActuRoadWhlAngGrdV_0_Valid" 1 "ActuRoadWhlAngGrdV_1_Invalid";
-VAL_ 2164729094 EPSAIPltCtrlChannel 0 "EPSAIPltCtrlChannel_0_Primary" 1 "EPSAIPltCtrlChannel_1_Secondary";
-VAL_ 2164729094 ActuRoadWhlAngGrd 65535 "ActuRoadWhlAngGrd_65535_error_mark";
-VAL_ 2164729108 StrgWhlAngSnsrFlt 0 "StrgWhlAngSnsrFlt_0_False" 1 "StrgWhlAngSnsrFlt_1_True";
-VAL_ 2164729108 StrgWhlAngV 0 "StrgWhlAngV_0_Valid" 1 "StrgWhlAngV_1_Invalid";
-VAL_ 2164729108 StrgWhlAngSnsrMultCapb 0 "StrgWhlAngSnsrMultCapb_0_False" 1 "StrgWhlAngSnsrMultCapb_1_True";
-VAL_ 2164729108 StrgWhlAngSnsrInid 0 "StrgWhlAngSnsrInid_0_False" 1 "StrgWhlAngSnsrInid_1_True";
-VAL_ 2164729108 StrgWhlAng 65535 "StrgWhlAng_65535_ErrorMark";
-VAL_ 2164729108 StrgWhlAngGrd 4095 "StrgWhlAngGrd_4095_ErrorMark";
-VAL_ 2164729108 StrgWhlAngSnsrCalSts 0 "StrgWhlAngSnsrCalSts_0_Unknown" 1 "StrgWhlAngSnsrCalSts_1_Estimated" 2 "StrgWhlAngSnsrCalSts_2_Calibrated" 3 "StrgWhlAngSnsrCalSts_3_Unknown";
-VAL_ 2164729095 EPBSysBrkLghtsReqdA 0 "EPBSysBrkLghtsReqdA_0_False" 1 "EPBSysBrkLghtsReqdA_1_True";
-VAL_ 2164729095 BrkSysBrkLghtsReqd 0 "BrkSysBrkLghtsReqd_0_False" 1 "BrkSysBrkLghtsReqd_1_True";
-VAL_ 2164729095 BrkPdlPosV 0 "BrkPdlPosV_0_Valid" 1 "BrkPdlPosV_1_Invalid";
-VAL_ 2164729097 BrkPdlDrvrAppdPrsV 0 "BrkPdlDrvrAppdPrsV_0_Valid" 1 "BrkPdlDrvrAppdPrsV_1_Invalid";
-VAL_ 2164729097 BrkPdlDrvrAppdPrsDetV 0 "BrkPdlDrvrAppdPrsDetV_0_Valid" 1 "BrkPdlDrvrAppdPrsDetV_1_Invalid";
-VAL_ 2164729097 BrkPdlDrvrAppdPrsDet 0 "BrkPdlDrvrAppdPrsDet_0_False" 1 "BrkPdlDrvrAppdPrsDet_1_True";
-VAL_ 2164729097 BrkDiscTemSts 0 "BrkDiscTemSts_0_Not_high" 1 "BrkDiscTemSts_1_Temperature_too_high";
-VAL_ 2164729097 BrkPdlMdlSts 0 "BrkPdlMdlSts_0_Normal" 1 "BrkPdlMdlSts_1_comfort" 2 "BrkPdlMdlSts_2_sport" 3 "BrkPdlMdlSts_3_Reserve";
-VAL_ 2164729097 DrvrReqOtptRodTrvlSts 0 "DrvrReqOtptRodTrvlSts_0_Init" 1 "DrvrReqOtptRodTrvlSts_1_Normal" 2 "DrvrReqOtptRodTrvlSts_2_Faulty";
-VAL_ 2164729097 BrkPdlSimltdPrsV 0 "BrkPdlSimltdPrsV_0_Valid" 1 "BrkPdlSimltdPrsV_1_Invalid";
-VAL_ 2164729097 BrkPdlAppd 0 "BrkPdlAppd_0_BrakePedalNotApplied" 1 "BrkPdlAppd_1_BrakePedalApplied";
-VAL_ 2164729097 BrkPdlAppdV 0 "BrkPdlAppdV_0_Init" 1 "BrkPdlAppdV_1_Normal" 2 "BrkPdlAppdV_2_Faulty";
-VAL_ 2164729097 BrkFludLvlLowV 0 "BrkFludLvlLowV_0_Valid" 1 "BrkFludLvlLowV_1_Invalid";
-VAL_ 2164729097 BrkFludLvlLow 0 "BrkFludLvlLow_0_False" 1 "BrkFludLvlLow_1_True";
-VAL_ 2164729097 BrkPdlMdlActSts 0 "BrkPdlMdlActSts_0_Normal" 1 "BrkPdlMdlActSts_1_comfort" 2 "BrkPdlMdlActSts_2_sport" 3 "BrkPdlMdlActSts_3_Reserve";
-VAL_ 2164729104 ACCBrkngA 0 "ACCBrkngA_0_False" 1 "ACCBrkngA_1_True";
-VAL_ 2164729104 ChAEBDclReqResp 0 "ChAEBDclReqResp_0_no_request" 1 "ChAEBDclReqResp_1_request_honored" 2 "ChAEBDclReqResp_2_lost_arbitration" 3 "ChAEBDclReqResp_3_control_not_allowed_for_error" 4 "ChAEBDclReqResp_4_pre_condition_not_satisfied" 5 "ChAEBDclReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBDclReqResp_6_Reserved" 7 "ChAEBDclReqResp_7_Reserved";
-VAL_ 2164729104 ChACCReqFlrSts 0 "ChACCReqFlrSts_0_No_error" 1 "ChACCReqFlrSts_1_reversible_error" 2 "ChACCReqFlrSts_2_irreversible_error" 3 "ChACCReqFlrSts_3_not_defined";
-VAL_ 2164729104 ChACCAccReqResp 0 "ChACCAccReqResp_0_no_request" 1 "ChACCAccReqResp_1_request_honored" 2 "ChACCAccReqResp_2_lost_arbitration" 3 "ChACCAccReqResp_3_control_not_allowed_for_error" 4 "ChACCAccReqResp_4_pre_condition_not_satisfied" 5 "ChACCAccReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChACCAccReqResp_6_Reserved" 7 "ChACCAccReqResp_7_Reserved";
-VAL_ 2164729104 ChAEBPrflReqResp 0 "ChAEBPrflReqResp_0_no_request" 1 "ChAEBPrflReqResp_1_request_honored" 2 "ChAEBPrflReqResp_2_lost_arbitration" 3 "ChAEBPrflReqResp_3_control_not_allowed_for_error" 4 "ChAEBPrflReqResp_4_pre_condition_not_satisfied" 5 "ChAEBPrflReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBPrflReqResp_6_Reserved" 7 "ChAEBPrflReqResp_7_Reserved";
-VAL_ 2164729104 AutodDrvngSysMdReqRespV 0 "AutodDrvngSysMdReqRespV_0_Valid" 1 "AutodDrvngSysMdReqRespV_1_Invalid";
-VAL_ 2164729104 AutodDrvngSysMdReqResp 0 "AutodDrvngSysMdReqResp_0_NoRequest" 1 "AutodDrvngSysMdReqResp_1_ReqestHonred";
-VAL_ 2164729104 ChAEBHydBrkAstReqResp 0 "ChAEBHydBrkAstReqResp_0_no_request" 1 "ChAEBHydBrkAstReqResp_1_request_honored" 2 "ChAEBHydBrkAstReqResp_2_lost_arbitration" 3 "ChAEBHydBrkAstReqResp_3_control_not_allowed_for_error" 4 "ChAEBHydBrkAstReqResp_4_pre_condition_not_satisfied" 5 "ChAEBHydBrkAstReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBHydBrkAstReqResp_6_Reserved" 7 "ChAEBHydBrkAstReqResp_7_Reserved";
-VAL_ 2164729104 ChAEBBrkJerkReqResp 0 "ChAEBBrkJerkReqResp_0_no_request" 1 "ChAEBBrkJerkReqResp_1_request_honored" 2 "ChAEBBrkJerkReqResp_2_lost_arbitration" 3 "ChAEBBrkJerkReqResp_3_control_not_allowed_for_error" 4 "ChAEBBrkJerkReqResp_4_pre_condition_not_satisfied" 5 "ChAEBBrkJerkReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBBrkJerkReqResp_6_reserved6" 7 "ChAEBBrkJerkReqResp_7_reserved7";
-VAL_ 2164729104 SCSAutodDrvngSysSts 0 "SCSAutodDrvngSysSts_0_TemporaryNotAvailable" 1 "SCSAutodDrvngSysSts_1_TemporaryNotReleased" 2 "SCSAutodDrvngSysSts_2_PermanentNotAvailable" 3 "SCSAutodDrvngSysSts_3_FullAvailable" 4 "SCSAutodDrvngSysSts_4_RedudancyLost" 5 "SCSAutodDrvngSysSts_5_FailOperation";
-VAL_ 2164729104 SCSAPAAcclAV 0 "SCSAPAAcclAV_0_Valid" 1 "SCSAPAAcclAV_1_Invalid";
-VAL_ 2164729104 SCSAPAAcclA 0 "SCSAPAAcclA_0_Inactive" 1 "SCSAPAAcclA_1_Active";
-VAL_ 2164729104 ExtnlBrkPrioV 0 "ExtnlBrkPrioV_0_Valid" 1 "ExtnlBrkPrioV_1_Invalid";
-VAL_ 2164729104 ExtnlBrkPrio 0 "ExtnlBrkPrio_0_EBR_NotDominate" 1 "ExtnlBrkPrio_1_EBR_Dominate";
-VAL_ 2164729104 EmgcBrkReqdByIECUSts 0 "EmgcBrkReqdByIECUSts_0_False" 1 "EmgcBrkReqdByIECUSts_1_True";
-VAL_ 2164729104 TCSDrvrItnt 0 "TCSDrvrItnt_0_Disabled" 1 "TCSDrvrItnt_1_Enabled";
-VAL_ 2164729104 MultColBrkAvlblySts 0 "MultColBrkAvlblySts_0_Unavailable" 1 "MultColBrkAvlblySts_1_Available";
-VAL_ 2164729104 ChRCTBDclReqResp 0 "ChRCTBDclReqResp_0_no_request" 1 "ChRCTBDclReqResp_1_request_honored" 2 "ChRCTBDclReqResp_2_lost_arbitration" 3 "ChRCTBDclReqResp_3_control_not_allowed_for_error" 4 "ChRCTBDclReqResp_4_pre_condition_not_satisfied" 5 "ChRCTBDclReqResp_5_request_received_not_fault_but_not_honored" 6 "ChRCTBDclReqResp_6_reserved" 7 "ChRCTBDclReqResp_7_reserved";
-VAL_ 2164729104 SCSVehHoldAV 0 "SCSVehHoldAV_0_Valid" 1 "SCSVehHoldAV_1_Invalid";
-VAL_ 2164729104 SCSVehHoldA 0 "SCSVehHoldA_0_NotActivelyHeld" 1 "SCSVehHoldA_1_ActivelyHeld";
-VAL_ 2164729104 SCSAutodDrvngSysStsV 0 "SCSAutodDrvngSysStsV_0_Valid" 1 "SCSAutodDrvngSysStsV_1_Invalid";
-VAL_ 2164729104 VehSdslStsV 0 "VehSdslStsV_0_Valid" 1 "VehSdslStsV_1_Invalid";
-VAL_ 2164729104 ChRCTBPrflReqResp 0 "ChRCTBPrflReqResp_0_no_request" 1 "ChRCTBPrflReqResp_1_request_honored" 2 "ChRCTBPrflReqResp_2_lost_arbitration" 3 "ChRCTBPrflReqResp_3_control_not_allowed_for_error" 4 "ChRCTBPrflReqResp_4_pre_condition_not_satisfied" 5 "ChRCTBPrflReqResp_5_reserved" 6 "ChRCTBPrflReqResp_6_reserved" 7 "ChRCTBPrflReqResp_7_reserved";
-VAL_ 2164729104 WhlBrkPrsSts 0 "WhlBrkPrsSts_0_Exist_brake_force" 1 "WhlBrkPrsSts_1_No_brake_force";
-VAL_ 2164729104 BrkSysRddySysSts 0 "BrkSysRddySysSts_0_FullAvailable" 1 "BrkSysRddySysSts_1_NotAvailable";
-VAL_ 2164729104 VehSdslSts 0 "VehSdslSts_0_not_standstill" 1 "VehSdslSts_1_standstill" 2 "VehSdslSts_2_invalid_short_unavailability_max_3s" 3 "VehSdslSts_3_reserved";
-VAL_ 2164729104 ChEBADclReqResp 0 "ChEBADclReqResp_0_NoRequest" 1 "ChEBADclReqResp_1_RequestHonored" 2 "ChEBADclReqResp_2_LostArbitration" 3 "ChEBADclReqResp_3_ControlNotAllowedForError" 4 "ChEBADclReqResp_4_Pre_conditionNotSatisfied" 6 "ChEBADclReqResp_6_reserved" 7 "ChEBADclReqResp_7_reserved";
-VAL_ 2164729104 IBSAPASysFltSts 0 "IBSAPASysFltSts_0_FullAvailable" 1 "IBSAPASysFltSts_1_NotAvailable";
+VAL_ 429 EPSAESReqResp 0 "EPSAESResp_0_Inhibit" 1 "EPSAESReqResp_1_Available" 2 "EPSAESReqResp_2_Active" 3 "EPSAESReqResp_3_Abort" 4 "EPSAESReqResp_4_ReplyForControl" 5 "EPSAESReqResp_5_Reserve" 6 "EPSAESReqResp_6_Reserve" 7 "EPSAESResp_7_Failure" 8 "EPSAESResp_8_Reserve";
+VAL_ 429 EPSAESStsInh 0 "EPSAIPkgAngReqResp_0_Inhibit" 1 "EPSAIPkgAngReqResp_1_Available" 2 "EPSAIPkgAngReqResp_2_Active" 3 "EPSAIPkgAngReqResp_3_Abort" 4 "EPSAIPkgAngReqResp_4_ReplyForControl" 5 "EPSAIPkgAngReqResp_5_Reserve" 6 "EPSAIPkgAngReqResp_6_Reserve" 7 "EPSAIPkgAngReqResp_7_Failure" 8 "EPSAIPkgAngReqResp_8_Reserve";
+VAL_ 429 EPSVMCAngRespSts 0 "EPSVMCAngRespSts_0_Init" 1 "EPSVMCAngRespSts_1_Off" 2 "EPSVMCAngRespSts_2_Ready" 3 "EPSVMCAngRespSts_3_Fadeln" 4 "EPSVMCAngRespSts_4_Active" 5 "EPSVMCAngRespSts_5_FadeOut" 6 "EPSVMCAngRespSts_6_Error" 7 "EPSVMCAngRespSts_7_Reserved";
+VAL_ 429 EPSAESReqTorRespV 0 "EPSAESReqTorV_0_Valid" 1 "EPSAESReqTorV_1_Invalid";
+VAL_ 429 EPSVMCRespStsInh 0 "EPSVMCRespStsInh_0_NormalOperation" 1 "EPSVMCRespStsInh_1_OverSpeed" 2 "EPSVMCRespStsInh_2_DriverInterference" 4 "EPSVMCRespStsInh_4_AbnormalCanInput" 8 "EPSVMCRespStsInh_8_Reserve" 16 "EPSVMCRespStsInh_16_EpsFailure" 32 "EPSVMCRespStsInh_32_Reserve" 64 "EPSVMCRespStsInh_64_Reserve" 128 "EPSVMCRespStsInh_128_Reserve";
+VAL_ 429 EPSVMCCodrivingSts 0 "EPSVMCCodrivingSts_0_Unavaliable" 1 "EPSVMCCodrivingSts_1_Non_Co_DrivingMode" 2 "EPSVMCCodrivingSts_2_Co_DrivingMode" 3 "EPSVMCCodrivingSts_3_Reserved";
+VAL_ 429 ActuRoadWhlAngV 0 "ActuRoadWhlAngV_0_Valid" 1 "ActuRoadWhlAngV_1_Invalid";
+VAL_ 429 ADASStrgDlvrdToqV 0 "ADASStrgDlvrdToqV_0_Valid" 1 "ADASStrgDlvrdToqV_1_Invalid";
+VAL_ 429 EPSDrvngMdCtrlInh 0 "EPSDrvngMdCtrlInh_0_False" 1 "EPSDrvngMdCtrlInh_1_True";
+VAL_ 429 DrvrStrgDlvrdToqV 0 "DrvrStrgDlvrdToqV_0_Valid" 1 "DrvrStrgDlvrdToqV_1_Invalid";
+VAL_ 429 StrgCustSetngDspCmd 0 "StrgCustSetngDspCmd_0_FunctionDisable" 1 "StrgCustSetngDspCmd_1_ComfortableMode" 2 "StrgCustSetngDspCmd_2_NormalMode" 3 "StrgCustSetngDspCmd_3_SportMode";
+VAL_ 429 EPSPriyChnlFlrSts 0 "EPSPriyChnlFlrSts_0_NoFailure" 1 "EPSPriyChnlFlrSts_1_LightLevelFailure" 2 "EPSPriyChnlFlrSts_2_HeavyLevelFailure";
+VAL_ 429 EPSFlrSts 0 "EPSFlrSts_0_EpsNoFailure_indicationOff" 1 "EPSFlrSts_1_EpsLightLevelFailureIndication_orange" 2 "EPSFlrSts_2_EpsHeavyLevelFailureIndication_red" 3 "EPSFlrSts_3_Invalid";
+VAL_ 429 EPSCurntDrvMd 0 "EPSCurntDrvMd_0_ADASMode" 1 "EPSCurntDrvMd_1_ComfortableMode" 2 "EPSCurntDrvMd_2_NormalMode" 3 "EPSCurntDrvMd_3_SportMode";
+VAL_ 429 ActuPnonAngV 0 "ActuPnonAngV_0_Valid" 1 "ActuPnonAngV_1_Invalid";
+VAL_ 429 EPSToqValAldMaxV 0 "EPSToqValAldMaxV_0_Valid" 1 "EPSToqValAldMaxV_1_Invalid";
+VAL_ 429 EPSLimMotToqV 0 "EPSLimMotToqV_0_Valid" 1 "EPSLimMotToqV_1_Invalid";
+VAL_ 429 EPSActRetMotToqV 0 "EPSActRetMotToqV_0_Valid" 1 "EPSActRetMotToqV_1_Invalid";
+VAL_ 429 ChLKAAngReqResp 0 "ChLKAAngReqResp_0_NoRequest" 1 "ChLKAAngReqResp_1_RequestHonored" 2 "ChLKAAngReqResp_2_LostArbitrary" 3 "ChLKAAngReqResp_3_ControlNotAllowedForFailure" 4 "ChLKAAngReqResp_4_Pre_conditionNotSatisfied" 5 "ChLKAAngReqResp_5_Initialization" 6 "ChLKAAngReqResp_6_EMA" 7 "ChLKAAngReqResp_7_Reserved";
+VAL_ 429 EPSToqValAldMinV 0 "EPSToqValAldMinV_0_Valid" 1 "EPSToqValAldMinV_1_Invalid";
+VAL_ 429 CHLKAHptResp 0 "CHLKAHptResp_0_NoRequest" 1 "CHLKAHptResp_1_RequestHonored" 2 "CHLKAHptResp_2_LostArbitrary" 3 "CHLKAHptResp_3_ControlNotAllowedForFailure" 4 "CHLKAHptResp_4_Pre_conditionNotSatisfied" 5 "CHLKAHptResp_5_Initialization";
+VAL_ 429 ChLKAToqReqResp 0 "ChLKAToqReqResp_0_NoRequest" 1 "ChLKAToqReqResp_1_RequestHonored" 2 "ChLKAToqReqResp_2_LostArbitrary" 3 "ChLKAToqReqResp_3_ControlNotAllowedForFailure" 4 "ChLKAToqReqResp_4_Pre_conditionNotSatisfied" 5 "ChLKAToqReqResp_5_Initialization" 6 "ChLKAToqReqResp_6_Reserved" 7 "ChLKAToqReqResp_7_Reserved";
+VAL_ 429 EPSCoDrivingSts 0 "EPSCoDrivingSts_0_Unavaliable" 1 "EPSCoDrivingSts_1_Non_Co_DrivingMode" 2 "EPSCoDrivingSts_2_Co_DrivingMode" 3 "EPSCoDrivingSts_3_Reserved";
+VAL_ 429 EPSAIPkgAngReqResp 0 "EPSAIPkgAngReqResp_0_Inhibit" 1 "EPSAIPkgAngReqResp_1_Available" 2 "EPSAIPkgAngReqResp_2_Active" 3 "EPSAIPkgAngReqResp_3_Abort" 4 "EPSAIPkgAngReqResp_4_ReplyForControl" 5 "EPSAIPkgAngReqResp_5_Reserve" 6 "EPSAIPkgAngReqResp_6_Reserve" 7 "EPSAIPkgAngReqResp_7_Failure" 8 "EPSAIPkgAngReqResp_8_Reserve";
+VAL_ 429 EPSAIPkgAngReqRespInh 0 "EPSAIPkgAngReqRespInh_0_NormalOperation" 1 "EPSAIPkgAngReqRespInh_1_OverSpeed" 2 "EPSAIPkgAngReqRespInh_2_DriverInterference" 4 "EPSAIPkgAngReqRespInh_4_AbnormalCanInput" 8 "EPSAIPkgAngReqRespInh_8_ExcessAngleDeviation" 16 "EPSAIPkgAngReqRespInh_16_EpsFailure" 32 "EPSAIPkgAngReqRespInh_32_Reserve" 64 "EPSAIPkgAngReqRespInh_64_Reserve" 128 "EPSAIPkgAngReqRespInh_128_Reserve";
+VAL_ 429 EPSAIPltAngRespStsInh 0 "EPSAIPltAngRespStsInh_0_NormalOperation" 1 "EPSAIPltAngRespStsInh_1_OverSpeed" 2 "EPSAIPltAngRespStsInh_2_DriverInterference" 4 "EPSAIPltAngRespStsInh_4_AbnormalCanInputtoFVCM" 8 "EPSAIPltAngRespStsInh_8_AbnormalCanInputtoZXD" 16 "EPSAIPltAngRespStsInh_10_EpsFailure" 18 "EPSAIPltAngRespStsInh_12_AbnormalCanInputtoFVCMandZXD" 32 "EPSAIPltAngRespStsInh_20_Reserve" 64 "EPSAIPltAngRespStsInh_40_Reserve" 128 "EPSAIPltAngRespStsInh_80_Reserve";
+VAL_ 429 EPSAIPltAvlLvl 0 "EPSAIPltAvlLvl_0_HadNotAvailable" 1 "EPSAIPltAvlLvl_1_HadAvailableDegraded" 2 "EPSAIPltAvlLvl_2_HadAvailable" 3 "EPSAIPltAvlLvl_3_Minor_Error";
+VAL_ 429 EPSAIPltAngRespSts 0 "EPSAIPltAngRespSts_0_Init" 1 "EPSAIPltAngRespSts_1_Off" 2 "EPSAIPltAngRespSts_2_Ready" 3 "EPSAIPltAngRespSts_3_Fadeln" 4 "EPSAIPltAngRespSts_4_HO_Active" 5 "EPSAIPltAngRespSts_5_Emergency_function_active" 6 "EPSAIPltAngRespSts_6_Error" 7 "EPSAIPltAngRespSts_7_HF_active";
+VAL_ 429 ActuRoadWhlAngGrdV 0 "ActuRoadWhlAngGrdV_0_Valid" 1 "ActuRoadWhlAngGrdV_1_Invalid";
+VAL_ 429 EPSAIPltCtrlChannel 0 "EPSAIPltCtrlChannel_0_Primary" 1 "EPSAIPltCtrlChannel_1_Secondary";
+VAL_ 429 ActuRoadWhlAngGrd 65535 "ActuRoadWhlAngGrd_65535_error_mark";
+VAL_ 173 StrgWhlAngSnsrFlt 0 "StrgWhlAngSnsrFlt_0_False" 1 "StrgWhlAngSnsrFlt_1_True";
+VAL_ 173 StrgWhlAngV 0 "StrgWhlAngV_0_Valid" 1 "StrgWhlAngV_1_Invalid";
+VAL_ 173 StrgWhlAngSnsrMultCapb 0 "StrgWhlAngSnsrMultCapb_0_False" 1 "StrgWhlAngSnsrMultCapb_1_True";
+VAL_ 173 StrgWhlAngSnsrInid 0 "StrgWhlAngSnsrInid_0_False" 1 "StrgWhlAngSnsrInid_1_True";
+VAL_ 173 StrgWhlAng 65535 "StrgWhlAng_65535_ErrorMark";
+VAL_ 173 StrgWhlAngGrd 4095 "StrgWhlAngGrd_4095_ErrorMark";
+VAL_ 173 StrgWhlAngSnsrCalSts 0 "StrgWhlAngSnsrCalSts_0_Unknown" 1 "StrgWhlAngSnsrCalSts_1_Estimated" 2 "StrgWhlAngSnsrCalSts_2_Calibrated" 3 "StrgWhlAngSnsrCalSts_3_Unknown";
+VAL_ 184 EPBSysBrkLghtsReqdA 0 "EPBSysBrkLghtsReqdA_0_False" 1 "EPBSysBrkLghtsReqdA_1_True";
+VAL_ 184 BrkSysBrkLghtsReqd 0 "BrkSysBrkLghtsReqd_0_False" 1 "BrkSysBrkLghtsReqd_1_True";
+VAL_ 184 BrkPdlPosV 0 "BrkPdlPosV_0_Valid" 1 "BrkPdlPosV_1_Invalid";
+VAL_ 394 BrkPdlDrvrAppdPrsV 0 "BrkPdlDrvrAppdPrsV_0_Valid" 1 "BrkPdlDrvrAppdPrsV_1_Invalid";
+VAL_ 394 BrkPdlDrvrAppdPrsDetV 0 "BrkPdlDrvrAppdPrsDetV_0_Valid" 1 "BrkPdlDrvrAppdPrsDetV_1_Invalid";
+VAL_ 394 BrkPdlDrvrAppdPrsDet 0 "BrkPdlDrvrAppdPrsDet_0_False" 1 "BrkPdlDrvrAppdPrsDet_1_True";
+VAL_ 394 BrkDiscTemSts 0 "BrkDiscTemSts_0_Not_high" 1 "BrkDiscTemSts_1_Temperature_too_high";
+VAL_ 394 BrkPdlMdlSts 0 "BrkPdlMdlSts_0_Normal" 1 "BrkPdlMdlSts_1_comfort" 2 "BrkPdlMdlSts_2_sport" 3 "BrkPdlMdlSts_3_Reserve";
+VAL_ 394 DrvrReqOtptRodTrvlSts 0 "DrvrReqOtptRodTrvlSts_0_Init" 1 "DrvrReqOtptRodTrvlSts_1_Normal" 2 "DrvrReqOtptRodTrvlSts_2_Faulty";
+VAL_ 394 BrkPdlSimltdPrsV 0 "BrkPdlSimltdPrsV_0_Valid" 1 "BrkPdlSimltdPrsV_1_Invalid";
+VAL_ 394 BrkPdlAppd 0 "BrkPdlAppd_0_BrakePedalNotApplied" 1 "BrkPdlAppd_1_BrakePedalApplied";
+VAL_ 394 BrkPdlAppdV 0 "BrkPdlAppdV_0_Init" 1 "BrkPdlAppdV_1_Normal" 2 "BrkPdlAppdV_2_Faulty";
+VAL_ 394 BrkFludLvlLowV 0 "BrkFludLvlLowV_0_Valid" 1 "BrkFludLvlLowV_1_Invalid";
+VAL_ 394 BrkFludLvlLow 0 "BrkFludLvlLow_0_False" 1 "BrkFludLvlLow_1_True";
+VAL_ 394 BrkPdlMdlActSts 0 "BrkPdlMdlActSts_0_Normal" 1 "BrkPdlMdlActSts_1_comfort" 2 "BrkPdlMdlActSts_2_sport" 3 "BrkPdlMdlActSts_3_Reserve";
+VAL_ 394 ACCBrkngA 0 "ACCBrkngA_0_False" 1 "ACCBrkngA_1_True";
+VAL_ 394 ChAEBDclReqResp 0 "ChAEBDclReqResp_0_no_request" 1 "ChAEBDclReqResp_1_request_honored" 2 "ChAEBDclReqResp_2_lost_arbitration" 3 "ChAEBDclReqResp_3_control_not_allowed_for_error" 4 "ChAEBDclReqResp_4_pre_condition_not_satisfied" 5 "ChAEBDclReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBDclReqResp_6_Reserved" 7 "ChAEBDclReqResp_7_Reserved";
+VAL_ 394 ChACCReqFlrSts 0 "ChACCReqFlrSts_0_No_error" 1 "ChACCReqFlrSts_1_reversible_error" 2 "ChACCReqFlrSts_2_irreversible_error" 3 "ChACCReqFlrSts_3_not_defined";
+VAL_ 394 ChACCAccReqResp 0 "ChACCAccReqResp_0_no_request" 1 "ChACCAccReqResp_1_request_honored" 2 "ChACCAccReqResp_2_lost_arbitration" 3 "ChACCAccReqResp_3_control_not_allowed_for_error" 4 "ChACCAccReqResp_4_pre_condition_not_satisfied" 5 "ChACCAccReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChACCAccReqResp_6_Reserved" 7 "ChACCAccReqResp_7_Reserved";
+VAL_ 394 ChAEBPrflReqResp 0 "ChAEBPrflReqResp_0_no_request" 1 "ChAEBPrflReqResp_1_request_honored" 2 "ChAEBPrflReqResp_2_lost_arbitration" 3 "ChAEBPrflReqResp_3_control_not_allowed_for_error" 4 "ChAEBPrflReqResp_4_pre_condition_not_satisfied" 5 "ChAEBPrflReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBPrflReqResp_6_Reserved" 7 "ChAEBPrflReqResp_7_Reserved";
+VAL_ 394 AutodDrvngSysMdReqRespV 0 "AutodDrvngSysMdReqRespV_0_Valid" 1 "AutodDrvngSysMdReqRespV_1_Invalid";
+VAL_ 394 AutodDrvngSysMdReqResp 0 "AutodDrvngSysMdReqResp_0_NoRequest" 1 "AutodDrvngSysMdReqResp_1_ReqestHonred";
+VAL_ 394 ChAEBHydBrkAstReqResp 0 "ChAEBHydBrkAstReqResp_0_no_request" 1 "ChAEBHydBrkAstReqResp_1_request_honored" 2 "ChAEBHydBrkAstReqResp_2_lost_arbitration" 3 "ChAEBHydBrkAstReqResp_3_control_not_allowed_for_error" 4 "ChAEBHydBrkAstReqResp_4_pre_condition_not_satisfied" 5 "ChAEBHydBrkAstReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBHydBrkAstReqResp_6_Reserved" 7 "ChAEBHydBrkAstReqResp_7_Reserved";
+VAL_ 394 ChAEBBrkJerkReqResp 0 "ChAEBBrkJerkReqResp_0_no_request" 1 "ChAEBBrkJerkReqResp_1_request_honored" 2 "ChAEBBrkJerkReqResp_2_lost_arbitration" 3 "ChAEBBrkJerkReqResp_3_control_not_allowed_for_error" 4 "ChAEBBrkJerkReqResp_4_pre_condition_not_satisfied" 5 "ChAEBBrkJerkReqResp_5_Request_received_no_fault_but_not_honoured" 6 "ChAEBBrkJerkReqResp_6_reserved6" 7 "ChAEBBrkJerkReqResp_7_reserved7";
+VAL_ 394 SCSAutodDrvngSysSts 0 "SCSAutodDrvngSysSts_0_TemporaryNotAvailable" 1 "SCSAutodDrvngSysSts_1_TemporaryNotReleased" 2 "SCSAutodDrvngSysSts_2_PermanentNotAvailable" 3 "SCSAutodDrvngSysSts_3_FullAvailable" 4 "SCSAutodDrvngSysSts_4_RedudancyLost" 5 "SCSAutodDrvngSysSts_5_FailOperation";
+VAL_ 394 SCSAPAAcclAV 0 "SCSAPAAcclAV_0_Valid" 1 "SCSAPAAcclAV_1_Invalid";
+VAL_ 394 SCSAPAAcclA 0 "SCSAPAAcclA_0_Inactive" 1 "SCSAPAAcclA_1_Active";
+VAL_ 394 ExtnlBrkPrioV 0 "ExtnlBrkPrioV_0_Valid" 1 "ExtnlBrkPrioV_1_Invalid";
+VAL_ 394 ExtnlBrkPrio 0 "ExtnlBrkPrio_0_EBR_NotDominate" 1 "ExtnlBrkPrio_1_EBR_Dominate";
+VAL_ 394 EmgcBrkReqdByIECUSts 0 "EmgcBrkReqdByIECUSts_0_False" 1 "EmgcBrkReqdByIECUSts_1_True";
+VAL_ 394 TCSDrvrItnt 0 "TCSDrvrItnt_0_Disabled" 1 "TCSDrvrItnt_1_Enabled";
+VAL_ 394 MultColBrkAvlblySts 0 "MultColBrkAvlblySts_0_Unavailable" 1 "MultColBrkAvlblySts_1_Available";
+VAL_ 394 ChRCTBDclReqResp 0 "ChRCTBDclReqResp_0_no_request" 1 "ChRCTBDclReqResp_1_request_honored" 2 "ChRCTBDclReqResp_2_lost_arbitration" 3 "ChRCTBDclReqResp_3_control_not_allowed_for_error" 4 "ChRCTBDclReqResp_4_pre_condition_not_satisfied" 5 "ChRCTBDclReqResp_5_request_received_not_fault_but_not_honored" 6 "ChRCTBDclReqResp_6_reserved" 7 "ChRCTBDclReqResp_7_reserved";
+VAL_ 394 SCSVehHoldAV 0 "SCSVehHoldAV_0_Valid" 1 "SCSVehHoldAV_1_Invalid";
+VAL_ 394 SCSVehHoldA 0 "SCSVehHoldA_0_NotActivelyHeld" 1 "SCSVehHoldA_1_ActivelyHeld";
+VAL_ 394 SCSAutodDrvngSysStsV 0 "SCSAutodDrvngSysStsV_0_Valid" 1 "SCSAutodDrvngSysStsV_1_Invalid";
+VAL_ 394 VehSdslStsV 0 "VehSdslStsV_0_Valid" 1 "VehSdslStsV_1_Invalid";
+VAL_ 394 ChRCTBPrflReqResp 0 "ChRCTBPrflReqResp_0_no_request" 1 "ChRCTBPrflReqResp_1_request_honored" 2 "ChRCTBPrflReqResp_2_lost_arbitration" 3 "ChRCTBPrflReqResp_3_control_not_allowed_for_error" 4 "ChRCTBPrflReqResp_4_pre_condition_not_satisfied" 5 "ChRCTBPrflReqResp_5_reserved" 6 "ChRCTBPrflReqResp_6_reserved" 7 "ChRCTBPrflReqResp_7_reserved";
+VAL_ 394 WhlBrkPrsSts 0 "WhlBrkPrsSts_0_Exist_brake_force" 1 "WhlBrkPrsSts_1_No_brake_force";
+VAL_ 394 BrkSysRddySysSts 0 "BrkSysRddySysSts_0_FullAvailable" 1 "BrkSysRddySysSts_1_NotAvailable";
+VAL_ 394 VehSdslSts 0 "VehSdslSts_0_not_standstill" 1 "VehSdslSts_1_standstill" 2 "VehSdslSts_2_invalid_short_unavailability_max_3s" 3 "VehSdslSts_3_reserved";
+VAL_ 394 ChEBADclReqResp 0 "ChEBADclReqResp_0_NoRequest" 1 "ChEBADclReqResp_1_RequestHonored" 2 "ChEBADclReqResp_2_LostArbitration" 3 "ChEBADclReqResp_3_ControlNotAllowedForError" 4 "ChEBADclReqResp_4_Pre_conditionNotSatisfied" 6 "ChEBADclReqResp_6_reserved" 7 "ChEBADclReqResp_7_reserved";
+VAL_ 394 IBSAPASysFltSts 0 "IBSAPASysFltSts_0_FullAvailable" 1 "IBSAPASysFltSts_1_NotAvailable";
 SIG_GROUP_ 430 IEPS_20ms_Group03 1 : EPSAPAInh EPSAPASts EPS_20ms_Group03_CRC EPS_20ms_Group03_RC EPS_20ms_Group03_Reserved1 EPS_20ms_Group03_Reserved2 EPS_20ms_Group03_Reserved3 EPS_20ms_Group03_Reserved4 EPS_20ms_Group03_Reserved5;
 SIG_GROUP_ 163 IFVCM_10ms_Group01 1 : FVCM_10ms_Group01_CRC FVCM_10ms_Group01_RC FVCM_10ms_Group01_Reserved1 FVCM_10ms_Group01_Reserved2 FVCM_10ms_Group01_Reserved3 FVCM_10ms_Group01_Reserved4 FVCM_10ms_Group01_Reserved5 FVCM_10ms_Group01_Reserved6 FVCM_10ms_Group01_Reserved7 LKAReqAng LKAReqAngSts LKAReqToq LKAReqToqSts;
 SIG_GROUP_ 988 IIBS_100ms_Group15 1 : BrkFltAlrm_GB BrkFrc_GB CsbLvlSts DistRCAvgDrvn DistRCAvgDrvnRstOcd DistRCAvgDrvnSrc DistRCAvgDrvnV IBSABSlvlResp IBSESPlvlResp IBSTCSlvlResp IBS_100ms_Group15_CRC IBS_100ms_Group15_RC IBS_100ms_Group15_Reserved1 IBS_100ms_Group15_Reserved2 IBS_100ms_Group15_Reserved3 IBS_100ms_Group15_Reserved4 IBS_100ms_Group15_Reserved5 IBS_100ms_Group15_Reserved6;
@@ -4295,6 +4355,7 @@ SIG_GROUP_ 425 IIBS_20ms_Group11 1 : IBS_20ms_Group11_CRC IBS_20ms_Group11_RC IB
 SIG_GROUP_ 339 IIBS_20ms_Group12 1 : IBS_20ms_Group12_CRC IBS_20ms_Group12_RC IBS_20ms_Group12_Reserved1 IBS_20ms_Group12_Reserved2 LNonDrvnWhlRotlDircn LNonDrvnWhlRotlDircnSdslSts RNonDrvnWhlRotlDircn RNonDrvnWhlRotlDircnSdslSts WhlGndVelLNonDrvn WhlGndVelLNonDrvnV WhlGndVelRNonDrvn WhlGndVelRNonDrvnV;
 SIG_GROUP_ 507 IIBS_ZONE_20ms_Group08 1 : BrkBstFnSts EPBAppcnSts_M IBSRespAccToqVal IBS_ZONE_20ms_Group08_CRC IBS_ZONE_20ms_Group08_RC IBS_ZONE_20ms_Group08_Reserved1 IBS_ZONE_20ms_Group08_Reserved2 IBS_ZONE_20ms_Group08_Reserved3 IBS_ZONE_20ms_Group08_Reserved4 IBS_ZONE_20ms_Group08_Reserved5;
 SIG_GROUP_ 382 IICBAD_20ms_Group07 1 : ACCAccReqSts_CH ACCAccReqVal ACCGoReq ACCSdslReq ACCSysFltSts ACCSysSts AIPkgAPASCSAcclReqVal APAEPBOPReq APAEPBOPReqV APASCSAcclReqSts AutodDrvngSysEmgcBrkReq AutodDrvngSysEmgcBrkReqV AutodDrvngSysFlrSts AutodDrvngSysFlrStsV AutodDrvngSysMdReq AutodDrvngSysMdReqV AutodDrvngSysSCSDrvOffReq AutodDrvngSysSCSDrvOffReqV AutodDrvngSysSCSSdslReq AutodDrvngSysSCSSdslReqV ICBAD_20ms_Group07_CRC ICBAD_20ms_Group07_RC ICBAD_20ms_Group07_Reserved1;
+SIG_GROUP_ 385 IICBAD_20ms_Group09 1 : ICBAD_20ms_Group09_CRC ICBAD_20ms_Group09_RC ICBAD_20ms_Group09_Reserved1 ICBAD_20ms_Group09_Reserved2 ICBAD_20ms_Group09_Reserved3 ICBAD_20ms_Group09_Reserved4 ICBAD_20ms_Group09_Reserved5 ICBAD_20ms_Group09_Reserved6 NSABacSysSts NSADisFucSts NSAForSysSts NSAReqAVMDis;
 SIG_GROUP_ 343 IICBAD_20ms_Group46 1 : AEBBrkJerkLvlReq AEBDclReqSts AEBDclReqToqVal AEBDclReqVal AEBHydBrkAstLvlReq AEBPrflReq AEBSysFltSts AEBSysSts ICBAD_20ms_Group46_CRC ICBAD_20ms_Group46_RC ICBAD_20ms_Group46_Reserved1 ICBAD_20ms_Group46_Reserved2;
 SIG_GROUP_ 102 IICBAD_10ms_Group01 1 : EPSToqAppdCoefnt ICBAD_10ms_Group01_CRC ICBAD_10ms_Group01_RC ICBAD_10ms_Group01_Reserved1 ICBAD_10ms_Group01_Reserved10 ICBAD_10ms_Group01_Reserved11 ICBAD_10ms_Group01_Reserved12 ICBAD_10ms_Group01_Reserved13 ICBAD_10ms_Group01_Reserved14 ICBAD_10ms_Group01_Reserved15 ICBAD_10ms_Group01_Reserved16 ICBAD_10ms_Group01_Reserved17 ICBAD_10ms_Group01_Reserved18 ICBAD_10ms_Group01_Reserved19 ICBAD_10ms_Group01_Reserved2 ICBAD_10ms_Group01_Reserved20 ICBAD_10ms_Group01_Reserved21 ICBAD_10ms_Group01_Reserved22 ICBAD_10ms_Group01_Reserved23 ICBAD_10ms_Group01_Reserved3 ICBAD_10ms_Group01_Reserved4 ICBAD_10ms_Group01_Reserved5 ICBAD_10ms_Group01_Reserved6 ICBAD_10ms_Group01_Reserved7 ICBAD_10ms_Group01_Reserved8 ICBAD_10ms_Group01_Reserved9 PltEPSRdWhlAngReqSts PltEPSRdWhlAngReqStsV;
 SIG_GROUP_ 360 IICBAD_20ms_Group13 1 : APACmdEPSSts APAF APASCUReqSts APASCUReqStsV APAShifterPosReqd APAShifterPosReqdV APATrgtEPSStrgWhlAng ICBAD_20ms_Group13_CRC ICBAD_20ms_Group13_RC ICBAD_20ms_Group13_Reserved1 ICBAD_20ms_Group13_Reserved2 ICBAD_20ms_Group13_Reserved3 ICBAD_20ms_Group13_Reserved4 ICBAD_20ms_Group13_Reserved5;
@@ -4303,6 +4364,13 @@ SIG_GROUP_ 424 IICBAD_20ms_Group12 1 : APASts AutodDrvngSysSts AutodDrvngSysStsV
 SIG_GROUP_ 98 IICBAD_ZONE_10ms_Group20 1 : ICBAD_ZONE_10ms_Group20_CRC ICBAD_ZONE_10ms_Group20_RC ICBAD_ZONE_10ms_Group20_Reserved0 ICBAD_ZONE_10ms_Group20_Reserved1 ICBAD_ZONE_10ms_Group20_Reserved2 ICBAD_ZONE_10ms_Group20_Reserved3 ICBAD_ZONE_10ms_Group20_Reserved4 ICBAD_ZONE_10ms_Group20_Reserved5 LKAToqReqValMax LKAToqReqValMin;
 SIG_GROUP_ 81 IICBAD_ZONE_20ms_Group13 1 : ACCToqReqSts ACCToqReqVal ICBAD_ZONE_20ms_Group13_CRC ICBAD_ZONE_20ms_Group13_RC ICBAD_ZONE_20ms_Group13_Reserved0 ICBAD_ZONE_20ms_Group13_Reserved1 ICBAD_ZONE_20ms_Group13_Reserved2 ICBAD_ZONE_20ms_Group13_Reserved3 ICBAD_ZONE_20ms_Group13_Reserved4 ICBAD_ZONE_20ms_Group13_Reserved5 LKASysFltSts LKASysSts TJAICASysFltSts TJAICASysSts;
 SIG_GROUP_ 486 IIPD_20ms_Group43 1 : ACCAccReqToqVal ACCSysFltSts_SCS FrtCarGoNotfr IPD_20ms_Group43_CRC IPD_20ms_Group43_RC IPD_20ms_Group43_Reserved1 IPD_20ms_Group43_Reserved2 IPD_20ms_Group43_Reserved3 IPD_20ms_Group43_Reserved4 IPD_20ms_Group43_Reserved5;
-SIG_GROUP_ 337 IIPD_20ms_Group60 1 : ALCSysFltSts ALCSysSts APASCSToqReqVal APAVehCrdnatAzmth APAVehCrdnatPosX APAVehCrdnatPosY AutoLaneChngLLaneSts AutoLaneChngRLaneSts ESSDirInd ESSDrvrTkovReq ESSSysFltSts ESSSysSts IPD_20ms_Group60_CRC IPD_20ms_Group60_RC IPD_20ms_Group60_Reserved1 IPD_20ms_Group60_Reserved10 IPD_20ms_Group60_Reserved11 IPD_20ms_Group60_Reserved2 IPD_20ms_Group60_Reserved3 IPD_20ms_Group60_Reserved4 IPD_20ms_Group60_Reserved5 IPD_20ms_Group60_Reserved6 IPD_20ms_Group60_Reserved7 IPD_20ms_Group60_Reserved8 IPD_20ms_Group60_Reserved9 NOPSysFltSts NOPSysSts_ZPD Parkngslottype PilotTkovMsgReq PrkgDstCtrlSwResp;
+SIG_GROUP_ 337 IIPD_20ms_Group60 1 : ALCSysFltSts ALCSysSts APASCSToqReqVal APAVehCrdnatAzmth APAVehCrdnatPosX APAVehCrdnatPosY AutoLaneChngLLaneSts AutoLaneChngRLaneSts ESSDirInd ESSDrvrTkovReq ESSSysFltSts ESSSysSts IPD_20ms_Group60_CRC IPD_20ms_Group60_RC IPD_20ms_Group60_Reserved1 IPD_20ms_Group60_Reserved10 IPD_20ms_Group60_Reserved11 IPD_20ms_Group60_Reserved2 IPD_20ms_Group60_Reserved4 IPD_20ms_Group60_Reserved5 IPD_20ms_Group60_Reserved6 IPD_20ms_Group60_Reserved7 IPD_20ms_Group60_Reserved8 IPD_20ms_Group60_Reserved9 NOPSysFltSts NOPSysSts_ZPD Parkngslottype PilotTkovMsgReq PrkgDstCtrlSwResp;
 SIG_GROUP_ 733 IIPD_50ms_Group49 1 : APAEnRunReq IPD_50ms_Group49_CRC IPD_50ms_Group49_RC IPD_50ms_Group49_Reserved1 IPD_50ms_Group49_Reserved2 IPD_50ms_Group49_Reserved3 IPD_50ms_Group49_Reserved4 IPD_50ms_Group49_Reserved5 IPD_50ms_Group49_Reserved6 KeepPwrRsnIPD LADSAFnInd SysPwrMdCtrl;
 SIG_GROUP_ 143 IRZCU_ZONE_10ms_Group64 1 : AccelerationXsecinfo AccelerationXsecinfoV AccelerationYsecinfo AccelerationYsecinfoV AccelerationZsecinfo AccelerationZsecinfoV AngularRateXsecinfo AngularRateXsecinfoV AngularRateYsecinfo AngularRateYsecinfoV AngularRateZsecinfo AngularRateZsecinfoV IMUTmp IMUseq RZCU_ZONE_10ms_Group64_CRC RZCU_ZONE_10ms_Group64_RC RZCU_ZONE_10ms_Group64_Reserved1 RZCU_ZONE_10ms_Group64_Reserved2 RZCU_ZONE_10ms_Group64_Reserved3 RZCU_ZONE_10ms_Group64_Reserved4 RZCU_ZONE_10ms_Group64_Reserved5 RZCU_ZONE_10ms_Group64_Reserved6 TireBlowoutPos TireBlowoutStabCtrlSts;
+SIG_GROUP_ 429 EPS_010ms_PDU03 1 : EPS_010ms_Group03_CRC EPS_010ms_Group03_RC EPSAESReqResp EPSAESStsInh EPSAESReqTorResp EPS_010ms_Group03_Reserved1 EPSVMCAngRespSts EPSAESReqTorRespV EPSVMCRespStsInh EPS_010ms_Group03_Reserved2 EPSVMCCodrivingSts EPS_010ms_Group03_Reserved3;
+SIG_GROUP_ 429 EPS_10ms_PDU01 2 : EPS_10ms_Group01_CRC EPS_10ms_Group01_RC ActuRoadWhlAngV ADASStrgDlvrdToqV EPSDrvngMdCtrlInh DrvrStrgDlvrdToqV ActuPnonAng ActuRoadWhlAng StrgCustSetngDspCmd EPSPriyChnlFlrSts EPSFlrSts EPSCurntDrvMd ActuPnonAngV EPSToqValAldMaxV EPSLimMotToqV EPSActRetMotToqV EPS_10ms_Group01_Reserved1 ChLKAAngReqResp EPS_10ms_Group01_Reserved2 EPSToqValAldMinV CHLKAHptResp EPS_10ms_Group01_Reserved3 ADASStrgDlvrdToq EPS_10ms_Group01_Reserved4 ChLKAToqReqResp EPSToqValAldMax EPSCoDrivingSts EPS_10ms_Group01_Reserved5 EPSToqValAldMin EPS_10ms_Group01_Reserved6 EPSActRetMotToq EPS_10ms_Group01_Reserved7 DrvrStrgDlvrdToq EPS_10ms_Group01_Reserved8 EPS_10ms_Group01_Reserved9 EPSLimMotToq;
+SIG_GROUP_ 429 EPS_10ms_PDU02 3 : EPS_10ms_Group02_CRC EPS_10ms_Group02_RC EPSAIPkgAngReqResp EPSAIPkgAngReqRespInh EPSAIPltAngRespStsInh EPS_10ms_Group02_Reserved1 EPSAIPltAvlLvl EPSAIPltAngRespSts ActuRoadWhlAngGrdV EPS_10ms_Group02_Reserved2 EPSAIPltCtrlChannel ActuRoadWhlAngGrd;
+SIG_GROUP_ 173 EPS_10ms_PDU05 1 : EPS_10ms_Group05_CRC EPS_10ms_Group05_RC StrgWhlAngSnsrFlt StrgWhlAngV StrgWhlAngSnsrMultCapb StrgWhlAngSnsrInid StrgWhlAng StrgWhlAngGrd EPS_10ms_Group05_Reserved1 StrgWhlAngSnsrCalSts EPS_10ms_Group05_Reserved2 EPS_10ms_Group05_Reserved3;
+SIG_GROUP_ 184 IBS_10ms_PDU04 1 : IBS_10ms_Group04_CRC IBS_10ms_Group04_RC IBS_10ms_Group04_Reserved1 BrkPdlPos IBS_10ms_Group04_Reserved3 EPBSysBrkLghtsReqdA IBS_10ms_Group04_Reserved2 BrkSysBrkLghtsReqd BrkPdlPosV ChSysEnToqReqProtn IBS_10ms_Group04_Reserved4 IBS_10ms_Group04_Reserved5 IBS_10ms_Group04_Reserved6;
+SIG_GROUP_ 394 IBS_20ms_PDU10 1 : IBS_20ms_Group10_CRC IBS_20ms_Group10_RC BrkPdlDrvrAppdPrsV BrkPdlDrvrAppdPrsDetV BrkPdlDrvrAppdPrsDet BrkDiscTemSts BrkPdlDrvrAppdPrs BrkPdlMdlSts DrvrReqOtptRodTrvlSts BrkPdlSimltdPrsV BrkPdlAppd BrkPdlAppdV BrkPdlSimltdPrs BrkFludLvlLowV BrkFludLvlLow BrkPdlMdlActSts IBS_20ms_Group10_Reserved1 DrvrReqOtptRodTrvl IBS_20ms_Group10_Reserved2;
+SIG_GROUP_ 394 IBS_20ms_PDU13 2 : IBS_20ms_Group13_CRC IBS_20ms_Group13_RC ACCBrkngA ChAEBDclReqResp ChACCReqFlrSts ChACCAccReqResp ChAEBPrflReqResp AutodDrvngSysMdReqRespV AutodDrvngSysMdReqResp ChAEBHydBrkAstReqResp ChAEBBrkJerkReqResp SCSAutodDrvngSysSts SCSAPAAcclAV SCSAPAAcclA ExtnlBrkPrioV ExtnlBrkPrio EmgcBrkReqdByIECUSts TCSDrvrItnt MultColBrkAvlblySts ChRCTBDclReqResp SCSVehHoldAV SCSVehHoldA SCSAutodDrvngSysStsV VehSdslStsV ChRCTBPrflReqResp WhlBrkPrsSts BrkSysRddySysSts VehSdslSts ChEBADclReqResp IBSAPASysFltSts;

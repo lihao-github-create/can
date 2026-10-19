@@ -1,8 +1,8 @@
 import cantools
 
 dbc_path = (
-    "dbc/20260612-lb1-AS5PM-IPD_V5.0_DBC/"
-    "20260612-lb1-AS5PM-IPD_V5.0_BKPCANFD_split.dbc"
+    "dbc/dbc_out/"
+    "20260825-lb1-AS5PR&AS5PM&AS5PR X1&大通小VAN-IPD_V6.1_BKPCANFD_split.dbc"
 )
 
 db = cantools.database.load_file(dbc_path)
